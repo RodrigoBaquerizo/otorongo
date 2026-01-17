@@ -1,0 +1,14 @@
+event_key,event_date,event_time,event_first_player,first_player_key,event_second_player,second_player_key,event_final_result,event_game_result,event_serve,event_winner,event_status,event_type_type,tournament_name,tournament_key,tournament_round,tournament_season,event_live,event_qualification,event_first_player_logo,event_second_player_logo,download_time
+12093893,2026-01-03,00:30,E. Mertens,521,L. Zhu,451,-,-,,,1,Wta Singles,United Cup,8456,,2025,0,,https://api.api-tennis.com/logo-tennis/521_e-mertens.jpg,https://api.api-tennis.com/logo-tennis/451_l-zhu.jpg,2025-12-30 16:13:00
+12093896,2026-01-03,00:30,Belgium,11091,China,14511,-,-,,,1,Teams Mix,United Cup,8454,,2025,0,,,,2025-12-30 16:13:00
+12093932,2026-01-03,02:00,Z. Bergs,1064,Z. Zhang,590,-,-,,,1,Atp Singles,United Cup,8455,,2025,0,,https://api.api-tennis.com/logo-tennis/1064_z-bergs.jpg,https://api.api-tennis.com/logo-tennis/590_z-zhang.jpg,2025-12-30 16:13:00
+12093933,2026-01-03,04:30,A. Rinderknech,1902,S. Wawrinka,2168,-,-,,,1,Atp Singles,United Cup,8455,,2025,0,,https://api.api-tennis.com/logo-tennis/1902_a-rinderknech.jpg,https://api.api-tennis.com/logo-tennis/2168_s-wawrinka.jpg,2025-12-30 16:13:00
+12093934,2026-01-03,09:00,A. De Minaur,1106,C. Ruud,430,-,-,,,1,Atp Singles,United Cup,8455,,2025,0,,https://api.api-tennis.com/logo-tennis/1106_a-de-minaur.jpg,https://api.api-tennis.com/logo-tennis/430_c-ruud.jpg,2025-12-30 16:13:00
+12093935,2026-01-03,10:00,T. Fritz,2832,S. Baez,1101,-,-,,,1,Atp Singles,United Cup,8455,,2025,0,,https://api.api-tennis.com/logo-tennis/2832_t-fritz.jpg,https://api.api-tennis.com/logo-tennis/1101_s-baez.jpg,2025-12-30 16:13:00
+12093936,2026-01-03,03:00,L. Boisson,8802,B. Bencic,2387,-,-,,,Cancelled,Wta Singles,United Cup,8456,,2025,0,,,https://api.api-tennis.com/logo-tennis/2387_b-bencic.jpg,2025-12-30 16:13:00
+12093937,2026-01-03,07:30,M. Joint,52689,M. Helgo,172,-,-,,,1,Wta Singles,United Cup,8456,,2025,0,,https://api.api-tennis.com/logo-tennis/52689_m-joint.jpg,https://api.api-tennis.com/logo-tennis/172_m-helgo.jpg,2025-12-30 16:13:00
+12093938,2026-01-03,11:30,C. Gauff,2176,S. Sierra,140,-,-,,,1,Wta Singles,United Cup,8456,,2025,0,,https://api.api-tennis.com/logo-tennis/2176_c-gauff.jpg,https://api.api-tennis.com/logo-tennis/140_s-sierra.jpg,2025-12-30 16:13:00
+12093940,2026-01-03,03:00,France,8729,Switzerland,8725,-,-,,,1,Teams Mix,United Cup,8454,,2025,0,,,,2025-12-30 16:13:00
+12093941,2026-01-03,07:30,Australia,8728,Norway,13193,-,-,,,1,Teams Mix,United Cup,8454,,2025,0,,,,2025-12-30 16:13:00
+12093942,2026-01-03,10:00,USA,8731,Argentina,11094,-,-,,,1,Teams Mix,United Cup,8454,,2025,0,,,,2025-12-30 16:13:00
+12094040,2026-01-03,03:00,L. Jeanjean,9118,B. Bencic,2387,-,-,,,1,Wta Singles,United Cup,8456,,2025,0,,https://api.api-tennis.com/logo-tennis/9118_l-jeanjean.jpg,https://api.api-tennis.com/logo-tennis/2387_b-bencic.jpg,2025-12-30 16:13:00

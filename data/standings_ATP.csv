@@ -1,0 +1,2225 @@
+place,player,player_key,league,movement,country,points,download_time
+1,Carlos Alcaraz,2382.0,ATP,same,Spain,12050,2026-01-15 23:05:43
+2,Jannik Sinner,2072.0,ATP,same,Italy,11500,2026-01-15 23:05:43
+3,Alexander Zverev,1980.0,ATP,same,Germany,5105,2026-01-15 23:05:43
+4,Novak Djokovic,1905.0,ATP,same,Serbia,4780,2026-01-15 23:05:43
+5,Lorenzo Musetti,2849.0,ATP,up,Italy,4105,2026-01-15 23:05:43
+6,Alex De Minaur,1106.0,ATP,same,Australia,4080,2026-01-15 23:05:43
+7,Felix Auger-Aliassime,2073.0,ATP,down,Canada,3990,2026-01-15 23:05:43
+8,Ben Shelton,2973.0,ATP,same,USA,3960,2026-01-15 23:05:43
+9,Taylor Fritz,2832.0,ATP,same,USA,3840,2026-01-15 23:05:43
+10,Alexander Bublik,1895.0,ATP,up,Kazakhstan,3065,2026-01-15 23:05:43
+11,Jack Draper,7011.0,ATP,down,United Kingdom,2990,2026-01-15 23:05:43
+12,Daniil Medvedev,1093.0,ATP,up,World,2910,2026-01-15 23:05:43
+13,Casper Ruud,430.0,ATP,down,Norway,2795,2026-01-15 23:05:43
+14,Andrey Rublev,2847.0,ATP,up,World,2600,2026-01-15 23:05:43
+15,Alejandro Davidovich Fokina,2842.0,ATP,down,Spain,2585,2026-01-15 23:05:43
+16,Holger Rune,437.0,ATP,down,Denmark,2580,2026-01-15 23:05:43
+17,Karen Khachanov,435.0,ATP,same,World,2320,2026-01-15 23:05:43
+18,Jakub Mensik,902.0,ATP,same,Czech Republic,2125,2026-01-15 23:05:43
+19,Jiri Lehecka,2959.0,ATP,same,Czech Republic,2090,2026-01-15 23:05:43
+20,Francisco Cerundolo,1104.0,ATP,up,Argentina,2035,2026-01-15 23:05:43
+21,Tommy Paul,1894.0,ATP,down,USA,2000,2026-01-15 23:05:43
+22,Flavio Cobolli,372.0,ATP,same,Italy,1955,2026-01-15 23:05:43
+23,Denis Shapovalov,431.0,ATP,same,Canada,1650,2026-01-15 23:05:43
+24,Luciano Darderi,8781.0,ATP,same,Italy,1579,2026-01-15 23:05:43
+25,Tallon Griekspoor,427.0,ATP,same,Netherlands,1565,2026-01-15 23:05:43
+26,Arthur Rinderknech,1902.0,ATP,up,France,1551,2026-01-15 23:05:43
+27,Learner Tien,10520.0,ATP,down,USA,1540,2026-01-15 23:05:43
+28,Cameron Norrie,1103.0,ATP,same,United Kingdom,1538,2026-01-15 23:05:43
+29,Brandon Nakashima,2838.0,ATP,up,USA,1535,2026-01-15 23:05:43
+30,Joao Fonseca,40058.0,ATP,down,Brazil,1510,2026-01-15 23:05:43
+31,Frances Tiafoe,2846.0,ATP,down,USA,1500,2026-01-15 23:05:43
+32,Valentin Vacherot,1852.0,ATP,down,Monaco,1469,2026-01-15 23:05:43
+33,Stefanos Tsitsipas,1906.0,ATP,up,Greece,1455,2026-01-15 23:05:43
+34,Corentin Moutet,2674.0,ATP,down,France,1383,2026-01-15 23:05:43
+35,Tomas Machac,2981.0,ATP,same,Czech Republic,1360,2026-01-15 23:05:43
+36,Ugo Humbert,1105.0,ATP,same,France,1355,2026-01-15 23:05:43
+37,Alex Michelsen,10884.0,ATP,same,USA,1350,2026-01-15 23:05:43
+38,Jaume Munar,2083.0,ATP,same,Spain,1295,2026-01-15 23:05:43
+39,Sebastian Baez,1101.0,ATP,up,Argentina,1250,2026-01-15 23:05:43
+40,Lorenzo Sonego,2843.0,ATP,down,Italy,1240,2026-01-15 23:05:43
+41,Gabriel Diallo,9909.0,ATP,down,Canada,1215,2026-01-15 23:05:43
+42,Arthur Fils,1759.0,ATP,down,France,1210,2026-01-15 23:05:43
+43,Zizou Bergs,1064.0,ATP,down,Belgium,1170,2026-01-15 23:05:43
+44,Daniel Altmaier,1099.0,ATP,same,Germany,1123,2026-01-15 23:05:43
+45,Grigor Dimitrov,2384.0,ATP,up,Bulgaria,1105,2026-01-15 23:05:43
+46,Nuno Borges,358.0,ATP,down,Portugal,1070,2026-01-15 23:05:43
+47,Camilo Ugo Carabelli,401.0,ATP,up,Argentina,1028,2026-01-15 23:05:43
+48,Jenson Brooksby,2169.0,ATP,up,USA,1017,2026-01-15 23:05:43
+49,Alexei Popyrin,1926.0,ATP,up,Australia,1000,2026-01-15 23:05:43
+50,Alexandre Muller,374.0,ATP,up,France,980,2026-01-15 23:05:43
+51,Sebastian Korda,2840.0,ATP,down,USA,975,2026-01-15 23:05:43
+52,Fabian Marozsan,10148.0,ATP,up,Hungary,975,2026-01-15 23:05:43
+53,Hubert Hurkacz,2841.0,ATP,up,Poland,965,2026-01-15 23:05:43
+54,Aleksandar Kovacevic,2978.0,ATP,up,USA,964,2026-01-15 23:05:43
+55,Marton Fucsovics,2833.0,ATP,down,Hungary,949,2026-01-15 23:05:43
+56,Matteo Berrettini,2844.0,ATP,down,Italy,945,2026-01-15 23:05:43
+57,Valentin Royer,954.0,ATP,down,France,924,2026-01-15 23:05:43
+58,Kamil Majchrzak,1096.0,ATP,up,Poland,918,2026-01-15 23:05:43
+59,Miomir Kecmanovic,2848.0,ATP,down,Serbia,910,2026-01-15 23:05:43
+60,Marcos Giron,1766.0,ATP,up,USA,895,2026-01-15 23:05:43
+61,Martin Etcheverry Tomas,1777.0,ATP,down,Argentina,895,2026-01-15 23:05:43
+62,Reilly Opelka,422.0,ATP,down,USA,873,2026-01-15 23:05:43
+63,Giovanni Mpetshi Perricard,9222.0,ATP,up,France,865,2026-01-15 23:05:43
+64,Terence Atmane,13091.0,ATP,down,France,862,2026-01-15 23:05:43
+65,Matteo Arnaldi,1192.0,ATP,down,Italy,858,2026-01-15 23:05:43
+66,Damir Dzumhur,1079.0,ATP,down,Bosnia and Herzegovina,837,2026-01-15 23:05:43
+67,Arthur Cazaux,1067.0,ATP,down,France,830,2026-01-15 23:05:43
+68,Francisco Comesana,2084.0,ATP,down,Argentina,829,2026-01-15 23:05:43
+69,Adrian Mannarino,438.0,ATP,down,France,810,2026-01-15 23:05:43
+70,Marin Cilic,2167.0,ATP,same,Croatia,790,2026-01-15 23:05:43
+71,Pedro Martinez,1775.0,ATP,up,Spain,768,2026-01-15 23:05:43
+72,Raphael Collignon,825.0,ATP,up,Belgium,767,2026-01-15 23:05:43
+73,Jesper De Jong,412.0,ATP,down,Netherlands,763,2026-01-15 23:05:43
+74,Mariano Navone,949.0,ATP,down,Argentina,760,2026-01-15 23:05:43
+75,Botic Van De Zandschulp,2972.0,ATP,same,Netherlands,759,2026-01-15 23:05:43
+76,Mattia Bellucci,2112.0,ATP,down,Italy,758,2026-01-15 23:05:43
+77,Jacob Fearnley,12951.0,ATP,down,United Kingdom,752,2026-01-15 23:05:43
+78,Ethan Quinn,9225.0,ATP,down,USA,733,2026-01-15 23:05:43
+79,Adam Walton,10070.0,ATP,down,Australia,727,2026-01-15 23:05:43
+80,Cristian Garin,2071.0,ATP,down,Chile,726,2026-01-15 23:05:43
+81,Alejandro Tabilo,2982.0,ATP,same,Chile,722,2026-01-15 23:05:43
+82,Filip Misolic,594.0,ATP,down,Austria,720,2026-01-15 23:05:43
+83,Manuel Cerundolo Juan,388.0,ATP,up,Argentina,700,2026-01-15 23:05:43
+84,Jan-Lennard Struff,2831.0,ATP,down,Germany,699,2026-01-15 23:05:43
+85,Quentin Halys,1925.0,ATP,up,France,697,2026-01-15 23:05:43
+86,James Duckworth,1900.0,ATP,same,Australia,694,2026-01-15 23:05:43
+87,Aleksandar Vukic,360.0,ATP,same,Australia,693,2026-01-15 23:05:43
+88,Emilio Nava,567.0,ATP,same,USA,677,2026-01-15 23:05:43
+89,Eliot Spizzirri,2983.0,ATP,same,USA,672,2026-01-15 23:05:43
+90,Roberto Bautista-Agut,2734.0,ATP,same,Spain,670,2026-01-15 23:05:43
+91,Laslo Djere,2386.0,ATP,up,Serbia,659,2026-01-15 23:05:43
+92,Pablo Carreno-Busta,434.0,ATP,same,Spain,656,2026-01-15 23:05:43
+93,Dalibor Svrcina,1754.0,ATP,same,Czech Republic,655,2026-01-15 23:05:43
+94,Hugo Gaston,1102.0,ATP,same,France,653,2026-01-15 23:05:43
+95,Alexander Blockx,39913.0,ATP,up,Belgium,653,2026-01-15 23:05:43
+96,Hamad Medjedovic,2677.0,ATP,down,Serbia,643,2026-01-15 23:05:43
+97,Tristan Schoolkate,1183.0,ATP,same,Australia,641,2026-01-15 23:05:43
+98,Carlos Taberner,1974.0,ATP,same,Spain,630,2026-01-15 23:05:43
+99,Ignacio Buse,9514.0,ATP,up,Peru,627,2026-01-15 23:05:43
+100,Vit Kopriva,1083.0,ATP,up,Czech Republic,626,2026-01-15 23:05:43
+101,Yannick Hanfmann,1764.0,ATP,down,Germany,611,2026-01-15 23:05:43
+102,Agustin Tirante Thiago,366.0,ATP,down,Argentina,605,2026-01-15 23:05:43
+103,Andres Burruchaga Roman,9596.0,ATP,down,Argentina,604,2026-01-15 23:05:43
+104,Alexander Shevchenko,566.0,ATP,down,Kazakhstan,597,2026-01-15 23:05:43
+105,Nikoloz Basilashvili,424.0,ATP,down,Georgia,573,2026-01-15 23:05:43
+106,Benjamin Bonzi,1771.0,ATP,up,France,566,2026-01-15 23:05:43
+107,Tomas Barrios Vera,396.0,ATP,down,Chile,565,2026-01-15 23:05:43
+108,Luca Nardi,386.0,ATP,up,Italy,561,2026-01-15 23:05:43
+109,Brandon Holt,8158.0,ATP,same,USA,553,2026-01-15 23:05:43
+110,Gael Monfils,2845.0,ATP,up,France,550,2026-01-15 23:05:43
+111,Jordan Thompson,207.0,ATP,down,Australia,548,2026-01-15 23:05:43
+112,Shintaro Mochizuki,1880.0,ATP,up,Japan,547,2026-01-15 23:05:43
+113,Mackenzie McDonald,2839.0,ATP,up,USA,546,2026-01-15 23:05:43
+114,Yoshihito Nishioka,1972.0,ATP,down,Japan,528,2026-01-15 23:05:43
+115,Rinky Hijikata,3317.0,ATP,up,Australia,527,2026-01-15 23:05:43
+116,Patrick Kypson,8130.0,ATP,down,USA,527,2026-01-15 23:05:43
+117,David Goffin,2385.0,ATP,same,Belgium,525,2026-01-15 23:05:43
+118,Christopher O'Connell,421.0,ATP,up,Australia,521,2026-01-15 23:05:43
+119,Elmer Moller,39675.0,ATP,same,Denmark,517,2026-01-15 23:05:43
+120,Yunchaokete Bu,796.0,ATP,same,China,499,2026-01-15 23:05:43
+121,Billy Harris,1186.0,ATP,down,United Kingdom,499,2026-01-15 23:05:43
+122,Hsin Tseng Chun,389.0,ATP,up,Taiwan,498,2026-01-15 23:05:43
+123,Borna Coric,3136.0,ATP,up,Croatia,498,2026-01-15 23:05:43
+124,Jan Choinski,5979.0,ATP,up,United Kingdom,498,2026-01-15 23:05:43
+125,Dusan Lajovic,2675.0,ATP,same,Serbia,497,2026-01-15 23:05:43
+126,Otto Virtanen,767.0,ATP,up,Finland,488,2026-01-15 23:05:43
+127,Dino Prizmic,10869.0,ATP,up,Croatia,481,2026-01-15 23:05:43
+128,Kyrian Jacquet,1335.0,ATP,down,France,477,2026-01-15 23:05:43
+129,Vilius Gaubas,9385.0,ATP,same,Lithuania,469,2026-01-15 23:05:43
+130,Marco Trungelliti,395.0,ATP,same,Argentina,468,2026-01-15 23:05:43
+131,Sebastian Ofner,359.0,ATP,same,Austria,463,2026-01-15 23:05:43
+132,Coleman Wong Chak Lam,2227.0,ATP,down,Hong Kong,456,2026-01-15 23:05:43
+133,Nicolas Jarry,400.0,ATP,same,Chile,451,2026-01-15 23:05:43
+134,Moez Echargui,1207.0,ATP,same,Tunisia,448,2026-01-15 23:05:43
+135,Nicolai Budkov Kjaer,55163.0,ATP,same,Norway,446,2026-01-15 23:05:43
+136,Lukas Klein,1969.0,ATP,down,Slovakia,444,2026-01-15 23:05:43
+137,Hugo Dellien,2980.0,ATP,down,Bolivia,438,2026-01-15 23:05:43
+138,Andrea Pellegrino,2001.0,ATP,down,Italy,438,2026-01-15 23:05:43
+139,Stan Wawrinka,2168.0,ATP,down,Switzerland,437,2026-01-15 23:05:43
+140,Francesco Passaro,8442.0,ATP,same,Italy,436,2026-01-15 23:05:43
+141,Francesco Maestrelli,1180.0,ATP,up,Italy,436,2026-01-15 23:05:43
+142,Ugo Blanchet,1903.0,ATP,down,France,435,2026-01-15 23:05:43
+143,Zachary Svajda,2986.0,ATP,up,USA,431,2026-01-15 23:05:43
+144,Sho Shimabukuro,9608.0,ATP,down,Japan,430,2026-01-15 23:05:43
+145,Liam Draxl,3696.0,ATP,up,Canada,429,2026-01-15 23:05:43
+146,Daniel Vallejo Adolfo,9217.0,ATP,up,Paraguay,428,2026-01-15 23:05:43
+147,Roberto Carballes Baena,593.0,ATP,up,Spain,427,2026-01-15 23:05:43
+148,Colton Smith,54466.0,ATP,up,USA,424,2026-01-15 23:05:43
+149,Martin Landaluce,39864.0,ATP,up,Spain,420,2026-01-15 23:05:43
+150,Rafael Jodar,50323.0,ATP,down,Spain,418,2026-01-15 23:05:43
+151,Jaime Faria,824.0,ATP,same,Portugal,413,2026-01-15 23:05:43
+152,Matteo Gigante,1187.0,ATP,up,Italy,407,2026-01-15 23:05:43
+153,Mark Lajal,731.0,ATP,up,Estonia,407,2026-01-15 23:05:43
+154,Elahi Galan Daniel,1735.0,ATP,down,Colombia,405,2026-01-15 23:05:43
+155,Titouan Droguet,8926.0,ATP,up,France,404,2026-01-15 23:05:43
+156,Giulio Zeppieri,376.0,ATP,up,Italy,402,2026-01-15 23:05:43
+157,Pierre-Hugues Herbert,1748.0,ATP,up,France,399,2026-01-15 23:05:43
+158,Henrique Rocha,827.0,ATP,up,Portugal,394,2026-01-15 23:05:43
+159,Harold Mayot,1189.0,ATP,down,France,380,2026-01-15 23:05:43
+160,Guy Den Ouden,1935.0,ATP,up,Netherlands,372,2026-01-15 23:05:43
+161,Pablo Ficovich Juan,420.0,ATP,up,Argentina,369,2026-01-15 23:05:43
+162,Yosuke Watanuki,1097.0,ATP,up,Japan,364,2026-01-15 23:05:43
+163,Luka Mikrut,938.0,ATP,up,Croatia,361,2026-01-15 23:05:43
+164,Daniel Merida Aguilar,978.0,ATP,up,Spain,353,2026-01-15 23:05:43
+165,Luca van Assche,1066.0,ATP,up,France,352,2026-01-15 23:05:43
+166,Vitaliy Sachko,1899.0,ATP,same,Ukraine,349,2026-01-15 23:05:43
+167,Jurij Rodionov,416.0,ATP,down,Austria,348,2026-01-15 23:05:43
+168,Yibing Wu,1849.0,ATP,down,China,347,2026-01-15 23:05:43
+169,Nicolas Mejia,7641.0,ATP,up,Colombia,345,2026-01-15 23:05:43
+170,Zsombor Piros,367.0,ATP,up,Hungary,341,2026-01-15 23:05:43
+171,Alex Bolt,3319.0,ATP,up,Australia,339,2026-01-15 23:05:43
+172,Roman Safiullin,1057.0,ATP,up,World,338,2026-01-15 23:05:43
+173,James McCabe,1882.0,ATP,down,Australia,337,2026-01-15 23:05:43
+174,Michael Zheng,9515.0,ATP,down,USA,337,2026-01-15 23:05:43
+175,Elias Ymer,1082.0,ATP,up,Sweden,337,2026-01-15 23:05:43
+176,Zdenek Kolar,384.0,ATP,same,Czech Republic,337,2026-01-15 23:05:43
+177,Martin Damm,1317.0,ATP,up,USA,333,2026-01-15 23:05:43
+178,Jay Clarke,1739.0,ATP,up,United Kingdom,330,2026-01-15 23:05:43
+179,Hugo Grenier,1073.0,ATP,up,France,327,2026-01-15 23:05:43
+180,Leandro Riedi,1092.0,ATP,up,Switzerland,326,2026-01-15 23:05:43
+181,Tristan Boyer,9037.0,ATP,up,USA,326,2026-01-15 23:05:43
+182,Dane Sweeny,1308.0,ATP,down,Australia,325,2026-01-15 23:05:43
+183,Justin Engel,55060.0,ATP,up,Germany,323,2026-01-15 23:05:43
+184,Bernard Tomic,3145.0,ATP,down,Australia,317,2026-01-15 23:05:43
+185,Arthur Fery,8174.0,ATP,same,United Kingdom,316,2026-01-15 23:05:43
+186,Jerome Kym,1304.0,ATP,up,Switzerland,315,2026-01-15 23:05:43
+187,Daniel Evans,2835.0,ATP,up,United Kingdom,314,2026-01-15 23:05:43
+188,Alex Barrena,1324.0,ATP,up,Argentina,312,2026-01-15 23:05:43
+189,Stefano Travaglia,2672.0,ATP,same,Italy,308,2026-01-15 23:05:43
+190,Agustin Gomez Federico,717.0,ATP,same,Argentina,306,2026-01-15 23:05:43
+191,August Holmgren,19536.0,ATP,same,Denmark,305,2026-01-15 23:05:43
+192,Jason Kubler,364.0,ATP,same,Australia,305,2026-01-15 23:05:43
+193,Alvaro Guillen Meza,9230.0,ATP,same,Ecuador,305,2026-01-15 23:05:43
+194,Thiago Monteiro,1074.0,ATP,same,Brazil,304,2026-01-15 23:05:43
+195,Timofey Skatov,362.0,ATP,down,Kazakhstan,302,2026-01-15 23:05:43
+196,Jack Pinnington Jones,1858.0,ATP,down,United Kingdom,300,2026-01-15 23:05:43
+197,Arthur Gea,9210.0,ATP,down,France,300,2026-01-15 23:05:43
+198,Sascha Gueymard Wayenburg,1742.0,ATP,up,France,298,2026-01-15 23:05:43
+199,Daniil Glinka,780.0,ATP,up,Estonia,297,2026-01-15 23:05:43
+200,Dan Added,1854.0,ATP,up,France,295,2026-01-15 23:05:43
+201,Clement Tabur,1762.0,ATP,down,France,294,2026-01-15 23:05:43
+202,Rei Sakamoto,37897.0,ATP,up,Japan,292,2026-01-15 23:05:43
+203,Oliver Crawford,945.0,ATP,up,United Kingdom,292,2026-01-15 23:05:43
+204,Mitchell Krueger,1751.0,ATP,up,USA,287,2026-01-15 23:05:43
+205,Alex Molcan,436.0,ATP,up,Slovakia,286,2026-01-15 23:05:43
+206,Lucas Reis Da Silva Joao,2408.0,ATP,up,Brazil,284,2026-01-15 23:05:43
+207,Arnaud Bailly Gilles,10840.0,ATP,up,Belgium,283,2026-01-15 23:05:43
+208,Chris Rodesch,5980.0,ATP,up,Luxembourg,281,2026-01-15 23:05:43
+209,Carlos Prado Angelo Juan,21704.0,ATP,up,Bolivia,279,2026-01-15 23:05:43
+210,Lorenzo Giustino,370.0,ATP,down,Italy,279,2026-01-15 23:05:43
+211,George Loffhagen,7006.0,ATP,up,United Kingdom,278,2026-01-15 23:05:43
+212,Pablo Llamas Ruiz,987.0,ATP,up,Spain,274,2026-01-15 23:05:43
+213,Alexis Galarneau,557.0,ATP,same,Canada,272,2026-01-15 23:05:43
+214,Gonzalo Bueno,9209.0,ATP,same,Peru,271,2026-01-15 23:05:43
+215,Clement Chidekh,7102.0,ATP,down,France,264,2026-01-15 23:05:43
+216,Thiago Seyboth Wild,1086.0,ATP,same,Brazil,263,2026-01-15 23:05:43
+217,Luka Pavlovic,2103.0,ATP,same,France,262,2026-01-15 23:05:43
+218,Johannus Monday,10071.0,ATP,down,United Kingdom,261,2026-01-15 23:05:43
+219,Ryan Peniston,1072.0,ATP,up,United Kingdom,260,2026-01-15 23:05:43
+220,Hsiou Hsu Yu,867.0,ATP,up,Taiwan,257,2026-01-15 23:05:43
+221,Lloyd Harris,2834.0,ATP,up,South Africa,256,2026-01-15 23:05:43
+222,Dmitry Popko,1758.0,ATP,up,Kazakhstan,255,2026-01-15 23:05:43
+223,Nerman Fatic,1904.0,ATP,up,Bosnia and Herzegovina,254,2026-01-15 23:05:43
+224,Murphy Cassone,12744.0,ATP,up,USA,252,2026-01-15 23:05:43
+225,Felipe Meligeni Alves,357.0,ATP,up,Brazil,251,2026-01-15 23:05:43
+226,Lukas Neumayer,2022.0,ATP,down,Austria,251,2026-01-15 23:05:43
+227,Santiago Rodriguez Taverna,361.0,ATP,up,Argentina,250,2026-01-15 23:05:43
+228,Michael Mmoh,439.0,ATP,down,USA,247,2026-01-15 23:05:43
+229,Arthur Bouquier,1311.0,ATP,up,France,247,2026-01-15 23:05:43
+230,Marco Cecchinato,1095.0,ATP,up,Italy,247,2026-01-15 23:05:43
+231,Alberto Olivieri Genaro,2407.0,ATP,up,Argentina,247,2026-01-15 23:05:43
+232,Rodrigo Pacheco Mendez,8762.0,ATP,up,Mexico,247,2026-01-15 23:05:43
+233,Matej Dodig,28615.0,ATP,up,Croatia,244,2026-01-15 23:05:43
+234,Lautaro Midon,10018.0,ATP,up,Argentina,243,2026-01-15 23:05:43
+235,Federico Cina,38264.0,ATP,up,Italy,240,2026-01-15 23:05:43
+236,Marko Topo,833.0,ATP,same,Germany,234,2026-01-15 23:05:43
+237,Kei Nishikori,2985.0,ATP,down,Japan,232,2026-01-15 23:05:43
+238,Gustavo Heide,2410.0,ATP,down,Brazil,232,2026-01-15 23:05:43
+239,Nishesh Basavareddy,15270.0,ATP,up,USA,230,2026-01-15 23:05:43
+240,Andrea Collarini,2189.0,ATP,down,Argentina,228,2026-01-15 23:05:43
+241,Josef Schwaerzler Joel,32558.0,ATP,down,Austria,225,2026-01-15 23:05:43
+242,Alejandro Moro Canas,1331.0,ATP,down,Spain,225,2026-01-15 23:05:43
+243,Facundo Diaz Acosta,2002.0,ATP,up,Argentina,224,2026-01-15 23:05:43
+244,Yi Zhou,39862.0,ATP,down,China,224,2026-01-15 23:05:43
+245,Hady Habib,1949.0,ATP,up,Lebanon,223,2026-01-15 23:05:43
+246,Rio Noguchi,690.0,ATP,up,Japan,222,2026-01-15 23:05:43
+247,Max Houkes,1243.0,ATP,up,Netherlands,221,2026-01-15 23:05:43
+248,Toby Samuel,15184.0,ATP,down,United Kingdom,218,2026-01-15 23:05:43
+249,Kaichi Uchida,568.0,ATP,down,Japan,218,2026-01-15 23:05:43
+250,Kimmer Coppejans,1205.0,ATP,up,Belgium,218,2026-01-15 23:05:43
+251,Alejandro Dellien Velasco Murkel,7334.0,ATP,up,Bolivia,218,2026-01-15 23:05:43
+252,Marc-Andrea Huesler,1746.0,ATP,up,Switzerland,216,2026-01-15 23:05:43
+253,Pablo Varillas Juan,391.0,ATP,same,Peru,213,2026-01-15 23:05:43
+254,Daniel Rincon,657.0,ATP,up,Spain,212,2026-01-15 23:05:43
+255,Remy Bertola,1212.0,ATP,same,Switzerland,212,2026-01-15 23:05:43
+256,Geoffrey Blancaneaux,409.0,ATP,same,France,212,2026-01-15 23:05:43
+257,Nicolas Kicker,1756.0,ATP,same,Argentina,210,2026-01-15 23:05:43
+258,Benjamin Hassan,1896.0,ATP,down,Lebanon,208,2026-01-15 23:05:43
+259,Calvin Hemery,1206.0,ATP,down,France,208,2026-01-15 23:05:43
+260,Daniel Michalski,582.0,ATP,up,Poland,207,2026-01-15 23:05:43
+261,Ivan Gakhov,574.0,ATP,up,World,203,2026-01-15 23:05:43
+262,Frederico Ferreira Silva,585.0,ATP,down,Portugal,202,2026-01-15 23:05:43
+263,Dimitar Kuzmanov,371.0,ATP,up,Bulgaria,202,2026-01-15 23:05:43
+264,Tiago Pereira,4077.0,ATP,down,Portugal,202,2026-01-15 23:05:43
+265,Beibit Zhukayev,579.0,ATP,down,Kazakhstan,201,2026-01-15 23:05:43
+266,Gauthier Onclin,818.0,ATP,same,Belgium,200,2026-01-15 23:05:43
+267,Federico Coria,433.0,ATP,same,Argentina,200,2026-01-15 23:05:43
+268,Fajing Sun,876.0,ATP,down,China,200,2026-01-15 23:05:43
+269,Tom Paris,13552.0,ATP,up,France,200,2026-01-15 23:05:43
+270,Andres Martin,1056.0,ATP,up,USA,200,2026-01-15 23:05:43
+271,Andres Andrade,6505.0,ATP,up,Ecuador,200,2026-01-15 23:05:43
+272,Ilia Simakin,1238.0,ATP,up,World,199,2026-01-15 23:05:43
+273,Edas Butvilas,9362.0,ATP,up,Lithuania,199,2026-01-15 23:05:43
+274,Patrick Zahraj,5791.0,ATP,up,Germany,198,2026-01-15 23:05:43
+275,Pedro Boscardin Dias,2003.0,ATP,up,Brazil,197,2026-01-15 23:05:43
+276,Henri Squire,907.0,ATP,same,Germany,195,2026-01-15 23:05:43
+277,Matteo Martineau,1185.0,ATP,down,France,193,2026-01-15 23:05:43
+278,Cristian Jianu Filip,576.0,ATP,same,Romania,191,2026-01-15 23:05:43
+279,Sumit Nagal,1077.0,ATP,up,India,190,2026-01-15 23:05:43
+280,Stefan Kozlov,1087.0,ATP,down,USA,190,2026-01-15 23:05:43
+281,Alex Rybakov,559.0,ATP,up,USA,189,2026-01-15 23:05:43
+282,Stefanos Sakellaridis,742.0,ATP,up,Greece,187,2026-01-15 23:05:43
+283,Tom Gentzsch,2501.0,ATP,down,Germany,187,2026-01-15 23:05:43
+284,Borna Gojo,377.0,ATP,down,Croatia,186,2026-01-15 23:05:43
+285,Christopher Eubanks,1059.0,ATP,up,USA,186,2026-01-15 23:05:43
+286,Saba Purtseladze,1202.0,ATP,up,Georgia,185,2026-01-15 23:05:43
+287,Michael Geerts,587.0,ATP,down,Belgium,184,2026-01-15 23:05:43
+288,Florent Bax,2105.0,ATP,up,France,183,2026-01-15 23:05:43
+289,Andrej Nedic,9640.0,ATP,up,Bosnia and Herzegovina,182,2026-01-15 23:05:43
+290,Fabrizio Andaloro,9568.0,ATP,same,Italy,180,2026-01-15 23:05:43
+291,Abedallah Shelbayh,9219.0,ATP,same,Jordan,179,2026-01-15 23:05:43
+292,Garrett Johns,7637.0,ATP,same,USA,179,2026-01-15 23:05:43
+293,Mikhail Kukushkin,2970.0,ATP,down,Kazakhstan,178,2026-01-15 23:05:43
+294,Tyler Zink,2214.0,ATP,same,USA,178,2026-01-15 23:05:43
+295,Darwin Blanch,17463.0,ATP,down,USA,176,2026-01-15 23:05:43
+296,Liam Broady,410.0,ATP,down,United Kingdom,176,2026-01-15 23:05:43
+297,Matheus Pucinelli de Almeida,1743.0,ATP,down,Brazil,176,2026-01-15 23:05:43
+298,Robin Bertrand,808.0,ATP,down,France,176,2026-01-15 23:05:43
+299,Jacopo Berrettini,6984.0,ATP,down,Italy,175,2026-01-15 23:05:43
+300,Hynek Barton,2241.0,ATP,down,Czech Republic,175,2026-01-15 23:05:43
+301,Kent Trotter James,9193.0,ATP,down,Japan,173,2026-01-15 23:05:43
+302,Sandro Kopp,848.0,ATP,up,Austria,171,2026-01-15 23:05:43
+303,Marat Sharipov,830.0,ATP,up,World,170,2026-01-15 23:05:43
+304,Charles Broom,745.0,ATP,down,United Kingdom,169,2026-01-15 23:05:43
+305,Nikolas Sanchez Izquierdo,591.0,ATP,same,Spain,169,2026-01-15 23:05:43
+306,Petr Brunclik,38921.0,ATP,same,Czech Republic,168,2026-01-15 23:05:43
+307,Yasutaka Uchiyama,884.0,ATP,same,Japan,167,2026-01-15 23:05:43
+308,Lilian Marmousez,835.0,ATP,same,France,167,2026-01-15 23:05:43
+309,Aziz Dougaz,798.0,ATP,same,Tunisia,166,2026-01-15 23:05:43
+310,Gianluca Cadenasso,38798.0,ATP,same,Italy,166,2026-01-15 23:05:43
+311,Juncheng Shang,2413.0,ATP,down,China,165,2026-01-15 23:05:43
+312,Alastair Gray,2110.0,ATP,up,United Kingdom,165,2026-01-15 23:05:43
+313,Eliakim Coulibaly,11110.0,ATP,up,Ivory Coast,165,2026-01-15 23:05:43
+314,Akira Santillan,868.0,ATP,same,Japan,165,2026-01-15 23:05:43
+315,Norbert Gombos,397.0,ATP,up,Slovakia,164,2026-01-15 23:05:43
+316,Harry Wendelken,7009.0,ATP,up,United Kingdom,164,2026-01-15 23:05:43
+317,Carlos Sanchez Jover,584.0,ATP,up,Spain,161,2026-01-15 23:05:43
+318,Miguel Damas,1209.0,ATP,up,Spain,159,2026-01-15 23:05:43
+319,Richard Gasquet,1094.0,ATP,up,France,158,2026-01-15 23:05:43
+320,Cedrik-Marcel Stebe,387.0,ATP,down,Germany,158,2026-01-15 23:05:43
+321,Mats Rosenkranz,1850.0,ATP,up,Germany,158,2026-01-15 23:05:43
+322,Facundo Mena,378.0,ATP,up,Argentina,157,2026-01-15 23:05:43
+323,Viktor Durasovic,1201.0,ATP,up,Norway,157,2026-01-15 23:05:43
+324,Renta Tokuda,5212.0,ATP,up,Japan,157,2026-01-15 23:05:43
+325,Adrian Boitan Gabi,9132.0,ATP,up,Romania,157,2026-01-15 23:05:43
+326,Philip Henning,23664.0,ATP,up,South Africa,156,2026-01-15 23:05:43
+327,Diego Dedura,55858.0,ATP,down,Germany,156,2026-01-15 23:05:43
+328,Petr Bar Biryukov,14515.0,ATP,up,World,156,2026-01-15 23:05:43
+329,Mathys Erhard,668.0,ATP,up,France,156,2026-01-15 23:05:43
+330,Omar Jasika,1261.0,ATP,up,Australia,155,2026-01-15 23:05:43
+331,Duje Ajdukovic,392.0,ATP,up,Croatia,153,2026-01-15 23:05:43
+332,Sergey Fomin,570.0,ATP,down,Uzbekistan,151,2026-01-15 23:05:43
+333,Oliver Tarvet,9368.0,ATP,up,United Kingdom,150,2026-01-15 23:05:43
+334,Andrej Martin,,ATP,up,Slovakia,149,2026-01-15 23:05:43
+335,Franco Agamenone,373.0,ATP,up,Italy,149,2026-01-15 23:05:43
+336,Andrea Vavassori,418.0,ATP,up,Italy,147,2026-01-15 23:05:43
+337,Alfredo Perez,,ATP,up,USA,147,2026-01-15 23:05:43
+338,Hamish Stewart,38208.0,ATP,up,United Kingdom,147,2026-01-15 23:05:43
+339,Daniel Dutra Da Silva,558.0,ATP,up,Brazil,146,2026-01-15 23:05:43
+340,Yuta Shimizu,2100.0,ATP,down,Japan,145,2026-01-15 23:05:43
+341,Gabriele Piraino,1245.0,ATP,down,Italy,144,2026-01-15 23:05:43
+342,Maxim Mrva,38850.0,ATP,down,Czech Republic,144,2026-01-15 23:05:43
+343,Martin Krumich,906.0,ATP,down,Czech Republic,144,2026-01-15 23:05:43
+344,Gonzalo Villanueva,5181.0,ATP,same,Argentina,144,2026-01-15 23:05:43
+345,Jelle Sels,586.0,ATP,up,Netherlands,143,2026-01-15 23:05:43
+346,Franco Roncadelli,823.0,ATP,down,Uruguay,141,2026-01-15 23:05:43
+347,Christian Langmo,2021.0,ATP,down,USA,141,2026-01-15 23:05:43
+348,Antoine Ghibaudo,9234.0,ATP,down,France,140,2026-01-15 23:05:43
+349,Javier Barranco Cosano,1877.0,ATP,down,Spain,139,2026-01-15 23:05:43
+350,Giles Hussey,627.0,ATP,up,United Kingdom,139,2026-01-15 23:05:43
+351,Marek Gengel,1321.0,ATP,down,Czech Republic,137,2026-01-15 23:05:43
+352,Andre Ilagan,37936.0,ATP,down,USA,137,2026-01-15 23:05:43
+353,Patrick Maloney,37922.0,ATP,down,USA,136,2026-01-15 23:05:43
+354,Sanhui Shin,10295.0,ATP,down,South Korea,136,2026-01-15 23:05:43
+355,Adria Soriano Barrera,1330.0,ATP,down,Colombia,135,2026-01-15 23:05:43
+356,Nicolas Alvarez Varona,565.0,ATP,down,Spain,135,2026-01-15 23:05:43
+357,Dominic Stricker,379.0,ATP,down,Switzerland,133,2026-01-15 23:05:43
+358,Bautista Torres Juan,2085.0,ATP,down,Argentina,133,2026-01-15 23:05:43
+359,Christoph Negritu,5971.0,ATP,down,Germany,132,2026-01-15 23:05:43
+360,Paul Jubb,385.0,ATP,down,United Kingdom,131,2026-01-15 23:05:43
+361,Tung-Lin Wu,1062.0,ATP,down,Taiwan,131,2026-01-15 23:05:43
+362,Zhizhen Zhang,590.0,ATP,down,China,130,2026-01-15 23:05:43
+363,Alibek Kachmazov,1197.0,ATP,down,World,130,2026-01-15 23:05:43
+364,Gastao Elias,404.0,ATP,down,Portugal,130,2026-01-15 23:05:43
+365,Hernan Casanova,560.0,ATP,down,Argentina,130,2026-01-15 23:05:43
+366,Luca Potenza,2235.0,ATP,down,Italy,130,2026-01-15 23:05:43
+367,Taro Daniel,2406.0,ATP,down,Japan,128,2026-01-15 23:05:43
+368,Jakub Paul,1966.0,ATP,up,Switzerland,128,2026-01-15 23:05:43
+369,Felix Gill,1208.0,ATP,down,United Kingdom,128,2026-01-15 23:05:43
+370,Viacheslav Bielinskyi,930.0,ATP,down,Ukraine,128,2026-01-15 23:05:43
+371,Alexey Vatutin,1878.0,ATP,down,World,128,2026-01-15 23:05:43
+372,Ivan Justo Guido,7249.0,ATP,down,Argentina,128,2026-01-15 23:05:43
+373,Pol Martin Tiffon,1338.0,ATP,down,Spain,127,2026-01-15 23:05:43
+374,Kilian Feldbausch,1297.0,ATP,down,Switzerland,127,2026-01-15 23:05:43
+375,Pedro Sakamoto,4741.0,ATP,down,Brazil,127,2026-01-15 23:05:43
+376,Federico Arnaboldi,1240.0,ATP,down,Italy,127,2026-01-15 23:05:43
+377,Cezar Cretu,972.0,ATP,down,Romania,126,2026-01-15 23:05:43
+378,Maximus Jones,680.0,ATP,up,Thailand,126,2026-01-15 23:05:43
+379,Denis Yevseyev,569.0,ATP,down,Kazakhstan,126,2026-01-15 23:05:43
+380,Trevor Svajda,52663.0,ATP,down,USA,124,2026-01-15 23:05:43
+381,Max Alcala Gurri,678.0,ATP,down,Spain,124,2026-01-15 23:05:43
+382,Marc Polmans,2735.0,ATP,down,Australia,123,2026-01-15 23:05:43
+383,Mili Poljicak,943.0,ATP,down,Croatia,123,2026-01-15 23:05:43
+384,Aidan McHugh,875.0,ATP,down,United Kingdom,123,2026-01-15 23:05:43
+385,David Jorda Sanchis,2019.0,ATP,down,Spain,123,2026-01-15 23:05:43
+386,Matias Soto,9035.0,ATP,down,Chile,122,2026-01-15 23:05:43
+387,Jonas Forejtek,2086.0,ATP,down,Czech Republic,121,2026-01-15 23:05:43
+388,Mika Brunold,37882.0,ATP,up,Switzerland,121,2026-01-15 23:05:43
+389,Facundo Bagnis,1089.0,ATP,down,Argentina,120,2026-01-15 23:05:43
+390,Li Tu,1883.0,ATP,up,Australia,120,2026-01-15 23:05:43
+391,Ioannis Xilas,19218.0,ATP,down,Greece,120,2026-01-15 23:05:43
+392,Alberto Caniato Carlo,24283.0,ATP,down,Italy,120,2026-01-15 23:05:43
+393,Andrea Picchione,8782.0,ATP,down,Italy,119,2026-01-15 23:05:43
+394,Aryan Shah,51257.0,ATP,down,India,119,2026-01-15 23:05:43
+395,Albert Ramos-Vinolas,1090.0,ATP,down,Spain,118,2026-01-15 23:05:43
+396,Igor Marcondes,3679.0,ATP,down,Brazil,118,2026-01-15 23:05:43
+397,Daniel Milavsky,15277.0,ATP,down,USA,118,2026-01-15 23:05:43
+398,Robert Strombachs,7489.0,ATP,down,Latvia,118,2026-01-15 23:05:43
+399,Corentin Denolly,8223.0,ATP,up,France,118,2026-01-15 23:05:43
+400,Dan Martin,23350.0,ATP,down,Canada,117,2026-01-15 23:05:43
+401,Raphael Perot,53339.0,ATP,down,France,117,2026-01-15 23:05:43
+402,Lucas Poullain,1315.0,ATP,down,France,117,2026-01-15 23:05:43
+403,Samir Banerjee,2974.0,ATP,up,USA,116,2026-01-15 23:05:43
+404,Constant Lestienne,1755.0,ATP,down,France,116,2026-01-15 23:05:43
+405,Hayato Matsuoka,38778.0,ATP,up,Japan,116,2026-01-15 23:05:43
+406,Mariano Kestelboim,8896.0,ATP,down,Argentina,115,2026-01-15 23:05:43
+407,Mert Alkaya,8972.0,ATP,down,Turkey,115,2026-01-15 23:05:43
+408,Inaki Montes-De La Torre,10232.0,ATP,down,Spain,115,2026-01-15 23:05:43
+409,Alex Hernandez,,ATP,down,Mexico,115,2026-01-15 23:05:43
+410,Oriol Roca Batalla,588.0,ATP,down,Spain,114,2026-01-15 23:05:43
+411,Raul Brancaccio,1873.0,ATP,up,Italy,114,2026-01-15 23:05:43
+412,Alex Martinez,,ATP,same,Spain,114,2026-01-15 23:05:43
+413,Kasidit Samrej,10124.0,ATP,down,Thailand,114,2026-01-15 23:05:43
+414,Sean Cuenin,382.0,ATP,down,France,113,2026-01-15 23:05:43
+415,Stuart Parker,2111.0,ATP,up,United Kingdom,112,2026-01-15 23:05:43
+416,Florian Broska,15199.0,ATP,up,Germany,112,2026-01-15 23:05:43
+417,Jie Cui,1274.0,ATP,up,China,112,2026-01-15 23:05:43
+418,Max Basing,13535.0,ATP,up,United Kingdom,111,2026-01-15 23:05:43
+419,Maks Kasnikowski,1242.0,ATP,same,Poland,111,2026-01-15 23:05:43
+420,Michele Ribecai,40082.0,ATP,same,Italy,111,2026-01-15 23:05:43
+421,Luca Castelnuovo,2220.0,ATP,down,Switzerland,110,2026-01-15 23:05:43
+422,Lorenzo Carboni,49616.0,ATP,down,Italy,110,2026-01-15 23:05:43
+423,Hyeon Chung,3135.0,ATP,up,South Korea,109,2026-01-15 23:05:43
+424,Keegan Smith,6011.0,ATP,down,USA,109,2026-01-15 23:05:43
+425,Neil Oberleitner,1301.0,ATP,down,Austria,109,2026-01-15 23:05:43
+426,Hikaru Shiraishi,13697.0,ATP,up,Japan,109,2026-01-15 23:05:43
+427,Vadym Ursu,7269.0,ATP,down,Ukraine,109,2026-01-15 23:05:43
+428,Etienne Donnet,40125.0,ATP,down,France,108,2026-01-15 23:05:43
+429,Radu Albot,363.0,ATP,down,Moldova,108,2026-01-15 23:05:43
+430,Erik Arutiunian,13389.0,ATP,down,World,108,2026-01-15 23:05:43
+431,Roberto Cid Subervi,2956.0,ATP,down,Dominican Republic,107,2026-01-15 23:05:43
+432,Ricardas Berankis,1767.0,ATP,up,Lithuania,107,2026-01-15 23:05:43
+433,Manuel La Serna Juan,10017.0,ATP,same,Argentina,107,2026-01-15 23:05:43
+434,Antoine Escoffier,1068.0,ATP,up,France,107,2026-01-15 23:05:43
+435,Emanuel Ambrogi Luciano,14270.0,ATP,up,Argentina,107,2026-01-15 23:05:43
+436,Arthur Weber,24769.0,ATP,down,France,106,2026-01-15 23:05:43
+437,Oleg Prihodko,8733.0,ATP,up,Ukraine,106,2026-01-15 23:05:43
+438,Mae Malige,53274.0,ATP,up,France,106,2026-01-15 23:05:43
+439,Buvaysar Gadamauri,12832.0,ATP,up,Belgium,106,2026-01-15 23:05:43
+440,Federico Bondioli,37892.0,ATP,up,Italy,106,2026-01-15 23:05:43
+441,Blake Ellis,7890.0,ATP,down,Australia,105,2026-01-15 23:05:43
+442,Max Wiskandt,9110.0,ATP,same,Germany,105,2026-01-15 23:05:43
+443,Olle Wallin,38131.0,ATP,same,Sweden,103,2026-01-15 23:05:43
+444,Cyril Vandermeersch,11809.0,ATP,same,France,103,2026-01-15 23:05:43
+445,Alexandr Binda,13409.0,ATP,same,Italy,103,2026-01-15 23:05:43
+446,Joaquin Rodriguez Lorenzo,14085.0,ATP,same,Argentina,103,2026-01-15 23:05:43
+447,Milos Karol,817.0,ATP,up,Slovakia,102,2026-01-15 23:05:43
+448,Stefano Napolitano,3915.0,ATP,same,Italy,101,2026-01-15 23:05:43
+449,Yanki Erel,10541.0,ATP,same,Turkey,101,2026-01-15 23:05:43
+450,Rudolf Molleker,893.0,ATP,up,Germany,100,2026-01-15 23:05:43
+451,Eric Vanshelboim,1196.0,ATP,down,Ukraine,100,2026-01-15 23:05:43
+452,Dali Blanch,1314.0,ATP,up,USA,100,2026-01-15 23:05:43
+453,Gianmarco Ferrari,658.0,ATP,up,Italy,100,2026-01-15 23:05:43
+454,Andrey Chepelev,4061.0,ATP,down,World,99,2026-01-15 23:05:43
+455,Svyatoslav Gulin,13386.0,ATP,up,World,98,2026-01-15 23:05:43
+456,Giovanni Fonio,1855.0,ATP,up,Italy,98,2026-01-15 23:05:43
+457,Olaf Pieczkowski,10838.0,ATP,up,Poland,98,2026-01-15 23:05:43
+458,Andrew Fenty,6696.0,ATP,same,USA,98,2026-01-15 23:05:43
+459,Marvin Moeller,7349.0,ATP,same,Germany,97,2026-01-15 23:05:43
+460,Mateus Alves,28260.0,ATP,same,Brazil,97,2026-01-15 23:05:43
+461,Eduardo Ribeiro,6712.0,ATP,down,Brazil,96,2026-01-15 23:05:43
+462,Bernabe Zapata Miralles,403.0,ATP,up,Spain,96,2026-01-15 23:05:43
+463,James Story,38266.0,ATP,same,United Kingdom,96,2026-01-15 23:05:43
+464,Ognjen Milic,52882.0,ATP,down,Serbia,95,2026-01-15 23:05:43
+465,Tibo Colson,961.0,ATP,down,Belgium,95,2026-01-15 23:05:43
+466,Maxim Zhukov,2209.0,ATP,up,World,95,2026-01-15 23:05:43
+467,Moerani Bouzige,7912.0,ATP,down,Australia,95,2026-01-15 23:05:43
+468,Dhakshineswar Suresh,18341.0,ATP,down,India,94,2026-01-15 23:05:43
+469,Henry Searle,38784.0,ATP,up,United Kingdom,94,2026-01-15 23:05:43
+470,Karan Singh,8537.0,ATP,up,India,94,2026-01-15 23:05:43
+471,Carlos Lopez Montagud,975.0,ATP,up,Spain,94,2026-01-15 23:05:43
+472,Takuya Kumasaka,20616.0,ATP,up,Japan,93,2026-01-15 23:05:43
+473,Eero Vasa,765.0,ATP,down,Finland,93,2026-01-15 23:05:43
+474,Juan Estevez,54079.0,ATP,up,Argentina,93,2026-01-15 23:05:43
+475,Jake Delaney,7078.0,ATP,down,Australia,93,2026-01-15 23:05:43
+476,Pedro Vives Marcos,4051.0,ATP,up,Spain,92,2026-01-15 23:05:43
+477,Filippo Moroni,8324.0,ATP,up,Italy,92,2026-01-15 23:05:43
+478,Filip Peliwo,1313.0,ATP,up,Poland,92,2026-01-15 23:05:43
+479,Laurent Lokoli,1076.0,ATP,up,France,91,2026-01-15 23:05:43
+480,Nikolay Vylegzhanin,12829.0,ATP,up,World,91,2026-01-15 23:05:43
+481,Mirza Basic,1080.0,ATP,up,Bosnia and Herzegovina,90,2026-01-15 23:05:43
+482,Orlando Fellin Pietro,8649.0,ATP,up,Italy,90,2026-01-15 23:05:43
+483,Pavel Kotov,415.0,ATP,up,World,89,2026-01-15 23:05:43
+484,Soonwoo Kwon,1098.0,ATP,up,South Korea,89,2026-01-15 23:05:43
+485,Yan Bai,4157.0,ATP,up,China,89,2026-01-15 23:05:43
+486,Tadeas Paroulek,6751.0,ATP,up,Czech Republic,89,2026-01-15 23:05:43
+487,Blaise Bicknell,1251.0,ATP,up,Jamaica,88,2026-01-15 23:05:43
+488,Eduardo Schiessl Joao,22055.0,ATP,same,Brazil,88,2026-01-15 23:05:43
+489,Alexander Weis,2023.0,ATP,down,Italy,88,2026-01-15 23:05:43
+490,Jack Loge,38176.0,ATP,down,Belgium,88,2026-01-15 23:05:43
+491,Lui Maxted,37938.0,ATP,down,United Kingdom,87,2026-01-15 23:05:43
+492,Aristotelis Thanos,749.0,ATP,down,Greece,87,2026-01-15 23:05:43
+493,Edward Winter,3318.0,ATP,down,Australia,87,2026-01-15 23:05:43
+494,Branko Djuric,37896.0,ATP,down,Serbia,87,2026-01-15 23:05:43
+495,Tsung-Hao Huang,792.0,ATP,up,Taiwan,87,2026-01-15 23:05:43
+496,Andrea Guerrieri,853.0,ATP,down,Italy,86,2026-01-15 23:05:43
+497,Bor Artnak,10846.0,ATP,same,Slovenia,86,2026-01-15 23:05:43
+498,Cannon Kingsley,3710.0,ATP,down,USA,86,2026-01-15 23:05:43
+499,Manas Dhamne,54470.0,ATP,down,India,86,2026-01-15 23:05:43
+500,Dylan Hara Friend Jay,69562.0,ATP,up,Japan,85,2026-01-15 23:05:43
+501,Vladyslav Orlov,932.0,ATP,up,Ukraine,85,2026-01-15 23:05:43
+502,Tristan McCormick,20665.0,ATP,up,USA,85,2026-01-15 23:05:43
+503,Nicolas Arseneault,71261.0,ATP,up,Canada,84,2026-01-15 23:05:43
+504,Yusuke Takahashi,2508.0,ATP,up,Japan,84,2026-01-15 23:05:43
+505,Alex Marti Pujolras,988.0,ATP,same,Spain,84,2026-01-15 23:05:43
+506,Oleksandr Ovcharenko,815.0,ATP,same,Ukraine,84,2026-01-15 23:05:43
+507,Stefan Palosi,9656.0,ATP,same,Romania,84,2026-01-15 23:05:43
+508,Dominik Koepfer,2830.0,ATP,same,Germany,83,2026-01-15 23:05:43
+509,Henry Bernet,57540.0,ATP,down,Switzerland,83,2026-01-15 23:05:43
+510,Daniel Masur,411.0,ATP,down,Germany,83,2026-01-15 23:05:43
+511,Renzo Olivo,1081.0,ATP,down,Argentina,82,2026-01-15 23:05:43
+512,Ryan Nijboer,9131.0,ATP,down,Netherlands,82,2026-01-15 23:05:43
+513,Alexander Ritschard,408.0,ATP,up,Switzerland,81,2026-01-15 23:05:43
+514,Emil Overbeck Carl,20568.0,ATP,down,Denmark,81,2026-01-15 23:05:43
+515,Hiroki Moriya,3202.0,ATP,up,Japan,81,2026-01-15 23:05:43
+516,Thomas Faurel,65519.0,ATP,up,France,81,2026-01-15 23:05:43
+517,Adrian Andreescu Stefan,38014.0,ATP,up,Romania,81,2026-01-15 23:05:43
+518,Matthew Dellavedova,1258.0,ATP,up,Australia,81,2026-01-15 23:05:43
+519,Philip Sekulic,3316.0,ATP,same,Australia,80,2026-01-15 23:05:43
+520,Egor Agafonov,650.0,ATP,up,World,80,2026-01-15 23:05:43
+521,Petr Nesterov,9220.0,ATP,down,Bulgaria,79,2026-01-15 23:05:43
+522,Samuele Pieri,20697.0,ATP,down,Italy,79,2026-01-15 23:05:43
+523,Valerio Aboian,703.0,ATP,down,Argentina,78,2026-01-15 23:05:43
+524,Enrico Dalla Valle,5675.0,ATP,up,Italy,78,2026-01-15 23:05:43
+525,Ryuki Matsuda,793.0,ATP,down,Japan,78,2026-01-15 23:05:43
+526,Mukund Sasikumar,1200.0,ATP,up,India,78,2026-01-15 23:05:43
+527,Sergio Callejon Hernando,50705.0,ATP,same,Spain,78,2026-01-15 23:05:43
+528,Tommaso Compagnucci,851.0,ATP,same,Italy,78,2026-01-15 23:05:43
+529,Maxime Janvier,580.0,ATP,same,France,78,2026-01-15 23:05:43
+530,Alberto Barroso Campos,1266.0,ATP,same,Spain,77,2026-01-15 23:05:43
+531,Bruno Kuzuhara,662.0,ATP,same,USA,77,2026-01-15 23:05:43
+532,Lukas Pokorny,935.0,ATP,up,Slovakia,76,2026-01-15 23:05:43
+533,Leo Borg,810.0,ATP,same,Sweden,76,2026-01-15 23:05:43
+534,Masamichi Imamura,10276.0,ATP,down,Japan,76,2026-01-15 23:05:43
+535,Sebastian Gima,2015.0,ATP,down,Romania,76,2026-01-15 23:05:43
+536,Peter Fajta,923.0,ATP,down,Hungary,75,2026-01-15 23:05:43
+537,Georgii Kravchenko,2106.0,ATP,down,Ukraine,75,2026-01-15 23:05:43
+538,Fares Zakaria,79642.0,ATP,down,Egypt,75,2026-01-15 23:05:43
+539,Yuki Mochizuki,10334.0,ATP,down,Japan,74,2026-01-15 23:05:43
+540,Maximilian Neuchrist,897.0,ATP,down,Austria,74,2026-01-15 23:05:43
+541,Dominik Palan,741.0,ATP,down,Czech Republic,74,2026-01-15 23:05:43
+542,Ivan Marrero Curbelo,4727.0,ATP,down,Spain,74,2026-01-15 23:05:43
+543,Gabriele Pennaforti,652.0,ATP,down,Italy,74,2026-01-15 23:05:43
+544,Emil Ruusuvuori,1770.0,ATP,down,Finland,73,2026-01-15 23:05:43
+545,Aleksandre Bakshi,1303.0,ATP,down,Georgia,73,2026-01-15 23:05:43
+546,Nino Ehrenschneider,10101.0,ATP,down,Germany,73,2026-01-15 23:05:43
+547,Tristan Lamasine,1973.0,ATP,up,France,72,2026-01-15 23:05:43
+548,Johan Nikles,428.0,ATP,down,Switzerland,72,2026-01-15 23:05:43
+549,Govind Nanda,2968.0,ATP,down,USA,71,2026-01-15 23:05:43
+550,Elmar Ejupovic,1881.0,ATP,down,Germany,71,2026-01-15 23:05:43
+551,Justin Boulais,5767.0,ATP,down,Canada,71,2026-01-15 23:05:43
+552,Maxwell McKennon,39941.0,ATP,down,USA,71,2026-01-15 23:05:43
+553,Amr Elsayed,676.0,ATP,down,Egypt,71,2026-01-15 23:05:43
+554,Tomasz Berkieta,37927.0,ATP,down,Poland,70,2026-01-15 23:05:43
+555,Pavle Marinkov,38851.0,ATP,down,Australia,70,2026-01-15 23:05:43
+556,Igor Gimenez,8681.0,ATP,down,Brazil,70,2026-01-15 23:05:43
+557,Kokoro Isomura,9226.0,ATP,up,Japan,70,2026-01-15 23:05:43
+558,Reda Bennani,38261.0,ATP,down,Morocco,69,2026-01-15 23:05:43
+559,Sebastian Sorger,22921.0,ATP,down,Austria,69,2026-01-15 23:05:43
+560,Woobin Shin,10857.0,ATP,down,South Korea,69,2026-01-15 23:05:43
+561,Dominik Kellovsky,8684.0,ATP,down,Czech Republic,69,2026-01-15 23:05:43
+562,Dusan Obradovic,941.0,ATP,down,Serbia,69,2026-01-15 23:05:43
+563,Andre Saraiva Dos Santos Paulo,10508.0,ATP,down,Brazil,69,2026-01-15 23:05:43
+564,Ergi Kirkin,1863.0,ATP,up,Turkey,68,2026-01-15 23:05:43
+565,Stefan Popovic,840.0,ATP,down,Serbia,68,2026-01-15 23:05:43
+566,Kirill Kivattsev,1944.0,ATP,down,World,68,2026-01-15 23:05:43
+567,Arda Azkara,33897.0,ATP,down,Turkey,67,2026-01-15 23:05:43
+568,Oleksii Krutykh,1177.0,ATP,down,Ukraine,67,2026-01-15 23:05:43
+569,Filippo Romano,39002.0,ATP,down,Italy,67,2026-01-15 23:05:43
+570,Taha Baadi,9881.0,ATP,down,Morocco,67,2026-01-15 23:05:43
+571,Mihai Papoe Radu,15768.0,ATP,down,Romania,66,2026-01-15 23:05:43
+572,Robin Catry,40126.0,ATP,down,France,66,2026-01-15 23:05:43
+573,Arthur Nagel,38026.0,ATP,down,France,66,2026-01-15 23:05:43
+574,Nicolae Madaras Dragos,1860.0,ATP,down,Sweden,65,2026-01-15 23:05:43
+575,Karue Sell,8218.0,ATP,up,Brazil,65,2026-01-15 23:05:43
+576,Khumoyun Sultanov,6983.0,ATP,down,Uzbekistan,65,2026-01-15 23:05:43
+577,Maxime Chazal,1332.0,ATP,down,France,65,2026-01-15 23:05:43
+578,Nicholas Tudorica Alvin,52605.0,ATP,down,Canada,65,2026-01-15 23:05:43
+579,Michal Krajci,38845.0,ATP,down,Slovakia,65,2026-01-15 23:05:43
+580,Lucas Pouille,1774.0,ATP,down,France,64,2026-01-15 23:05:43
+581,Sebastian Gomez Juan,712.0,ATP,down,Colombia,64,2026-01-15 23:05:43
+582,Jeff Planinsek Filip,40154.0,ATP,down,Slovenia,64,2026-01-15 23:05:43
+583,Manuel Mazza,695.0,ATP,down,Italy,64,2026-01-15 23:05:43
+584,Michael Vrbensky,1947.0,ATP,down,Czech Republic,64,2026-01-15 23:05:43
+585,Dennis Novak,1753.0,ATP,up,Austria,64,2026-01-15 23:05:43
+586,Tai Sach,885.0,ATP,down,Australia,64,2026-01-15 23:05:43
+587,Stefan Dostanic,37907.0,ATP,down,USA,63,2026-01-15 23:05:43
+588,Cem Ilkel,1736.0,ATP,down,Turkey,63,2026-01-15 23:05:43
+589,Alexandru Tomescu Dan,10543.0,ATP,down,Romania,63,2026-01-15 23:05:43
+590,Jozef Kovalik,1065.0,ATP,down,Slovakia,63,2026-01-15 23:05:43
+591,Koki Matsuda,37969.0,ATP,down,Japan,63,2026-01-15 23:05:43
+592,Adhithya Ganesan,54464.0,ATP,same,USA,63,2026-01-15 23:05:43
+594,Constantin Bittoun Kouzmine,13283.0,ATP,same,France,63,2026-01-15 23:05:43
+595,Lucas Gerch,1971.0,ATP,down,Germany,62,2026-01-15 23:05:43
+596,Digvijaypratap Singh,7098.0,ATP,down,India,62,2026-01-15 23:05:43
+597,Joaquin Aguilar Cardozo,38832.0,ATP,down,Uruguay,62,2026-01-15 23:05:43
+598,Millen Hurrion,12967.0,ATP,down,United Kingdom,62,2026-01-15 23:05:43
+599,Matthew Donald,1322.0,ATP,down,Czech Republic,61,2026-01-15 23:05:43
+600,Karl Poling,8886.0,ATP,down,USA,61,2026-01-15 23:05:43
+601,Emilien Demanet,62513.0,ATP,down,Belgium,61,2026-01-15 23:05:43
+602,Adrian Oetzbach,751.0,ATP,down,Germany,61,2026-01-15 23:05:43
+603,Shunsuke Mitsui,22253.0,ATP,down,Japan,60,2026-01-15 23:05:43
+604,Nick Hardt,1853.0,ATP,down,Dominican Republic,60,2026-01-15 23:05:43
+605,Andres Santamarta Roig,71815.0,ATP,down,Spain,60,2026-01-15 23:05:43
+606,Manuel Aguilar Juan Carlos,8133.0,ATP,down,Canada,60,2026-01-15 23:05:43
+607,Lucio Ratti,10022.0,ATP,down,Argentina,60,2026-01-15 23:05:43
+608,Maria Zarate Carlos,65990.0,ATP,down,Argentina,60,2026-01-15 23:05:43
+609,Loann Massard,38776.0,ATP,down,France,60,2026-01-15 23:05:43
+610,Louis Wessels,1955.0,ATP,down,Germany,60,2026-01-15 23:05:43
+611,Carlos Alvarez Valdes Luis,10514.0,ATP,down,Mexico,59,2026-01-15 23:05:43
+612,Max Schoenhaus,56893.0,ATP,down,Germany,59,2026-01-15 23:05:43
+613,Fernando Rubio Fierros Alan,14088.0,ATP,down,Mexico,59,2026-01-15 23:05:43
+614,Aidan Mayo,9216.0,ATP,down,USA,59,2026-01-15 23:05:43
+615,Maxence Beauge,1312.0,ATP,down,France,59,2026-01-15 23:05:43
+616,Gerard Campana Lee,10845.0,ATP,down,South Korea,59,2026-01-15 23:05:43
+617,David Ionel Nicholas,564.0,ATP,down,Romania,59,2026-01-15 23:05:43
+618,Hans Rehberg Max,3604.0,ATP,up,Germany,58,2026-01-15 23:05:43
+619,Yassine Dlimi,14468.0,ATP,down,Morocco,58,2026-01-15 23:05:43
+620,Shintaro Imai,5216.0,ATP,down,Japan,58,2026-01-15 23:05:43
+621,Damien Wenger,83433.0,ATP,down,Switzerland,58,2026-01-15 23:05:43
+622,Lorenzo Sciahbasi,32336.0,ATP,down,Italy,58,2026-01-15 23:05:43
+623,Yi Lee Kuan,,ATP,down,Taiwan,58,2026-01-15 23:05:43
+624,Mees Rottgering,53790.0,ATP,up,Netherlands,58,2026-01-15 23:05:43
+625,Mario Gonzalez Fernandez,15921.0,ATP,up,Spain,58,2026-01-15 23:05:43
+626,Mikael Ymer,1976.0,ATP,same,Sweden,57,2026-01-15 23:05:43
+627,Jakub Nicod,2516.0,ATP,same,Czech Republic,57,2026-01-15 23:05:43
+628,Yuta Kawahashi,10335.0,ATP,down,Japan,57,2026-01-15 23:05:43
+629,Cruz Martin Manzano Juan,56246.0,ATP,down,Italy,57,2026-01-15 23:05:43
+630,Felix Balshaw,52682.0,ATP,down,France,57,2026-01-15 23:05:43
+631,Prajwal Dev S D,11781.0,ATP,down,India,57,2026-01-15 23:05:43
+632,Aziz Ouakaa,1876.0,ATP,down,Tunisia,57,2026-01-15 23:05:43
+633,Nicolas Moreno De Alboran,1179.0,ATP,down,USA,56,2026-01-15 23:05:43
+634,Kenta Miyoshi,10873.0,ATP,same,Japan,56,2026-01-15 23:05:43
+635,Alec Deckers,10019.0,ATP,same,Netherlands,56,2026-01-15 23:05:43
+636,Arthur Reymond,1184.0,ATP,down,France,56,2026-01-15 23:05:43
+637,Ryan Fishback,52052.0,ATP,up,USA,56,2026-01-15 23:05:43
+638,Denis Klok,2101.0,ATP,up,World,56,2026-01-15 23:05:43
+639,Yurii Dzhavakian,9694.0,ATP,up,Ukraine,56,2026-01-15 23:05:43
+640,Christian Sigsgaard,773.0,ATP,up,Denmark,55,2026-01-15 23:05:43
+641,Alexander Rodriguez Johan,9221.0,ATP,up,Colombia,55,2026-01-15 23:05:43
+642,Daniel Siniakov,899.0,ATP,up,Czech Republic,55,2026-01-15 23:05:43
+643,James Watt,40233.0,ATP,down,New Zealand,55,2026-01-15 23:05:43
+644,Toby Kodat,716.0,ATP,up,USA,55,2026-01-15 23:05:43
+645,Yecong Mo,37952.0,ATP,up,China,55,2026-01-15 23:05:43
+646,Andrew Paulson,888.0,ATP,up,Czech Republic,54,2026-01-15 23:05:43
+647,Mate Valkusz,563.0,ATP,up,Hungary,54,2026-01-15 23:05:43
+648,Yusuke Kusuhara,39158.0,ATP,up,Japan,54,2026-01-15 23:05:43
+649,Rigele Te,663.0,ATP,up,China,54,2026-01-15 23:05:43
+650,Santiago De La Fuente,9597.0,ATP,up,Argentina,54,2026-01-15 23:05:43
+651,Igor Kudriashov,9218.0,ATP,up,World,54,2026-01-15 23:05:43
+652,Massimo Giunta,37933.0,ATP,up,Italy,54,2026-01-15 23:05:43
+653,Karol Filar,15548.0,ATP,up,Poland,53,2026-01-15 23:05:43
+654,Facundo Juarez,8880.0,ATP,up,Italy,53,2026-01-15 23:05:43
+655,Axel Garcian,9830.0,ATP,same,France,53,2026-01-15 23:05:43
+656,Kyle Kang,9518.0,ATP,down,USA,52,2026-01-15 23:05:43
+657,Aidan Kim,9381.0,ATP,down,USA,52,2026-01-15 23:05:43
+658,Alafia Ayeni,2481.0,ATP,down,USA,52,2026-01-15 23:05:43
+659,Alejo Sanchez Quilez,52692.0,ATP,down,Spain,52,2026-01-15 23:05:43
+660,Tim Handel,12606.0,ATP,same,Germany,52,2026-01-15 23:05:43
+661,Duncan Chan,38792.0,ATP,same,Canada,51,2026-01-15 23:05:43
+662,Jacopo Vasami,73841.0,ATP,same,Italy,51,2026-01-15 23:05:43
+663,Iliyan Radulov,38103.0,ATP,same,Bulgaria,51,2026-01-15 23:05:43
+664,Stijn Slump,38041.0,ATP,same,Netherlands,51,2026-01-15 23:05:43
+665,Imanol Lopez Morillo,991.0,ATP,same,Spain,51,2026-01-15 23:05:43
+666,Giuseppe La Vela,8323.0,ATP,same,Italy,51,2026-01-15 23:05:43
+667,Luca Castagnola,819.0,ATP,same,Italy,51,2026-01-15 23:05:43
+668,Quinn Vandecasteele,5778.0,ATP,same,USA,51,2026-01-15 23:05:43
+669,Giovanni Oradini,862.0,ATP,same,Italy,51,2026-01-15 23:05:43
+670,Thanasi Kokkinakis,426.0,ATP,up,Australia,50,2026-01-15 23:05:43
+671,Nick Kyrgios,2984.0,ATP,up,Australia,50,2026-01-15 23:05:43
+672,Aslan Karatsev,1901.0,ATP,up,World,50,2026-01-15 23:05:43
+673,Michael Agwi,38006.0,ATP,up,Ireland,50,2026-01-15 23:05:43
+674,Jan Kumstat,38839.0,ATP,up,Czech Republic,50,2026-01-15 23:05:43
+675,David Turcanu Radu,63402.0,ATP,up,Romania,50,2026-01-15 23:05:43
+676,Antonio Nunez Daniel,9687.0,ATP,up,Chile,50,2026-01-15 23:05:43
+677,Pierre Delage,778.0,ATP,down,France,50,2026-01-15 23:05:43
+678,Niels Visker,14641.0,ATP,down,Netherlands,50,2026-01-15 23:05:43
+679,Alexander Donski,9159.0,ATP,up,Bulgaria,49,2026-01-15 23:05:43
+680,Enzo Couacaud,394.0,ATP,up,France,49,2026-01-15 23:05:43
+681,Francesco Forti,1191.0,ATP,up,Italy,49,2026-01-15 23:05:43
+682,Matisse Bobichon,69332.0,ATP,up,France,49,2026-01-15 23:05:43
+683,Felix Corwin,3703.0,ATP,up,USA,49,2026-01-15 23:05:43
+684,Alejandro Manzanera Pertusa,9367.0,ATP,up,Spain,49,2026-01-15 23:05:43
+685,Sidharth Rawat,4469.0,ATP,down,India,49,2026-01-15 23:05:43
+686,Ryan Dickerson,38039.0,ATP,up,USA,49,2026-01-15 23:05:43
+687,Abel Forger,57239.0,ATP,up,Netherlands,49,2026-01-15 23:05:43
+688,Pedro Cachin,414.0,ATP,up,Argentina,48,2026-01-15 23:05:43
+689,Joshua Sheehy,1254.0,ATP,up,USA,48,2026-01-15 23:05:43
+690,Braden Shick,37912.0,ATP,up,USA,48,2026-01-15 23:05:43
+691,Blu Baker,6655.0,ATP,up,United Kingdom,48,2026-01-15 23:05:43
+692,Yuta Kikuchi,23537.0,ATP,up,Japan,48,2026-01-15 23:05:43
+693,Rodrigo Alujas,55470.0,ATP,up,Mexico,48,2026-01-15 23:05:43
+694,Pedro Araujo,8974.0,ATP,up,Portugal,48,2026-01-15 23:05:43
+695,Sergi Perez Contri,4254.0,ATP,up,Spain,48,2026-01-15 23:05:43
+696,Anton Matusevich,6886.0,ATP,up,United Kingdom,47,2026-01-15 23:05:43
+697,Pawit Sornlaksup,38249.0,ATP,up,Thailand,47,2026-01-15 23:05:43
+698,Kang Leong Mitsuki Wei,38273.0,ATP,down,Malaysia,47,2026-01-15 23:05:43
+699,Strong Kirchheimer,3706.0,ATP,up,USA,47,2026-01-15 23:05:43
+700,Leo Vithoontien,38128.0,ATP,down,Japan,47,2026-01-15 23:05:43
+701,Cooper Williams,,ATP,up,USA,46,2026-01-15 23:05:43
+702,Pierluigi Basile,69812.0,ATP,up,Italy,46,2026-01-15 23:05:43
+703,Tuncay Duran,14315.0,ATP,up,Turkey,46,2026-01-15 23:05:43
+704,Tianhui Zhang,54172.0,ATP,up,China,46,2026-01-15 23:05:43
+705,Marcel Zielinski,27904.0,ATP,up,Poland,46,2026-01-15 23:05:43
+706,Kyle Edmund,3221.0,ATP,up,United Kingdom,45,2026-01-15 23:05:43
+707,Pablo Martinez Gomez,49886.0,ATP,up,Spain,45,2026-01-15 23:05:43
+708,Peter Bertran,720.0,ATP,up,Dominican Republic,45,2026-01-15 23:05:43
+709,Sora Fukuda,5213.0,ATP,up,Japan,45,2026-01-15 23:05:43
+710,Semen Pankin,54138.0,ATP,up,World,45,2026-01-15 23:05:43
+711,Gabriel Ghetu,69520.0,ATP,up,Romania,45,2026-01-15 23:05:43
+712,Chase Ferguson,37866.0,ATP,up,Australia,45,2026-01-15 23:05:43
+713,Ali Yazdani,11166.0,ATP,up,Iran,45,2026-01-15 23:05:43
+714,Federico Iannaccone,5673.0,ATP,up,Italy,45,2026-01-15 23:05:43
+715,Kenny De Schepper,990.0,ATP,up,France,45,2026-01-15 23:05:43
+716,Guillaume Dalmasso,38125.0,ATP,up,France,45,2026-01-15 23:05:43
+717,Kaylan Bigun,37898.0,ATP,up,USA,44,2026-01-15 23:05:43
+718,Uisung Park,9952.0,ATP,up,South Korea,44,2026-01-15 23:05:43
+719,Jose Pereira,3896.0,ATP,up,Brazil,44,2026-01-15 23:05:43
+720,Augusto Barreto Sanchez Diego,7251.0,ATP,up,Spain,44,2026-01-15 23:05:43
+721,Michiel De Krom,4056.0,ATP,up,Netherlands,44,2026-01-15 23:05:43
+722,Pedro Rodrigues,,ATP,same,Brazil,43,2026-01-15 23:05:43
+723,Joris De Loore,5169.0,ATP,same,Belgium,43,2026-01-15 23:05:43
+724,Naoki Nakagawa,4136.0,ATP,up,Japan,43,2026-01-15 23:05:43
+725,Matthew Summers,39195.0,ATP,up,United Kingdom,43,2026-01-15 23:05:43
+726,Michael Bassem Sobhy,37992.0,ATP,up,Egypt,43,2026-01-15 23:05:43
+727,Dinko Dinev,10850.0,ATP,up,Bulgaria,43,2026-01-15 23:05:43
+728,Maik Steiner,1273.0,ATP,up,Germany,43,2026-01-15 23:05:43
+729,Conner Huertas Del Pino,2411.0,ATP,same,Peru,42,2026-01-15 23:05:43
+730,Sung Nam Ji,4102.0,ATP,same,South Korea,42,2026-01-15 23:05:43
+731,Ignacio Monzon,685.0,ATP,same,Argentina,42,2026-01-15 23:05:43
+732,Kai Wehnelt,2459.0,ATP,same,Germany,42,2026-01-15 23:05:43
+733,Fausto Tabacco,1295.0,ATP,down,Italy,42,2026-01-15 23:05:43
+734,Cruz Hewitt,76018.0,ATP,down,Australia,41,2026-01-15 23:05:43
+735,Timofei Derepasko,52054.0,ATP,down,World,41,2026-01-15 23:05:43
+736,John Echeverria,1328.0,ATP,same,Spain,41,2026-01-15 23:05:43
+737,Daniil Ostapenkov,13986.0,ATP,same,World,41,2026-01-15 23:05:43
+738,Nicolas Tepmahc,12632.0,ATP,same,France,41,2026-01-15 23:05:43
+739,Evan Zhu,578.0,ATP,down,USA,41,2026-01-15 23:05:43
+740,Mika Petkovic,63396.0,ATP,up,Germany,41,2026-01-15 23:05:43
+741,Dimitris Sakellaridis,38623.0,ATP,down,Greece,41,2026-01-15 23:05:43
+742,Maximilian Marterer,1070.0,ATP,up,Germany,40,2026-01-15 23:05:43
+743,Theo Papamalamis,9232.0,ATP,up,France,40,2026-01-15 23:05:43
+744,Luca Staeheli,9360.0,ATP,up,Switzerland,40,2026-01-15 23:05:43
+745,Alex Knaff,5969.0,ATP,up,Luxembourg,40,2026-01-15 23:05:43
+746,Alessandro Pecci,2478.0,ATP,up,Italy,40,2026-01-15 23:05:43
+747,Tomas Farjat,9600.0,ATP,up,Argentina,40,2026-01-15 23:05:43
+748,Josip Simundza,50324.0,ATP,up,Croatia,40,2026-01-15 23:05:43
+749,Matteo Covato,57685.0,ATP,up,Italy,40,2026-01-15 23:05:43
+750,Maxence Bertimon,58609.0,ATP,up,France,40,2026-01-15 23:05:43
+751,Amaury Raynel,700.0,ATP,up,France,40,2026-01-15 23:05:43
+752,Yanaki Milev,13372.0,ATP,up,Bulgaria,40,2026-01-15 23:05:43
+753,Alexis Gautier,6628.0,ATP,down,France,39,2026-01-15 23:05:43
+754,Cesar Bouchelaghem,38101.0,ATP,up,France,39,2026-01-15 23:05:43
+755,Alejandro Linde Palacios Samuel,67049.0,ATP,same,Colombia,39,2026-01-15 23:05:43
+756,Samuel Heredia,66890.0,ATP,same,Colombia,39,2026-01-15 23:05:43
+757,Tomas Curras Abasolo,6717.0,ATP,same,Spain,39,2026-01-15 23:05:43
+758,Mwendwa Mbithi,719.0,ATP,down,USA,38,2026-01-15 23:05:43
+759,Adrien Gobat,13854.0,ATP,down,France,38,2026-01-15 23:05:43
+760,Yanis Ghazouani Durand,58961.0,ATP,down,France,38,2026-01-15 23:05:43
+761,Gregoire Barrere,1772.0,ATP,down,France,37,2026-01-15 23:05:43
+762,Tiago Torres,14435.0,ATP,up,Portugal,37,2026-01-15 23:05:43
+763,Kris van Wyk,38111.0,ATP,down,South Africa,37,2026-01-15 23:05:43
+764,Leo Raquillet,24770.0,ATP,down,France,37,2026-01-15 23:05:43
+765,Luca Preda,52607.0,ATP,down,Romania,37,2026-01-15 23:05:43
+766,Naoya Honda,39537.0,ATP,down,Japan,37,2026-01-15 23:05:43
+767,John Sperle,13694.0,ATP,down,Germany,37,2026-01-15 23:05:43
+768,Jose Gutierrez Oscar,974.0,ATP,down,Spain,37,2026-01-15 23:05:43
+769,Jack Anthrop,9212.0,ATP,down,USA,36,2026-01-15 23:05:43
+770,Victor Lilov,656.0,ATP,down,USA,36,2026-01-15 23:05:43
+771,Francisco Rocha,12972.0,ATP,down,Portugal,36,2026-01-15 23:05:43
+772,Matt Kuhar,1247.0,ATP,down,USA,36,2026-01-15 23:05:43
+773,Aleksandr Braynin,10487.0,ATP,down,Ukraine,36,2026-01-15 23:05:43
+774,Leonardo Rossi,37988.0,ATP,down,Italy,36,2026-01-15 23:05:43
+775,Lucas Andrade da Silva,57484.0,ATP,down,Brazil,35,2026-01-15 23:05:43
+776,Roger Pascual Ferra,17585.0,ATP,down,Spain,35,2026-01-15 23:05:43
+777,Karim Bennani,38298.0,ATP,down,Morocco,35,2026-01-15 23:05:43
+778,Matyas Fuele,918.0,ATP,down,Hungary,35,2026-01-15 23:05:43
+779,Attila Boros,13823.0,ATP,down,Hungary,35,2026-01-15 23:05:43
+780,Alec Beckley,642.0,ATP,down,South Africa,35,2026-01-15 23:05:43
+781,Emile Hudd,8645.0,ATP,down,United Kingdom,35,2026-01-15 23:05:43
+782,Martin Van Der Meerschen,7999.0,ATP,down,Belgium,35,2026-01-15 23:05:43
+783,Colin Sinclair,6752.0,ATP,down,Northern Mariana Islands,35,2026-01-15 23:05:43
+784,Menelaos Efstathiou,11182.0,ATP,down,Cyprus,35,2026-01-15 23:05:43
+785,Iannis Miletich,60454.0,ATP,down,Italy,35,2026-01-15 23:05:43
+786,Wishaya Trongcharoenchaikul,5527.0,ATP,down,Thailand,35,2026-01-15 23:05:43
+787,Samir Hamza Reguig,1283.0,ATP,down,Algeria,35,2026-01-15 23:05:43
+788,Fryderyk Lechno-Wasiutynski,53799.0,ATP,down,Poland,34,2026-01-15 23:05:43
+789,Trey Hilderbrand,11005.0,ATP,up,USA,34,2026-01-15 23:05:43
+790,Micah Braswell,12958.0,ATP,up,USA,34,2026-01-15 23:05:43
+791,Ilya Ivashka,432.0,ATP,same,World,34,2026-01-15 23:05:43
+792,Gustavo Ribeiro de Almeida,40143.0,ATP,same,Brazil,34,2026-01-15 23:05:43
+793,Mikalai Haliak,896.0,ATP,down,World,34,2026-01-15 23:05:43
+794,Alan Magadan,60067.0,ATP,down,Mexico,34,2026-01-15 23:05:43
+795,Bautista Vilicich,20663.0,ATP,down,Argentina,34,2026-01-15 23:05:43
+796,Linang Xiao,38140.0,ATP,down,China,34,2026-01-15 23:05:43
+797,Joshua Charlton,10215.0,ATP,down,Australia,34,2026-01-15 23:05:43
+798,William Grant,7309.0,ATP,down,USA,34,2026-01-15 23:05:43
+799,John Wolf Jeffrey,2853.0,ATP,down,USA,33,2026-01-15 23:05:43
+800,Oscar Weightman,770.0,ATP,down,United Kingdom,33,2026-01-15 23:05:43
+801,Albert Pedrico Kravtsov,55487.0,ATP,down,Spain,33,2026-01-15 23:05:43
+802,Nikita Bilozertsev,64775.0,ATP,down,Ukraine,33,2026-01-15 23:05:43
+803,Pedro Rodenas,17462.0,ATP,down,Spain,33,2026-01-15 23:05:43
+804,Evgeny Karlovskiy,575.0,ATP,down,World,33,2026-01-15 23:05:43
+805,Oliver Bonding,28596.0,ATP,down,United Kingdom,33,2026-01-15 23:05:43
+806,Lucas Bouquet,966.0,ATP,down,France,33,2026-01-15 23:05:43
+807,Muhamad Rifqi Fitriadi,14460.0,ATP,up,Indonesia,33,2026-01-15 23:05:43
+808,Hee Lee Duck,4567.0,ATP,down,South Korea,33,2026-01-15 23:05:43
+809,Shinji Hazawa,744.0,ATP,down,Japan,33,2026-01-15 23:05:43
+810,Alejandro Juan Mano,52069.0,ATP,down,Spain,33,2026-01-15 23:05:43
+811,Toufik Sahtali,804.0,ATP,down,Algeria,33,2026-01-15 23:05:43
+812,Artur Kukasian,10851.0,ATP,up,World,33,2026-01-15 23:05:43
+813,Wilson Leite,5469.0,ATP,down,Brazil,33,2026-01-15 23:05:43
+814,Jacob Brumm,8686.0,ATP,down,USA,33,2026-01-15 23:05:43
+815,Keisuke Saitoh,1326.0,ATP,down,Japan,32,2026-01-15 23:05:43
+816,Bruno Fernandez,53136.0,ATP,down,Brazil,32,2026-01-15 23:05:43
+817,Thanapet Chanta,10126.0,ATP,down,Thailand,32,2026-01-15 23:05:43
+818,Ajeet Rai,3224.0,ATP,same,New Zealand,32,2026-01-15 23:05:43
+819,Maximilian Homberg,21176.0,ATP,down,Germany,32,2026-01-15 23:05:43
+820,Lorenzo Rottoli,837.0,ATP,down,Italy,32,2026-01-15 23:05:43
+821,Taiyo Yamanaka,13371.0,ATP,down,Japan,32,2026-01-15 23:05:43
+822,Kosuke Ogura,711.0,ATP,down,Japan,32,2026-01-15 23:05:43
+823,Egor Gerasimov,368.0,ATP,up,World,31,2026-01-15 23:05:43
+824,Petros Tsitsipas,1872.0,ATP,same,Greece,31,2026-01-15 23:05:43
+825,Amir Omarkhanov,63488.0,ATP,down,Kazakhstan,31,2026-01-15 23:05:43
+826,Michel Hopp,912.0,ATP,down,Germany,31,2026-01-15 23:05:43
+827,Vincent Marysko,54889.0,ATP,down,Germany,31,2026-01-15 23:05:43
+828,Benjamin Torrealba,10319.0,ATP,down,Chile,31,2026-01-15 23:05:43
+829,Niccolo Catini,37970.0,ATP,down,Italy,31,2026-01-15 23:05:43
+830,Martin Klizan,3144.0,ATP,down,Slovakia,30,2026-01-15 23:05:43
+831,Luca Tanner Gian,13127.0,ATP,down,Switzerland,30,2026-01-15 23:05:43
+832,Moise Kouame,68751.0,ATP,down,France,30,2026-01-15 23:05:43
+833,Kristijan Juhas,18862.0,ATP,down,Serbia,30,2026-01-15 23:05:43
+834,Alejandro Turriziani Alvarez,38023.0,ATP,down,Spain,30,2026-01-15 23:05:43
+835,Maximo Zeitune,66326.0,ATP,down,Argentina,30,2026-01-15 23:05:43
+836,Yannik Kelm,55032.0,ATP,down,Germany,30,2026-01-15 23:05:43
+837,Marlon Vankan,1265.0,ATP,same,Germany,30,2026-01-15 23:05:43
+838,Ben Jones,768.0,ATP,down,United Kingdom,30,2026-01-15 23:05:43
+839,Evgenii Tiurnev,1861.0,ATP,up,World,29,2026-01-15 23:05:43
+840,Julio Cesar Porras,8799.0,ATP,up,Argentina,29,2026-01-15 23:05:43
+841,Jorge Plans,4047.0,ATP,up,Spain,29,2026-01-15 23:05:43
+842,Rafael Izquierdo Luque,57566.0,ATP,up,Spain,29,2026-01-15 23:05:43
+843,Thiago Cigarran,9602.0,ATP,up,Argentina,29,2026-01-15 23:05:43
+844,Noah Schachter,15166.0,ATP,up,USA,29,2026-01-15 23:05:43
+845,Marko Maksimovic,51626.0,ATP,same,Serbia,29,2026-01-15 23:05:43
+846,Ju Kim Dong,10296.0,ATP,same,South Korea,28,2026-01-15 23:05:43
+847,Patrick Schoen,38167.0,ATP,same,Switzerland,28,2026-01-15 23:05:43
+848,Matt Ponchet,17612.0,ATP,same,France,28,2026-01-15 23:05:43
+848,Hoyoung Roh,66327.0,ATP,same,South Korea,28,2026-01-15 23:05:43
+850,Marc Van Der Merwe,69706.0,ATP,same,South Africa,28,2026-01-15 23:05:43
+851,Xiaofei Wang,,ATP,same,China,28,2026-01-15 23:05:43
+852,Ivan Nedelko,766.0,ATP,same,World,28,2026-01-15 23:05:43
+853,Naci Turker Mert,11692.0,ATP,same,Turkey,28,2026-01-15 23:05:43
+854,Izan Almazan Valiente,57826.0,ATP,same,Spain,28,2026-01-15 23:05:43
+855,Ignacio Parisca,52679.0,ATP,same,Venezuela,28,2026-01-15 23:05:43
+856,Niklas Schell,783.0,ATP,down,Germany,28,2026-01-15 23:05:43
+857,Taisei Ichikawa,2018.0,ATP,down,Japan,28,2026-01-15 23:05:43
+858,Alexandre Aubriot,14024.0,ATP,same,France,28,2026-01-15 23:05:43
+859,Yves Bailly Pierre,9211.0,ATP,same,Belgium,27,2026-01-15 23:05:43
+860,Ryan Seggerman,37911.0,ATP,same,USA,27,2026-01-15 23:05:43
+861,Luca Wiedenmann,38169.0,ATP,same,Germany,27,2026-01-15 23:05:43
+862,Isaiah Strode,1256.0,ATP,down,USA,27,2026-01-15 23:05:43
+863,Charlie Robertson,51278.0,ATP,down,United Kingdom,27,2026-01-15 23:05:43
+864,Jeffrey Von der Schulenburg,10231.0,ATP,down,Switzerland,27,2026-01-15 23:05:43
+865,Giorgio Tabacco,14127.0,ATP,down,Italy,27,2026-01-15 23:05:43
+866,Jumpei Yamasaki,5515.0,ATP,down,Japan,27,2026-01-15 23:05:43
+867,Agustin Falabella Lautaro,18335.0,ATP,same,Argentina,27,2026-01-15 23:05:43
+868,Jakub Filip,57536.0,ATP,same,Czech Republic,27,2026-01-15 23:05:43
+869,Amit Vales,35790.0,ATP,same,Israel,27,2026-01-15 23:05:43
+870,Manuel Plunger,40085.0,ATP,same,Italy,26,2026-01-15 23:05:43
+870,Emon van Loben Sels,55504.0,ATP,same,USA,26,2026-01-15 23:05:43
+872,Jacob Bradshaw,37971.0,ATP,up,Australia,26,2026-01-15 23:05:43
+873,Kalin Ivanovski,1296.0,ATP,same,North Macedonia,26,2026-01-15 23:05:43
+874,Scott Jones,4513.0,ATP,up,Australia,26,2026-01-15 23:05:43
+875,Nikola Slavic,19893.0,ATP,up,Sweden,26,2026-01-15 23:05:43
+876,Matyas Cerny,37919.0,ATP,same,Czech Republic,26,2026-01-15 23:05:43
+877,Couto Loureiro Joao Victor,9229.0,ATP,same,Brazil,26,2026-01-15 23:05:43
+878,Andrea Fiorentini,40088.0,ATP,same,Italy,26,2026-01-15 23:05:43
+879,Diego Schwartzman,67.0,ATP,same,Argentina,25,2026-01-15 23:05:43
+880,Ian Kotzen Nicolas,57122.0,ATP,same,USA,25,2026-01-15 23:05:43
+881,Arklon Huertas Del Pino Cordova,2188.0,ATP,same,Peru,25,2026-01-15 23:05:43
+882,Aoran Wang,2225.0,ATP,same,China,25,2026-01-15 23:05:43
+883,Tiago Cacao,1327.0,ATP,same,Portugal,25,2026-01-15 23:05:43
+884,Aleksandr Lobanov,677.0,ATP,down,World,25,2026-01-15 23:05:43
+885,Daisuke Sumizawa,960.0,ATP,up,Japan,25,2026-01-15 23:05:43
+886,Enzo Wallart,9136.0,ATP,same,USA,25,2026-01-15 23:05:43
+887,Nicolae Cazacu Dragos,38011.0,ATP,down,Romania,25,2026-01-15 23:05:43
+888,Orlando Luz,4053.0,ATP,down,Brazil,24,2026-01-15 23:05:43
+889,Ilya Snitari,11114.0,ATP,down,Moldova,24,2026-01-15 23:05:43
+890,Andreja Petrovic,,ATP,down,Norway,24,2026-01-15 23:05:43
+891,Shunsuke Nakagawa,38295.0,ATP,up,Japan,24,2026-01-15 23:05:43
+892,Fernando Cavallo,34714.0,ATP,down,Argentina,24,2026-01-15 23:05:43
+893,Miles Jones,14087.0,ATP,down,USA,24,2026-01-15 23:05:43
+894,Tomas Luis,15442.0,ATP,down,Portugal,24,2026-01-15 23:05:43
+895,Anas Mazdrashki,63409.0,ATP,down,Bulgaria,24,2026-01-15 23:05:43
+896,Finn Murgett,8169.0,ATP,down,United Kingdom,24,2026-01-15 23:05:43
+897,Dev Javia,939.0,ATP,up,India,24,2026-01-15 23:05:43
+898,Alexander Klintcharov,12680.0,ATP,same,New Zealand,24,2026-01-15 23:05:43
+899,Daniel De Jonge,7498.0,ATP,same,Netherlands,24,2026-01-15 23:05:43
+900,Ezekiel Clark,1257.0,ATP,same,USA,24,2026-01-15 23:05:43
+901,Seydina Andre,19223.0,ATP,same,Senegal,24,2026-01-15 23:05:43
+902,Nicolas Jadoun,52645.0,ATP,same,France,24,2026-01-15 23:05:43
+903,Jesse Delaney,14306.0,ATP,same,Australia,24,2026-01-15 23:05:43
+904,Anton Shepp,56171.0,ATP,same,New Zealand,23,2026-01-15 23:05:43
+905,Mathias Bourgue,1194.0,ATP,same,France,23,2026-01-15 23:05:43
+905,Peter Makk,15664.0,ATP,same,Hungary,23,2026-01-15 23:05:43
+907,Benoit Paire,429.0,ATP,up,France,23,2026-01-15 23:05:43
+908,Enzo Kohlmann,63483.0,ATP,up,Brazil,23,2026-01-15 23:05:43
+909,Kasra Rahmani,73847.0,ATP,up,Iran,23,2026-01-15 23:05:43
+910,Marcus Walters,7014.0,ATP,up,United Kingdom,23,2026-01-15 23:05:43
+911,Carles Hernandez,12954.0,ATP,up,Spain,23,2026-01-15 23:05:43
+912,Kumar Sinha Nitin,18088.0,ATP,same,India,23,2026-01-15 23:05:43
+913,Stefano D'Agostino,29714.0,ATP,down,Italy,23,2026-01-15 23:05:43
+914,Nikita Mashtakov,14638.0,ATP,up,Ukraine,23,2026-01-15 23:05:43
+915,Grigoriy Lomakin,1869.0,ATP,up,Kazakhstan,23,2026-01-15 23:05:43
+916,Matthew Forbes,58222.0,ATP,up,USA,22,2026-01-15 23:05:43
+917,Inchauspe Paul,17436.0,ATP,up,France,22,2026-01-15 23:05:43
+918,Theodore Dean,85191.0,ATP,up,USA,22,2026-01-15 23:05:43
+919,Calvin Mueller,90155.0,ATP,up,Germany,22,2026-01-15 23:05:43
+920,Pavel Lagutin,80068.0,ATP,up,World,22,2026-01-15 23:05:43
+921,Lorenzo Bocchi,682.0,ATP,up,Italy,22,2026-01-15 23:05:43
+922,Ryotaro Taguchi,38831.0,ATP,down,Japan,22,2026-01-15 23:05:43
+923,Yaojie Zeng,14021.0,ATP,up,China,22,2026-01-15 23:05:43
+924,Salvador Price,59410.0,ATP,up,Colombia,22,2026-01-15 23:05:43
+925,Adan Freire Da Silva,38022.0,ATP,up,France,22,2026-01-15 23:05:43
+926,Evan Bynoe,22446.0,ATP,up,USA,22,2026-01-15 23:05:43
+927,Romain Faucon,2222.0,ATP,up,Belgium,22,2026-01-15 23:05:43
+928,Pietro Marino,13087.0,ATP,up,Italy,22,2026-01-15 23:05:43
+929,Zoran Ludoski,56233.0,ATP,up,Serbia,21,2026-01-15 23:05:43
+930,Aleksa Ciric,60100.0,ATP,up,Serbia,21,2026-01-15 23:05:43
+931,Rudy Quan,39199.0,ATP,up,USA,21,2026-01-15 23:05:43
+932,Filip Pieczonka,15221.0,ATP,up,Poland,21,2026-01-15 23:05:43
+933,Pablo Masjuan Ginel,38046.0,ATP,up,Spain,21,2026-01-15 23:05:43
+934,Stijn Paardekooper,56578.0,ATP,up,Netherlands,21,2026-01-15 23:05:43
+935,Marc Majdandzic,52681.0,ATP,up,Germany,21,2026-01-15 23:05:43
+936,Sebastian Osorio Juan,13923.0,ATP,up,Colombia,21,2026-01-15 23:05:43
+937,Benjamin Pietri,6857.0,ATP,up,France,21,2026-01-15 23:05:43
+938,Yaroslav Demin,7395.0,ATP,up,World,21,2026-01-15 23:05:43
+939,Razvan Marinescu Mihai,40066.0,ATP,same,Romania,21,2026-01-15 23:05:43
+940,Steven Diez,1975.0,ATP,same,Canada,20,2026-01-15 23:05:43
+941,Yunseong Chung,2925.0,ATP,same,South Korea,20,2026-01-15 23:05:43
+942,Ivan Ivanov,57825.0,ATP,same,Bulgaria,20,2026-01-15 23:05:43
+943,Qian Sun,40127.0,ATP,same,China,20,2026-01-15 23:05:43
+944,Brian Bozemoj,32507.0,ATP,same,Netherlands,20,2026-01-15 23:05:43
+945,Younes Lalami Laaroussi,38043.0,ATP,same,Morocco,20,2026-01-15 23:05:43
+946,Kristjan Tamm,785.0,ATP,same,Estonia,20,2026-01-15 23:05:43
+947,Chirag Duhan,18730.0,ATP,up,India,20,2026-01-15 23:05:43
+948,Finn Bass,6503.0,ATP,up,United Kingdom,20,2026-01-15 23:05:43
+949,John Hallquist Lithen,53232.0,ATP,up,Sweden,20,2026-01-15 23:05:43
+950,Axel Nefve,8129.0,ATP,up,USA,20,2026-01-15 23:05:43
+951,Diego Fernandez Flores,976.0,ATP,up,Chile,20,2026-01-15 23:05:43
+952,Michael Zhu,7126.0,ATP,up,USA,20,2026-01-15 23:05:43
+953,David Pichler,927.0,ATP,up,Austria,19,2026-01-15 23:05:43
+954,Johannes Ingildsen,2502.0,ATP,up,Denmark,19,2026-01-15 23:05:43
+955,Georgi Georgiev,73247.0,ATP,up,Bulgaria,19,2026-01-15 23:05:43
+956,Luca Pow,53787.0,ATP,up,United Kingdom,19,2026-01-15 23:05:43
+957,Ozan Baris,32559.0,ATP,up,USA,19,2026-01-15 23:05:43
+958,Taym Al Azmeh,38100.0,ATP,up,Germany,19,2026-01-15 23:05:43
+959,Matthew Hulme,37943.0,ATP,up,Australia,19,2026-01-15 23:05:43
+960,Moon Lee Jea,4334.0,ATP,up,South Korea,19,2026-01-15 23:05:43
+961,Manish Sureshkumar,1334.0,ATP,up,India,19,2026-01-15 23:05:43
+962,Romeo Scomparin Pietro,13196.0,ATP,up,Italy,19,2026-01-15 23:05:43
+963,Thantub Suksumrarn,25740.0,ATP,up,Thailand,19,2026-01-15 23:05:43
+964,Karlis Ozolins,13125.0,ATP,up,Latvia,19,2026-01-15 23:05:43
+965,Adrian Andreev,2409.0,ATP,down,Bulgaria,19,2026-01-15 23:05:43
+966,Bekkhan Atlangeriev,757.0,ATP,up,World,19,2026-01-15 23:05:43
+967,Marcello Serafini,971.0,ATP,up,Italy,19,2026-01-15 23:05:43
+968,Ewen Lumsden,57565.0,ATP,up,United Kingdom,19,2026-01-15 23:05:43
+969,Gabriele Bosio,750.0,ATP,down,Italy,19,2026-01-15 23:05:43
+970,Nicolas Zanellato,14273.0,ATP,up,Brazil,19,2026-01-15 23:05:43
+971,Tomas Martinez,58881.0,ATP,up,Argentina,19,2026-01-15 23:05:43
+972,Justin Schlageter,60968.0,ATP,up,Germany,19,2026-01-15 23:05:43
+973,Lucas Marionneau,66957.0,ATP,up,France,19,2026-01-15 23:05:43
+974,Jeremy Gschwendtner,60151.0,ATP,up,United Kingdom,19,2026-01-15 23:05:43
+975,Nicolas Barrientos,4694.0,ATP,up,Colombia,18,2026-01-15 23:05:43
+976,Dante Pagani,77943.0,ATP,up,Argentina,18,2026-01-15 23:05:43
+977,Spencer Johnson,2851.0,ATP,up,USA,18,2026-01-15 23:05:43
+978,Jack Kennedy,68750.0,ATP,up,USA,18,2026-01-15 23:05:43
+979,Mateo Barreiros Reyes,10467.0,ATP,up,Brazil,18,2026-01-15 23:05:43
+980,Ryo Tabata,63487.0,ATP,up,Japan,18,2026-01-15 23:05:43
+981,Lorenzo Lingua Lavallen Alejo,9594.0,ATP,up,Argentina,18,2026-01-15 23:05:43
+982,Leonardo Aboian,688.0,ATP,up,Argentina,18,2026-01-15 23:05:43
+983,Maxim Shin,37966.0,ATP,up,Uzbekistan,18,2026-01-15 23:05:43
+984,Peter Buldorini,10866.0,ATP,up,Ireland,18,2026-01-15 23:05:43
+985,Thomas Braithwaite,38299.0,ATP,up,Australia,18,2026-01-15 23:05:43
+986,Daniel Salazar,40212.0,ATP,up,Colombia,18,2026-01-15 23:05:43
+987,Lorenzo Lorusso,38060.0,ATP,up,Italy,18,2026-01-15 23:05:43
+988,Lorenzo Angelini,15916.0,ATP,up,Italy,18,2026-01-15 23:05:43
+989,Nicolas Villalon,39931.0,ATP,up,Chile,18,2026-01-15 23:05:43
+990,Giannicola Misasi,21354.0,ATP,up,Italy,18,2026-01-15 23:05:43
+991,Gabriel Debru,398.0,ATP,up,France,17,2026-01-15 23:05:43
+992,Ryan Colby,37857.0,ATP,up,USA,17,2026-01-15 23:05:43
+993,Ziga Sesko,69093.0,ATP,up,Slovenia,17,2026-01-15 23:05:43
+994,Qing Xu Kuang,60967.0,ATP,up,China,17,2026-01-15 23:05:43
+995,Andrew Delgado,12563.0,ATP,up,USA,17,2026-01-15 23:05:43
+996,Hyun Choo Suk,,ATP,up,South Korea,17,2026-01-15 23:05:43
+997,Dominique Rolland,55112.0,ATP,up,USA,17,2026-01-15 23:05:43
+998,William Rejchtman Vinciguerra,59291.0,ATP,up,Sweden,17,2026-01-15 23:05:43
+999,Dominik Recek,7497.0,ATP,up,Czech Republic,17,2026-01-15 23:05:43
+1000,Kiranpal Pannu,3225.0,ATP,up,New Zealand,17,2026-01-15 23:05:43
+1001,Pepijn Bastiaansen,56577.0,ATP,same,Netherlands,17,2026-01-15 23:05:43
+1002,Louis Dussin,4259.0,ATP,same,France,17,2026-01-15 23:05:43
+1003,Zach Stephens,28598.0,ATP,down,United Kingdom,17,2026-01-15 23:05:43
+1004,Jesse Flores,725.0,ATP,down,Costa Rica,17,2026-01-15 23:05:43
+1005,Tymur Bieldiugin,53288.0,ATP,down,Ukraine,17,2026-01-15 23:05:43
+1006,Mikael Arseneault,75350.0,ATP,down,Canada,17,2026-01-15 23:05:43
+1007,Fermin Tenti,684.0,ATP,down,Argentina,17,2026-01-15 23:05:43
+1008,Sam Ryan Ziegann,25015.0,ATP,down,Australia,17,2026-01-15 23:05:43
+1009,Ruslan Tiukaev,38321.0,ATP,down,World,17,2026-01-15 23:05:43
+1010,Chen Dong,29450.0,ATP,down,Australia,17,2026-01-15 23:05:43
+1011,Vignesh Gogineni,86747.0,ATP,same,USA,16,2026-01-15 23:05:43
+1012,Nicolas Oliveira,38849.0,ATP,same,Brazil,16,2026-01-15 23:05:43
+1013,Alex Kuperstein,38300.0,ATP,same,USA,16,2026-01-15 23:05:43
+1014,Keegan Rice,38846.0,ATP,down,Canada,16,2026-01-15 23:05:43
+1015,Lorenzo Gagliardo,10021.0,ATP,down,Argentina,16,2026-01-15 23:05:43
+1016,Markus Malaszszak,56784.0,ATP,down,Thailand,16,2026-01-15 23:05:43
+1017,Benjamin Winter Lopez,977.0,ATP,down,Spain,16,2026-01-15 23:05:43
+1018,Isaac Becroft,2467.0,ATP,down,New Zealand,16,2026-01-15 23:05:43
+1019,Simeon Stankovic,69974.0,ATP,down,Serbia,16,2026-01-15 23:05:43
+1020,Lucca Helguera Casado,17991.0,ATP,down,Spain,16,2026-01-15 23:05:43
+1021,Teodor Pieleanu Rares,67687.0,ATP,down,Romania,16,2026-01-15 23:05:43
+1022,Ezequiel Monferrer,9378.0,ATP,down,Argentina,16,2026-01-15 23:05:43
+1023,Hayden Jones,10219.0,ATP,down,Australia,16,2026-01-15 23:05:43
+1024,Nicolas Ifi,61403.0,ATP,down,Belgium,16,2026-01-15 23:05:43
+1025,Alexander Vasilev,52072.0,ATP,down,Bulgaria,15,2026-01-15 23:05:43
+1026,Oscar Otte,1100.0,ATP,down,Germany,15,2026-01-15 23:05:43
+1027,Simon Reveniau,38027.0,ATP,down,France,15,2026-01-15 23:05:43
+1028,Blake Mott,3823.0,ATP,up,Australia,15,2026-01-15 23:05:43
+1029,Patrick Brady,9371.0,ATP,up,United Kingdom,15,2026-01-15 23:05:43
+1030,Gilbert Klier Junior,9595.0,ATP,down,Brazil,15,2026-01-15 23:05:43
+1031,Christopher Li,40225.0,ATP,down,Peru,15,2026-01-15 23:05:43
+1032,Kacper Szymkowiak,67375.0,ATP,down,Poland,15,2026-01-15 23:05:43
+1033,Gergely Madarasz,834.0,ATP,down,Hungary,15,2026-01-15 23:05:43
+1034,David Poljak,895.0,ATP,down,Czech Republic,15,2026-01-15 23:05:43
+1035,Louis Larue,74727.0,ATP,down,France,15,2026-01-15 23:05:43
+1036,Rafael De Alba,72766.0,ATP,down,Mexico,15,2026-01-15 23:05:43
+1037,Koray Kirci,1244.0,ATP,down,Turkey,15,2026-01-15 23:05:43
+1038,Pieter De Lange,71108.0,ATP,down,Netherlands,15,2026-01-15 23:05:43
+1039,Pengyu Lu,55489.0,ATP,down,China,15,2026-01-15 23:05:43
+1040,Thomas George Benjamin,55610.0,ATP,down,Canada,15,2026-01-15 23:05:43
+1041,Karim Ibrahim,675.0,ATP,down,Egypt,15,2026-01-15 23:05:43
+1042,Daniele Rapagnetta,57079.0,ATP,down,Italy,15,2026-01-15 23:05:43
+1043,Nicolas Bruna,9689.0,ATP,down,Chile,15,2026-01-15 23:05:43
+1044,Pavlos Tsitsipas,61071.0,ATP,down,Greece,15,2026-01-15 23:05:43
+1045,Dylan Dietrich,10865.0,ATP,down,Switzerland,14,2026-01-15 23:05:43
+1046,Jangjun Kim,37932.0,ATP,down,South Korea,14,2026-01-15 23:05:43
+1047,Savriyan Danilov,9567.0,ATP,down,World,14,2026-01-15 23:05:43
+1048,Bastian Malla,3380.0,ATP,down,Chile,14,2026-01-15 23:05:43
+1049,Kriish Tyagi,40363.0,ATP,down,India,14,2026-01-15 23:05:43
+1050,Marko Miladinovic,8931.0,ATP,down,Serbia,14,2026-01-15 23:05:43
+1051,Thomas Deschamps,9964.0,ATP,down,France,14,2026-01-15 23:05:43
+1051,Oskari Paldanius,61173.0,ATP,down,Finland,14,2026-01-15 23:05:43
+1051,Tom Zeuch,82368.0,ATP,down,Germany,14,2026-01-15 23:05:43
+1054,Grigory Shebekin,49590.0,ATP,down,World,14,2026-01-15 23:05:43
+1055,Karl Friberg,759.0,ATP,down,Sweden,14,2026-01-15 23:05:43
+1056,Vitor Scramin do Lago Joao,86276.0,ATP,down,Brazil,14,2026-01-15 23:05:43
+1057,Siddharth Vishwakarma,9957.0,ATP,down,India,14,2026-01-15 23:05:43
+1058,Natan Rodrigues,15771.0,ATP,down,Brazil,14,2026-01-15 23:05:43
+1059,Ishaque Eqbal,805.0,ATP,down,India,14,2026-01-15 23:05:43
+1060,Franco Ribero,8144.0,ATP,down,Argentina,14,2026-01-15 23:05:43
+1061,Nathan Ponwith,7181.0,ATP,down,USA,14,2026-01-15 23:05:43
+1062,Daniil Sarksian,40236.0,ATP,down,Armenia,14,2026-01-15 23:05:43
+1063,Gijs Brouwer,581.0,ATP,down,Netherlands,13,2026-01-15 23:05:43
+1064,Matias Ponce de Leon Gomila,13797.0,ATP,down,Spain,13,2026-01-15 23:05:43
+1065,Gavin Young,56781.0,ATP,down,USA,13,2026-01-15 23:05:43
+1066,Jason Jung,390.0,ATP,down,Taiwan,13,2026-01-15 23:05:43
+1067,Noah Zamora,53791.0,ATP,down,USA,13,2026-01-15 23:05:43
+1068,Enzo Aguiard,15290.0,ATP,down,Australia,13,2026-01-15 23:05:43
+1069,Vlado Jankanj,67917.0,ATP,down,Serbia,13,2026-01-15 23:05:43
+1070,Sebastian Dominko,2221.0,ATP,down,Slovenia,13,2026-01-15 23:05:43
+1071,Alexander Kotzen,17373.0,ATP,down,USA,13,2026-01-15 23:05:43
+1072,Chan-Yeong Oh,53004.0,ATP,up,South Korea,13,2026-01-15 23:05:43
+1073,Julian Cundom,37945.0,ATP,down,Argentina,13,2026-01-15 23:05:43
+1074,Alberto Bronzetti,56232.0,ATP,down,Italy,13,2026-01-15 23:05:43
+1075,Maxwell Exsted,51618.0,ATP,down,USA,13,2026-01-15 23:05:43
+1076,Federico Aguilar Cardozo,38833.0,ATP,down,Uruguay,13,2026-01-15 23:05:43
+1077,Ali Habib,947.0,ATP,down,United Kingdom,13,2026-01-15 23:05:43
+1078,Nicolas Parizzia,8917.0,ATP,down,Switzerland,13,2026-01-15 23:05:43
+1079,Noel Larwig,13460.0,ATP,down,Germany,13,2026-01-15 23:05:43
+1080,Mika Lipp,9228.0,ATP,down,Germany,13,2026-01-15 23:05:43
+1081,Enzo Camargo Lima,57479.0,ATP,down,Brazil,13,2026-01-15 23:05:43
+1082,Luis Pinter Piet,67777.0,ATP,down,Austria,13,2026-01-15 23:05:43
+1083,Nikola Basic,39050.0,ATP,down,Croatia,13,2026-01-15 23:05:43
+1084,Evgeny Philippov,670.0,ATP,down,World,13,2026-01-15 23:05:43
+1085,Maria Noce Gabriele,679.0,ATP,down,Italy,13,2026-01-15 23:05:43
+1086,Jacopo Bilardo,40192.0,ATP,down,Italy,13,2026-01-15 23:05:43
+1087,Matthias Ujvary,38072.0,ATP,down,Austria,13,2026-01-15 23:05:43
+1088,Tomohiro Masabayashi,14348.0,ATP,down,Japan,13,2026-01-15 23:05:43
+1089,Zhe Li,,ATP,down,China,12,2026-01-15 23:05:43
+1090,Devin Badenhorst,14373.0,ATP,down,South Africa,12,2026-01-15 23:05:43
+1091,Benito Sanchez Martinez,14025.0,ATP,down,Germany,12,2026-01-15 23:05:43
+1092,Alexey Zakharov,9948.0,ATP,up,World,12,2026-01-15 23:05:43
+1093,Jamie Mackenzie,78985.0,ATP,down,Germany,12,2026-01-15 23:05:43
+1094,Niels McDonald,73846.0,ATP,down,Germany,12,2026-01-15 23:05:43
+1095,Adam Jilly,58390.0,ATP,down,Hungary,12,2026-01-15 23:05:43
+1096,Martin Borisiouk,1937.0,ATP,down,World,12,2026-01-15 23:05:43
+1097,Mario Martinez Serrano,68640.0,ATP,down,Spain,12,2026-01-15 23:05:43
+1098,Gabriel Papoe Cezar,67686.0,ATP,down,Romania,12,2026-01-15 23:05:43
+1099,Jun Kim Geun,25650.0,ATP,down,South Korea,12,2026-01-15 23:05:43
+1100,Shu Matsuoka,68361.0,ATP,down,Japan,12,2026-01-15 23:05:43
+1101,Alen Mujakic,10228.0,ATP,down,Germany,12,2026-01-15 23:05:43
+1102,Maan Kesharwani,74450.0,ATP,down,India,12,2026-01-15 23:05:43
+1103,Mathieu Scaglia,1278.0,ATP,down,France,12,2026-01-15 23:05:43
+1104,Samuel Vincent Ruggeri,965.0,ATP,up,Italy,12,2026-01-15 23:05:43
+1105,Yuto Oki,61207.0,ATP,down,Japan,12,2026-01-15 23:05:43
+1106,Marco Ortenzi Gian,1182.0,ATP,down,Italy,12,2026-01-15 23:05:43
+1107,Hanyi Liu,,ATP,down,China,12,2026-01-15 23:05:43
+1108,Andreas Timini,62413.0,ATP,down,Cyprus,12,2026-01-15 23:05:43
+1109,Jasza Szajrych,654.0,ATP,down,Poland,12,2026-01-15 23:05:43
+1110,Billy Suarez,75982.0,ATP,down,USA,12,2026-01-15 23:05:43
+1111,Stefan Vujic,12706.0,ATP,down,Australia,12,2026-01-15 23:05:43
+1112,Hugo Pierre,13253.0,ATP,down,France,12,2026-01-15 23:05:43
+1113,Louis Tessa,8769.0,ATP,down,France,12,2026-01-15 23:05:43
+1114,Faleh Alhogbani Anmar,31252.0,ATP,down,Saudi Arabia,12,2026-01-15 23:05:43
+1115,Bautista Otegui Juan,9604.0,ATP,down,Argentina,12,2026-01-15 23:05:43
+1116,Sungbeen Sim,73127.0,ATP,down,South Korea,12,2026-01-15 23:05:43
+1117,Boris Butulija,1281.0,ATP,down,Serbia,12,2026-01-15 23:05:43
+1118,Zsombor Velcz,13018.0,ATP,down,Hungary,11,2026-01-15 23:05:43
+1119,Agustin Pernas Thiago,91698.0,ATP,down,Argentina,11,2026-01-15 23:05:43
+1120,Oskar Poulsen Brostrom,40129.0,ATP,down,Denmark,11,2026-01-15 23:05:43
+1121,Rohan Mehra,38055.0,ATP,down,India,11,2026-01-15 23:05:43
+1122,Mathis Bondaz,87791.0,ATP,down,France,11,2026-01-15 23:05:43
+1123,Connor Thomson,55376.0,ATP,down,United Kingdom,11,2026-01-15 23:05:43
+1124,James Van Herzeele,29461.0,ATP,down,Belgium,11,2026-01-15 23:05:43
+1125,Thando Longwe-Smit,63094.0,ATP,down,South Africa,11,2026-01-15 23:05:43
+1126,Jefferson Wendler Filho,57793.0,ATP,down,Brazil,11,2026-01-15 23:05:43
+1127,Elgin Khoeblal,39929.0,ATP,down,Netherlands,11,2026-01-15 23:05:43
+1128,Nicolas Garcia Longo,55063.0,ATP,down,Argentina,11,2026-01-15 23:05:43
+1128,Ricardo Rodriguez,3702.0,ATP,down,Venezuela,11,2026-01-15 23:05:43
+1130,Leonardo Malgaroli,15252.0,ATP,down,Italy,11,2026-01-15 23:05:43
+1131,Gregor Ramskogler,38038.0,ATP,down,Austria,11,2026-01-15 23:05:43
+1132,Nikolai Barsukov,71308.0,ATP,down,Germany,11,2026-01-15 23:05:43
+1133,Tyler Stice,54312.0,ATP,down,USA,11,2026-01-15 23:05:43
+1134,Niccolo Ciavarella,10879.0,ATP,down,Italy,11,2026-01-15 23:05:43
+1135,Valentin Basel,10020.0,ATP,down,Argentina,11,2026-01-15 23:05:43
+1136,Maximilian Figl,40081.0,ATP,down,Italy,11,2026-01-15 23:05:43
+1137,Nazim Makhlouf,8655.0,ATP,down,Algeria,11,2026-01-15 23:05:43
+1138,Noah Perfetti,13591.0,ATP,down,Italy,11,2026-01-15 23:05:43
+1139,Toby Martin,2517.0,ATP,down,United Kingdom,11,2026-01-15 23:05:43
+1140,Noah Thurner,25804.0,ATP,down,Germany,11,2026-01-15 23:05:43
+1141,Saveliy Ivanov,38317.0,ATP,down,World,11,2026-01-15 23:05:43
+1142,David Martinez Luis,4298.0,ATP,down,Venezuela,10,2026-01-15 23:05:43
+1143,Stian Klaassen,54520.0,ATP,down,Netherlands,10,2026-01-15 23:05:43
+1143,Filippo Speziali,2248.0,ATP,down,Italy,10,2026-01-15 23:05:43
+1145,Rohan Murali,10858.0,ATP,down,USA,10,2026-01-15 23:05:43
+1146,Siddhant Banthia,20374.0,ATP,down,India,10,2026-01-15 23:05:43
+1147,Manuel Guinard,440.0,ATP,up,France,10,2026-01-15 23:05:43
+1148,Ege Sik Mustafa,80801.0,ATP,same,Turkey,10,2026-01-15 23:05:43
+1148,Cooper Woestendick,67327.0,ATP,same,USA,10,2026-01-15 23:05:43
+1150,Sasha Rozin,55609.0,ATP,same,Canada,10,2026-01-15 23:05:43
+1151,Jannik Opitz,23522.0,ATP,same,Germany,10,2026-01-15 23:05:43
+1152,Daniel Paty,20214.0,ATP,same,Czech Republic,10,2026-01-15 23:05:43
+1153,Joaquin Guilleme,30582.0,ATP,same,Nicaragua,10,2026-01-15 23:05:43
+1154,Nino Serdarusic,417.0,ATP,same,Croatia,10,2026-01-15 23:05:43
+1155,Oliver Okonkwo,40080.0,ATP,same,United Kingdom,10,2026-01-15 23:05:43
+1156,Martin Sabas,59647.0,ATP,same,France,10,2026-01-15 23:05:43
+1157,Ramkumar Ramanathan,381.0,ATP,same,India,10,2026-01-15 23:05:43
+1158,Ryota Tanuma,8742.0,ATP,same,Japan,10,2026-01-15 23:05:43
+1159,Edison Ambarzumjan,38076.0,ATP,same,Germany,10,2026-01-15 23:05:43
+1160,Dimitris Azoidis,22255.0,ATP,same,Greece,10,2026-01-15 23:05:43
+1160,Robert Guna,73138.0,ATP,same,Romania,10,2026-01-15 23:05:43
+1162,Phillip Jordan,38263.0,ATP,same,USA,10,2026-01-15 23:05:43
+1163,Sebastian Fanselow,571.0,ATP,up,Germany,10,2026-01-15 23:05:43
+1163,Ronald Hohmann,3716.0,ATP,down,USA,10,2026-01-15 23:05:43
+1165,Mateo Del Pino,14275.0,ATP,same,Argentina,10,2026-01-15 23:05:43
+1166,Dao Chen Xing,54657.0,ATP,down,China,10,2026-01-15 23:05:43
+1167,Markus Molder,55148.0,ATP,up,Estonia,10,2026-01-15 23:05:43
+1168,Aleksander Chayka,59293.0,ATP,up,World,10,2026-01-15 23:05:43
+1169,Denis Petak,30785.0,ATP,same,Czech Republic,10,2026-01-15 23:05:43
+1170,Zura Tkemaladze,702.0,ATP,same,Georgia,10,2026-01-15 23:05:43
+1171,Yuquan Jin,11701.0,ATP,same,China,10,2026-01-15 23:05:43
+1172,Niklas Waldner,1298.0,ATP,down,Austria,10,2026-01-15 23:05:43
+1173,Yuta Tomida,63403.0,ATP,down,Japan,10,2026-01-15 23:05:43
+1174,Samuele Seghetti,56184.0,ATP,down,Italy,10,2026-01-15 23:05:43
+1175,Leyton Rivera,20776.0,ATP,down,Norway,10,2026-01-15 23:05:43
+1176,Diogo Marques,15387.0,ATP,down,Portugal,10,2026-01-15 23:05:43
+1177,Preston Brown,1232.0,ATP,down,USA,10,2026-01-15 23:05:43
+1178,Derek Pham,878.0,ATP,down,Australia,9,2026-01-15 23:05:43
+1179,Joshua Lapadat,37924.0,ATP,down,Canada,9,2026-01-15 23:05:43
+1179,Gianluca Mager,1757.0,ATP,down,Italy,9,2026-01-15 23:05:43
+1181,Mohamed Safwat,1320.0,ATP,down,Egypt,9,2026-01-15 23:05:43
+1182,Alexander Bernard,1250.0,ATP,down,USA,9,2026-01-15 23:05:43
+1182,Andrea Meduri,66628.0,ATP,down,Italy,9,2026-01-15 23:05:43
+1182,Leonardo Primucci,75588.0,ATP,down,Italy,9,2026-01-15 23:05:43
+1185,Tudor Batin,58949.0,ATP,down,Romania,9,2026-01-15 23:05:43
+1186,Elijah Strode,37976.0,ATP,down,USA,9,2026-01-15 23:05:43
+1187,Sebastian Prechtel,856.0,ATP,down,Germany,9,2026-01-15 23:05:43
+1188,Orel Kimhi,629.0,ATP,down,Israel,9,2026-01-15 23:05:43
+1188,George Lazarov,21806.0,ATP,down,Bulgaria,9,2026-01-15 23:05:43
+1190,Mikail Alimli,1887.0,ATP,down,France,9,2026-01-15 23:05:43
+1191,Oscar Moraing,2211.0,ATP,down,Germany,9,2026-01-15 23:05:43
+1192,Jan Hrazdil,37883.0,ATP,down,Czech Republic,9,2026-01-15 23:05:43
+1193,Martyn Pawelski,14023.0,ATP,down,Poland,9,2026-01-15 23:05:43
+1194,Ivan Denisov,776.0,ATP,down,World,9,2026-01-15 23:05:43
+1195,Christian Djonov,78854.0,ATP,down,Germany,9,2026-01-15 23:05:43
+1196,Viktor Frydrych,28613.0,ATP,down,United Kingdom,9,2026-01-15 23:05:43
+1197,Andrea de Marchi,63398.0,ATP,down,Italy,9,2026-01-15 23:05:43
+1198,Aaron Funk,57709.0,ATP,down,Germany,9,2026-01-15 23:05:43
+1199,Giacomo Crisostomo,39011.0,ATP,down,Italy,9,2026-01-15 23:05:43
+1200,Vitor Goncalves Ceolin Joao,20846.0,ATP,down,Brazil,9,2026-01-15 23:05:43
+1201,Charles Bertimon,62793.0,ATP,down,France,9,2026-01-15 23:05:43
+1202,Keenan Mayo,5770.0,ATP,down,USA,8,2026-01-15 23:05:43
+1203,Felipe Miguel Luis,23302.0,ATP,down,Brazil,8,2026-01-15 23:05:43
+1204,Thijs Boogaard,52704.0,ATP,down,Netherlands,8,2026-01-15 23:05:43
+1205,Ofek Shimanov,40159.0,ATP,down,Israel,8,2026-01-15 23:05:43
+1206,Daniel Cukierman,634.0,ATP,down,Israel,8,2026-01-15 23:05:43
+1207,Vito Tonejc,38166.0,ATP,down,Croatia,8,2026-01-15 23:05:43
+1208,Deney Wassermann,661.0,ATP,down,Netherlands,8,2026-01-15 23:05:43
+1209,Keaton Hance,15332.0,ATP,down,USA,8,2026-01-15 23:05:43
+1210,Savva Polukhin,13695.0,ATP,down,World,8,2026-01-15 23:05:43
+1211,Simon Beaupain,2470.0,ATP,down,Belgium,8,2026-01-15 23:05:43
+1211,Jiri Vesely,2673.0,ATP,down,Czech Republic,8,2026-01-15 23:05:43
+1213,Tiago Silva,12970.0,ATP,down,Portugal,8,2026-01-15 23:05:43
+1214,Joao Domingues,561.0,ATP,down,Portugal,8,2026-01-15 23:05:43
+1215,Darian King,2926.0,ATP,down,Barbados,8,2026-01-15 23:05:43
+1216,Taketo Takamisawa,18731.0,ATP,down,Japan,8,2026-01-15 23:05:43
+1217,Herman Hoeyeraal,70317.0,ATP,down,Norway,8,2026-01-15 23:05:43
+1217,Jack Loutit,10844.0,ATP,down,New Zealand,8,2026-01-15 23:05:43
+1219,Giulio Perego,15278.0,ATP,down,Italy,8,2026-01-15 23:05:43
+1220,Antoine Faut Pierre,68749.0,ATP,down,France,8,2026-01-15 23:05:43
+1221,Junhyun Lee,38308.0,ATP,down,South Korea,8,2026-01-15 23:05:43
+1222,Matthew Thomson,69528.0,ATP,down,USA,8,2026-01-15 23:05:43
+1223,Lorenzo Beraldo,71812.0,ATP,down,Italy,8,2026-01-15 23:05:43
+1224,Woo Cho Seung,83534.0,ATP,down,South Korea,8,2026-01-15 23:05:43
+1225,Valentin Lapalu,13092.0,ATP,down,France,8,2026-01-15 23:05:43
+1226,Amador Salazar,19802.0,ATP,down,Chile,8,2026-01-15 23:05:43
+1227,Lorenzo Comino,80521.0,ATP,down,Italy,8,2026-01-15 23:05:43
+1227,Edouard Villoslada,20215.0,ATP,down,France,8,2026-01-15 23:05:43
+1229,David Eichenseher,57708.0,ATP,down,Germany,8,2026-01-15 23:05:43
+1230,Aldin Setkic,1204.0,ATP,down,Bosnia and Herzegovina,8,2026-01-15 23:05:43
+1231,Costanzo Baragiola Mordini Tobia,63404.0,ATP,down,Italy,8,2026-01-15 23:05:43
+1232,Aljaz Jeran,54748.0,ATP,down,Slovenia,8,2026-01-15 23:05:43
+1233,Volodymyr Iakubenko,60816.0,ATP,down,Ukraine,8,2026-01-15 23:05:43
+1233,Egor Pleshivtsev,62037.0,ATP,down,World,8,2026-01-15 23:05:43
+1235,Oliver Anderson,67768.0,ATP,down,Australia,8,2026-01-15 23:05:43
+1236,Corban Crowther,2477.0,ATP,down,New Zealand,8,2026-01-15 23:05:43
+1237,Jan Kupcic,25272.0,ATP,down,Slovenia,8,2026-01-15 23:05:43
+1238,Brandon Perez,,ATP,down,Venezuela,8,2026-01-15 23:05:43
+1239,Benjamin O'Connell,82135.0,ATP,down,Australia,8,2026-01-15 23:05:43
+1239,Leonid Sheyngezikht,756.0,ATP,down,Bulgaria,8,2026-01-15 23:05:43
+1241,Ivan Gretskiy,76308.0,ATP,down,World,8,2026-01-15 23:05:43
+1242,Alp Horoz,12173.0,ATP,down,Turkey,8,2026-01-15 23:05:43
+1243,Sergi Fita Juan,75358.0,ATP,down,Spain,8,2026-01-15 23:05:43
+1243,Rafael Tosetto,37939.0,ATP,down,Brazil,8,2026-01-15 23:05:43
+1245,Vadym Konovchuk,81141.0,ATP,down,Ukraine,8,2026-01-15 23:05:43
+1246,Keshav Chopra,40189.0,ATP,down,USA,8,2026-01-15 23:05:43
+1247,Joao Graca,70350.0,ATP,down,Portugal,8,2026-01-15 23:05:43
+1248,Cosme Rolland de Ravel,54824.0,ATP,down,France,7,2026-01-15 23:05:43
+1249,Cleeve Harper,5771.0,ATP,up,Canada,7,2026-01-15 23:05:43
+1250,Niels Ratiu,69814.0,ATP,down,Belgium,7,2026-01-15 23:05:43
+1251,Alexander Chang,16432.0,ATP,down,USA,7,2026-01-15 23:05:43
+1252,Noa Vukadin,39930.0,ATP,down,Croatia,7,2026-01-15 23:05:43
+1253,Preston Stearns,9646.0,ATP,down,USA,7,2026-01-15 23:05:43
+1254,Mark Whitehouse,738.0,ATP,down,United Kingdom,7,2026-01-15 23:05:43
+1255,Elliot Benchetrit,1879.0,ATP,down,Morocco,7,2026-01-15 23:05:43
+1256,Noah Johnston,68734.0,ATP,down,USA,7,2026-01-15 23:05:43
+1257,Viktor Markov,38104.0,ATP,down,Bulgaria,7,2026-01-15 23:05:43
+1258,Nicholas Godsick,9375.0,ATP,down,USA,7,2026-01-15 23:05:43
+1259,Fnu Nidunjianzan,22428.0,ATP,down,China,7,2026-01-15 23:05:43
+1260,Lachlan McFadzean,90045.0,ATP,down,Australia,7,2026-01-15 23:05:43
+1261,Julian Alonso Vivanco,16320.0,ATP,down,Spain,7,2026-01-15 23:05:43
+1262,Hazem Naw,1337.0,ATP,down,Syria,7,2026-01-15 23:05:43
+1263,Szymon Kielan,9659.0,ATP,down,Poland,7,2026-01-15 23:05:43
+1264,Daniel Bagnolini,858.0,ATP,down,Italy,7,2026-01-15 23:05:43
+1264,Niklas Guttau,6023.0,ATP,down,Germany,7,2026-01-15 23:05:43
+1266,Bernardo Munk Mesa,13509.0,ATP,down,Spain,7,2026-01-15 23:05:43
+1267,Alexander Wagner,6317.0,ATP,same,Austria,7,2026-01-15 23:05:43
+1268,Gage Brymer,794.0,ATP,same,USA,7,2026-01-15 23:05:43
+1268,Kabir Hans,50060.0,ATP,same,India,7,2026-01-15 23:05:43
+1270,Pranav Kumar,38138.0,ATP,same,USA,7,2026-01-15 23:05:43
+1271,Constantin Spiridon Denis,25278.0,ATP,same,Italy,7,2026-01-15 23:05:43
+1272,Filippo Alberti,64840.0,ATP,same,Italy,7,2026-01-15 23:05:43
+1273,Marcel Kamrowski,15215.0,ATP,same,Poland,7,2026-01-15 23:05:43
+1274,Vishnu Vardhan,4686.0,ATP,up,India,7,2026-01-15 23:05:43
+1275,Sebastiano Cocola,78741.0,ATP,up,Italy,7,2026-01-15 23:05:43
+1276,Liam Krall,25008.0,ATP,up,USA,7,2026-01-15 23:05:43
+1277,Dmitry Bessonov,76705.0,ATP,up,World,7,2026-01-15 23:05:43
+1277,Gabriel Schenekenberg,39170.0,ATP,up,Brazil,7,2026-01-15 23:05:43
+1279,Vladislav Melnic,23349.0,ATP,up,Romania,7,2026-01-15 23:05:43
+1280,Arthur Bonnaud,28511.0,ATP,up,France,7,2026-01-15 23:05:43
+1281,Oskar Grzegorzewski,53731.0,ATP,up,Poland,7,2026-01-15 23:05:43
+1282,Alessio Basile,10859.0,ATP,up,Belgium,7,2026-01-15 23:05:43
+1282,Benjamin Hannestad,10142.0,ATP,up,Denmark,7,2026-01-15 23:05:43
+1284,Fadi Bidan,58948.0,ATP,up,Lebanon,7,2026-01-15 23:05:43
+1284,Mateo Castaneda,23581.0,ATP,up,Colombia,7,2026-01-15 23:05:43
+1286,Ethan Cook,33138.0,ATP,down,Australia,7,2026-01-15 23:05:43
+1286,Aaron Gil Garcia,58548.0,ATP,up,Spain,7,2026-01-15 23:05:43
+1288,Matteo Fondriest,40216.0,ATP,up,Italy,7,2026-01-15 23:05:43
+1289,Nico Hipfl,69921.0,ATP,up,Austria,7,2026-01-15 23:05:43
+1289,Maxence Rivet,51078.0,ATP,up,France,7,2026-01-15 23:05:43
+1289,Sydney Zick,73132.0,ATP,up,Germany,7,2026-01-15 23:05:43
+1292,Leonardo Cattaneo,73645.0,ATP,up,Italy,7,2026-01-15 23:05:43
+1293,Nicolo Toffanin,70351.0,ATP,down,Italy,7,2026-01-15 23:05:43
+1294,Alan Bojarski,15216.0,ATP,up,Poland,7,2026-01-15 23:05:43
+1295,Nikola Jovic,56794.0,ATP,up,Serbia,7,2026-01-15 23:05:43
+1296,Antoine Berger,39180.0,ATP,up,France,7,2026-01-15 23:05:43
+1297,Andrin Casanova,31668.0,ATP,up,Switzerland,7,2026-01-15 23:05:43
+1298,Yuichiro Inui,13090.0,ATP,up,Japan,7,2026-01-15 23:05:43
+1298,Matas Vasiliauskas,869.0,ATP,up,Lithuania,7,2026-01-15 23:05:43
+1300,Alaa Trifi,63836.0,ATP,up,Tunisia,7,2026-01-15 23:05:43
+1301,Gianluca Brunkow,55611.0,ATP,up,USA,6,2026-01-15 23:05:43
+1302,Segundo Goity Zapico,58211.0,ATP,up,Argentina,6,2026-01-15 23:05:43
+1303,Max Dahlin,52070.0,ATP,up,Sweden,6,2026-01-15 23:05:43
+1303,Andrej Loncarevic,86674.0,ATP,up,France,6,2026-01-15 23:05:43
+1305,Mehdi Benchakroun,883.0,ATP,up,Morocco,6,2026-01-15 23:05:43
+1306,Remy Dugardin,89618.0,ATP,down,France,6,2026-01-15 23:05:43
+1307,Filip Gustafsson,51973.0,ATP,up,Sweden,6,2026-01-15 23:05:43
+1308,James Storrie Ryan,8035.0,ATP,up,United Kingdom,6,2026-01-15 23:05:43
+1309,Gavin Goode,85957.0,ATP,up,USA,6,2026-01-15 23:05:43
+1310,Michal Novansky,14022.0,ATP,up,Slovakia,6,2026-01-15 23:05:43
+1311,Rodrigo Fernandes,15402.0,ATP,up,Portugal,6,2026-01-15 23:05:43
+1312,Khololwam Montsi,786.0,ATP,up,South Africa,6,2026-01-15 23:05:43
+1313,Marko Mesarovic,40064.0,ATP,up,Puerto Rico,6,2026-01-15 23:05:43
+1314,Harold Huens,38142.0,ATP,up,Belgium,6,2026-01-15 23:05:43
+1314,Novak Novakovic,52644.0,ATP,up,Serbia,6,2026-01-15 23:05:43
+1316,Dillon Beckles,75801.0,ATP,up,USA,6,2026-01-15 23:05:43
+1317,Maxime Cressy,2961.0,ATP,up,USA,6,2026-01-15 23:05:43
+1318,Justin Roberts,,ATP,up,Bahamas,6,2026-01-15 23:05:43
+1319,Nicaise Muamba,9880.0,ATP,up,Canada,6,2026-01-15 23:05:43
+1320,Patrik Munkhammar,67674.0,ATP,up,Sweden,6,2026-01-15 23:05:43
+1321,Madhwin Kamath,18134.0,ATP,up,India,6,2026-01-15 23:05:43
+1322,Vladan Tadic,831.0,ATP,up,Bosnia and Herzegovina,6,2026-01-15 23:05:43
+1323,Glib Sekachov,76826.0,ATP,up,Ukraine,6,2026-01-15 23:05:43
+1324,Pelle Hartenstein Jonas,38133.0,ATP,up,Germany,6,2026-01-15 23:05:43
+1324,Jarno Jans,23376.0,ATP,up,Netherlands,6,2026-01-15 23:05:43
+1326,Antonio Becerra Otarola Ignacio,10318.0,ATP,up,Chile,6,2026-01-15 23:05:43
+1326,Jan Klimas,56408.0,ATP,up,Czech Republic,6,2026-01-15 23:05:43
+1326,Pablo Paz Juan,1325.0,ATP,up,Argentina,6,2026-01-15 23:05:43
+1329,Felipe De Dios,38056.0,ATP,up,Argentina,6,2026-01-15 23:05:43
+1330,Cheng Chen Yan,57378.0,ATP,up,Taiwan,6,2026-01-15 23:05:43
+1331,Joe Leather,57896.0,ATP,up,United Kingdom,6,2026-01-15 23:05:43
+1332,Conor Gannon,69524.0,ATP,up,Ireland,6,2026-01-15 23:05:43
+1333,Noah Lopez Cherubino,50291.0,ATP,up,Spain,6,2026-01-15 23:05:43
+1333,Alexandre Reco,12894.0,ATP,up,France,6,2026-01-15 23:05:43
+1335,Miha Vetrih,38260.0,ATP,up,Slovenia,6,2026-01-15 23:05:43
+1336,Manvydas Balciunas,70648.0,ATP,up,Netherlands,6,2026-01-15 23:05:43
+1336,James Beaven,60773.0,ATP,up,United Kingdom,6,2026-01-15 23:05:43
+1336,Makoto Ochi,2460.0,ATP,up,Japan,6,2026-01-15 23:05:43
+1336,Sanjeev Shanmugam Abhinav,1279.0,ATP,up,India,6,2026-01-15 23:05:43
+1340,Reece Falck,15085.0,ATP,up,New Zealand,6,2026-01-15 23:05:43
+1341,Radovan Michalik,15597.0,ATP,up,Slovakia,6,2026-01-15 23:05:43
+1342,Patricio Alvarado,37929.0,ATP,up,Ecuador,6,2026-01-15 23:05:43
+1342,Hugo Remondy Pagotto Victor,65080.0,ATP,up,Brazil,6,2026-01-15 23:05:43
+1344,Louis Van Herck,54685.0,ATP,up,Luxembourg,6,2026-01-15 23:05:43
+1345,Lucca Pinto,13924.0,ATP,up,Brazil,6,2026-01-15 23:05:43
+1346,Luke Hooper,55150.0,ATP,up,United Kingdom,6,2026-01-15 23:05:43
+1347,Luca Fantini,20905.0,ATP,up,Italy,6,2026-01-15 23:05:43
+1348,Charles Chen,,ATP,up,China,6,2026-01-15 23:05:43
+1349,Manel Lazaro Juncadella,70517.0,ATP,up,Spain,6,2026-01-15 23:05:43
+1350,Santiago Lora,23673.0,ATP,up,Bolivia,5,2026-01-15 23:05:43
+1350,Illya Marchenko,573.0,ATP,up,Ukraine,5,2026-01-15 23:05:43
+1350,Peter Van Noord Niels,79893.0,ATP,up,Canada,5,2026-01-15 23:05:43
+1353,Jagger Leach,58210.0,ATP,up,USA,5,2026-01-15 23:05:43
+1354,James Hopper,12717.0,ATP,up,United Kingdom,5,2026-01-15 23:05:43
+1354,Jeremy Jin,10214.0,ATP,up,Australia,5,2026-01-15 23:05:43
+1354,Jaden Weekes,10861.0,ATP,up,Canada,5,2026-01-15 23:05:43
+1357,Theodor Alexandrescou Yannick,68659.0,ATP,up,Romania,5,2026-01-15 23:05:43
+1358,Luc Koenig,14347.0,ATP,up,United Kingdom,5,2026-01-15 23:05:43
+1359,Edoardo Cherie Ligniere,37935.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1359,Frazier Rengifo,23580.0,ATP,up,Colombia,5,2026-01-15 23:05:43
+1359,Jeremy Zhang,10870.0,ATP,up,Australia,5,2026-01-15 23:05:43
+1362,Asahi Harazaki,10864.0,ATP,up,Japan,5,2026-01-15 23:05:43
+1362,Pawel Juszczak,1190.0,ATP,up,Poland,5,2026-01-15 23:05:43
+1364,Saki Tange,82198.0,ATP,up,Japan,5,2026-01-15 23:05:43
+1365,Alessio Vasquez,38134.0,ATP,up,Germany,5,2026-01-15 23:05:43
+1366,Jaesung Choe,69052.0,ATP,up,South Korea,5,2026-01-15 23:05:43
+1366,Stefan Seifert,,ATP,up,Germany,5,2026-01-15 23:05:43
+1368,Adil Kalyanpur,775.0,ATP,down,India,5,2026-01-15 23:05:43
+1369,Alexander Frusina,22430.0,ATP,up,USA,5,2026-01-15 23:05:43
+1370,Amir Milushev,55761.0,ATP,up,Uzbekistan,5,2026-01-15 23:05:43
+1371,Charlelie Cosnet,9208.0,ATP,up,France,5,2026-01-15 23:05:43
+1371,Horia Haita Stefan,63401.0,ATP,up,Romania,5,2026-01-15 23:05:43
+1373,Anton Arzhankin,86675.0,ATP,up,Russia,5,2026-01-15 23:05:43
+1373,Leonardo Borrelli,60965.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1375,William Jansen,37890.0,ATP,up,United Kingdom,5,2026-01-15 23:05:43
+1375,Vardan Manukyan,55114.0,ATP,up,World,5,2026-01-15 23:05:43
+1375,William Mirarchi,81689.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1375,Konstantin Zhzhenov,9231.0,ATP,up,World,5,2026-01-15 23:05:43
+1379,Toshiki Karigyo,81134.0,ATP,up,Japan,5,2026-01-15 23:05:43
+1379,Peetu Pohjola,37920.0,ATP,up,Finland,5,2026-01-15 23:05:43
+1381,Bill Chan,63395.0,ATP,up,Singapore,5,2026-01-15 23:05:43
+1382,Uladzimir Ignatik,7491.0,ATP,up,World,5,2026-01-15 23:05:43
+1382,Jackson Ross,67656.0,ATP,up,USA,5,2026-01-15 23:05:43
+1384,Alexis Gurmendi,63093.0,ATP,up,Argentina,5,2026-01-15 23:05:43
+1385,Kazuki Nishiwaki,9655.0,ATP,up,Japan,5,2026-01-15 23:05:43
+1385,Gilberto Ravasio,84713.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1385,Xiaoyin Yang,56741.0,ATP,up,China,5,2026-01-15 23:05:43
+1388,Yua Taka,52574.0,ATP,up,Japan,5,2026-01-15 23:05:43
+1389,Mac Visser,78369.0,ATP,up,Netherlands,5,2026-01-15 23:05:43
+1390,Yuttana Charoenphon,14459.0,ATP,up,Thailand,5,2026-01-15 23:05:43
+1390,Rodolfo Jauregui Sainz De Rozas,38843.0,ATP,up,Mexico,5,2026-01-15 23:05:43
+1390,Kacper Knitter,74207.0,ATP,up,Poland,5,2026-01-15 23:05:43
+1390,Lucca Liu,73579.0,ATP,up,USA,5,2026-01-15 23:05:43
+1394,Julian Werner Elias,74278.0,ATP,up,Germany,5,2026-01-15 23:05:43
+1395,Kuzey Cekirge,973.0,ATP,up,Turkey,5,2026-01-15 23:05:43
+1395,Alexandru Chirita Ioan,40131.0,ATP,up,Romania,5,2026-01-15 23:05:43
+1397,Nick Chappell,1255.0,ATP,up,USA,5,2026-01-15 23:05:43
+1398,Kylian Collignon,54522.0,ATP,up,Belgium,5,2026-01-15 23:05:43
+1398,Gabriele Volpi,64524.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1400,Toprak Avcibasi,40219.0,ATP,up,Turkey,5,2026-01-15 23:05:43
+1401,Richard Antoni,83883.0,ATP,up,Germany,5,2026-01-15 23:05:43
+1402,Gabor Hornung,32300.0,ATP,up,Hungary,5,2026-01-15 23:05:43
+1402,Alan Wazny,71082.0,ATP,up,Poland,5,2026-01-15 23:05:43
+1404,Gabriele Crivellaro,87125.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1404,Gian Gruenig,73133.0,ATP,up,Switzerland,5,2026-01-15 23:05:43
+1404,Jonas Kucera,72210.0,ATP,up,Czech Republic,5,2026-01-15 23:05:43
+1404,Tristan Stringer,69941.0,ATP,up,USA,5,2026-01-15 23:05:43
+1408,Daniel Khazime,58964.0,ATP,down,World,5,2026-01-15 23:05:43
+1408,Fanming Meng,87025.0,ATP,up,China,5,2026-01-15 23:05:43
+1408,Lasse Poertner,57545.0,ATP,up,Germany,5,2026-01-15 23:05:43
+1408,Vuk Radjenovic,38985.0,ATP,up,Serbia,5,2026-01-15 23:05:43
+1412,Pablo Trochu,38049.0,ATP,up,France,5,2026-01-15 23:05:43
+1413,Hiromasa Koyama,78931.0,ATP,up,Japan,5,2026-01-15 23:05:43
+1414,Luka Talan Lopatic,62392.0,ATP,up,Slovenia,5,2026-01-15 23:05:43
+1415,Alessandro Battiston,68379.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1416,Ferdinand Livet Novkirichka,68450.0,ATP,up,France,5,2026-01-15 23:05:43
+1417,Daniel Uta,55174.0,ATP,up,Romania,5,2026-01-15 23:05:43
+1418,Naoki Tajima,2453.0,ATP,up,Japan,5,2026-01-15 23:05:43
+1419,Francesco Ferrari,37856.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1420,Michael Gloeckler,936.0,ATP,same,Austria,5,2026-01-15 23:05:43
+1421,Ioannis Kountourakis,732.0,ATP,up,Greece,5,2026-01-15 23:05:43
+1422,Andrea Bacaloni,38115.0,ATP,up,Italy,5,2026-01-15 23:05:43
+1423,Alexey Aleshchev,49576.0,ATP,up,World,5,2026-01-15 23:05:43
+1423,Nikita Ianin,23831.0,ATP,up,World,5,2026-01-15 23:05:43
+1425,Gokberk Saritas,13540.0,ATP,up,Turkey,5,2026-01-15 23:05:43
+1426,Aleksi Lofman,12968.0,ATP,up,Finland,4,2026-01-15 23:05:43
+1426,Amirkhamza Nasridinov,62411.0,ATP,up,World,4,2026-01-15 23:05:43
+1426,Kaito Uesugi,37934.0,ATP,up,Japan,4,2026-01-15 23:05:43
+1429,Federico Zeballos,1253.0,ATP,up,Bolivia,4,2026-01-15 23:05:43
+1430,Hugo Car,71902.0,ATP,up,France,4,2026-01-15 23:05:43
+1431,Takeru Yuzuki,26927.0,ATP,up,Japan,4,2026-01-15 23:05:43
+1432,Collin Altamirano,5917.0,ATP,up,USA,4,2026-01-15 23:05:43
+1432,Hugo Coquelin,9361.0,ATP,up,United Kingdom,4,2026-01-15 23:05:43
+1432,Sebastian Eriksson,40059.0,ATP,up,Sweden,4,2026-01-15 23:05:43
+1432,Timo Legout,916.0,ATP,up,France,4,2026-01-15 23:05:43
+1432,Muzammil Murtaza,54465.0,ATP,up,Pakistan,4,2026-01-15 23:05:43
+1432,Azuma Visaya,9384.0,ATP,up,USA,4,2026-01-15 23:05:43
+1438,Corey Craig,6489.0,ATP,up,USA,4,2026-01-15 23:05:43
+1439,James Connel,54463.0,ATP,up,United Kingdom,4,2026-01-15 23:05:43
+1440,Cesar Cruz,86761.0,ATP,up,El Salvador,4,2026-01-15 23:05:43
+1440,Bryce Nakashima,1249.0,ATP,up,USA,4,2026-01-15 23:05:43
+1442,Paul Barbier Gazeu,26613.0,ATP,up,France,4,2026-01-15 23:05:43
+1442,Sho Katayama,3801.0,ATP,up,Japan,4,2026-01-15 23:05:43
+1444,Stepan Baum,49042.0,ATP,up,Czech Republic,4,2026-01-15 23:05:43
+1444,Udit Kamboj,77031.0,ATP,up,India,4,2026-01-15 23:05:43
+1444,Nicola Kuhn,583.0,ATP,up,Germany,4,2026-01-15 23:05:43
+1444,Hugo Maia,37997.0,ATP,up,Portugal,4,2026-01-15 23:05:43
+1448,Moritz Kudernatsch,68003.0,ATP,up,Germany,4,2026-01-15 23:05:43
+1449,Walid Ahouda,791.0,ATP,up,Morocco,4,2026-01-15 23:05:43
+1449,Anton Chekhov,6838.0,ATP,up,World,4,2026-01-15 23:05:43
+1449,Emanuel Ivanisevic,68656.0,ATP,up,Croatia,4,2026-01-15 23:05:43
+1449,Duje Markovina,49022.0,ATP,up,Australia,4,2026-01-15 23:05:43
+1449,Damien Salvestre,19894.0,ATP,up,France,4,2026-01-15 23:05:43
+1454,Vasco Leote Prata,38113.0,ATP,up,Portugal,4,2026-01-15 23:05:43
+1455,Dax Donders,18978.0,ATP,up,Netherlands,4,2026-01-15 23:05:43
+1455,Diego Jarry Fillol,69945.0,ATP,up,Chile,4,2026-01-15 23:05:43
+1455,Alberto Lim,61208.0,ATP,up,Philippines,4,2026-01-15 23:05:43
+1458,Nicola Rispoli,61070.0,ATP,up,Italy,4,2026-01-15 23:05:43
+1459,Congsup Congcar,7210.0,ATP,up,Thailand,4,2026-01-15 23:05:43
+1459,Romain Gales,13250.0,ATP,up,France,4,2026-01-15 23:05:43
+1459,Davide Pontoglio,2246.0,ATP,up,Italy,4,2026-01-15 23:05:43
+1459,Kase Schinnerer,68733.0,ATP,up,USA,4,2026-01-15 23:05:43
+1463,Ko Suzuki,23191.0,ATP,up,Japan,4,2026-01-15 23:05:43
+1463,Pijus Vaitiekunas,19216.0,ATP,up,Lithuania,4,2026-01-15 23:05:43
+1465,Oskari Eerola,86805.0,ATP,up,Finland,4,2026-01-15 23:05:43
+1465,Adam Heinonen,26150.0,ATP,up,Sweden,4,2026-01-15 23:05:43
+1465,David Naharro,39194.0,ATP,up,Spain,4,2026-01-15 23:05:43
+1465,Dian Nedev,19427.0,ATP,up,Bulgaria,4,2026-01-15 23:05:43
+1465,Aleksander Orlikowski,9237.0,ATP,up,Poland,4,2026-01-15 23:05:43
+1470,Zane Stevens,63411.0,ATP,up,Australia,4,2026-01-15 23:05:43
+1471,Xavi Palomar,83913.0,ATP,up,Spain,4,2026-01-15 23:05:43
+1472,Gustavo Albieri,81594.0,ATP,up,Brazil,4,2026-01-15 23:05:43
+1473,Vladimir Bazilevskiy,40157.0,ATP,up,Israel,4,2026-01-15 23:05:43
+1474,Rafael Giotis,672.0,ATP,up,Germany,4,2026-01-15 23:05:43
+1474,Lingxi Zhao,80929.0,ATP,up,China,4,2026-01-15 23:05:43
+1476,Arthur Bellegy,69973.0,ATP,up,France,4,2026-01-15 23:05:43
+1477,Florin Breazu Matei,57892.0,ATP,up,Romania,4,2026-01-15 23:05:43
+1477,Jirat Navasirisomboon,9829.0,ATP,up,Thailand,4,2026-01-15 23:05:43
+1477,Florin Pop Darius,52236.0,ATP,up,Romania,4,2026-01-15 23:05:43
+1477,Ignacio Torres Fernandez Benjamin,10322.0,ATP,up,Chile,4,2026-01-15 23:05:43
+1477,Fons Van Sambeek,38110.0,ATP,up,Netherlands,4,2026-01-15 23:05:43
+1482,Alessandro Coccioli,40221.0,ATP,up,Italy,4,2026-01-15 23:05:43
+1482,Valentin Garay,50788.0,ATP,up,Argentina,4,2026-01-15 23:05:43
+1482,Yunseok Jang,38065.0,ATP,up,South Korea,4,2026-01-15 23:05:43
+1482,Gray Voelzke,83187.0,ATP,up,USA,4,2026-01-15 23:05:43
+1486,Richard Zusman,2490.0,ATP,up,USA,4,2026-01-15 23:05:43
+1487,Maikel De Boes,13126.0,ATP,up,Belgium,4,2026-01-15 23:05:43
+1488,Nemanja Malesevic,19404.0,ATP,up,Bosnia and Herzegovina,4,2026-01-15 23:05:43
+1488,Weiwen Pan,75604.0,ATP,up,China,4,2026-01-15 23:05:43
+1490,Kevin Edengren,62412.0,ATP,up,Sweden,4,2026-01-15 23:05:43
+1490,Michele Mecarelli,78934.0,ATP,up,Italy,4,2026-01-15 23:05:43
+1490,Riku Takahata,,ATP,up,Japan,4,2026-01-15 23:05:43
+1493,Jack Bruce-Smith,65354.0,ATP,up,Australia,4,2026-01-15 23:05:43
+1494,Jose Bianchi Juan,69529.0,ATP,up,Venezuela,4,2026-01-15 23:05:43
+1494,Cristian Breazu Vlad,38012.0,ATP,up,Romania,4,2026-01-15 23:05:43
+1494,Alexis Canter,1236.0,ATP,up,United Kingdom,4,2026-01-15 23:05:43
+1494,Joshua Peck,9190.0,ATP,up,Canada,4,2026-01-15 23:05:43
+1494,Antonio Voljavec,50679.0,ATP,up,Croatia,4,2026-01-15 23:05:43
+1499,Andrea Colombo,1017.0,ATP,up,Italy,4,2026-01-15 23:05:43
+1499,Daniel Verbeek,10842.0,ATP,up,Netherlands,4,2026-01-15 23:05:43
+1501,Luca Cervantes Tomas,970.0,ATP,up,Mexico,4,2026-01-15 23:05:43
+1501,Nikola Djosic,51949.0,ATP,up,Switzerland,4,2026-01-15 23:05:43
+1501,Tanguy Genier,58020.0,ATP,up,Switzerland,4,2026-01-15 23:05:43
+1504,Roman Kharlamov,75803.0,ATP,up,World,4,2026-01-15 23:05:43
+1505,Alejandro Lopez Escribano,55549.0,ATP,same,Spain,4,2026-01-15 23:05:43
+1505,Oren Vasser,38075.0,ATP,same,USA,4,2026-01-15 23:05:43
+1507,Fumin Jiang,80790.0,ATP,up,China,4,2026-01-15 23:05:43
+1508,Jonathan Mridha,2500.0,ATP,same,Sweden,4,2026-01-15 23:05:43
+1509,Credit Chaiyarin,21983.0,ATP,down,Thailand,4,2026-01-15 23:05:43
+1510,Yassine Smiej,54521.0,ATP,up,Morocco,4,2026-01-15 23:05:43
+1511,Carles Cordoba,61814.0,ATP,same,Spain,4,2026-01-15 23:05:43
+1512,Filippo Mazzola,52609.0,ATP,same,Italy,4,2026-01-15 23:05:43
+1513,Alexandru Coman Mihai,37891.0,ATP,down,Romania,4,2026-01-15 23:05:43
+1514,Daniel Batista,10376.0,ATP,down,Portugal,4,2026-01-15 23:05:43
+1515,Guido Andreozzi,2960.0,ATP,down,Argentina,3,2026-01-15 23:05:43
+1515,Thomas Byers Loren,38268.0,ATP,down,USA,3,2026-01-15 23:05:43
+1515,Luciano Carraro,10024.0,ATP,down,Italy,3,2026-01-15 23:05:43
+1515,Samir Iftikhar,10224.0,ATP,down,Pakistan,3,2026-01-15 23:05:43
+1515,Yousaf Khalil,74517.0,ATP,down,Pakistan,3,2026-01-15 23:05:43
+1515,Lucas Miedler,1210.0,ATP,down,Austria,3,2026-01-15 23:05:43
+1515,Siphosothando Montsi,12708.0,ATP,down,South Africa,3,2026-01-15 23:05:43
+1515,Patrik Niklas-Salminen,761.0,ATP,down,Finland,3,2026-01-15 23:05:43
+1515,Reese Stalder,9028.0,ATP,down,USA,3,2026-01-15 23:05:43
+1515,Patrik Trhac,87998.0,ATP,down,USA,3,2026-01-15 23:05:43
+1525,Kelly Giese,86770.0,ATP,down,USA,3,2026-01-15 23:05:43
+1525,Tom Hands,8167.0,ATP,down,United Kingdom,3,2026-01-15 23:05:43
+1525,Sander Jong,39928.0,ATP,down,Netherlands,3,2026-01-15 23:05:43
+1525,Adit Sinha,18085.0,ATP,down,USA,3,2026-01-15 23:05:43
+1525,Antoine Vincent,23250.0,ATP,down,France,3,2026-01-15 23:05:43
+1530,Justin Barki,49889.0,ATP,down,Indonesia,3,2026-01-15 23:05:43
+1530,Samuel Brosset,10526.0,ATP,down,France,3,2026-01-15 23:05:43
+1530,Matisse Farzam,67513.0,ATP,down,USA,3,2026-01-15 23:05:43
+1530,Theo Herrmann,72360.0,ATP,down,France,3,2026-01-15 23:05:43
+1530,Will Mayew,52053.0,ATP,down,USA,3,2026-01-15 23:05:43
+1530,Oliver Ojakaar,52071.0,ATP,down,Estonia,3,2026-01-15 23:05:43
+1530,Daniel Phillips,54047.0,ATP,down,Bermuda,3,2026-01-15 23:05:43
+1530,Nikolas Stoot Donald,92862.0,ATP,down,USA,3,2026-01-15 23:05:43
+1538,Damien Clerc,83932.0,ATP,down,France,3,2026-01-15 23:05:43
+1538,Laurence Teunissen,87316.0,ATP,down,Netherlands,3,2026-01-15 23:05:43
+1540,Wissam Abderrahman,1948.0,ATP,down,Tunisia,3,2026-01-15 23:05:43
+1540,Yusuf Khamis,39535.0,ATP,down,Egypt,3,2026-01-15 23:05:43
+1540,Weiyi Kong,71493.0,ATP,down,China,3,2026-01-15 23:05:43
+1540,Thijmen Loof,13374.0,ATP,down,Netherlands,3,2026-01-15 23:05:43
+1540,Alexander Razeghi,9516.0,ATP,down,USA,3,2026-01-15 23:05:43
+1540,Hudson Rivera,37899.0,ATP,down,USA,3,2026-01-15 23:05:43
+1540,Jack Satterfield,79358.0,ATP,down,USA,3,2026-01-15 23:05:43
+1540,Isac Stroemberg,40174.0,ATP,down,Sweden,3,2026-01-15 23:05:43
+1548,Ymerali Ibraimi,78978.0,ATP,down,Australia,3,2026-01-15 23:05:43
+1549,Siwanat Auytayakul,55035.0,ATP,down,Thailand,3,2026-01-15 23:05:43
+1549,John Bothma,69709.0,ATP,down,South Africa,3,2026-01-15 23:05:43
+1549,Raghav Jaisinghani,38050.0,ATP,down,India,3,2026-01-15 23:05:43
+1549,Stefan Latinovic,54682.0,ATP,down,Serbia,3,2026-01-15 23:05:43
+1549,Maciej Rajski,2099.0,ATP,down,Poland,3,2026-01-15 23:05:43
+1549,Timofey Stepanov,38062.0,ATP,down,Switzerland,3,2026-01-15 23:05:43
+1555,Liam Branger,39079.0,ATP,same,France,3,2026-01-15 23:05:43
+1555,Nathan Cox,84737.0,ATP,same,USA,3,2026-01-15 23:05:43
+1555,Felipe Dreer,83801.0,ATP,same,Argentina,3,2026-01-15 23:05:43
+1555,Milad Fahim Ilyas,67947.0,ATP,same,Morocco,3,2026-01-15 23:05:43
+1555,Yazid Lahjomri,85183.0,ATP,down,Morocco,3,2026-01-15 23:05:43
+1555,Clement Lemire,52678.0,ATP,same,France,3,2026-01-15 23:05:43
+1555,Arjun Rathi,38218.0,ATP,same,India,3,2026-01-15 23:05:43
+1555,Timeo Trufelli,61033.0,ATP,same,France,3,2026-01-15 23:05:43
+1563,Achilles Belkovics,68441.0,ATP,up,Hungary,3,2026-01-15 23:05:43
+1563,Emirhan Bulut,39051.0,ATP,up,Turkey,3,2026-01-15 23:05:43
+1563,Bautista De La Pena,65126.0,ATP,up,Chile,3,2026-01-15 23:05:43
+1563,Melvin Kumar,67977.0,ATP,up,Sweden,3,2026-01-15 23:05:43
+1563,Arvid Nordquist,2216.0,ATP,up,Sweden,3,2026-01-15 23:05:43
+1563,Matthew Rankin,10856.0,ATP,up,United Kingdom,3,2026-01-15 23:05:43
+1569,Niccolo Baroni,25726.0,ATP,down,Italy,3,2026-01-15 23:05:43
+1569,Nishok Kumaran Bharath,14544.0,ATP,down,India,3,2026-01-15 23:05:43
+1569,Arthur Laborde,57773.0,ATP,down,Switzerland,3,2026-01-15 23:05:43
+1569,Lewie Lane,6024.0,ATP,down,Germany,3,2026-01-15 23:05:43
+1569,Francois Musitelli,21084.0,ATP,down,France,3,2026-01-15 23:05:43
+1569,Shu Muto,76395.0,ATP,down,Japan,3,2026-01-15 23:05:43
+1569,Yu Tanaka,9521.0,ATP,down,Japan,3,2026-01-15 23:05:43
+1576,Illya Beloborodko,2455.0,ATP,down,Ukraine,3,2026-01-15 23:05:43
+1576,Thomas Gerbaud,66956.0,ATP,down,France,3,2026-01-15 23:05:43
+1578,Ryan Augusto dos Santos,37940.0,ATP,down,Brazil,3,2026-01-15 23:05:43
+1578,Enrique Carrascosa Diaz,80300.0,ATP,down,Spain,3,2026-01-15 23:05:43
+1578,Amine Jamji,81473.0,ATP,up,Morocco,3,2026-01-15 23:05:43
+1578,Grundtvig Jorgensen Sebastian,69469.0,ATP,down,Denmark,3,2026-01-15 23:05:43
+1578,Mickael Kaouk,68730.0,ATP,up,France,3,2026-01-15 23:05:43
+1578,Dominick Mosejczuk,73861.0,ATP,down,USA,3,2026-01-15 23:05:43
+1578,Ainius Sabaliauskas,21543.0,ATP,down,Lithuania,3,2026-01-15 23:05:43
+1585,Leonardo Angeloni,81139.0,ATP,down,Italy,3,2026-01-15 23:05:43
+1585,Sekou Bangoura,2921.0,ATP,down,USA,3,2026-01-15 23:05:43
+1585,Noah Brownrigg,81132.0,ATP,down,Australia,3,2026-01-15 23:05:43
+1585,Mahmoud Chetouane,89864.0,ATP,up,Tunisia,3,2026-01-15 23:05:43
+1585,Valentin Guadagno,77366.0,ATP,down,Argentina,3,2026-01-15 23:05:43
+1585,Patrik Homola,60457.0,ATP,down,Czech Republic,3,2026-01-15 23:05:43
+1585,Augusto Miguel Luis,67442.0,ATP,down,Brazil,3,2026-01-15 23:05:43
+1585,Mattia Nannelli,76611.0,ATP,down,Italy,3,2026-01-15 23:05:43
+1585,Alexander Petrov,37928.0,ATP,down,Bulgaria,3,2026-01-15 23:05:43
+1585,Stevan Popovic,38120.0,ATP,down,Germany,3,2026-01-15 23:05:43
+1585,Iker Urribarrens Ramirez,50072.0,ATP,down,Spain,3,2026-01-15 23:05:43
+1596,Leo Lagarrigue,64960.0,ATP,same,France,3,2026-01-15 23:05:43
+1596,Gabriele Vulpitta,52676.0,ATP,same,Italy,3,2026-01-15 23:05:43
+1598,Artem Bogomolov,75802.0,ATP,same,World,3,2026-01-15 23:05:43
+1598,Jake Dembo,,ATP,same,Australia,3,2026-01-15 23:05:43
+1598,Andres Fernandez Canovas,40036.0,ATP,same,Spain,3,2026-01-15 23:05:43
+1598,Tilen Kovac,65987.0,ATP,same,Slovenia,3,2026-01-15 23:05:43
+1598,Benjamin Willwerth,73862.0,ATP,same,USA,3,2026-01-15 23:05:43
+1598,Edoardo Zanada,21852.0,ATP,same,Italy,3,2026-01-15 23:05:43
+1604,Viktor Jovic,841.0,ATP,same,Serbia,3,2026-01-15 23:05:43
+1604,Nikos Lehmann,55031.0,ATP,same,Argentina,3,2026-01-15 23:05:43
+1604,Zekai Li,879.0,ATP,same,China,3,2026-01-15 23:05:43
+1604,Bogdan Pavel,15838.0,ATP,same,Romania,3,2026-01-15 23:05:43
+1604,Sergio Planella Hernandez,74773.0,ATP,same,Spain,3,2026-01-15 23:05:43
+1609,Christopher Papa,54742.0,ATP,same,USA,3,2026-01-15 23:05:43
+1610,Vito Dell'Elba,39003.0,ATP,same,Italy,3,2026-01-15 23:05:43
+1610,Benjamin Gusic Wan,28614.0,ATP,same,United Kingdom,3,2026-01-15 23:05:43
+1612,Alex Finkelstein,60823.0,ATP,same,USA,3,2026-01-15 23:05:43
+1612,David Fix,55061.0,ATP,same,Germany,3,2026-01-15 23:05:43
+1612,Valentino Grippo,74381.0,ATP,same,Argentina,3,2026-01-15 23:05:43
+1612,Chun-Chien Hou,72232.0,ATP,same,Taiwan,3,2026-01-15 23:05:43
+1612,Pierre-Jo Kamendje Stephane,76952.0,ATP,same,Canada,3,2026-01-15 23:05:43
+1612,Matteo Lavizzari,38879.0,ATP,same,Switzerland,3,2026-01-15 23:05:43
+1612,Silvio Mencaglia,74710.0,ATP,down,Italy,3,2026-01-15 23:05:43
+1612,Nik Mikovic,51377.0,ATP,same,Slovenia,3,2026-01-15 23:05:43
+1612,Esteban Rico Arias Nicolas,23091.0,ATP,same,Colombia,3,2026-01-15 23:05:43
+1612,Claudiu Schinteie Gheorghe,40083.0,ATP,same,Romania,3,2026-01-15 23:05:43
+1612,Darrshan Suresh,27347.0,ATP,same,Malaysia,3,2026-01-15 23:05:43
+1612,Raphael Vaksmann,52677.0,ATP,same,France,3,2026-01-15 23:05:43
+1624,Sasa Markovic,38963.0,ATP,up,Serbia,3,2026-01-15 23:05:43
+1624,Ryotaro Matsumura,14236.0,ATP,up,Japan,3,2026-01-15 23:05:43
+1624,Andrea Paolini,68143.0,ATP,up,Italy,3,2026-01-15 23:05:43
+1627,Odiseo Alvarado Berrospi Alberto,13760.0,ATP,up,Peru,3,2026-01-15 23:05:43
+1627,Haoyuan Huang,714.0,ATP,up,China,3,2026-01-15 23:05:43
+1627,Ajay Malik,23375.0,ATP,up,India,3,2026-01-15 23:05:43
+1627,Aleksa Pisaric,39023.0,ATP,up,Serbia,3,2026-01-15 23:05:43
+1627,Aristarkh Safonov,14519.0,ATP,up,World,3,2026-01-15 23:05:43
+1627,Federico Valle,38982.0,ATP,up,Italy,3,2026-01-15 23:05:43
+1627,Aditya Vishal Balsekar,37953.0,ATP,up,India,3,2026-01-15 23:05:43
+1627,Alexander Zgirovsky,14516.0,ATP,up,World,3,2026-01-15 23:05:43
+1635,Charlie Camus,10841.0,ATP,up,France,3,2026-01-15 23:05:43
+1635,Jonas Gundacker,69497.0,ATP,up,Austria,3,2026-01-15 23:05:43
+1635,Ye Hongyu,49384.0,ATP,up,China,3,2026-01-15 23:05:43
+1635,Stijn Pel,28070.0,ATP,up,Netherlands,3,2026-01-15 23:05:43
+1639,Rocco Piatti,39914.0,ATP,up,Monaco,3,2026-01-15 23:05:43
+1640,Adam Farag-Cao,75349.0,ATP,up,Canada,3,2026-01-15 23:05:43
+1640,Nicolas Robert,82785.0,ATP,up,France,3,2026-01-15 23:05:43
+1642,Daniel Domingos,69999.0,ATP,up,Angola,3,2026-01-15 23:05:43
+1643,Melih Anavatan,68069.0,ATP,up,Turkey,3,2026-01-15 23:05:43
+1643,Loic Namigandet Tenguere,57897.0,ATP,up,France,3,2026-01-15 23:05:43
+1643,Mariano Tammaro,11979.0,ATP,up,Italy,3,2026-01-15 23:05:43
+1643,Kerem Yilmaz,65986.0,ATP,down,Turkey,3,2026-01-15 23:05:43
+1647,Jiri Cizek,38953.0,ATP,up,Czech Republic,3,2026-01-15 23:05:43
+1648,Alessandro Bellifemine,38105.0,ATP,up,Italy,3,2026-01-15 23:05:43
+1649,Tadeo Meneo,63065.0,ATP,up,Argentina,3,2026-01-15 23:05:43
+1649,Issei Okamura,7372.0,ATP,up,Japan,3,2026-01-15 23:05:43
+1651,Zhenxiong Dong,53307.0,ATP,up,China,3,2026-01-15 23:05:43
+1652,Luis Garcia Paez,70968.0,ATP,up,Spain,3,2026-01-15 23:05:43
+1652,Dmitry Kopilevich,80515.0,ATP,up,Slovenia,3,2026-01-15 23:05:43
+1654,Jeremy Schifris,7496.0,ATP,up,Germany,3,2026-01-15 23:05:43
+1655,Lawrence Bataljin,6997.0,ATP,up,Australia,3,2026-01-15 23:05:43
+1656,Alfred Almasi,40205.0,ATP,up,Slovakia,2,2026-01-15 23:05:43
+1656,David Bakonyi,68637.0,ATP,up,Hungary,2,2026-01-15 23:05:43
+1656,Ulises Blanch,1862.0,ATP,up,USA,2,2026-01-15 23:05:43
+1656,Casper Christensen,15294.0,ATP,up,Norway,2,2026-01-15 23:05:43
+1656,Valentino Conte,93922.0,ATP,up,Argentina,2,2026-01-15 23:05:43
+1656,Connor Doig,78291.0,ATP,up,South Africa,2,2026-01-15 23:05:43
+1656,Luis Hernandez Ramirez Sergio,9650.0,ATP,up,Colombia,2,2026-01-15 23:05:43
+1656,Marcel Latak,89239.0,ATP,up,USA,2,2026-01-15 23:05:43
+1656,Ivan Liutarevich,955.0,ATP,up,World,2,2026-01-15 23:05:43
+1656,Marko Milosavljevic,,ATP,up,Serbia,2,2026-01-15 23:05:43
+1656,Eduardo Munoz Navia Diego,63482.0,ATP,up,Bolivia,2,2026-01-15 23:05:43
+1656,Ignacio Novo,23827.0,ATP,up,Argentina,2,2026-01-15 23:05:43
+1656,Cristian Rodriguez,7232.0,ATP,up,Colombia,2,2026-01-15 23:05:43
+1656,Andre Solis Encinas Oliver,93885.0,ATP,up,Bolivia,2,2026-01-15 23:05:43
+1656,James Tracy,23563.0,ATP,up,USA,2,2026-01-15 23:05:43
+1656,Seita Watanabe,643.0,ATP,up,Japan,2,2026-01-15 23:05:43
+1656,Milan Welte,1264.0,ATP,up,Germany,2,2026-01-15 23:05:43
+1656,Baltazar Wiger Nordas,88004.0,ATP,up,Norway,2,2026-01-15 23:05:43
+1656,Tomas Zurmendi,92938.0,ATP,up,Uruguay,2,2026-01-15 23:05:43
+1675,Michael Antonius,86725.0,ATP,up,USA,2,2026-01-15 23:05:43
+1675,Billy Blaydes,37982.0,ATP,up,United Kingdom,2,2026-01-15 23:05:43
+1675,Nikita Filin,58209.0,ATP,up,USA,2,2026-01-15 23:05:43
+1675,Raul Garcia,39586.0,ATP,up,Bolivia,2,2026-01-15 23:05:43
+1675,Saahith Jayaraman,65461.0,ATP,up,USA,2,2026-01-15 23:05:43
+1675,Markos Kalovelonis,1938.0,ATP,up,Greece,2,2026-01-15 23:05:43
+1675,Loan Lestir,38774.0,ATP,up,France,2,2026-01-15 23:05:43
+1675,Neo Niedner,1276.0,ATP,up,Germany,2,2026-01-15 23:05:43
+1675,Henrique Ortenblad Nogueira,93923.0,ATP,up,Brazil,2,2026-01-15 23:05:43
+1675,Max Sheldon,,ATP,up,USA,2,2026-01-15 23:05:43
+1675,Antonio Vergara del Puerto Martin,24405.0,ATP,up,Paraguay,2,2026-01-15 23:05:43
+1686,Ignacio De Armas,93540.0,ATP,up,Venezuela,2,2026-01-15 23:05:43
+1686,Matteo De Vincentis,2223.0,ATP,up,Italy,2,2026-01-15 23:05:43
+1686,Diego Duran,87126.0,ATP,up,Colombia,2,2026-01-15 23:05:43
+1686,Andrew Johnson,32064.0,ATP,up,USA,2,2026-01-15 23:05:43
+1686,Petar Jovanovic,37949.0,ATP,up,Montenegro,2,2026-01-15 23:05:43
+1686,Vit Kalina,30786.0,ATP,up,Czech Republic,2,2026-01-15 23:05:43
+1686,Ho Ko Min,93354.0,ATP,up,South Korea,2,2026-01-15 23:05:43
+1686,Noritaka Koizumi,59061.0,ATP,up,Japan,2,2026-01-15 23:05:43
+1686,Oscar Lacides,49887.0,ATP,up,Guadeloupe,2,2026-01-15 23:05:43
+1686,Oscar Lien Johan,89202.0,ATP,up,Norway,2,2026-01-15 23:05:43
+1686,Noah Lopez,982.0,ATP,up,Switzerland,2,2026-01-15 23:05:43
+1686,Tomas Rengel Sierra,40432.0,ATP,up,Argentina,2,2026-01-15 23:05:43
+1686,Yaraslav Shyla,5877.0,ATP,up,World,2,2026-01-15 23:05:43
+1686,Nikita Volonski,13383.0,ATP,up,Australia,2,2026-01-15 23:05:43
+1686,Christian Wedel,83888.0,ATP,up,Germany,2,2026-01-15 23:05:43
+1686,Anthony Wright,7786.0,ATP,up,United Kingdom,2,2026-01-15 23:05:43
+1702,Antonio Caruso,6891.0,ATP,up,Italy,2,2026-01-15 23:05:43
+1702,Chen Ye,,ATP,up,China,2,2026-01-15 23:05:43
+1702,Ernesto Escobedo,402.0,ATP,up,Mexico,2,2026-01-15 23:05:43
+1702,Ondrej Horak,10040.0,ATP,up,Czech Republic,2,2026-01-15 23:05:43
+1702,Alex Jones,38934.0,ATP,up,USA,2,2026-01-15 23:05:43
+1702,Emiliano Jorquera,84288.0,ATP,up,Canada,2,2026-01-15 23:05:43
+1702,Sheng Koay Hao,40195.0,ATP,up,Malaysia,2,2026-01-15 23:05:43
+1702,Sergey Petrov,81857.0,ATP,up,Russia,2,2026-01-15 23:05:43
+1702,Eli Stephenson,56459.0,ATP,up,USA,2,2026-01-15 23:05:43
+1711,Tomas Geschwind Francisco,27497.0,ATP,same,Argentina,2,2026-01-15 23:05:43
+1711,Federico Guarducci,82366.0,ATP,same,Italy,2,2026-01-15 23:05:43
+1711,Sean Hodkin,2512.0,ATP,same,United Kingdom,2,2026-01-15 23:05:43
+1711,Jarrod Joyce,63397.0,ATP,same,Australia,2,2026-01-15 23:05:43
+1711,Botond Kisantal,65124.0,ATP,same,Hungary,2,2026-01-15 23:05:43
+1711,Espen Lagarde,67103.0,ATP,same,France,2,2026-01-15 23:05:43
+1711,Karim-Mohamed Maamoun,5292.0,ATP,same,Egypt,2,2026-01-15 23:05:43
+1711,Gasper Matijasic,71505.0,ATP,same,Slovenia,2,2026-01-15 23:05:43
+1711,Petr Michnev,7495.0,ATP,same,Czech Republic,2,2026-01-15 23:05:43
+1711,Diogo Morais,39921.0,ATP,same,Portugal,2,2026-01-15 23:05:43
+1711,Ren Nakamura,646.0,ATP,same,Japan,2,2026-01-15 23:05:43
+1711,Viacheslav Ovchinnikov,14824.0,ATP,same,World,2,2026-01-15 23:05:43
+1711,Mathys Picard,92463.0,ATP,same,France,2,2026-01-15 23:05:43
+1711,Johan Reinhard Bengt,86331.0,ATP,same,Germany,2,2026-01-15 23:05:43
+1711,Flynn Thomas,70746.0,ATP,same,Switzerland,2,2026-01-15 23:05:43
+1726,Benjamin Perez,1280.0,ATP,down,Chile,2,2026-01-15 23:05:43
+1726,Felipe Virgili Berini,38549.0,ATP,down,Italy,2,2026-01-15 23:05:43
+1728,Sarp Agabigun,8973.0,ATP,down,Turkey,2,2026-01-15 23:05:43
+1728,Evan Burnett,57159.0,ATP,down,USA,2,2026-01-15 23:05:43
+1728,Hugo Cardinaud,52219.0,ATP,up,France,2,2026-01-15 23:05:43
+1728,Ivan Dreycopp,14272.0,ATP,down,Argentina,2,2026-01-15 23:05:43
+1728,Alexander Glomb,80524.0,ATP,down,Germany,2,2026-01-15 23:05:43
+1728,Toru Horie,51633.0,ATP,down,Japan,2,2026-01-15 23:05:43
+1728,Oskar Jansson,51438.0,ATP,down,Sweden,2,2026-01-15 23:05:43
+1728,Yeong-Seok Jeong,38292.0,ATP,down,South Korea,2,2026-01-15 23:05:43
+1728,Admir Kalender,920.0,ATP,down,Croatia,2,2026-01-15 23:05:43
+1728,Jakub Kroslak,37989.0,ATP,down,Slovakia,2,2026-01-15 23:05:43
+1728,Jules Leroux,77603.0,ATP,down,France,2,2026-01-15 23:05:43
+1728,Cing-Yang Meng,13014.0,ATP,down,Taiwan,2,2026-01-15 23:05:43
+1728,Aleksandar Mihailovic,40749.0,ATP,down,Serbia,2,2026-01-15 23:05:43
+1728,Ilija Palavestra,69060.0,ATP,down,USA,2,2026-01-15 23:05:43
+1728,Arnav Paparkar,64476.0,ATP,down,India,2,2026-01-15 23:05:43
+1728,Noah Regas Luis,39044.0,ATP,down,Spain,2,2026-01-15 23:05:43
+1728,Noah Schlagenhauf,38025.0,ATP,down,Germany,2,2026-01-15 23:05:43
+1728,Dmytro Shirokyi,74446.0,ATP,down,Ukraine,2,2026-01-15 23:05:43
+1728,Esteban Talavera Cortes,92128.0,ATP,down,Spain,2,2026-01-15 23:05:43
+1728,Valentin Vanta,15769.0,ATP,down,Romania,2,2026-01-15 23:05:43
+1728,Ilias Zimmermann,15182.0,ATP,down,Switzerland,2,2026-01-15 23:05:43
+1749,Sebastian Dominguez Collado Juan,14473.0,ATP,down,Guatemala,2,2026-01-15 23:05:43
+1749,Gabriel Evans,710.0,ATP,down,Puerto Rico,2,2026-01-15 23:05:43
+1749,Daniel Jovanovski,63484.0,ATP,down,Australia,2,2026-01-15 23:05:43
+1749,Shaoyun Liu,53308.0,ATP,down,China,2,2026-01-15 23:05:43
+1753,Henrik Bladelius,61688.0,ATP,down,Sweden,2,2026-01-15 23:05:43
+1753,Stylianos Christodoulou,,ATP,down,Cyprus,2,2026-01-15 23:05:43
+1753,Stefan Cooper,35788.0,ATP,down,United Kingdom,2,2026-01-15 23:05:43
+1753,Andre De Almeida Santos Pedro,68047.0,ATP,down,Brazil,2,2026-01-15 23:05:43
+1753,Dmitry Dolzhenkov,23829.0,ATP,down,World,2,2026-01-15 23:05:43
+1753,Hamza El Amine,38262.0,ATP,down,Morocco,2,2026-01-15 23:05:43
+1753,Jonas Eriksson Ziverts,37917.0,ATP,down,Sweden,2,2026-01-15 23:05:43
+1753,Matt Kleiman,75575.0,ATP,down,USA,2,2026-01-15 23:05:43
+1753,Alex Kobelt,11761.0,ATP,down,USA,2,2026-01-15 23:05:43
+1753,Norbert Marosik,64837.0,ATP,down,Slovakia,2,2026-01-15 23:05:43
+1753,Edward Papac Tomislav,14310.0,ATP,down,Australia,2,2026-01-15 23:05:43
+1753,Minjong Park,,ATP,down,South Korea,2,2026-01-15 23:05:43
+1753,Julien Penzlin,20017.0,ATP,down,Germany,2,2026-01-15 23:05:43
+1753,David Petrovic,821.0,ATP,down,Germany,2,2026-01-15 23:05:43
+1753,Roman Postolka,54468.0,ATP,down,Czech Republic,2,2026-01-15 23:05:43
+1753,Raul Sau Franco Alan,,ATP,down,Mexico,2,2026-01-15 23:05:43
+1753,Ruslan Serazhetdinov,72717.0,ATP,down,World,2,2026-01-15 23:05:43
+1753,Gunawan Trismuwantara,29692.0,ATP,down,Indonesia,2,2026-01-15 23:05:43
+1753,Kian Vakili,38045.0,ATP,down,USA,2,2026-01-15 23:05:43
+1753,Duc Vu Ha Minh,38231.0,ATP,down,Vietnam,2,2026-01-15 23:05:43
+1753,Kai-i Wang,57394.0,ATP,down,Taiwan,2,2026-01-15 23:05:43
+1753,Jan Wygona,87143.0,ATP,down,Poland,2,2026-01-15 23:05:43
+1775,Ryusuke Horiuchi,38293.0,ATP,down,Japan,2,2026-01-15 23:05:43
+1775,Zangar Nurlanuly,78981.0,ATP,down,Kazakhstan,2,2026-01-15 23:05:43
+1775,Photos Photiades,,ATP,down,Cyprus,2,2026-01-15 23:05:43
+1778,Laurin Aerne,88314.0,ATP,down,Switzerland,2,2026-01-15 23:05:43
+1778,Simone Agostini,13198.0,ATP,down,Italy,2,2026-01-15 23:05:43
+1778,Sergey Betov,39915.0,ATP,down,World,2,2026-01-15 23:05:43
+1778,Miles Clark,59244.0,ATP,down,USA,2,2026-01-15 23:05:43
+1778,Nav Dayal,83821.0,ATP,down,USA,2,2026-01-15 23:05:43
+1778,Jesse De Jager,13024.0,ATP,down,Netherlands,2,2026-01-15 23:05:43
+1778,Mariano Dedura-Palomero,52646.0,ATP,down,Germany,2,2026-01-15 23:05:43
+1778,Ammar Elamin,11185.0,ATP,down,Ireland,2,2026-01-15 23:05:43
+1778,Luc Fomba,28815.0,ATP,down,France,2,2026-01-15 23:05:43
+1778,Giammarco Gandolfi,10853.0,ATP,down,Italy,2,2026-01-15 23:05:43
+1778,Carl Holder,84558.0,ATP,down,France,2,2026-01-15 23:05:43
+1778,Nicolas Hollender,38205.0,ATP,down,Argentina,2,2026-01-15 23:05:43
+1778,Yeonsu Jeong,32066.0,ATP,down,South Korea,2,2026-01-15 23:05:43
+1778,Makar Krivoshchekov,73806.0,ATP,down,World,2,2026-01-15 23:05:43
+1778,Daniel Lara Salmeron,62059.0,ATP,down,Spain,2,2026-01-15 23:05:43
+1778,Cian Maguire,66634.0,ATP,down,Ireland,2,2026-01-15 23:05:43
+1778,Kunanan Pantaratorn,78441.0,ATP,down,Thailand,2,2026-01-15 23:05:43
+1778,Kody Pearson,13158.0,ATP,down,Australia,2,2026-01-15 23:05:43
+1778,Michalis Sakellaridis,17584.0,ATP,down,Greece,2,2026-01-15 23:05:43
+1778,Luke Simkiss,55375.0,ATP,down,United Kingdom,2,2026-01-15 23:05:43
+1778,Marvin Spiering,73093.0,ATP,down,Brazil,2,2026-01-15 23:05:43
+1778,Stefan Storch,74752.0,ATP,down,Australia,2,2026-01-15 23:05:43
+1778,Matei Todoran,54888.0,ATP,down,Romania,2,2026-01-15 23:05:43
+1778,Shuo Yin Bang,53620.0,ATP,down,Taiwan,2,2026-01-15 23:05:43
+1802,Marco Furlanetto,9466.0,ATP,same,Italy,2,2026-01-15 23:05:43
+1802,Mikel Martinez,38047.0,ATP,same,Spain,2,2026-01-15 23:05:43
+1804,Andres Delgadillo,66075.0,ATP,same,Mexico,2,2026-01-15 23:05:43
+1804,Daniel Jade,63427.0,ATP,same,France,2,2026-01-15 23:05:43
+1804,Alvaro Jimenez,72052.0,ATP,same,Spain,2,2026-01-15 23:05:43
+1804,Noah Karma,68927.0,ATP,same,Switzerland,2,2026-01-15 23:05:43
+1804,Jordi Leston Tomas,89139.0,ATP,same,Argentina,2,2026-01-15 23:05:43
+1804,Aliaksandr Liaonenka,13387.0,ATP,same,World,2,2026-01-15 23:05:43
+1804,Santino Nunez Vera Alex,74738.0,ATP,same,Paraguay,2,2026-01-15 23:05:43
+1804,Fabien Salle,54136.0,ATP,same,France,2,2026-01-15 23:05:43
+1804,Yoshka Sborowsky,76980.0,ATP,same,France,2,2026-01-15 23:05:43
+1804,Alessandro Spadola,14613.0,ATP,same,Italy,2,2026-01-15 23:05:43
+1804,Linghao Zhang,3410.0,ATP,same,China,2,2026-01-15 23:05:43
+1815,Kane Bonsach Ganley,50204.0,ATP,down,Denmark,2,2026-01-15 23:05:43
+1815,Antoni Fabre,90113.0,ATP,down,France,2,2026-01-15 23:05:43
+1817,Peter Alam,55860.0,ATP,down,United Kingdom,2,2026-01-15 23:05:43
+1817,Jose Escurra Isnardi Hernando,2215.0,ATP,down,Paraguay,2,2026-01-15 23:05:43
+1817,Filiberto Fumagalli,39919.0,ATP,down,Italy,2,2026-01-15 23:05:43
+1817,Bora Sengul,19520.0,ATP,down,Turkey,2,2026-01-15 23:05:43
+1817,Tom Sickenberger,55486.0,ATP,down,Germany,2,2026-01-15 23:05:43
+1817,Daiki Yoshimura,19886.0,ATP,down,Japan,2,2026-01-15 23:05:43
+1823,Vesa Ahti,38068.0,ATP,down,Finland,2,2026-01-15 23:05:43
+1823,Anas Bennour Dit Sahli,63834.0,ATP,down,Tunisia,2,2026-01-15 23:05:43
+1823,Bogdan Bobrov,1867.0,ATP,down,World,2,2026-01-15 23:05:43
+1823,Mateya Stanisavljevic,,ATP,down,Serbia,2,2026-01-15 23:05:43
+1827,Pietro Pampanin,1294.0,ATP,down,Italy,2,2026-01-15 23:05:43
+1828,Hugo Ouzilou,68657.0,ATP,down,Switzerland,2,2026-01-15 23:05:43
+1828,Luca Parenti,54265.0,ATP,down,Italy,2,2026-01-15 23:05:43
+1828,Bogdan Seleznev,76298.0,ATP,up,World,2,2026-01-15 23:05:43
+1831,Louis Herman,13696.0,ATP,down,Belgium,2,2026-01-15 23:05:43
+1832,Ignasi Forcano Aparicio,,ATP,down,Spain,2,2026-01-15 23:05:43
+1832,Arjun Mehrotra,15314.0,ATP,down,Australia,2,2026-01-15 23:05:43
+1832,Alvaro Peiro Serrano,38020.0,ATP,down,Spain,2,2026-01-15 23:05:43
+1832,Zhengyu Sun,8667.0,ATP,down,China,2,2026-01-15 23:05:43
+1832,Antoine Tailleu Pierre,20066.0,ATP,down,France,2,2026-01-15 23:05:43
+1837,Anthony Susanto,39551.0,ATP,down,Indonesia,2,2026-01-15 23:05:43
+1837,Rocco Valente,54709.0,ATP,down,Argentina,2,2026-01-15 23:05:43
+1839,Kaya Arinc,19885.0,ATP,down,Turkey,2,2026-01-15 23:05:43
+1839,Drew Van Orderlain,15273.0,ATP,down,USA,2,2026-01-15 23:05:43
+1841,Parth Aggarwal,1284.0,ATP,down,India,2,2026-01-15 23:05:43
+1841,Philip Hjorth,40067.0,ATP,down,Denmark,2,2026-01-15 23:05:43
+1843,Sheng Tang,38093.0,ATP,down,China,2,2026-01-15 23:05:43
+1844,Eric Ahren Moonga,90763.0,ATP,down,Sweden,1,2026-01-15 23:05:43
+1844,Artur Aiukhanov,90116.0,ATP,down,World,1,2026-01-15 23:05:43
+1844,Juan-Samuel Arauzo-Martinez,7764.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1844,Boris Arias,2213.0,ATP,down,Bolivia,1,2026-01-15 23:05:43
+1844,Arian Barbic,91507.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1844,Anthony Barki Nathan,10889.0,ATP,up,Indonesia,1,2026-01-15 23:05:43
+1844,Ignacio Barraza Juan,93628.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1844,Jerry Barton,63941.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Bastian Berenz,89140.0,ATP,down,Austria,1,2026-01-15 23:05:43
+1844,Mika Berghaus,79175.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1844,Alexis Berquier,63295.0,ATP,down,France,1,2026-01-15 23:05:43
+1844,Juliusz Bienkiewicz,15213.0,ATP,down,Poland,1,2026-01-15 23:05:43
+1844,Omar Brigida,1275.0,ATP,down,Italy,1,2026-01-15 23:05:43
+1844,Oscar Brown,94111.0,ATP,down,United Kingdom,1,2026-01-15 23:05:43
+1844,Tighe Brunetti,85495.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Angel Cabrera Miguel,38933.0,ATP,down,Chile,1,2026-01-15 23:05:43
+1844,Matthew Carroll,93602.0,ATP,down,United Kingdom,1,2026-01-15 23:05:43
+1844,Marcos Castro Fabra,69522.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1844,Elijah Cham,72231.0,ATP,down,Australia,1,2026-01-15 23:05:43
+1844,Luis Claro Jose,94061.0,ATP,down,Peru,1,2026-01-15 23:05:43
+1844,Sandesh Dattatray Kurale,39184.0,ATP,down,India,1,2026-01-15 23:05:43
+1844,Franco Descotte Matias,3900.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1844,Malanqi Du,5056.0,ATP,down,China,1,2026-01-15 23:05:43
+1844,Tomas Dummer Macedo,,ATP,down,Brazil,1,2026-01-15 23:05:43
+1844,Birtan Duran,40113.0,ATP,down,Turkey,1,2026-01-15 23:05:43
+1844,Gian Durrer,94272.0,ATP,down,Switzerland,1,2026-01-15 23:05:43
+1844,Samyar Elyasi,53619.0,ATP,down,Iran,1,2026-01-15 23:05:43
+1844,Roberto Ferrer Guimaraes,93639.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Xavier Ferrer Mateo,83652.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1844,Oriol Font,65792.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1844,Jon Gamble,87073.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Augusto Garcia Finetto Rafael,93943.0,ATP,down,Brazil,1,2026-01-15 23:05:43
+1844,Pietro Gava,93942.0,ATP,down,Brazil,1,2026-01-15 23:05:43
+1844,Daniil Golubev,14126.0,ATP,down,World,1,2026-01-15 23:05:43
+1844,Maxim Groysman,90126.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Alexander Gschiel,,ATP,down,Austria,1,2026-01-15 23:05:43
+1844,Kornel Halmos,70125.0,ATP,down,Hungary,1,2026-01-15 23:05:43
+1844,Bryan Hernandez Cortes,72883.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1844,Sergio Ingles Garre,80887.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1844,Ryder Jackson,12991.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Hamza Karmoussi,25456.0,ATP,down,Morocco,1,2026-01-15 23:05:43
+1844,Nicolas Kobelt,32548.0,ATP,down,Switzerland,1,2026-01-15 23:05:43
+1844,Thomas Kostka,60456.0,ATP,down,France,1,2026-01-15 23:05:43
+1844,Tomas Lanik,14540.0,ATP,down,Slovakia,1,2026-01-15 23:05:43
+1844,Jordan Lee,5568.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Bi Lee Woong,93728.0,ATP,down,South Korea,1,2026-01-15 23:05:43
+1844,Chan Lee Woong,93158.0,ATP,down,South Korea,1,2026-01-15 23:05:43
+1844,Tim Loosen,39933.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1844,Mateo Lucarelli Augusto,93543.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1844,Cyrus Mahjoob,56260.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Noah Martens,92835.0,ATP,down,Belgium,1,2026-01-15 23:05:43
+1844,Kaspar Mathes,89695.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1844,Joel Meda,90127.0,ATP,down,Burkina Faso,1,2026-01-15 23:05:43
+1844,Moein Moazam,74448.0,ATP,down,Iran,1,2026-01-15 23:05:43
+1844,Ezzat Mohamed Sherif Eyad Reda,94269.0,ATP,down,Egypt,1,2026-01-15 23:05:43
+1844,Alejandro Moreno,55591.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Francisco Munoz Juan,93130.0,ATP,down,Mexico,1,2026-01-15 23:05:43
+1844,Freddy Murray,59058.0,ATP,down,Ireland,1,2026-01-15 23:05:43
+1844,Mason Naumovski,40738.0,ATP,down,Australia,1,2026-01-15 23:05:43
+1844,Pierre Ngijol Carre,94522.0,ATP,up,France,1,2026-01-15 23:05:43
+1844,Niklas Niggemann,89696.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1844,Dingzheng Nima,68302.0,ATP,down,China,1,2026-01-15 23:05:43
+1844,Ricard Novell,85184.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1844,Frederik Pape Valdemar,20775.0,ATP,down,Denmark,1,2026-01-15 23:05:43
+1844,Matija Pecotic,2676.0,ATP,down,Croatia,1,2026-01-15 23:05:43
+1844,Roberto Perez Socas,93178.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1844,Felipe Pinzon Moreno,23582.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Henry Ren,90030.0,ATP,down,Canada,1,2026-01-15 23:05:43
+1844,Rodrigo Reyna,82867.0,ATP,down,Mexico,1,2026-01-15 23:05:43
+1844,Freddie Ridout,28599.0,ATP,down,United Kingdom,1,2026-01-15 23:05:43
+1844,Carl Roothman,14375.0,ATP,down,South Africa,1,2026-01-15 23:05:43
+1844,Agassi Rusher,89204.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Leevi Saatela,772.0,ATP,down,Finland,1,2026-01-15 23:05:43
+1844,Batyr Sapaev,,ATP,down,Uzbekistan,1,2026-01-15 23:05:43
+1844,Djordje Sapic,87421.0,ATP,down,Serbia,1,2026-01-15 23:05:43
+1844,Mauricio Schtulmann Gasca,80886.0,ATP,down,Mexico,1,2026-01-15 23:05:43
+1844,Jan Sebesta,18059.0,ATP,down,Switzerland,1,2026-01-15 23:05:43
+1844,Jack Secord,73845.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Rajat Shirur,94521.0,ATP,up,USA,1,2026-01-15 23:05:43
+1844,Hayden Shoemake,79830.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Leon Sloboda,86677.0,ATP,down,Slovakia,1,2026-01-15 23:05:43
+1844,Stephen Slocombe,86752.0,ATP,down,Barbados,1,2026-01-15 23:05:43
+1844,Harry Thursfield,56221.0,ATP,down,United Kingdom,1,2026-01-15 23:05:43
+1844,Maximilian Todorov,11749.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1844,Ryan Torres,88216.0,ATP,down,Philippines,1,2026-01-15 23:05:43
+1844,Justas Trainauskas,92464.0,ATP,down,Lithuania,1,2026-01-15 23:05:43
+1844,Vaal Urankar,88821.0,ATP,down,Slovenia,1,2026-01-15 23:05:43
+1844,Andres Urquiola Montellano,23667.0,ATP,down,Bolivia,1,2026-01-15 23:05:43
+1844,Iiro Vasa,9934.0,ATP,down,Finland,1,2026-01-15 23:05:43
+1844,Brandon Walkin,651.0,ATP,down,Australia,1,2026-01-15 23:05:43
+1844,Ids Waterbolk,93132.0,ATP,down,Netherlands,1,2026-01-15 23:05:43
+1844,Phoenix Weir,9376.0,ATP,down,United Kingdom,1,2026-01-15 23:05:43
+1844,Dawid Wisniewski,15210.0,ATP,down,Poland,1,2026-01-15 23:05:43
+1844,Yusuke Yoshikawa,73957.0,ATP,down,Japan,1,2026-01-15 23:05:43
+1844,William Zhang,89602.0,ATP,down,USA,1,2026-01-15 23:05:43
+1844,Shixun Zhu,87026.0,ATP,down,China,1,2026-01-15 23:05:43
+1940,Fantino Alberca de las Casas,93495.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1940,Ramiro Amarilla,59891.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1940,Joao Antonio,57644.0,ATP,down,Portugal,1,2026-01-15 23:05:43
+1940,Romeo Arcuschin,50789.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1940,David Asenov,87066.0,ATP,down,Canada,1,2026-01-15 23:05:43
+1940,Nicolas Baena,85340.0,ATP,down,Peru,1,2026-01-15 23:05:43
+1940,Lorenzo Balducci,89923.0,ATP,down,Italy,1,2026-01-15 23:05:43
+1940,Tristan Berard,65899.0,ATP,down,France,1,2026-01-15 23:05:43
+1940,Luka Bojicic Ono,59646.0,ATP,down,Brazil,1,2026-01-15 23:05:43
+1940,Maximilian Borisov,77365.0,ATP,down,Bulgaria,1,2026-01-15 23:05:43
+1940,Federico Bove,13407.0,ATP,down,Italy,1,2026-01-15 23:05:43
+1940,Tyler Bowers,36194.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Benjamin Chelia,67627.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1940,Enrique Collar,90062.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1940,Sasha Colleu,83918.0,ATP,down,France,1,2026-01-15 23:05:43
+1940,Pedro Didoni Bonini Joao,83934.0,ATP,down,Brazil,1,2026-01-15 23:05:43
+1940,Sid Donarski,13510.0,ATP,down,Canada,1,2026-01-15 23:05:43
+1940,Mikhail Dubrouski,38278.0,ATP,down,World,1,2026-01-15 23:05:43
+1940,Gabriel Elicha Navas,37991.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1940,Lorenzo Esquici,10504.0,ATP,down,Brazil,1,2026-01-15 23:05:43
+1940,Edward Etty,89162.0,ATP,up,Netherlands,1,2026-01-15 23:05:43
+1940,Bo Fan Wen,88927.0,ATP,down,China,1,2026-01-15 23:05:43
+1940,Juan Fuentes Vasquez,63925.0,ATP,down,El Salvador,1,2026-01-15 23:05:43
+1940,Nicholas Gadecki Thomas,58841.0,ATP,down,Australia,1,2026-01-15 23:05:43
+1940,Iker Gaztambide Arrastia,69712.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1940,Mikhail Gorokhov,23830.0,ATP,down,World,1,2026-01-15 23:05:43
+1940,Sebastian Gorzny,9519.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Tobia Grandinetti,38310.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1940,Spencer Gray,69223.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Matteo Gribaldo,89613.0,ATP,down,Italy,1,2026-01-15 23:05:43
+1940,Gus Grumet,73860.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Thomas Gunzinger,88419.0,ATP,down,Switzerland,1,2026-01-15 23:05:43
+1940,Javier Guzman,16528.0,ATP,down,Chile,1,2026-01-15 23:05:43
+1940,Ryan Haviland,7711.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Mark Havlicek,898.0,ATP,down,Czech Republic,1,2026-01-15 23:05:43
+1940,Yuya Hirose,84610.0,ATP,down,Japan,1,2026-01-15 23:05:43
+1940,Matic Hribar,93204.0,ATP,down,Slovenia,1,2026-01-15 23:05:43
+1940,Leonardo Iemmi,88820.0,ATP,down,Italy,1,2026-01-15 23:05:43
+1940,Ilya Ignatov,85925.0,ATP,down,Uzbekistan,1,2026-01-15 23:05:43
+1940,Alejandro Jacome Jaramillo,69525.0,ATP,down,Ecuador,1,2026-01-15 23:05:43
+1940,Daniil Kakhniuk,85606.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Kaigaoge Kang,90131.0,ATP,down,China,1,2026-01-15 23:05:43
+1940,Veljko Krstic,19892.0,ATP,down,Serbia,1,2026-01-15 23:05:43
+1940,Anes Latifovic,92066.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1940,Rhys Lawlor,70745.0,ATP,down,United Kingdom,1,2026-01-15 23:05:43
+1940,Mikolaj Lorens,15224.0,ATP,down,Poland,1,2026-01-15 23:05:43
+1940,Hao Luo Jun,84922.0,ATP,down,China,1,2026-01-15 23:05:43
+1940,Martin Maldonado,86639.0,ATP,down,Ecuador,1,2026-01-15 23:05:43
+1940,Tomas Marin,86080.0,ATP,down,Colombia,1,2026-01-15 23:05:43
+1940,Marco Migliorati,94443.0,ATP,up,Italy,1,2026-01-15 23:05:43
+1940,Milos Mikovic,54471.0,ATP,down,Serbia,1,2026-01-15 23:05:43
+1940,Ali Missoum,69972.0,ATP,up,Morocco,1,2026-01-15 23:05:43
+1940,Jose Nakamine Luis,56998.0,ATP,down,Peru,1,2026-01-15 23:05:43
+1940,Seiya Nakanishi,37930.0,ATP,down,Japan,1,2026-01-15 23:05:43
+1940,Andy Nguyen,84675.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Maximilian Oezcelik,92110.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1940,Alexander Okonkwo,86746.0,ATP,down,United Kingdom,1,2026-01-15 23:05:43
+1940,Bogdan Petre Stefan Ilie,92968.0,ATP,down,Romania,1,2026-01-15 23:05:43
+1940,Mattias Pisanu,90409.0,ATP,down,Italy,1,2026-01-15 23:05:43
+1940,Benjamin Privara Peter,9206.0,ATP,down,Slovakia,1,2026-01-15 23:05:43
+1940,Tadija Radovanovic,59292.0,ATP,down,Serbia,1,2026-01-15 23:05:43
+1940,Yannik Rahman,10839.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Lucas Renard,2233.0,ATP,down,Sweden,1,2026-01-15 23:05:43
+1940,Philippe Renard,71901.0,ATP,down,France,1,2026-01-15 23:05:43
+1940,Pablo Robledo Hoyos,86079.0,ATP,down,Colombia,1,2026-01-15 23:05:43
+1940,Lautaro Rocha,93247.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1940,Tim Ruehl,52051.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1940,Jan Sadzik,88816.0,ATP,down,Poland,1,2026-01-15 23:05:43
+1940,Agustin Salazar,77147.0,ATP,down,Mexico,1,2026-01-15 23:05:43
+1940,Jonas Schaer,37985.0,ATP,down,Switzerland,1,2026-01-15 23:05:43
+1940,Rafael Segado Esteve,17464.0,ATP,down,Spain,1,2026-01-15 23:05:43
+1940,Andre Souza Pinto de Camargo e Silva,,ATP,down,Brazil,1,2026-01-15 23:05:43
+1940,Nicholas Steiglehner,87435.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Filip Stidell,74999.0,ATP,down,Sweden,1,2026-01-15 23:05:43
+1940,Gustaf Strom,30970.0,ATP,down,Sweden,1,2026-01-15 23:05:43
+1940,Leonardo Suarez,84897.0,ATP,down,Bolivia,1,2026-01-15 23:05:43
+1940,Sarthak Suden,,ATP,down,India,1,2026-01-15 23:05:43
+1940,Elias Sumann,86464.0,ATP,down,Austria,1,2026-01-15 23:05:43
+1940,Jinpeng Tang,27725.0,ATP,down,China,1,2026-01-15 23:05:43
+1940,Daniel Tazabekov,87098.0,ATP,down,Kazakhstan,1,2026-01-15 23:05:43
+1940,Kai Thompson,89121.0,ATP,down,Hong Kong,1,2026-01-15 23:05:43
+1940,Aadarsh Tripathi,69983.0,ATP,down,USA,1,2026-01-15 23:05:43
+1940,Nathan Trouve,63159.0,ATP,down,France,1,2026-01-15 23:05:43
+1940,Abdulaziz Usmonjonov,83536.0,ATP,down,Uzbekistan,1,2026-01-15 23:05:43
+1940,Jip van Assendelft,39118.0,ATP,down,Netherlands,1,2026-01-15 23:05:43
+1940,Felipe Vazquez,79817.0,ATP,down,Uruguay,1,2026-01-15 23:05:43
+1940,Ariel Vazquez Franco,68041.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1940,Benjamin Vitter,50070.0,ATP,down,France,1,2026-01-15 23:05:43
+1940,Max Westphal,9233.0,ATP,down,France,1,2026-01-15 23:05:43
+1940,James Williams Aaron,40206.0,ATP,down,Germany,1,2026-01-15 23:05:43
+1940,Finn Willman,94154.0,ATP,down,New Zealand,1,2026-01-15 23:05:43
+1940,Zavier Wong Maximus,49888.0,ATP,down,Singapore,1,2026-01-15 23:05:43
+1940,An Wu Kai,89073.0,ATP,down,Taiwan,1,2026-01-15 23:05:43
+1940,Fernando Yamacita,1248.0,ATP,down,Brazil,1,2026-01-15 23:05:43
+1940,Arturs Zagars,78929.0,ATP,down,Latvia,1,2026-01-15 23:05:43
+1940,Gonzalo Zeitune,55064.0,ATP,down,Argentina,1,2026-01-15 23:05:43
+1940,Carlos Zerega,82866.0,ATP,down,Mexico,1,2026-01-15 23:05:43
+2037,Danielle Abadia,,ATP,up,Philippines,1,2026-01-15 23:05:43
+2037,Damir Abdusamadov,74152.0,ATP,up,Uzbekistan,1,2026-01-15 23:05:43
+2037,Marco Alvarez,67514.0,ATP,up,USA,1,2026-01-15 23:05:43
+2037,Aleksandar Amarandei Daniel,91823.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2037,Romain Andres,91397.0,ATP,up,France,1,2026-01-15 23:05:43
+2037,Felipe Assuncao Garla,,ATP,up,Brazil,1,2026-01-15 23:05:43
+2037,Sergio Badini,51314.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2037,Flavio Bocci,88183.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2037,Enrique Bogo,10517.0,ATP,up,Brazil,1,2026-01-15 23:05:43
+2037,Thanaphat Boosarawongse,58212.0,ATP,up,Thailand,1,2026-01-15 23:05:43
+2037,Vasilios Caripi,14379.0,ATP,up,South Africa,1,2026-01-15 23:05:43
+2037,Ignacio Carou,660.0,ATP,up,Uruguay,1,2026-01-15 23:05:43
+2037,Cristian Carteputreda David,56746.0,ATP,up,Romania,1,2026-01-15 23:05:43
+2037,Alexandru Ciobotaru Dario,78739.0,ATP,up,Romania,1,2026-01-15 23:05:43
+2037,Antoine Cornut-Chauvinc,6750.0,ATP,up,France,1,2026-01-15 23:05:43
+2037,Lautaro Correa Beguerie,64370.0,ATP,up,Argentina,1,2026-01-15 23:05:43
+2037,Nikola Djukic Valera,68641.0,ATP,up,Spain,1,2026-01-15 23:05:43
+2037,Tarek Erlewein,86329.0,ATP,up,Germany,1,2026-01-15 23:05:43
+2037,Francesco Garbero Filippo,70265.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2037,Liam Gavrielides,10540.0,ATP,up,Germany,1,2026-01-15 23:05:43
+2037,Volodymyr Gurenko,76969.0,ATP,up,Canada,1,2026-01-15 23:05:43
+2037,Hugo Hashimoto,71814.0,ATP,up,USA,1,2026-01-15 23:05:43
+2037,Maximilian Haus Julius,85493.0,ATP,up,Germany,1,2026-01-15 23:05:43
+2037,Lukas Hellum-Lilleengen,2484.0,ATP,up,Norway,1,2026-01-15 23:05:43
+2037,Kaeri Hernandez Mariona,23884.0,ATP,up,Guatemala,1,2026-01-15 23:05:43
+2037,Patrick Jozwicki,73580.0,ATP,up,Austria,1,2026-01-15 23:05:43
+2037,Dorian Juszczak,74206.0,ATP,up,Poland,1,2026-01-15 23:05:43
+2037,Alexander Krylov,80522.0,ATP,up,World,1,2026-01-15 23:05:43
+2037,Justin Lenders,88313.0,ATP,up,Switzerland,1,2026-01-15 23:05:43
+2037,Isaac Lhomond,69610.0,ATP,up,France,1,2026-01-15 23:05:43
+2037,Adam Majchrzak,58193.0,ATP,up,Poland,1,2026-01-15 23:05:43
+2037,Janos Major Aron,82992.0,ATP,up,Hungary,1,2026-01-15 23:05:43
+2037,Franco Marini,,ATP,up,Argentina,1,2026-01-15 23:05:43
+2037,Benjamin Martin,34062.0,ATP,up,France,1,2026-01-15 23:05:43
+2037,Jordi Mas De Ugarte,4732.0,ATP,up,Spain,1,2026-01-15 23:05:43
+2037,Maciej Matuszczyk,83890.0,ATP,up,Poland,1,2026-01-15 23:05:43
+2037,Jack McGary,89409.0,ATP,up,USA,1,2026-01-15 23:05:43
+2037,Vicente Monge,73447.0,ATP,up,Peru,1,2026-01-15 23:05:43
+2037,Salvador Monteiro,92115.0,ATP,up,Portugal,1,2026-01-15 23:05:43
+2037,Kaan Oktay Ramazan,85926.0,ATP,up,Turkey,1,2026-01-15 23:05:43
+2037,Daniil Piatrouski,85829.0,ATP,up,World,1,2026-01-15 23:05:43
+2037,Tomas Pinho,15376.0,ATP,up,Portugal,1,2026-01-15 23:05:43
+2037,Rishi Reddy,11782.0,ATP,up,India,1,2026-01-15 23:05:43
+2037,Martins Rocens,12769.0,ATP,up,Latvia,1,2026-01-15 23:05:43
+2037,Manuel Sanchez,,ATP,up,Mexico,1,2026-01-15 23:05:43
+2037,Elijah Sanogo,89559.0,ATP,up,France,1,2026-01-15 23:05:43
+2037,Pranav Senthil Kumar Rethin,63910.0,ATP,up,India,1,2026-01-15 23:05:43
+2037,Samuel Stolarik,61352.0,ATP,up,Slovakia,1,2026-01-15 23:05:43
+2037,Bjorn Swenson,38084.0,ATP,up,USA,1,2026-01-15 23:05:43
+2037,Gabor Szoke Adam,74231.0,ATP,up,Hungary,1,2026-01-15 23:05:43
+2037,Guillermo Tunas,80782.0,ATP,up,Mexico,1,2026-01-15 23:05:43
+2037,Jake Van Emburgh,9027.0,ATP,up,USA,1,2026-01-15 23:05:43
+2037,Alexander Vikhlyantsev,19888.0,ATP,up,World,1,2026-01-15 23:05:43
+2037,Henrik Villanger,78567.0,ATP,up,Norway,1,2026-01-15 23:05:43
+2037,Jakub Vrba,83545.0,ATP,up,Czech Republic,1,2026-01-15 23:05:43
+2037,Yamato Yukawa,65683.0,ATP,up,Japan,1,2026-01-15 23:05:43
+2037,Ahmed Zaki,91701.0,ATP,up,Egypt,1,2026-01-15 23:05:43
+2037,Vitaliy Zatsepin,55900.0,ATP,up,Kazakhstan,1,2026-01-15 23:05:43
+2095,Mohammad Alkotop,58066.0,ATP,up,Jordan,1,2026-01-15 23:05:43
+2095,Marcin Andrzejczak,71083.0,ATP,up,Poland,1,2026-01-15 23:05:43
+2095,Mert Aytekin,79600.0,ATP,up,Turkey,1,2026-01-15 23:05:43
+2095,Dakotah Bobo,67410.0,ATP,up,USA,1,2026-01-15 23:05:43
+2095,Penn Charusorn,88928.0,ATP,up,Thailand,1,2026-01-15 23:05:43
+2095,Gabriel Ciurletti Andres,2210.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2095,Mathys Domenc,68179.0,ATP,up,France,1,2026-01-15 23:05:43
+2095,Jose Freitas,71306.0,ATP,up,Portugal,1,2026-01-15 23:05:43
+2095,Hong-Lin Fu,38926.0,ATP,up,Taiwan,1,2026-01-15 23:05:43
+2095,Anthony Genov,13408.0,ATP,up,Bulgaria,1,2026-01-15 23:05:43
+2095,Santiago Giamichelle,55062.0,ATP,up,Argentina,1,2026-01-15 23:05:43
+2095,Rafael Goldberg Alviani Nicolas,23587.0,ATP,up,Spain,1,2026-01-15 23:05:43
+2095,Gregor Hausberger,56006.0,ATP,up,Austria,1,2026-01-15 23:05:43
+2095,Liam Hignett,15241.0,ATP,up,United Kingdom,1,2026-01-15 23:05:43
+2095,Vladimir Holban,77607.0,ATP,up,Greece,1,2026-01-15 23:05:43
+2095,Nicolas Hurtado Novoa,86277.0,ATP,up,Colombia,1,2026-01-15 23:05:43
+2095,Nicola Ion,89689.0,ATP,up,Canada,1,2026-01-15 23:05:43
+2095,Roan Jones,9363.0,ATP,up,United Kingdom,1,2026-01-15 23:05:43
+2095,Karlo Kajin,81046.0,ATP,up,Croatia,1,2026-01-15 23:05:43
+2095,Ronit Karki,73842.0,ATP,up,USA,1,2026-01-15 23:05:43
+2095,Jack Karlsson Wistrand,38069.0,ATP,up,Sweden,1,2026-01-15 23:05:43
+2095,Samuil Konov,24089.0,ATP,up,Bulgaria,1,2026-01-15 23:05:43
+2095,Matic Kriznik,38847.0,ATP,up,Slovenia,1,2026-01-15 23:05:43
+2095,Henry Lieberman,59411.0,ATP,up,USA,1,2026-01-15 23:05:43
+2095,Mirko Martinez,,ATP,up,Switzerland,1,2026-01-15 23:05:43
+2095,Andrea M'Chich,38777.0,ATP,up,France,1,2026-01-15 23:05:43
+2095,Ashton McLeod,78933.0,ATP,up,Australia,1,2026-01-15 23:05:43
+2095,Alejandro Melero Kretzer,40168.0,ATP,up,Spain,1,2026-01-15 23:05:43
+2095,Stefan Menichella,38251.0,ATP,up,USA,1,2026-01-15 23:05:43
+2095,Thomas Menzel,62137.0,ATP,up,Chile,1,2026-01-15 23:05:43
+2095,Mak Mikovic,,ATP,up,Slovenia,1,2026-01-15 23:05:43
+2095,Abdulhamid Mubarak,14543.0,ATP,up,Kuwait,1,2026-01-15 23:05:43
+2095,Botond Nagy,68636.0,ATP,up,Hungary,1,2026-01-15 23:05:43
+2095,Noppadol Noikor,38237.0,ATP,up,Thailand,1,2026-01-15 23:05:43
+2095,William Nolan,9370.0,ATP,up,United Kingdom,1,2026-01-15 23:05:43
+2095,Yshai Oliel,1195.0,ATP,up,Israel,1,2026-01-15 23:05:43
+2095,Diego Ortiz Gamonal,59295.0,ATP,up,Chile,1,2026-01-15 23:05:43
+2095,Pio Osti Fabrizio Karol,66083.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2095,Seungmin Park,55156.0,ATP,up,South Korea,1,2026-01-15 23:05:43
+2095,Nicola Senn,73577.0,ATP,up,Switzerland,1,2026-01-15 23:05:43
+2095,Teodor Stirbu Calin,57344.0,ATP,up,Romania,1,2026-01-15 23:05:43
+2095,Alexander Ushakov,81642.0,ATP,up,Russia,1,2026-01-15 23:05:43
+2095,Matei Varbanciu,87263.0,ATP,up,Romania,1,2026-01-15 23:05:43
+2095,Qiulin Wang,3323.0,ATP,up,China,1,2026-01-15 23:05:43
+2095,Caheer Warik,67691.0,ATP,up,India,1,2026-01-15 23:05:43
+2095,Weitao Xu,53520.0,ATP,up,China,1,2026-01-15 23:05:43
+2141,Suk Ann,32471.0,ATP,up,South Korea,1,2026-01-15 23:05:43
+2141,Michael Beltran Rubio,15230.0,ATP,up,Colombia,1,2026-01-15 23:05:43
+2141,Gregorio Biondolillo,31886.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2141,Jonah Braswell,38779.0,ATP,up,USA,1,2026-01-15 23:05:43
+2141,Henrique Chabalgoity Pedro,83933.0,ATP,up,Brazil,1,2026-01-15 23:05:43
+2141,Edoardo De Filippo,73246.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2141,Rahul Dhokia,38077.0,ATP,up,United Kingdom,1,2026-01-15 23:05:43
+2141,Corneliu Gadoiu Andrei,83103.0,ATP,up,Romania,1,2026-01-15 23:05:43
+2141,Toubi Hebhang Balan Alexandru,69110.0,ATP,up,Canada,1,2026-01-15 23:05:43
+2141,Ivan Iutkin,68731.0,ATP,up,World,1,2026-01-15 23:05:43
+2141,Reid Jarvis,85105.0,ATP,up,USA,1,2026-01-15 23:05:43
+2141,Jan Jermar,10038.0,ATP,up,Czech Republic,1,2026-01-15 23:05:43
+2141,Rafael Kis Balazs,22147.0,ATP,up,Hungary,1,2026-01-15 23:05:43
+2141,Rein Koenders,73581.0,ATP,up,Netherlands,1,2026-01-15 23:05:43
+2141,Yuhei Kono,58843.0,ATP,up,Japan,1,2026-01-15 23:05:43
+2141,Valentin Kopeikin,62038.0,ATP,up,World,1,2026-01-15 23:05:43
+2141,Kazuma Lee Karl,55113.0,ATP,up,USA,1,2026-01-15 23:05:43
+2141,Karol Malirz,57480.0,ATP,up,Poland,1,2026-01-15 23:05:43
+2141,Vicente Freda,,ATP,up,Brazil,1,2026-01-15 23:05:43
+2141,Matteo Mesaglio,74709.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2141,George Nanobashvili Saba,51971.0,ATP,up,Sweden,1,2026-01-15 23:05:43
+2141,Drazen Petrovic,37909.0,ATP,up,Bosnia and Herzegovina,1,2026-01-15 23:05:43
+2141,Glauco Pinheiro da Cruz Junior,90843.0,ATP,up,Brazil,1,2026-01-15 23:05:43
+2141,Peter Sallay,58180.0,ATP,up,Hungary,1,2026-01-15 23:05:43
+2141,Kyle Seelig,1237.0,ATP,up,USA,1,2026-01-15 23:05:43
+2141,Lev Seidman,86751.0,ATP,up,USA,1,2026-01-15 23:05:43
+2141,Cedric Stanke,13026.0,ATP,up,Germany,1,2026-01-15 23:05:43
+2141,Vullnet Tashi,84746.0,ATP,up,Kosovo,1,2026-01-15 23:05:43
+2141,Benoit Torcq,59840.0,ATP,up,Belgium,1,2026-01-15 23:05:43
+2141,Joe Tyler,38217.0,ATP,up,United Kingdom,1,2026-01-15 23:05:43
+2141,Dmitrii Vasilev,49815.0,ATP,up,World,1,2026-01-15 23:05:43
+2141,Ahmed Wageh Yassin,90102.0,ATP,up,Egypt,1,2026-01-15 23:05:43
+2141,Antoine Walch,5909.0,ATP,up,France,1,2026-01-15 23:05:43
+2174,Alejandro Arcila,52705.0,ATP,up,Colombia,1,2026-01-15 23:05:43
+2174,Ivan Biletic,68638.0,ATP,up,Bosnia and Herzegovina,1,2026-01-15 23:05:43
+2174,Breno Braga,63732.0,ATP,up,Brazil,1,2026-01-15 23:05:43
+2174,Hitesh Chauhan,65717.0,ATP,up,India,1,2026-01-15 23:05:43
+2174,Julien De Cuyper,17050.0,ATP,up,France,1,2026-01-15 23:05:43
+2174,Jose Dominguez Alonso,74771.0,ATP,up,Spain,1,2026-01-15 23:05:43
+2174,Jeffrey Fradkin,78730.0,ATP,up,USA,1,2026-01-15 23:05:43
+2174,Henri Haupt,66629.0,ATP,up,Germany,1,2026-01-15 23:05:43
+2174,Lucky Kurniawan,33304.0,ATP,up,Indonesia,1,2026-01-15 23:05:43
+2174,Niels Lootsma,7995.0,ATP,up,Netherlands,1,2026-01-15 23:05:43
+2174,Andreas Messis,81140.0,ATP,up,Greece,1,2026-01-15 23:05:43
+2174,Zhou Mingzhou,53521.0,ATP,up,China,1,2026-01-15 23:05:43
+2174,Manuel Mouilleron Salvo,38057.0,ATP,up,Argentina,1,2026-01-15 23:05:43
+2174,Kosuke Shibano,76704.0,ATP,up,Japan,1,2026-01-15 23:05:43
+2174,Krogh Solheim Fredrik,73420.0,ATP,up,Norway,1,2026-01-15 23:05:43
+2174,Mikal Statham,38270.0,ATP,up,New Zealand,1,2026-01-15 23:05:43
+2174,Efe Tufekci Cagan,58219.0,ATP,up,Turkey,1,2026-01-15 23:05:43
+2174,Lazar Vojinovic,13195.0,ATP,up,Serbia,1,2026-01-15 23:05:43
+2192,Daniil Bogatov,76394.0,ATP,up,World,1,2026-01-15 23:05:43
+2192,Nicolas Buitrago,13289.0,ATP,up,Colombia,1,2026-01-15 23:05:43
+2192,Jim Hendrikx,57139.0,ATP,up,Netherlands,1,2026-01-15 23:05:43
+2192,Moritz Hoffmann,56111.0,ATP,up,Germany,1,2026-01-15 23:05:43
+2192,Andrei Kunitsyn,82604.0,ATP,up,World,1,2026-01-15 23:05:43
+2192,Aryan Lakshmanan,65410.0,ATP,up,India,1,2026-01-15 23:05:43
+2192,Enmanuel Munoz,19461.0,ATP,up,Dominican Republic,1,2026-01-15 23:05:43
+2192,Savva Rybkin,81398.0,ATP,up,World,1,2026-01-15 23:05:43
+2192,Pavel Verbin,13391.0,ATP,up,World,1,2026-01-15 23:05:43
+2192,Minghui Zhang,59301.0,ATP,up,China,1,2026-01-15 23:05:43
+2192,Zhan Zheng,50071.0,ATP,up,China,1,2026-01-15 23:05:43
+2203,Victor Braga,63731.0,ATP,up,Brazil,1,2026-01-15 23:05:43
+2203,Alvaro Bueno Gil,59839.0,ATP,up,Spain,1,2026-01-15 23:05:43
+2203,Adrien Burdet,40101.0,ATP,up,Switzerland,1,2026-01-15 23:05:43
+2203,Liam Delicata,11178.0,ATP,up,Malta,1,2026-01-15 23:05:43
+2203,Carlos Giraldi,70094.0,ATP,up,Spain,1,2026-01-15 23:05:43
+2203,Krittin Koaykul,13537.0,ATP,up,Thailand,1,2026-01-15 23:05:43
+2203,Filip Krolo,62340.0,ATP,up,Germany,1,2026-01-15 23:05:43
+2203,Gabriel Matuszewski,40094.0,ATP,up,Poland,1,2026-01-15 23:05:43
+2203,Kyle Overmyer,63677.0,ATP,up,USA,1,2026-01-15 23:05:43
+2203,Joon Park Yong,69227.0,ATP,up,South Korea,1,2026-01-15 23:05:43
+2203,Rossetto Urvaneja Breno,52074.0,ATP,up,Brazil,1,2026-01-15 23:05:43
+2203,Fu Wong Tsz,62930.0,ATP,up,Hong Kong,1,2026-01-15 23:05:43
+2215,Adrian Arcon,38999.0,ATP,up,Australia,1,2026-01-15 23:05:43
+2215,Mateo Carballo,80939.0,ATP,up,Argentina,1,2026-01-15 23:05:43
+2215,Xirui Han,59305.0,ATP,up,China,1,2026-01-15 23:05:43
+2215,Isaac Nortey,39008.0,ATP,up,Ghana,1,2026-01-15 23:05:43
+2219,Leo Deflandre,60421.0,ATP,up,France,1,2026-01-15 23:05:43
+2219,Kazuma Kawachi,784.0,ATP,up,Japan,1,2026-01-15 23:05:43
+2219,Andrea Motta,75576.0,ATP,up,Italy,1,2026-01-15 23:05:43
+2219,Essa Qabazard,12621.0,ATP,up,Kuwait,1,2026-01-15 23:05:43
+2223,Sean Hess,699.0,ATP,up,Argentina,1,2026-01-15 23:05:43
+2223,Ty Host,63481.0,ATP,up,Australia,1,2026-01-15 23:05:43
+2223,Atharva Sharma,18242.0,ATP,up,India,1,2026-01-15 23:05:43

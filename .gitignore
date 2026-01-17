@@ -1,0 +1,16 @@
+# System
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Debug output
+debug_*.txt
+debug_*.py
+diagnose_*.py
+test_*.py

@@ -1,0 +1,1518 @@
+place,player,player_key,league,movement,country,points,download_time
+1,Aryna Sabalenka,1989.0,WTA,same,World,10870,2026-01-11 15:55:13
+2,Iga Swiatek,1910.0,WTA,same,Poland,8395,2026-01-11 15:55:13
+3,Coco Gauff,2176.0,WTA,same,USA,6763,2026-01-11 15:55:13
+4,Amanda Anisimova,2074.0,WTA,same,USA,6287,2026-01-11 15:55:13
+5,Elena Rybakina,2172.0,WTA,same,Kazakhstan,5850,2026-01-11 15:55:13
+6,Jessica Pegula,2171.0,WTA,same,USA,5583,2026-01-11 15:55:13
+7,Madison Keys,2692.0,WTA,same,USA,4335,2026-01-11 15:55:13
+8,Jasmine Paolini,2811.0,WTA,same,Italy,4325,2026-01-11 15:55:13
+9,Mirra Andreeva,9534.0,WTA,same,World,4319,2026-01-11 15:55:13
+10,Ekaterina Alexandrova,2392.0,WTA,same,World,3375,2026-01-11 15:55:13
+11,Belinda Bencic,2387.0,WTA,same,Switzerland,3168,2026-01-11 15:55:13
+12,Clara Tauson,3007.0,WTA,same,Denmark,2770,2026-01-11 15:55:13
+13,Linda Noskova,447.0,WTA,same,Czech Republic,2641,2026-01-11 15:55:13
+14,Elina Svitolina,2816.0,WTA,same,Ukraine,2606,2026-01-11 15:55:13
+15,Emma Navarro,2823.0,WTA,same,USA,2515,2026-01-11 15:55:13
+16,Naomi Osaka,2685.0,WTA,same,Japan,2487,2026-01-11 15:55:13
+17,Liudmila Samsonova,2815.0,WTA,same,World,2209,2026-01-11 15:55:13
+18,Victoria Mboko,9527.0,WTA,same,Canada,2157,2026-01-11 15:55:13
+19,Karolina Muchova,2807.0,WTA,same,Czech Republic,1996,2026-01-11 15:55:13
+20,Elise Mertens,521.0,WTA,same,Belgium,1969,2026-01-11 15:55:13
+21,Diana Shnaider,7403.0,WTA,same,World,1866,2026-01-11 15:55:13
+22,Leylah Fernandez,2394.0,WTA,same,Canada,1821,2026-01-11 15:55:13
+23,Jelena Ostapenko,2802.0,WTA,same,Latvia,1800,2026-01-11 15:55:13
+24,Qinwen Zheng,1813.0,WTA,same,China,1728,2026-01-11 15:55:13
+25,Paula Badosa,2178.0,WTA,same,Spain,1676,2026-01-11 15:55:13
+26,Marta Kostyuk,1828.0,WTA,same,Ukraine,1659,2026-01-11 15:55:13
+27,Dayana Yastremska,2813.0,WTA,same,Ukraine,1604,2026-01-11 15:55:13
+28,Sofia Kenin,2904.0,WTA,same,USA,1589,2026-01-11 15:55:13
+29,Emma Raducanu,2996.0,WTA,same,United Kingdom,1563,2026-01-11 15:55:13
+30,Veronika Kudermetova,2810.0,WTA,same,World,1558,2026-01-11 15:55:13
+31,McCartney Kessler,22072.0,WTA,same,USA,1558,2026-01-11 15:55:13
+32,Maya Joint,52689.0,WTA,same,Australia,1539,2026-01-11 15:55:13
+33,Anna Kalinskaya,1820.0,WTA,same,World,1461,2026-01-11 15:55:13
+34,Marketa Vondrousova,2814.0,WTA,same,Czech Republic,1445,2026-01-11 15:55:13
+35,Iva Jovic,58226.0,WTA,same,USA,1437,2026-01-11 15:55:13
+36,Lois Boisson,8802.0,WTA,same,France,1351,2026-01-11 15:55:13
+37,Daria Kasatkina,1990.0,WTA,same,Australia,1334,2026-01-11 15:55:13
+38,Ann Li,2997.0,WTA,same,USA,1334,2026-01-11 15:55:13
+39,Jaqueline Cristian,2992.0,WTA,same,Romania,1324,2026-01-11 15:55:13
+40,Eva Lys,2088.0,WTA,same,Germany,1291,2026-01-11 15:55:13
+41,Tatjana Maria,2414.0,WTA,same,Germany,1277,2026-01-11 15:55:13
+42,Jessica Bouzas Maneiro,154.0,WTA,same,Spain,1262,2026-01-11 15:55:13
+43,Marie Bouzkova,2820.0,WTA,same,Czech Republic,1260,2026-01-11 15:55:13
+44,Sorana Cirstea,1150.0,WTA,same,Romania,1243,2026-01-11 15:55:13
+45,Ashlyn Krueger,196.0,WTA,same,USA,1229,2026-01-11 15:55:13
+46,Laura Siegemund,464.0,WTA,same,Germany,1214,2026-01-11 15:55:13
+47,Anastasia Pavlyuchenkova,2694.0,WTA,same,World,1184,2026-01-11 15:55:13
+48,Emiliana Arango,1802.0,WTA,same,Colombia,1176,2026-01-11 15:55:13
+49,Katerina Siniakova,3006.0,WTA,same,Czech Republic,1172,2026-01-11 15:55:13
+50,Alexandra Eala,3490.0,WTA,same,Philippines,1143,2026-01-11 15:55:13
+51,Anastasia Potapova,457.0,WTA,same,World,1131,2026-01-11 15:55:13
+52,Maria Sakkari,2076.0,WTA,same,Greece,1116,2026-01-11 15:55:13
+53,Janice Tjen,28551.0,WTA,same,Indonesia,1106,2026-01-11 15:55:13
+54,Cristina Bucsa,454.0,WTA,same,Spain,1098,2026-01-11 15:55:13
+55,Magda Linette,1154.0,WTA,same,Poland,1089,2026-01-11 15:55:13
+56,Tereza Valentova,8976.0,WTA,same,Czech Republic,1072,2026-01-11 15:55:13
+57,Xinyu Wang,1812.0,WTA,same,China,1056,2026-01-11 15:55:13
+58,Beatriz Haddad Maia,1951.0,WTA,same,Brazil,1052,2026-01-11 15:55:13
+59,Magdalena Frech,2089.0,WTA,same,Poland,1051,2026-01-11 15:55:13
+60,Elsa Jacquemot,1823.0,WTA,same,France,1044,2026-01-11 15:55:13
+61,Hailey Baptiste,490.0,WTA,same,USA,1023,2026-01-11 15:55:13
+62,Anna Blinkova,1779.0,WTA,same,World,1018,2026-01-11 15:55:13
+63,Peyton Stearns,2827.0,WTA,same,USA,1013,2026-01-11 15:55:13
+64,Danielle Collins,34409.0,WTA,same,USA,996,2026-01-11 15:55:13
+65,Barbora Krejcikova,2801.0,WTA,same,Czech Republic,989,2026-01-11 15:55:13
+66,Solana Sierra,140.0,WTA,same,Argentina,978,2026-01-11 15:55:13
+67,Alycia Parks,1792.0,WTA,same,USA,961,2026-01-11 15:55:13
+68,Olga Danilovic,494.0,WTA,same,Serbia,957,2026-01-11 15:55:13
+69,Viktorija Golubic,525.0,WTA,same,Switzerland,953,2026-01-11 15:55:13
+70,Renata Zarazua,1805.0,WTA,same,Mexico,944,2026-01-11 15:55:13
+71,Sonay Kartal,1961.0,WTA,same,United Kingdom,937,2026-01-11 15:55:13
+72,Donna Vekic,455.0,WTA,same,Croatia,935,2026-01-11 15:55:13
+73,Yulia Putintseva,2177.0,WTA,same,Kazakhstan,924,2026-01-11 15:55:13
+74,Rebecca Sramkova,449.0,WTA,same,Slovakia,914,2026-01-11 15:55:13
+75,Antonia Ruzic,168.0,WTA,same,Croatia,914,2026-01-11 15:55:13
+76,Sara Bejlek,9393.0,WTA,same,Czech Republic,912,2026-01-11 15:55:13
+77,Francesca Jones,2991.0,WTA,same,United Kingdom,912,2026-01-11 15:55:13
+78,Anna Bondar,505.0,WTA,same,Hungary,900,2026-01-11 15:55:13
+79,Ons Jabeur,1911.0,WTA,same,Tunisia,893,2026-01-11 15:55:13
+80,Varvara Gracheva,1913.0,WTA,same,France,887,2026-01-11 15:55:13
+81,Caty McNally,1127.0,WTA,same,USA,864,2026-01-11 15:55:13
+82,Camila Osorio,2390.0,WTA,same,Colombia,860,2026-01-11 15:55:13
+83,Ajla Tomljanovic,1146.0,WTA,same,Australia,844,2026-01-11 15:55:13
+84,Elisabetta Cocciaretto,477.0,WTA,same,Italy,837,2026-01-11 15:55:13
+85,Ella Seidel,2415.0,WTA,same,Germany,833,2026-01-11 15:55:13
+86,Simona Waltert,493.0,WTA,same,Switzerland,830,2026-01-11 15:55:13
+87,Suzan Lamens,450.0,WTA,same,Netherlands,825,2026-01-11 15:55:13
+88,Lulu Sun,,WTA,same,New Zealand,825,2026-01-11 15:55:13
+89,Katie Volynets,2826.0,WTA,same,USA,810,2026-01-11 15:55:13
+90,Polina Kudermetova,9259.0,WTA,same,World,809,2026-01-11 15:55:13
+91,Moyuka Uchijima,,WTA,same,Japan,808,2026-01-11 15:55:13
+92,Julia Grabher,489.0,WTA,same,Austria,808,2026-01-11 15:55:13
+93,Mayar Sherif,510.0,WTA,same,Egypt,803,2026-01-11 15:55:13
+94,Darja Semenistaja,157.0,WTA,same,Latvia,803,2026-01-11 15:55:13
+95,Kimberly Birrell,92.0,WTA,same,Australia,800,2026-01-11 15:55:13
+96,Dalma Galfi,507.0,WTA,same,Hungary,795,2026-01-11 15:55:13
+97,Oksana Selekhmeteva,478.0,WTA,same,World,783,2026-01-11 15:55:13
+98,Kaja Juvan,519.0,WTA,same,Slovenia,770,2026-01-11 15:55:13
+99,Gabriela Ruse Elena,1151.0,WTA,same,Romania,757,2026-01-11 15:55:13
+100,Katie Boulter,2993.0,WTA,same,United Kingdom,744,2026-01-11 15:55:13
+101,Anastasia Zakharova,1794.0,WTA,same,World,741,2026-01-11 15:55:13
+102,Shuai Zhang,1825.0,WTA,same,China,738,2026-01-11 15:55:13
+103,Lucia Bronzetti,516.0,WTA,same,Italy,731,2026-01-11 15:55:13
+104,Priscilla Hon,467.0,WTA,same,Australia,720,2026-01-11 15:55:13
+105,Sinja Kraus,1424.0,WTA,same,Austria,709,2026-01-11 15:55:13
+106,Leolia Jeanjean,9118.0,WTA,same,France,706,2026-01-11 15:55:13
+107,Victoria Jimenez Kasintseva,1137.0,WTA,same,Andorra,697,2026-01-11 15:55:13
+108,Panna Udvardy,1141.0,WTA,same,Hungary,694,2026-01-11 15:55:13
+109,Oleksandra Oliynykova,12876.0,WTA,same,Ukraine,694,2026-01-11 15:55:13
+110,Kamilla Rakhimova,1140.0,WTA,same,World,692,2026-01-11 15:55:13
+111,Aliaksandra Sasnovich,527.0,WTA,same,World,685,2026-01-11 15:55:13
+112,Caroline Dolehide,482.0,WTA,same,USA,684,2026-01-11 15:55:13
+113,Zeynep Sonmez,4062.0,WTA,same,Turkey,680,2026-01-11 15:55:13
+114,Veronika Erjavec,163.0,WTA,same,Slovenia,680,2026-01-11 15:55:13
+115,Yuliia Starodubtseva,50398.0,WTA,down,Ukraine,671,2026-01-11 15:55:13
+116,Petra Marcinko,1143.0,WTA,down,Croatia,671,2026-01-11 15:55:13
+117,Rebeka Masarova,1132.0,WTA,down,Switzerland,659,2026-01-11 15:55:13
+118,Aoi Ito,13618.0,WTA,up,Japan,655,2026-01-11 15:55:13
+119,Taylor Townsend,3214.0,WTA,same,USA,652,2026-01-11 15:55:13
+120,Elina Avanesyan,1810.0,WTA,same,Armenia,649,2026-01-11 15:55:13
+121,Greet Minnen,2191.0,WTA,down,Belgium,644,2026-01-11 15:55:13
+122,Katarzyna Kawa,1780.0,WTA,down,Poland,630,2026-01-11 15:55:13
+123,Joanna Garland,1962.0,WTA,up,Taiwan,628,2026-01-11 15:55:13
+124,Hanne Vandewinkel,9254.0,WTA,down,Belgium,627,2026-01-11 15:55:13
+125,Jil Teichmann,2077.0,WTA,down,Switzerland,623,2026-01-11 15:55:13
+126,Sarah Rakotomanga Rajaonah Tiantsoa,37886.0,WTA,up,France,621,2026-01-11 15:55:13
+127,Diane Parry,1833.0,WTA,same,France,615,2026-01-11 15:55:13
+128,Lourdes Carle Maria,187.0,WTA,same,Argentina,604,2026-01-11 15:55:13
+129,Yue Yuan,,WTA,same,China,585,2026-01-11 15:55:13
+130,Nikola Bartunkova,9196.0,WTA,same,Czech Republic,582,2026-01-11 15:55:13
+131,Marina Stakusic,81.0,WTA,same,Canada,579,2026-01-11 15:55:13
+132,Dominika Salkova,179.0,WTA,same,Czech Republic,573,2026-01-11 15:55:13
+133,Maja Chwalinska,1434.0,WTA,same,Poland,563,2026-01-11 15:55:13
+134,Viktoriya Tomova,499.0,WTA,same,Bulgaria,557,2026-01-11 15:55:13
+135,Victoria Azarenka,2174.0,WTA,same,World,555,2026-01-11 15:55:13
+136,Talia Gibson,3326.0,WTA,same,Australia,555,2026-01-11 15:55:13
+137,Linda Fruhvirtova,446.0,WTA,same,Czech Republic,553,2026-01-11 15:55:13
+138,Leyre Romero Gormaz,141.0,WTA,same,Spain,551,2026-01-11 15:55:13
+139,Arantxa Rus,508.0,WTA,same,Netherlands,535,2026-01-11 15:55:13
+140,Lucrezia Stefanini,1113.0,WTA,down,Italy,525,2026-01-11 15:55:13
+141,Tamara Korpatsch,501.0,WTA,down,Germany,523,2026-01-11 15:55:13
+142,Lanlana Tararudee,25728.0,WTA,down,Thailand,523,2026-01-11 15:55:13
+143,Kaitlin Quevedo,13647.0,WTA,down,Spain,518,2026-01-11 15:55:13
+144,Whitney Osuigwe,1431.0,WTA,up,USA,517,2026-01-11 15:55:13
+145,Lola Radivojevic,1364.0,WTA,same,Serbia,517,2026-01-11 15:55:13
+146,Linda Klimovicova,8978.0,WTA,same,Poland,514,2026-01-11 15:55:13
+147,Irina-Camelia Begu,2828.0,WTA,same,Romania,509,2026-01-11 15:55:13
+148,Alexia Todoni Anca,10891.0,WTA,same,Romania,496,2026-01-11 15:55:13
+149,Darja Vidmanova,9260.0,WTA,up,Czech Republic,495,2026-01-11 15:55:13
+150,Sofia Costoulas,9248.0,WTA,up,Belgium,490,2026-01-11 15:55:13
+151,Maria Timofeeva,12869.0,WTA,up,Uzbekistan,486,2026-01-11 15:55:13
+152,Nuria Brancaccio,222.0,WTA,same,Italy,478,2026-01-11 15:55:13
+153,Lilli Tagger,53046.0,WTA,same,Austria,471,2026-01-11 15:55:13
+154,Varvara Lepchenko,2765.0,WTA,same,USA,468,2026-01-11 15:55:13
+155,Iryna Shymanovich,223.0,WTA,same,World,466,2026-01-11 15:55:13
+156,Astra Sharma,,WTA,same,Australia,464,2026-01-11 15:55:13
+157,Anhelina Kalinina,2393.0,WTA,same,Ukraine,462,2026-01-11 15:55:13
+158,Bernarda Pera,518.0,WTA,down,USA,459,2026-01-11 15:55:13
+159,Daria Snigur,1131.0,WTA,up,Ukraine,452,2026-01-11 15:55:13
+160,Alina Charaeva,13421.0,WTA,down,World,451,2026-01-11 15:55:13
+161,Tamara Zidansek,2803.0,WTA,down,Slovenia,445,2026-01-11 15:55:13
+162,Daria Saville,1153.0,WTA,down,Australia,442,2026-01-11 15:55:13
+163,Lin Zhu,451.0,WTA,down,China,429,2026-01-11 15:55:13
+164,Carole Monnet,1831.0,WTA,down,France,429,2026-01-11 15:55:13
+165,Jodie Burrage,1437.0,WTA,up,United Kingdom,425,2026-01-11 15:55:13
+166,Polina Iatcenko,9264.0,WTA,up,World,425,2026-01-11 15:55:13
+167,Louisa Chirico,456.0,WTA,same,USA,421,2026-01-11 15:55:13
+168,Guiomar Maristany Zuleta De Reales,142.0,WTA,down,Spain,418,2026-01-11 15:55:13
+169,Hanyu Guo,7931.0,WTA,up,China,415,2026-01-11 15:55:13
+170,Clervie Ngounoue,2994.0,WTA,up,USA,414,2026-01-11 15:55:13
+171,Julia Riera,2281.0,WTA,up,Argentina,413,2026-01-11 15:55:13
+172,Jessika Ponchet,472.0,WTA,up,France,406,2026-01-11 15:55:13
+173,Despina Papamichail,1111.0,WTA,up,Greece,406,2026-01-11 15:55:13
+174,Tatiana Prozorova,9253.0,WTA,up,World,405,2026-01-11 15:55:13
+175,Xiyu Wang,463.0,WTA,up,China,404,2026-01-11 15:55:13
+176,Emerson Jones,10924.0,WTA,down,Australia,403,2026-01-11 15:55:13
+177,Maddison Inglis,1788.0,WTA,up,Australia,401,2026-01-11 15:55:13
+178,Andrea Lazaro Garcia,1117.0,WTA,down,Spain,400,2026-01-11 15:55:13
+179,Harriet Dart,2998.0,WTA,up,United Kingdom,399,2026-01-11 15:55:13
+180,Xinyu Gao,7289.0,WTA,up,China,398,2026-01-11 15:55:13
+181,Himeno Sakatsume,115.0,WTA,up,Japan,395,2026-01-11 15:55:13
+182,Rebecca Marino,479.0,WTA,up,Canada,390,2026-01-11 15:55:13
+183,Ekaterine Gorgodze,491.0,WTA,up,Georgia,390,2026-01-11 15:55:13
+184,Carson Branstine,6528.0,WTA,up,Canada,389,2026-01-11 15:55:13
+185,Elizabeth Mandlik,209.0,WTA,same,USA,387,2026-01-11 15:55:13
+186,Sofia Sanchez Ana,123.0,WTA,up,Mexico,387,2026-01-11 15:55:13
+187,Nao Hibino,465.0,WTA,up,Japan,386,2026-01-11 15:55:13
+188,Cadence Brace,204.0,WTA,up,Canada,385,2026-01-11 15:55:13
+189,Nuria Parrizas-Diaz,513.0,WTA,up,Spain,384,2026-01-11 15:55:13
+190,Nina Stojanovic,3004.0,WTA,up,Serbia,383,2026-01-11 15:55:13
+191,Teodora Kostovic,52707.0,WTA,up,Serbia,382,2026-01-11 15:55:13
+192,Anastasia Gasanova,468.0,WTA,down,World,379,2026-01-11 15:55:13
+193,Gabriela Knutson,24736.0,WTA,up,Czech Republic,377,2026-01-11 15:55:13
+194,Anna-Lena Friedsam,522.0,WTA,up,Germany,376,2026-01-11 15:55:13
+195,Laura Pigossi,1125.0,WTA,up,Brazil,373,2026-01-11 15:55:13
+196,Manon Leonard,7520.0,WTA,up,France,373,2026-01-11 15:55:13
+197,Ena Shibahara,1986.0,WTA,up,Japan,370,2026-01-11 15:55:13
+198,Jana Fett,1801.0,WTA,up,Croatia,369,2026-01-11 15:55:13
+199,Anouk Koevermans,13375.0,WTA,up,Netherlands,368,2026-01-11 15:55:13
+200,Alice Rame,1124.0,WTA,up,France,368,2026-01-11 15:55:13
+201,Elena Pridankina,9399.0,WTA,up,World,365,2026-01-11 15:55:13
+202,Robin Montgomery,2123.0,WTA,down,USA,358,2026-01-11 15:55:13
+203,Elvina Kalieva,198.0,WTA,down,USA,358,2026-01-11 15:55:13
+204,Lina Gjorcheska,227.0,WTA,down,North Macedonia,358,2026-01-11 15:55:13
+205,Silvia Ambrosio,2292.0,WTA,down,Italy,356,2026-01-11 15:55:13
+206,Sijia Wei,40.0,WTA,down,China,354,2026-01-11 15:55:13
+207,Francisca Jorge,1410.0,WTA,up,Portugal,354,2026-01-11 15:55:13
+208,Arina Rodionova,453.0,WTA,up,Australia,353,2026-01-11 15:55:13
+209,Anastasija Sevastova,2825.0,WTA,up,Latvia,351,2026-01-11 15:55:13
+210,Claire Liu,509.0,WTA,up,USA,349,2026-01-11 15:55:13
+211,Caterina Grant Tyra,40794.0,WTA,up,Italy,349,2026-01-11 15:55:13
+212,Petra Martic,2173.0,WTA,up,Croatia,348,2026-01-11 15:55:13
+213,Youngsuh Lee Carol,38969.0,WTA,same,USA,347,2026-01-11 15:55:13
+214,Olivia Gadecki,1809.0,WTA,same,Australia,343,2026-01-11 15:55:13
+215,Alina Korneeva,,WTA,same,World,343,2026-01-11 15:55:13
+216,Jasmin Ortenzi,224.0,WTA,same,Argentina,342,2026-01-11 15:55:13
+217,Taylah Preston,3324.0,WTA,down,Australia,341,2026-01-11 15:55:13
+218,Eva Vedder,2277.0,WTA,down,Netherlands,340,2026-01-11 15:55:13
+219,Viktoria Hruncakova,445.0,WTA,down,Slovakia,338,2026-01-11 15:55:13
+220,Harmony Tan,1156.0,WTA,down,France,334,2026-01-11 15:55:13
+221,Justina Mikulskyte,232.0,WTA,up,Lithuania,332,2026-01-11 15:55:13
+222,Mananchaya Sawangkaew,12716.0,WTA,up,Thailand,332,2026-01-11 15:55:13
+223,Kathinka von Deichmann,459.0,WTA,up,Liechtenstein,331,2026-01-11 15:55:13
+224,Bianca Bulgaru Miriam,173.0,WTA,up,Romania,327,2026-01-11 15:55:13
+225,Camilla Rosatello,216.0,WTA,up,Italy,326,2026-01-11 15:55:13
+226,Wakana Sonobe,38855.0,WTA,up,Japan,323,2026-01-11 15:55:13
+227,Yexin Ma,126.0,WTA,up,China,322,2026-01-11 15:55:13
+228,Bianca Andreescu,2817.0,WTA,up,Canada,319,2026-01-11 15:55:13
+229,Jessica Pieri,3003.0,WTA,up,Italy,318,2026-01-11 15:55:13
+230,Selena Janicijevic,470.0,WTA,down,France,317,2026-01-11 15:55:13
+231,Mona Barthel,171.0,WTA,up,Germany,314,2026-01-11 15:55:13
+232,Hina Inoue,118.0,WTA,down,USA,313,2026-01-11 15:55:13
+233,Kayla Cross,6700.0,WTA,down,Canada,312,2026-01-11 15:55:13
+234,Aliona Bolsova Zadoinov,1107.0,WTA,up,Spain,311,2026-01-11 15:55:13
+235,Barbora Palicova,2280.0,WTA,down,Czech Republic,310,2026-01-11 15:55:13
+236,Destanee Aiava,3134.0,WTA,up,Australia,308,2026-01-11 15:55:13
+237,Tara Wuerth,2578.0,WTA,up,Croatia,307,2026-01-11 15:55:13
+238,Sada Nahimana,1988.0,WTA,up,Burundi,305,2026-01-11 15:55:13
+239,Mai Hontama,1787.0,WTA,down,Japan,303,2026-01-11 15:55:13
+240,Carolina Alves,495.0,WTA,up,Brazil,302,2026-01-11 15:55:13
+241,Susan Bandecchi,484.0,WTA,up,Switzerland,301,2026-01-11 15:55:13
+242,Marina Bassols Ribera,135.0,WTA,down,Spain,297,2026-01-11 15:55:13
+243,Fiona Crawley,20540.0,WTA,down,USA,297,2026-01-11 15:55:13
+244,Kyoka Okamura,1396.0,WTA,up,Japan,296,2026-01-11 15:55:13
+245,Sara Saito,,WTA,down,Japan,296,2026-01-11 15:55:13
+246,Jule Niemeier,471.0,WTA,up,Germany,295,2026-01-11 15:55:13
+247,Georgiana Serban Raluca,1807.0,WTA,up,Cyprus,293,2026-01-11 15:55:13
+248,Irene Burillo Escorihuela,1907.0,WTA,up,Spain,293,2026-01-11 15:55:13
+249,Chloe Paquet,1142.0,WTA,up,France,290,2026-01-11 15:55:13
+250,Lizette Cabrera,497.0,WTA,up,Australia,289,2026-01-11 15:55:13
+251,Sinclair Rogers Anna,124.0,WTA,same,USA,288,2026-01-11 15:55:13
+252,Erika Andreeva,1958.0,WTA,down,World,287,2026-01-11 15:55:13
+253,Kiara Toth Amarissa,9242.0,WTA,up,Hungary,285,2026-01-11 15:55:13
+254,Arianne Hartono,1134.0,WTA,up,Netherlands,283,2026-01-11 15:55:13
+255,Yeonwoo Ku,9407.0,WTA,up,South Korea,282,2026-01-11 15:55:13
+256,Kayla Day,132.0,WTA,down,USA,280,2026-01-11 15:55:13
+257,Ayana Akli,53646.0,WTA,up,USA,279,2026-01-11 15:55:13
+258,Lily Miyazaki Yuriko,462.0,WTA,up,United Kingdom,275,2026-01-11 15:55:13
+259,Mingge Xu,9391.0,WTA,up,United Kingdom,273,2026-01-11 15:55:13
+260,Mary Stoiana,56261.0,WTA,down,USA,273,2026-01-11 15:55:13
+261,Caroline Werner,4802.0,WTA,up,Germany,273,2026-01-11 15:55:13
+262,Anastasia Tikhonova,1122.0,WTA,down,World,273,2026-01-11 15:55:13
+263,Angela Fita Boluda,159.0,WTA,down,Spain,270,2026-01-11 15:55:13
+264,Matilde Jorge,97.0,WTA,up,Portugal,270,2026-01-11 15:55:13
+265,Laura Samson,2815.0,WTA,up,Czech Republic,270,2026-01-11 15:55:13
+266,Anastasiia Sobolieva,13987.0,WTA,down,Ukraine,267,2026-01-11 15:55:13
+267,Heather Watson,1155.0,WTA,up,United Kingdom,264,2026-01-11 15:55:13
+268,Celine Naef,10911.0,WTA,up,Switzerland,264,2026-01-11 15:55:13
+269,Katherine Sebov,6701.0,WTA,up,Canada,263,2026-01-11 15:55:13
+270,Katharina Hobgarski,1827.0,WTA,up,Germany,263,2026-01-11 15:55:13
+271,Luisina Giovannini,21359.0,WTA,up,Argentina,262,2026-01-11 15:55:13
+272,Tessah Andrianjafitrimo,1147.0,WTA,up,France,260,2026-01-11 15:55:13
+273,Hanna Chang,1128.0,WTA,up,USA,258,2026-01-11 15:55:13
+274,Valentina Ryser,101.0,WTA,same,Switzerland,258,2026-01-11 15:55:13
+275,Mia Ristic,38070.0,WTA,same,Serbia,257,2026-01-11 15:55:13
+276,Mariam Bolkvadze,1806.0,WTA,same,Georgia,253,2026-01-11 15:55:13
+277,Haruka Kaji,5088.0,WTA,up,Japan,253,2026-01-11 15:55:13
+278,Renata Jamrichova,37894.0,WTA,up,Slovakia,252,2026-01-11 15:55:13
+279,Yafan Wang,2276.0,WTA,up,China,251,2026-01-11 15:55:13
+280,Katie Swan,1129.0,WTA,down,United Kingdom,251,2026-01-11 15:55:13
+281,Lisa Pigato,230.0,WTA,down,Italy,249,2026-01-11 15:55:13
+282,Mei Yamaguchi,98.0,WTA,up,Japan,248,2026-01-11 15:55:13
+283,Eva Guerrero Alvarez,5342.0,WTA,down,Spain,248,2026-01-11 15:55:13
+284,Kajsa Rinaldo Persson,2592.0,WTA,up,Sweden,245,2026-01-11 15:55:13
+285,Anna Siskova,218.0,WTA,up,Czech Republic,242,2026-01-11 15:55:13
+286,Julie Belgraver,1404.0,WTA,down,France,238,2026-01-11 15:55:13
+287,Wushuang Zheng,,WTA,up,China,237,2026-01-11 15:55:13
+288,Ekaterina Reyngold,1814.0,WTA,up,World,236,2026-01-11 15:55:13
+289,Madelyn Nugroho Priska,9261.0,WTA,up,Indonesia,236,2026-01-11 15:55:13
+290,Xiaodi You,1819.0,WTA,up,China,235,2026-01-11 15:55:13
+291,Sakura Hosogi,1399.0,WTA,up,Japan,235,2026-01-11 15:55:13
+292,Ylena In-Albon,1110.0,WTA,up,Switzerland,234,2026-01-11 15:55:13
+293,Alisa Oktiabreva,78480.0,WTA,up,World,233,2026-01-11 15:55:13
+294,Julia Avdeeva,14150.0,WTA,up,World,229,2026-01-11 15:55:13
+295,Lia Karatancheva,155.0,WTA,up,Bulgaria,227,2026-01-11 15:55:13
+296,Johanna Brockmann Tessa,63288.0,WTA,up,Germany,226,2026-01-11 15:55:13
+297,Zarina Diyas,1800.0,WTA,down,Kazakhstan,223,2026-01-11 15:55:13
+298,Gabriela Lee,1786.0,WTA,up,Romania,222,2026-01-11 15:55:13
+299,Eunhye Lee,,WTA,down,South Korea,221,2026-01-11 15:55:13
+300,Emina Bektas,1796.0,WTA,up,USA,220,2026-01-11 15:55:13
+301,Lauren Davis,2389.0,WTA,up,USA,220,2026-01-11 15:55:13
+302,Noma Noha Akugue,1029.0,WTA,down,Germany,220,2026-01-11 15:55:13
+303,Veronika Podrez,40100.0,WTA,down,Ukraine,220,2026-01-11 15:55:13
+304,Carol Zhao,1822.0,WTA,up,Canada,219,2026-01-11 15:55:13
+305,Sohyun Park,205.0,WTA,up,South Korea,217,2026-01-11 15:55:13
+306,Amarni Banks,13898.0,WTA,up,United Kingdom,216,2026-01-11 15:55:13
+307,Nastasja Schunk,487.0,WTA,same,Germany,215,2026-01-11 15:55:13
+308,Anouck Vrancken Peeters,2250.0,WTA,up,Netherlands,214,2026-01-11 15:55:13
+309,Cagla Buyukakcay,2988.0,WTA,down,Turkey,213,2026-01-11 15:55:13
+310,Sahaja Yamalapalli,13919.0,WTA,up,India,212,2026-01-11 15:55:13
+311,Caroline Garcia,1148.0,WTA,up,France,211,2026-01-11 15:55:13
+312,Lea Boskovic,161.0,WTA,up,Croatia,209,2026-01-11 15:55:13
+313,Ruxandra Bertea Elena,67747.0,WTA,down,Romania,207,2026-01-11 15:55:13
+314,Amandine Hesse,2990.0,WTA,up,France,206,2026-01-11 15:55:13
+315,Dayeon Back,20923.0,WTA,up,South Korea,206,2026-01-11 15:55:13
+316,Nicole Fossa Huergo,15246.0,WTA,up,Italy,205,2026-01-11 15:55:13
+317,Alicia Herrero Linana,14112.0,WTA,up,Spain,204,2026-01-11 15:55:13
+318,Katarina Jokic,8284.0,WTA,down,Serbia,202,2026-01-11 15:55:13
+319,Jennifer Ruggeri,21178.0,WTA,down,Italy,202,2026-01-11 15:55:13
+320,Nadine Smith Tina,12994.0,WTA,up,Australia,200,2026-01-11 15:55:13
+321,Margaux Rouvroy,9119.0,WTA,down,France,198,2026-01-11 15:55:13
+322,Aurora Zantedeschi,170.0,WTA,up,Italy,198,2026-01-11 15:55:13
+323,Katrina Scott,186.0,WTA,down,USA,197,2026-01-11 15:55:13
+324,Laura Hietaranta,9247.0,WTA,up,Finland,197,2026-01-11 15:55:13
+325,Gabriela Ce,4752.0,WTA,same,Brazil,195,2026-01-11 15:55:13
+326,Hiromi Abe,14313.0,WTA,down,Japan,195,2026-01-11 15:55:13
+327,Anastasia Zolotareva,13411.0,WTA,same,World,193,2026-01-11 15:55:13
+328,Sara Sorribes Tormo,2910.0,WTA,same,Spain,192,2026-01-11 15:55:13
+329,Rina Saigo,73.0,WTA,same,Japan,192,2026-01-11 15:55:13
+330,Giorgia Pedone,10892.0,WTA,up,Italy,190,2026-01-11 15:55:13
+331,Ariana Geerlings Martinez,37888.0,WTA,same,Spain,190,2026-01-11 15:55:13
+332,Zhibek Kulambayeva,14355.0,WTA,same,Kazakhstan,189,2026-01-11 15:55:13
+333,Irina Bara,469.0,WTA,down,Romania,188,2026-01-11 15:55:13
+334,Dalila Jakupovic,1427.0,WTA,down,Slovenia,188,2026-01-11 15:55:13
+335,Isabella Shinikova,503.0,WTA,down,Bulgaria,188,2026-01-11 15:55:13
+336,Dalila Spiteri,4188.0,WTA,down,Italy,187,2026-01-11 15:55:13
+337,Tiphanie Lemaitre,1432.0,WTA,down,France,187,2026-01-11 15:55:13
+338,Aliona Falei,9265.0,WTA,down,World,186,2026-01-11 15:55:13
+339,Leonie Kung,,WTA,down,Switzerland,184,2026-01-11 15:55:13
+340,Vendula Valdmannova,30799.0,WTA,down,Czech Republic,183,2026-01-11 15:55:13
+341,Shuo Liang En,2574.0,WTA,down,Taiwan,182,2026-01-11 15:55:13
+342,Julieta Pareja,32553.0,WTA,down,USA,180,2026-01-11 15:55:13
+343,Mika Stojsavljevic,63495.0,WTA,down,United Kingdom,180,2026-01-11 15:55:13
+344,Monika Ekstrand,68739.0,WTA,down,USA,178,2026-01-11 15:55:13
+345,Valeriya Strakhova,148.0,WTA,down,Ukraine,178,2026-01-11 15:55:13
+346,Samira De Stefano,37984.0,WTA,down,Italy,178,2026-01-11 15:55:13
+347,Ekaterina Makarova,524.0,WTA,down,World,177,2026-01-11 15:55:13
+348,Tatiana Pieri,1426.0,WTA,down,Italy,177,2026-01-11 15:55:13
+349,Miriana Tona,22868.0,WTA,down,Italy,176,2026-01-11 15:55:13
+350,Katarina Zavatska,480.0,WTA,down,Ukraine,176,2026-01-11 15:55:13
+351,Saki Imamura,1359.0,WTA,same,Japan,176,2026-01-11 15:55:13
+352,Maria Mateas,111.0,WTA,up,USA,174,2026-01-11 15:55:13
+353,Lea Ma,53951.0,WTA,up,USA,174,2026-01-11 15:55:13
+354,Astrid Lew Yan Foon,14241.0,WTA,down,France,174,2026-01-11 15:55:13
+355,Jenny Duerst,2260.0,WTA,down,Switzerland,174,2026-01-11 15:55:13
+356,Kristina Dmitruk,2298.0,WTA,up,World,173,2026-01-11 15:55:13
+357,Fangran Tian,13672.0,WTA,down,China,173,2026-01-11 15:55:13
+358,Maria Tig Patricia,3128.0,WTA,up,Romania,172,2026-01-11 15:55:13
+359,Martyna Kubka,2295.0,WTA,same,Poland,172,2026-01-11 15:55:13
+360,Vivian Wolff,13506.0,WTA,down,USA,171,2026-01-11 15:55:13
+361,Ane Mintegi Del Olmo,9267.0,WTA,down,Spain,169,2026-01-11 15:55:13
+362,Cristina Diaz Adrover,64290.0,WTA,down,Spain,169,2026-01-11 15:55:13
+363,Alexis Blokhina,1412.0,WTA,down,USA,168,2026-01-11 15:55:13
+364,Denislava Glushkova,10906.0,WTA,down,Bulgaria,168,2026-01-11 15:55:13
+365,Diletta Cherubini,1016.0,WTA,same,Italy,166,2026-01-11 15:55:13
+366,Martina Capurro Taborda,1960.0,WTA,same,Argentina,166,2026-01-11 15:55:13
+367,Francesca Curmi,145.0,WTA,up,Malta,166,2026-01-11 15:55:13
+368,Carolyn Ansari,40166.0,WTA,down,USA,164,2026-01-11 15:55:13
+369,Yidi Yang,,WTA,down,China,163,2026-01-11 15:55:13
+370,Victoria Rodriguez,5922.0,WTA,down,Mexico,162,2026-01-11 15:55:13
+371,Sayaka Ishii,37885.0,WTA,down,Japan,161,2026-01-11 15:55:13
+372,Carlota Martinez Cirez,144.0,WTA,down,Spain,161,2026-01-11 15:55:13
+373,Haley Giavara,1429.0,WTA,down,USA,161,2026-01-11 15:55:13
+374,Miho Kuramochi,1052.0,WTA,down,Japan,161,2026-01-11 15:55:13
+375,Jia-Jing Lu,1002.0,WTA,up,China,160,2026-01-11 15:55:13
+376,Ikumi Yamazaki,13990.0,WTA,same,Japan,160,2026-01-11 15:55:13
+377,Julie Struplova,15563.0,WTA,down,Czech Republic,160,2026-01-11 15:55:13
+378,Katarina Kuzmova,13326.0,WTA,up,Slovakia,160,2026-01-11 15:55:13
+379,Xinxin Yao,46.0,WTA,up,China,159,2026-01-11 15:55:13
+380,Emily Appleton,2598.0,WTA,up,United Kingdom,158,2026-01-11 15:55:13
+381,Victoria Bosio,4019.0,WTA,down,Argentina,158,2026-01-11 15:55:13
+382,Momoko Kobori,7356.0,WTA,down,Japan,157,2026-01-11 15:55:13
+383,Eryn Cayetano,38190.0,WTA,down,USA,155,2026-01-11 15:55:13
+384,Natalija Senic,14152.0,WTA,down,Serbia,152,2026-01-11 15:55:13
+385,Antonia Schmidt,1026.0,WTA,down,Germany,152,2026-01-11 15:55:13
+386,Rashmikaa Bhamidipaty Shrivalli,18040.0,WTA,up,India,151,2026-01-11 15:55:13
+387,Ekaterina Kazionova,1985.0,WTA,up,World,151,2026-01-11 15:55:13
+388,Alina Granwehr,18373.0,WTA,down,Switzerland,150,2026-01-11 15:55:13
+389,Judith Visscher Stephanie,21.0,WTA,up,Netherlands,150,2026-01-11 15:55:13
+390,Elena Micic,10904.0,WTA,same,Australia,147,2026-01-11 15:55:13
+391,Alexandra Shubladze,38880.0,WTA,same,World,147,2026-01-11 15:55:13
+392,Akasha Urhobo,127.0,WTA,down,USA,146,2026-01-11 15:55:13
+393,Martina Okalova,38017.0,WTA,up,Slovakia,146,2026-01-11 15:55:13
+394,Ayano Shimizu,5085.0,WTA,up,Japan,146,2026-01-11 15:55:13
+395,Lian Tran,13212.0,WTA,up,Netherlands,145,2026-01-11 15:55:13
+396,Yasmine Mansouri,42.0,WTA,up,France,145,2026-01-11 15:55:13
+397,Alana Smith,17346.0,WTA,up,USA,144,2026-01-11 15:55:13
+398,Lucie Havlickova,8975.0,WTA,down,Czech Republic,142,2026-01-11 15:55:13
+399,Victoria Hu,20331.0,WTA,down,USA,142,2026-01-11 15:55:13
+400,Alevtina Ibragimova,51378.0,WTA,up,World,142,2026-01-11 15:55:13
+401,Vittoria Paganetti,29728.0,WTA,up,Italy,142,2026-01-11 15:55:13
+402,Federica Urgesi,10912.0,WTA,down,Italy,141,2026-01-11 15:55:13
+403,Viktoria Morvayova,72.0,WTA,up,Slovakia,141,2026-01-11 15:55:13
+404,Mathilde Lollia,14672.0,WTA,up,France,141,2026-01-11 15:55:13
+405,Han Shi,38097.0,WTA,up,China,140,2026-01-11 15:55:13
+406,Ayla Aksu,4363.0,WTA,up,Turkey,140,2026-01-11 15:55:13
+407,Francesca Pace,24135.0,WTA,down,Italy,139,2026-01-11 15:55:13
+408,Anastasia Abbagnato,38052.0,WTA,down,Italy,138,2026-01-11 15:55:13
+409,Maria Kozyreva,19544.0,WTA,down,World,138,2026-01-11 15:55:13
+410,Andreea Craciun Georgia,14036.0,WTA,down,Romania,138,2026-01-11 15:55:13
+411,Antonia Vergara Rivera,23356.0,WTA,up,Chile,138,2026-01-11 15:55:13
+412,Naiktha Bains,2567.0,WTA,up,United Kingdom,138,2026-01-11 15:55:13
+413,Sophie Steur Joelle Lilly,15649.0,WTA,down,Germany,138,2026-01-11 15:55:13
+414,Sandra Samir,8362.0,WTA,down,Egypt,138,2026-01-11 15:55:13
+415,Lucija Ciric Bagaric,2575.0,WTA,down,Croatia,137,2026-01-11 15:55:13
+416,Fiona Ferro,526.0,WTA,down,France,137,2026-01-11 15:55:13
+417,Eri Shimizu,13810.0,WTA,down,Japan,137,2026-01-11 15:55:13
+418,Weronika Falkowska,164.0,WTA,down,Poland,136,2026-01-11 15:55:13
+419,Yasmine Kabbaj,37878.0,WTA,down,Morocco,136,2026-01-11 15:55:13
+420,Martha Matoula,34.0,WTA,up,Greece,136,2026-01-11 15:55:13
+421,Sapfo Sakellaridi,226.0,WTA,down,Greece,136,2026-01-11 15:55:13
+422,Sofia Shapatava,120.0,WTA,up,Georgia,135,2026-01-11 15:55:13
+423,Mayu Crossley,33954.0,WTA,up,Japan,135,2026-01-11 15:55:13
+424,Lucciana Perez Alarcon,38782.0,WTA,up,Peru,134,2026-01-11 15:55:13
+425,Daria Khomutsianskaya,37975.0,WTA,up,World,134,2026-01-11 15:55:13
+426,Sara Daavettila,13521.0,WTA,up,USA,134,2026-01-11 15:55:13
+427,Alice Tubello,7522.0,WTA,up,France,133,2026-01-11 15:55:13
+428,Tena Lukas,1438.0,WTA,up,Croatia,133,2026-01-11 15:55:13
+429,Amandine Monnot,14242.0,WTA,same,France,133,2026-01-11 15:55:13
+430,Kira Pavlova,13072.0,WTA,same,World,133,2026-01-11 15:55:13
+431,Berfu Cengiz,1241.0,WTA,same,Turkey,132,2026-01-11 15:55:13
+432,Aneta Kucmova,,WTA,down,Czech Republic,132,2026-01-11 15:55:13
+433,Zuzanna Pawlikowska,15409.0,WTA,down,Poland,132,2026-01-11 15:55:13
+434,Julia Adams,15344.0,WTA,up,USA,132,2026-01-11 15:55:13
+435,Victoria Allen,71438.0,WTA,up,United Kingdom,131,2026-01-11 15:55:13
+436,Madison Sieg,9246.0,WTA,down,USA,129,2026-01-11 15:55:13
+437,Lisa Zaar,12814.0,WTA,up,Sweden,129,2026-01-11 15:55:13
+438,Elizara Yaneva,58227.0,WTA,up,Bulgaria,127,2026-01-11 15:55:13
+439,Gergana Topalova,169.0,WTA,down,Bulgaria,126,2026-01-11 15:55:13
+440,Mina Hodzic,147.0,WTA,down,Germany,125,2026-01-11 15:55:13
+441,Ana Bogdan,2004.0,WTA,down,Romania,124,2026-01-11 15:55:13
+442,Hayu Kinoshita,10909.0,WTA,down,Japan,124,2026-01-11 15:55:13
+443,Wilda Hennemann Caijsa,162.0,WTA,down,Sweden,123,2026-01-11 15:55:13
+444,Ayumi Koshiishi,38.0,WTA,down,Japan,123,2026-01-11 15:55:13
+445,Shiho Akita,4315.0,WTA,up,Japan,123,2026-01-11 15:55:13
+446,Amelia Rajecki,39071.0,WTA,down,United Kingdom,122,2026-01-11 15:55:13
+447,Robin Anderson,1798.0,WTA,down,USA,122,2026-01-11 15:55:13
+448,Fernanda Labrana,2121.0,WTA,down,Chile,121,2026-01-11 15:55:13
+449,Madison Brengle,2391.0,WTA,down,USA,120,2026-01-11 15:55:13
+450,Ruth Roura Llaverias,58496.0,WTA,down,Spain,120,2026-01-11 15:55:13
+451,Meiqi Guo,9108.0,WTA,down,China,120,2026-01-11 15:55:13
+452,Noemi Basiletti,13420.0,WTA,up,Italy,120,2026-01-11 15:55:13
+453,Patcharin Cheapchandej,5426.0,WTA,down,Thailand,120,2026-01-11 15:55:13
+454,Ipek Oz,486.0,WTA,down,Turkey,119,2026-01-11 15:55:13
+455,Elena Malygina,1994.0,WTA,down,Estonia,119,2026-01-11 15:55:13
+456,Dalina Amariei Ilinca,30.0,WTA,up,Romania,119,2026-01-11 15:55:13
+457,Thaisa Pedretti,4778.0,WTA,up,Brazil,118,2026-01-11 15:55:13
+458,Weronika Ewald,38788.0,WTA,down,Poland,118,2026-01-11 15:55:13
+459,Valentini Grammatikopoulou,504.0,WTA,up,Greece,118,2026-01-11 15:55:13
+460,Mia Pohankova,61034.0,WTA,down,Slovakia,116,2026-01-11 15:55:13
+461,Aleksandra Krunic,443.0,WTA,down,Serbia,115,2026-01-11 15:55:13
+462,Emily Seibold,13503.0,WTA,down,Germany,115,2026-01-11 15:55:13
+463,Daria Lodikova,993.0,WTA,down,World,114,2026-01-11 15:55:13
+464,Mariia Tkacheva,13204.0,WTA,up,World,114,2026-01-11 15:55:13
+465,Ekaterina Khayrutdinova,10901.0,WTA,down,World,114,2026-01-11 15:55:13
+466,Hibah Shaikh,28034.0,WTA,same,USA,114,2026-01-11 15:55:13
+467,Angelina Voloshchuk,39033.0,WTA,down,Portugal,113,2026-01-11 15:55:13
+468,Florencia Urrutia Maria,54084.0,WTA,down,Argentina,113,2026-01-11 15:55:13
+469,Fangzhou Liu,1959.0,WTA,down,China,113,2026-01-11 15:55:13
+470,Georgeta Simion Oana,167.0,WTA,down,Romania,113,2026-01-11 15:55:13
+471,Akua Stoiber Ranah,9387.0,WTA,down,United Kingdom,112,2026-01-11 15:55:13
+472,Urszula Radwanska,2272.0,WTA,down,Poland,112,2026-01-11 15:55:13
+473,Jeline Vandromme,73460.0,WTA,down,Belgium,112,2026-01-11 15:55:13
+474,Malene Helgo,172.0,WTA,down,Norway,111,2026-01-11 15:55:13
+475,Martina Colmegna,1348.0,WTA,down,Italy,110,2026-01-11 15:55:13
+476,Anastasia Kulikova,458.0,WTA,down,Finland,110,2026-01-11 15:55:13
+477,Ana Candiotto,10902.0,WTA,up,Brazil,110,2026-01-11 15:55:13
+478,Ekaterina Ovcharenko,18807.0,WTA,down,World,110,2026-01-11 15:55:13
+479,Olivia Lincer,19335.0,WTA,up,Poland,110,2026-01-11 15:55:13
+480,Sofya Lansere,69.0,WTA,down,World,110,2026-01-11 15:55:13
+481,Britt Du Pree,54738.0,WTA,down,Netherlands,110,2026-01-11 15:55:13
+482,Josy Daems,40135.0,WTA,down,Germany,110,2026-01-11 15:55:13
+483,Radka Zelnickova,1363.0,WTA,down,Slovakia,109,2026-01-11 15:55:13
+484,Andreea Prisacariu,13793.0,WTA,down,Romania,109,2026-01-11 15:55:13
+485,Rasheeda McAdoo,1414.0,WTA,down,USA,109,2026-01-11 15:55:13
+486,Zongyu Li,22722.0,WTA,down,China,108,2026-01-11 15:55:13
+487,Jasmijn Gimbrere,13078.0,WTA,up,Netherlands,108,2026-01-11 15:55:13
+488,Alice Gillan,2565.0,WTA,down,United Kingdom,107,2026-01-11 15:55:13
+489,Natsumi Kawaguchi,13546.0,WTA,down,Japan,107,2026-01-11 15:55:13
+490,Anja Stankovic,52257.0,WTA,down,Serbia,107,2026-01-11 15:55:13
+491,Pia Lovric,11488.0,WTA,down,Slovenia,106,2026-01-11 15:55:13
+492,Lamis Alhussein Abdel Aziz,13865.0,WTA,down,Egypt,106,2026-01-11 15:55:13
+493,Yufei Ren,51632.0,WTA,same,China,105,2026-01-11 15:55:13
+494,Emeline Dartron,1114.0,WTA,up,France,105,2026-01-11 15:55:13
+495,Ankita Raina,1442.0,WTA,up,India,105,2026-01-11 15:55:13
+496,Ying Zhang,8910.0,WTA,up,China,105,2026-01-11 15:55:13
+497,Ania Hertel,12792.0,WTA,down,Poland,104,2026-01-11 15:55:13
+498,Yaroslava Bartashevich,9169.0,WTA,up,France,103,2026-01-11 15:55:13
+499,Boyoung Jeong,24516.0,WTA,down,South Korea,102,2026-01-11 15:55:13
+500,Misaki Matsuda,1423.0,WTA,down,Japan,102,2026-01-11 15:55:13
+501,Darya Astakhova,1435.0,WTA,up,World,101,2026-01-11 15:55:13
+502,Jessica Bertoldo,37972.0,WTA,up,Italy,101,2026-01-11 15:55:13
+503,Sarah Van Emst,50288.0,WTA,same,Netherlands,101,2026-01-11 15:55:13
+504,Alicia Dudeney,37850.0,WTA,same,United Kingdom,101,2026-01-11 15:55:13
+505,Katerina Tsygourova,23388.0,WTA,same,Switzerland,101,2026-01-11 15:55:13
+506,Haruna Arakawa,75.0,WTA,up,Japan,101,2026-01-11 15:55:13
+507,Ariana Arseneault,185.0,WTA,down,Canada,100,2026-01-11 15:55:13
+508,Riya Bhatia,93.0,WTA,up,India,100,2026-01-11 15:55:13
+509,Arina Bulatova,51324.0,WTA,down,World,100,2026-01-11 15:55:13
+510,Storm Hunter,,WTA,up,Australia,99,2026-01-11 15:55:13
+511,Cody Wong Hong Yi,2566.0,WTA,up,Hong Kong,99,2026-01-11 15:55:13
+512,Yelyzaveta Kotliar,38883.0,WTA,up,Ukraine,99,2026-01-11 15:55:13
+513,Aunchisa Chanta,,WTA,up,Thailand,99,2026-01-11 15:55:13
+514,Rositsa Dencheva,34106.0,WTA,down,Bulgaria,99,2026-01-11 15:55:13
+515,Tereza Martincova,1149.0,WTA,up,Czech Republic,98,2026-01-11 15:55:13
+516,Petra Kvitova,2693.0,WTA,up,Czech Republic,97,2026-01-11 15:55:13
+517,Sachia Vickery,1790.0,WTA,up,USA,97,2026-01-11 15:55:13
+518,Eudice Chong,7589.0,WTA,up,Hong Kong,97,2026-01-11 15:55:13
+519,Kristiana Sidorova,57527.0,WTA,up,World,97,2026-01-11 15:55:13
+520,Alessandra Mazzola,15681.0,WTA,up,Italy,97,2026-01-11 15:55:13
+521,Vitalia Diatchenko,1115.0,WTA,up,World,96,2026-01-11 15:55:13
+522,Carla Markus,39540.0,WTA,up,Argentina,95,2026-01-11 15:55:13
+523,Sara Dols,36845.0,WTA,down,Spain,95,2026-01-11 15:55:13
+524,Malaika Rapolu,19546.0,WTA,up,USA,94,2026-01-11 15:55:13
+525,Rada Zolotareva,40163.0,WTA,up,World,94,2026-01-11 15:55:13
+526,Ashley Lahey,13742.0,WTA,same,USA,93,2026-01-11 15:55:13
+527,Lina Glushko,1829.0,WTA,up,Israel,92,2026-01-11 15:55:13
+528,Ella McDonald,24733.0,WTA,same,United Kingdom,92,2026-01-11 15:55:13
+529,Verena Meliss,2580.0,WTA,down,Italy,92,2026-01-11 15:55:13
+530,Jiaqi Wang,,WTA,same,China,92,2026-01-11 15:55:13
+531,Dasha Plekhanova,50654.0,WTA,down,Canada,91,2026-01-11 15:55:13
+532,Louise Van den Broek Isis,55590.0,WTA,down,Netherlands,91,2026-01-11 15:55:13
+533,Rinko Matsuda,39924.0,WTA,down,Japan,91,2026-01-11 15:55:13
+534,Marie Dittmann Gina,19899.0,WTA,up,Germany,91,2026-01-11 15:55:13
+535,Andreea Herea Carmen,28104.0,WTA,up,Romania,90,2026-01-11 15:55:13
+536,Meiling Wang,2263.0,WTA,up,China,90,2026-01-11 15:55:13
+537,Draginja Vukovic,1367.0,WTA,down,Serbia,90,2026-01-11 15:55:13
+538,Jaeda Daniel,31723.0,WTA,down,USA,90,2026-01-11 15:55:13
+539,Carolina Kuhl,10896.0,WTA,up,Germany,89,2026-01-11 15:55:13
+540,Marie Voracek Eva,58571.0,WTA,up,Germany,89,2026-01-11 15:55:13
+541,Jenny Lim,8545.0,WTA,up,France,88,2026-01-11 15:55:13
+542,Thasaporn Naklo,58067.0,WTA,up,Thailand,88,2026-01-11 15:55:13
+543,Jana Kovackova,71705.0,WTA,up,Czech Republic,88,2026-01-11 15:55:13
+544,Varvara Panshina,67427.0,WTA,down,World,88,2026-01-11 15:55:13
+545,Lidia Encheva,50682.0,WTA,up,Bulgaria,88,2026-01-11 15:55:13
+546,Arianna Zucchini,2581.0,WTA,up,Italy,87,2026-01-11 15:55:13
+547,Alana Subasic,68363.0,WTA,down,Australia,87,2026-01-11 15:55:13
+548,Julie Pastikova,30860.0,WTA,down,Czech Republic,87,2026-01-11 15:55:13
+549,Victoria Osuigwe,19463.0,WTA,down,USA,87,2026-01-11 15:55:13
+550,Elena Milovanovic,13620.0,WTA,up,Serbia,87,2026-01-11 15:55:13
+551,Yuki Naito,,WTA,up,Japan,86,2026-01-11 15:55:13
+552,Christine Svendsen Johanne,9257.0,WTA,down,Denmark,85,2026-01-11 15:55:13
+553,Camilla Zanolini,55115.0,WTA,down,Italy,85,2026-01-11 15:55:13
+554,Marie Weckerle,7413.0,WTA,down,Luxembourg,85,2026-01-11 15:55:13
+555,Iva Primorac,5330.0,WTA,up,Croatia,85,2026-01-11 15:55:13
+556,Dana Guzman,9241.0,WTA,down,Peru,84,2026-01-11 15:55:13
+557,Zeel Desai,13676.0,WTA,down,India,84,2026-01-11 15:55:13
+558,Mayuka Aikawa,13333.0,WTA,down,Japan,84,2026-01-11 15:55:13
+559,Marie Vogt,28610.0,WTA,same,Germany,84,2026-01-11 15:55:13
+560,Jamie Loeb,1782.0,WTA,up,USA,83,2026-01-11 15:55:13
+561,Sara Cakarevic,228.0,WTA,down,France,83,2026-01-11 15:55:13
+562,Sara Popa Maria,14322.0,WTA,up,Romania,83,2026-01-11 15:55:13
+563,Ena Koike,40075.0,WTA,up,Japan,83,2026-01-11 15:55:13
+564,Kamilla Bartone,220.0,WTA,up,Latvia,83,2026-01-11 15:55:13
+565,Punnin Kovapitukted,12715.0,WTA,up,Thailand,83,2026-01-11 15:55:13
+566,Nina Vargova,15593.0,WTA,same,Slovakia,82,2026-01-11 15:55:13
+567,Ellie Schoppe,77239.0,WTA,same,USA,82,2026-01-11 15:55:13
+568,Eva Bennemann,57345.0,WTA,down,Germany,82,2026-01-11 15:55:13
+569,Jada Robinson,59623.0,WTA,up,USA,82,2026-01-11 15:55:13
+570,Maria Martinez Vaquero,20501.0,WTA,same,Spain,82,2026-01-11 15:55:13
+571,Vaidehi Chaudhari,13982.0,WTA,up,India,82,2026-01-11 15:55:13
+572,Marine Szostak,13505.0,WTA,up,France,82,2026-01-11 15:55:13
+573,Elizabeth Reasco Gonzalez Mell,11487.0,WTA,down,Ecuador,81,2026-01-11 15:55:13
+574,Venus Williams,5341.0,WTA,up,USA,80,2026-01-11 15:55:13
+575,Ana Konjuh,1824.0,WTA,up,Croatia,80,2026-01-11 15:55:13
+576,Makenna Jones,38040.0,WTA,up,USA,80,2026-01-11 15:55:13
+577,Ksenia Zaytseva,2526.0,WTA,up,World,80,2026-01-11 15:55:13
+578,Noelia Bouzo Zanotti,31.0,WTA,up,Spain,80,2026-01-11 15:55:13
+579,Deborah Chiesa,231.0,WTA,down,Italy,79,2026-01-11 15:55:13
+580,Gabriella da Silva Fick,1366.0,WTA,down,Australia,79,2026-01-11 15:55:13
+581,Elena Cabezas Dominguez Sofia,56279.0,WTA,down,Venezuela,79,2026-01-11 15:55:13
+582,Chihiro Muramatsu,5343.0,WTA,up,Japan,79,2026-01-11 15:55:13
+583,Alba Rey Garcia,1418.0,WTA,up,Spain,79,2026-01-11 15:55:13
+584,Valentina Steiner,74837.0,WTA,down,Germany,78,2026-01-11 15:55:13
+585,Lavinia Tanasie,13031.0,WTA,up,Romania,78,2026-01-11 15:55:13
+586,Laura Mair,5151.0,WTA,up,Italy,78,2026-01-11 15:55:13
+587,Bianca Barbulescu,29.0,WTA,up,Romania,78,2026-01-11 15:55:13
+588,Jenna Defalco,13650.0,WTA,up,USA,78,2026-01-11 15:55:13
+589,Chenting Zhu,53060.0,WTA,up,China,77,2026-01-11 15:55:13
+590,Noelia Zeballos,6.0,WTA,same,Bolivia,77,2026-01-11 15:55:13
+591,Loes Ebeling Koning,66095.0,WTA,down,Netherlands,77,2026-01-11 15:55:13
+592,Karina Miller,23171.0,WTA,up,USA,77,2026-01-11 15:55:13
+593,Hikaru Sato,39077.0,WTA,up,Japan,77,2026-01-11 15:55:13
+594,Hannah Klugman,55586.0,WTA,same,United Kingdom,76,2026-01-11 15:55:13
+595,Alena Kovackova,52683.0,WTA,down,Czech Republic,76,2026-01-11 15:55:13
+596,Danka Kovinic,2524.0,WTA,down,Montenegro,75,2026-01-11 15:55:13
+597,Amy Zhu,133.0,WTA,up,USA,75,2026-01-11 15:55:13
+598,Nahia Berecoechea,9266.0,WTA,down,France,75,2026-01-11 15:55:13
+599,Merna Refaat,1044.0,WTA,down,Egypt,75,2026-01-11 15:55:13
+600,Kristina Kroitor,75363.0,WTA,down,World,75,2026-01-11 15:55:13
+601,Esther Adeshina,70322.0,WTA,down,United Kingdom,75,2026-01-11 15:55:13
+602,Diana Martynov,13466.0,WTA,down,France,74,2026-01-11 15:55:13
+603,Jana Otzipka,51326.0,WTA,up,Belgium,74,2026-01-11 15:55:13
+604,Erika Sema,4526.0,WTA,up,Japan,74,2026-01-11 15:55:13
+605,Arlinda Rushiti,104.0,WTA,down,Kosovo,74,2026-01-11 15:55:13
+606,Ekaterina Perelygina,75890.0,WTA,down,Austria,74,2026-01-11 15:55:13
+607,Amelie Van Impe,21360.0,WTA,down,Belgium,74,2026-01-11 15:55:13
+608,Melisa Ercan,40065.0,WTA,down,Australia,73,2026-01-11 15:55:13
+609,Yuno Kitahara,61695.0,WTA,up,Japan,73,2026-01-11 15:55:13
+610,Stefania Bojica,38154.0,WTA,up,Romania,73,2026-01-11 15:55:13
+611,Amelia Honer,9526.0,WTA,up,USA,72,2026-01-11 15:55:13
+612,Ekaterina Yashina,1987.0,WTA,up,World,72,2026-01-11 15:55:13
+613,Ilay Yoruk,1344.0,WTA,up,Turkey,72,2026-01-11 15:55:13
+614,Sara Errani,474.0,WTA,down,Italy,71,2026-01-11 15:55:13
+615,Lucia Cortez Llorca,5919.0,WTA,down,Spain,71,2026-01-11 15:55:13
+616,Alyssa Reguer,2545.0,WTA,up,France,71,2026-01-11 15:55:13
+617,Angella Okutoyi,10913.0,WTA,up,Kenya,71,2026-01-11 15:55:13
+618,Ema Burgic,9356.0,WTA,down,Bosnia and Herzegovina,71,2026-01-11 15:55:13
+619,Marcelina Podlinska,9047.0,WTA,down,Poland,71,2026-01-11 15:55:13
+620,Angelica Raggi,1443.0,WTA,down,Italy,70,2026-01-11 15:55:13
+621,Jeong Jang Su,1803.0,WTA,up,South Korea,70,2026-01-11 15:55:13
+622,Alice Robbe,91.0,WTA,down,France,70,2026-01-11 15:55:13
+623,Stephanie Wagner,1416.0,WTA,down,Germany,70,2026-01-11 15:55:13
+624,Camila Romero,22529.0,WTA,up,Ecuador,70,2026-01-11 15:55:13
+625,Maria Ionescu Eva,54081.0,WTA,up,Romania,70,2026-01-11 15:55:13
+626,Adelina Lachinova,50429.0,WTA,down,Latvia,69,2026-01-11 15:55:13
+627,Hiroko Kuwata,5244.0,WTA,down,Japan,69,2026-01-11 15:55:13
+628,Ekaterina Maklakova,9256.0,WTA,down,World,69,2026-01-11 15:55:13
+629,Valeria Bhunu,7729.0,WTA,down,Zimbabwe,69,2026-01-11 15:55:13
+630,Mara Guth,8334.0,WTA,down,Germany,69,2026-01-11 15:55:13
+631,Dasha Ivanova,1050.0,WTA,down,USA,69,2026-01-11 15:55:13
+632,Kristina Mladenovic,514.0,WTA,down,France,68,2026-01-11 15:55:13
+633,Monique Barry,40167.0,WTA,down,New Zealand,68,2026-01-11 15:55:13
+634,Mariella Thamm,70149.0,WTA,down,Germany,68,2026-01-11 15:55:13
+635,Evialina Laskevich,2114.0,WTA,down,World,68,2026-01-11 15:55:13
+636,Tian Jialin,69107.0,WTA,down,China,68,2026-01-11 15:55:13
+637,Kateryna Lazarenko,38153.0,WTA,down,Ukraine,68,2026-01-11 15:55:13
+638,Kayo Nishimura,49582.0,WTA,down,Japan,68,2026-01-11 15:55:13
+639,Beatrise Zeltina,80157.0,WTA,down,Latvia,67,2026-01-11 15:55:13
+640,Maitane Arconada Usue,3001.0,WTA,up,USA,66,2026-01-11 15:55:13
+641,Vaishnavi Adkar,39035.0,WTA,down,India,66,2026-01-11 15:55:13
+642,Luiza Fullana,52392.0,WTA,down,Brazil,66,2026-01-11 15:55:13
+643,Dalayna Hewitt,189.0,WTA,up,USA,66,2026-01-11 15:55:13
+644,Tahlia Kokkinis,63057.0,WTA,down,Australia,66,2026-01-11 15:55:13
+645,Monika Stankiewicz,52685.0,WTA,down,Poland,66,2026-01-11 15:55:13
+646,Rachel Gailis,1351.0,WTA,up,USA,66,2026-01-11 15:55:13
+647,Mary Lewis,40229.0,WTA,down,USA,65,2026-01-11 15:55:13
+648,Christasha McNeil,32551.0,WTA,down,USA,65,2026-01-11 15:55:13
+649,Luca Udvardy,38781.0,WTA,up,Hungary,65,2026-01-11 15:55:13
+650,Rebecca Munk Mortensen,37903.0,WTA,down,Denmark,65,2026-01-11 15:55:13
+651,Astrid Cirotte,13324.0,WTA,down,France,65,2026-01-11 15:55:13
+652,Clara Burel,515.0,WTA,down,France,64,2026-01-11 15:55:13
+653,Gina Feistel,38149.0,WTA,down,Poland,64,2026-01-11 15:55:13
+654,Elina Nepliy,62081.0,WTA,up,World,64,2026-01-11 15:55:13
+655,Sarah Iliev,9250.0,WTA,up,France,64,2026-01-11 15:55:13
+656,Maria Serban Isabella,58892.0,WTA,same,Italy,64,2026-01-11 15:55:13
+657,Alexis Nguyen,,WTA,down,USA,63,2026-01-11 15:55:13
+658,Maaya Rajeshwaran Revathi,63412.0,WTA,down,India,63,2026-01-11 15:55:13
+659,Joy De Zeeuw,54718.0,WTA,down,Netherlands,63,2026-01-11 15:55:13
+660,Natsuki Yoshimoto,53278.0,WTA,down,Japan,63,2026-01-11 15:55:13
+661,Maria Gonzalez Daniele Justina,53436.0,WTA,down,Argentina,63,2026-01-11 15:55:13
+662,Adrienn Nagy,12932.0,WTA,down,Hungary,63,2026-01-11 15:55:13
+663,Marie Mettraux,2265.0,WTA,down,Switzerland,62,2026-01-11 15:55:13
+664,Alize Lim,5432.0,WTA,up,France,62,2026-01-11 15:55:13
+665,Alexandra Vagramov,7035.0,WTA,down,Canada,62,2026-01-11 15:55:13
+666,Luisa Meyer Auf Der Heide,53.0,WTA,up,Germany,62,2026-01-11 15:55:13
+667,Anna Petkovic,72578.0,WTA,down,Germany,61,2026-01-11 15:55:13
+668,Celia Cervino Ruiz,137.0,WTA,down,Spain,61,2026-01-11 15:55:13
+669,Berta Bonardi,4005.0,WTA,up,Argentina,61,2026-01-11 15:55:13
+670,Andre Lukosiute,11326.0,WTA,up,Lithuania,61,2026-01-11 15:55:13
+671,Stefi Webb,10932.0,WTA,down,Australia,61,2026-01-11 15:55:13
+672,Clara Vlasselaer,1357.0,WTA,up,Belgium,61,2026-01-11 15:55:13
+673,Milana Zhabrailova,43.0,WTA,down,World,61,2026-01-11 15:55:13
+674,Oceane Dodin,523.0,WTA,up,France,60,2026-01-11 15:55:13
+675,Federica Oana Anamaria,55524.0,WTA,down,Romania,60,2026-01-11 15:55:13
+676,Kylie Collins,20330.0,WTA,down,USA,60,2026-01-11 15:55:13
+677,Vitoria Leme Da Silva Nauhany,65788.0,WTA,up,Brazil,59,2026-01-11 15:55:13
+678,Sofia Rocchetti,2584.0,WTA,down,Italy,59,2026-01-11 15:55:13
+679,Yuliya Hatouka,466.0,WTA,up,World,59,2026-01-11 15:55:13
+680,Raphaelle Lacasse,6697.0,WTA,down,Canada,59,2026-01-11 15:55:13
+681,Yi Yang Ya,1023.0,WTA,up,Taiwan,59,2026-01-11 15:55:13
+682,Mio Mushika,10893.0,WTA,up,Japan,59,2026-01-11 15:55:13
+683,Petra Hule,33387.0,WTA,up,Australia,58,2026-01-11 15:55:13
+684,Eleejah Inisan,40528.0,WTA,up,France,58,2026-01-11 15:55:13
+685,Valeriia Iushchenko,,WTA,up,World,58,2026-01-11 15:55:13
+686,Fiona Ganz,12561.0,WTA,up,Switzerland,58,2026-01-11 15:55:13
+687,Daria Kudashova,13424.0,WTA,up,World,57,2026-01-11 15:55:13
+688,Anastasiia Gureva,9245.0,WTA,down,World,57,2026-01-11 15:55:13
+689,Enola Chiesa,176.0,WTA,up,Italy,57,2026-01-11 15:55:13
+690,Eliska Tichackova,56385.0,WTA,down,Czech Republic,57,2026-01-11 15:55:13
+691,Emma Lene,13258.0,WTA,up,France,57,2026-01-11 15:55:13
+692,Maria Golovina,51418.0,WTA,up,World,57,2026-01-11 15:55:13
+693,Ivana Sebestova,14.0,WTA,down,Czech Republic,57,2026-01-11 15:55:13
+694,Jesika Maleckova,1109.0,WTA,up,Czech Republic,56,2026-01-11 15:55:13
+695,Aneta Laboutkova,4085.0,WTA,up,Czech Republic,56,2026-01-11 15:55:13
+696,Lea Nilsson,51328.0,WTA,down,Sweden,56,2026-01-11 15:55:13
+697,Daria Egorova,63419.0,WTA,up,World,56,2026-01-11 15:55:13
+698,Kristina Liutova,76966.0,WTA,down,World,56,2026-01-11 15:55:13
+699,Diana Demidova,1001.0,WTA,up,World,56,2026-01-11 15:55:13
+700,Salma Ewing,38259.0,WTA,up,USA,56,2026-01-11 15:55:13
+701,Jaimee Fourlis,441.0,WTA,up,Australia,55,2026-01-11 15:55:13
+702,Zhuoxuan Bai,9107.0,WTA,up,China,55,2026-01-11 15:55:13
+703,Kristina Novak,38150.0,WTA,down,Slovenia,55,2026-01-11 15:55:13
+704,Gaia Maduzzi,55153.0,WTA,up,Italy,55,2026-01-11 15:55:13
+705,Federica Sacco,57428.0,WTA,up,Italy,55,2026-01-11 15:55:13
+706,Amina Anshba,1983.0,WTA,up,World,54,2026-01-11 15:55:13
+707,Jose Portillo Ramirez Maria,1428.0,WTA,up,Mexico,54,2026-01-11 15:55:13
+708,Briana Szabo,13381.0,WTA,down,Romania,54,2026-01-11 15:55:13
+709,Ayumi Miyamoto,11583.0,WTA,up,Japan,54,2026-01-11 15:55:13
+710,Honoka Kobayashi,13415.0,WTA,up,Japan,54,2026-01-11 15:55:13
+711,Martina Trevisan,512.0,WTA,up,Italy,53,2026-01-11 15:55:13
+712,Federica Di Sarra,1799.0,WTA,up,Italy,53,2026-01-11 15:55:13
+713,Mariana Diaz-Oliva,,WTA,up,Argentina,53,2026-01-11 15:55:13
+714,Jana Kolodynska,199.0,WTA,up,World,53,2026-01-11 15:55:13
+715,Tamila Gadamauri,80301.0,WTA,down,Belgium,53,2026-01-11 15:55:13
+716,Zoziya Kardava,11480.0,WTA,down,Georgia,53,2026-01-11 15:55:13
+717,Karolina Schmiedlova Anna,1145.0,WTA,up,Slovakia,52,2026-01-11 15:55:13
+718,Marie Benoit,2289.0,WTA,up,Belgium,52,2026-01-11 15:55:13
+719,Stacey Fung,13329.0,WTA,up,Canada,52,2026-01-11 15:55:13
+720,Dimitra Pavlou,28.0,WTA,up,Greece,52,2026-01-11 15:55:13
+721,Brooke Black,55157.0,WTA,up,United Kingdom,52,2026-01-11 15:55:13
+722,Carmen Lopez Martinez,38035.0,WTA,down,Spain,52,2026-01-11 15:55:13
+723,Ava Markham,40193.0,WTA,up,USA,52,2026-01-11 15:55:13
+724,Irina Balus,10898.0,WTA,down,Slovakia,52,2026-01-11 15:55:13
+725,Marie Nijkamp Rose,61974.0,WTA,up,Netherlands,52,2026-01-11 15:55:13
+726,Iva Ivanova,52708.0,WTA,up,Bulgaria,52,2026-01-11 15:55:13
+727,Junhan Zhang,63420.0,WTA,up,China,52,2026-01-11 15:55:13
+728,Laura Svatikova,14635.0,WTA,up,Slovakia,52,2026-01-11 15:55:13
+729,Alyssa Ahn,48889.0,WTA,up,USA,51,2026-01-11 15:55:13
+730,Julia Konishi Camargo Silva,2120.0,WTA,up,Brazil,51,2026-01-11 15:55:13
+731,Jessica Hinojosa Gomez,1051.0,WTA,up,Mexico,51,2026-01-11 15:55:13
+732,Ida Wobker,81722.0,WTA,up,Germany,51,2026-01-11 15:55:13
+733,Ziva Falkner,2278.0,WTA,up,Slovenia,51,2026-01-11 15:55:13
+734,Ksenia Efremova,63490.0,WTA,up,France,50,2026-01-11 15:55:13
+735,Anastasia Bertacchi,68678.0,WTA,up,Italy,50,2026-01-11 15:55:13
+736,Maria Sholokhova,9258.0,WTA,up,World,50,2026-01-11 15:55:13
+737,Edda Mamedova,14563.0,WTA,down,World,50,2026-01-11 15:55:13
+738,Melany Fajmonova Sarah,83920.0,WTA,down,Czech Republic,50,2026-01-11 15:55:13
+739,Chantal Sauvant,19.0,WTA,up,Germany,50,2026-01-11 15:55:13
+740,Anna Kubareva,1417.0,WTA,up,World,50,2026-01-11 15:55:13
+741,Yanina Wickmayer,74.0,WTA,up,Belgium,49,2026-01-11 15:55:13
+742,Julia Stusek,38313.0,WTA,down,Germany,49,2026-01-11 15:55:13
+743,Yi Chen Meng,40110.0,WTA,up,China,49,2026-01-11 15:55:13
+744,Akiko Omae,4342.0,WTA,up,Japan,49,2026-01-11 15:55:13
+745,Victoria Milovanova,63416.0,WTA,up,World,49,2026-01-11 15:55:13
+746,Mia Horvit,38670.0,WTA,up,USA,49,2026-01-11 15:55:13
+747,Jiangxue Han,,WTA,up,China,49,2026-01-11 15:55:13
+748,Elena Korokozidi,37979.0,WTA,down,Greece,49,2026-01-11 15:55:13
+749,Franziska Sziedat,2116.0,WTA,up,Germany,49,2026-01-11 15:55:13
+750,Ruien Zhang,,WTA,up,China,48,2026-01-11 15:55:13
+751,Nadiya Kolb,7553.0,WTA,up,Ukraine,48,2026-01-11 15:55:13
+752,Matilde Paoletti,9395.0,WTA,up,Italy,48,2026-01-11 15:55:13
+753,Chengyiyi Yuan,10227.0,WTA,up,China,48,2026-01-11 15:55:13
+754,Gaeul Jang,32808.0,WTA,up,South Korea,48,2026-01-11 15:55:13
+755,Vicky Van De Peer,13820.0,WTA,up,Belgium,48,2026-01-11 15:55:13
+756,Daria Zelinskaya,14549.0,WTA,up,World,48,2026-01-11 15:55:13
+757,Yuliana Lizarazo,150.0,WTA,up,Colombia,47,2026-01-11 15:55:13
+758,Sophia Biolay,16091.0,WTA,up,France,47,2026-01-11 15:55:13
+759,Patricija Paukstyte,10903.0,WTA,up,Lithuania,47,2026-01-11 15:55:13
+760,Michika Ozeki,7561.0,WTA,up,Japan,47,2026-01-11 15:55:13
+761,Angelina Wirges,1368.0,WTA,up,Germany,47,2026-01-11 15:55:13
+762,Geraldine Gerald Gonzalez Jimar,19896.0,WTA,up,Chile,46,2026-01-11 15:55:13
+763,Naho Sato,,WTA,down,Japan,46,2026-01-11 15:55:13
+764,Reina Goto,50792.0,WTA,up,Japan,46,2026-01-11 15:55:13
+765,Yujia Huang,56997.0,WTA,up,China,46,2026-01-11 15:55:13
+766,Daria Yesypchuk,52647.0,WTA,down,Ukraine,46,2026-01-11 15:55:13
+767,Mirjam Bjorklund,498.0,WTA,up,Sweden,45,2026-01-11 15:55:13
+768,Safina Popa Giulia,69063.0,WTA,up,Romania,45,2026-01-11 15:55:13
+769,Demi Tran,13208.0,WTA,up,Netherlands,45,2026-01-11 15:55:13
+770,Michaela Bayerlova,194.0,WTA,up,Czech Republic,45,2026-01-11 15:55:13
+771,Anne-Christine Lutkemeyer,1358.0,WTA,up,USA,45,2026-01-11 15:55:13
+772,Onyu Choi,24515.0,WTA,up,South Korea,45,2026-01-11 15:55:13
+773,Anita Sahdiieva,13920.0,WTA,up,Ukraine,45,2026-01-11 15:55:13
+774,JiaYi Wang,5683.0,WTA,up,China,45,2026-01-11 15:55:13
+775,Jessica Failla,13323.0,WTA,up,USA,44,2026-01-11 15:55:13
+776,Victoria Gomez O'Hayon,40095.0,WTA,down,Spain,44,2026-01-11 15:55:13
+777,Ana Grubor,89.0,WTA,down,Canada,44,2026-01-11 15:55:13
+778,Maria Kalyakina,61314.0,WTA,up,World,44,2026-01-11 15:55:13
+779,Madelief Hageman,2527.0,WTA,same,Netherlands,44,2026-01-11 15:55:13
+780,Linda Sevcikova,21842.0,WTA,up,Czech Republic,44,2026-01-11 15:55:13
+781,Kaylah McPhee,3191.0,WTA,up,Australia,43,2026-01-11 15:55:13
+782,Valentina Mediorreal Arias,50044.0,WTA,down,Colombia,43,2026-01-11 15:55:13
+783,Beatrice Ricci,1024.0,WTA,up,Italy,43,2026-01-11 15:55:13
+784,Aran Teixido Garcia Maria,22522.0,WTA,up,Spain,43,2026-01-11 15:55:13
+785,Yiming Dang,53147.0,WTA,up,China,43,2026-01-11 15:55:13
+786,Iveta Dapkute,11610.0,WTA,up,Lithuania,43,2026-01-11 15:55:13
+787,Chloe Noel,13077.0,WTA,up,France,43,2026-01-11 15:55:13
+788,Dune Vaissaud,52684.0,WTA,up,France,43,2026-01-11 15:55:13
+789,Lan Mi,68334.0,WTA,up,China,43,2026-01-11 15:55:13
+790,Tilwith Di Girolami,33.0,WTA,down,Belgium,43,2026-01-11 15:55:13
+791,Nadia Podoroska,2805.0,WTA,up,Argentina,42,2026-01-11 15:55:13
+792,Bunyawi Thamchaiwat,38246.0,WTA,up,Thailand,42,2026-01-11 15:55:13
+793,Yasmin Ezzat,1035.0,WTA,up,Egypt,42,2026-01-11 15:55:13
+794,Nagi Hanatani,2602.0,WTA,up,Japan,42,2026-01-11 15:55:13
+795,Merel Hoedt,2296.0,WTA,up,Netherlands,42,2026-01-11 15:55:13
+796,Nika Radisic,175.0,WTA,up,Slovenia,41,2026-01-11 15:55:13
+797,Tamira Paszek,2756.0,WTA,up,Austria,41,2026-01-11 15:55:13
+798,Laquisa Khan,58844.0,WTA,up,Australia,41,2026-01-11 15:55:13
+799,Romina Ccuno,2119.0,WTA,up,Peru,41,2026-01-11 15:55:13
+800,Diana Marcinkevica,122.0,WTA,up,Latvia,40,2026-01-11 15:55:13
+801,Yuhan Wang,85999.0,WTA,up,China,39,2026-01-11 15:55:13
+802,Julieta Estable Lara,2283.0,WTA,up,Argentina,39,2026-01-11 15:55:13
+803,Dileep Nitture Akanksha,18042.0,WTA,up,India,39,2026-01-11 15:55:13
+804,Ya-Hsuan Lee,5239.0,WTA,down,Taiwan,39,2026-01-11 15:55:13
+805,Yujin Kim,62139.0,WTA,up,South Korea,39,2026-01-11 15:55:13
+806,Suana Tucakovic,50431.0,WTA,up,Bosnia and Herzegovina,39,2026-01-11 15:55:13
+807,Akasha Ceuca Ann,75973.0,WTA,down,Germany,39,2026-01-11 15:55:13
+808,Adriana Reami,2586.0,WTA,up,USA,39,2026-01-11 15:55:13
+809,Wanja Brune Olsen Astrid,20694.0,WTA,up,Norway,39,2026-01-11 15:55:13
+810,Brenda Fruhvirtova,9532.0,WTA,up,Czech Republic,38,2026-01-11 15:55:13
+811,Camila Torres Murcia Maria,1053.0,WTA,up,Colombia,38,2026-01-11 15:55:13
+812,Viola Turini,1375.0,WTA,up,Italy,38,2026-01-11 15:55:13
+813,Shilin Xu,131.0,WTA,up,China,38,2026-01-11 15:55:13
+814,Olga Helmi,1406.0,WTA,up,Denmark,38,2026-01-11 15:55:13
+815,Vlada Mincheva,61490.0,WTA,up,World,37,2026-01-11 15:55:13
+816,Sarah Rokusek,10929.0,WTA,down,Australia,37,2026-01-11 15:55:13
+817,Laia Petretic,22.0,WTA,up,France,37,2026-01-11 15:55:13
+818,Eugenie Bouchard,2941.0,WTA,up,Canada,36,2026-01-11 15:55:13
+819,Ines Murta,90.0,WTA,up,Portugal,36,2026-01-11 15:55:13
+820,Arabella Koller,14207.0,WTA,up,Austria,36,2026-01-11 15:55:13
+821,Mara Gae,55170.0,WTA,up,Romania,36,2026-01-11 15:55:13
+822,Luciana Moyano,40060.0,WTA,down,Argentina,36,2026-01-11 15:55:13
+823,Gaia Squarcialupi,2533.0,WTA,up,Italy,36,2026-01-11 15:55:13
+824,Garbiela Vasilescu Arina,13991.0,WTA,up,Romania,36,2026-01-11 15:55:13
+825,Fernanda Herazo Gonzalez Maria,1415.0,WTA,down,Colombia,35,2026-01-11 15:55:13
+826,Nellie Taraba Wallberg,40173.0,WTA,up,Sweden,35,2026-01-11 15:55:13
+827,Sofia Rojas,,WTA,up,Ecuador,35,2026-01-11 15:55:13
+828,Victoria Kan,1421.0,WTA,up,World,35,2026-01-11 15:55:13
+829,Jacqueline Cabaj Awad,87.0,WTA,up,Sweden,35,2026-01-11 15:55:13
+830,Elena Jamshidi,50.0,WTA,down,Denmark,35,2026-01-11 15:55:13
+831,Anastasiia Firman,69527.0,WTA,up,Ukraine,35,2026-01-11 15:55:13
+832,Maddalena Giordano,58312.0,WTA,up,Italy,35,2026-01-11 15:55:13
+833,Noemi Maines,73807.0,WTA,down,Italy,35,2026-01-11 15:55:13
+834,Lilian Poling,61430.0,WTA,down,USA,35,2026-01-11 15:55:13
+835,Sonja Zhenikhova,57568.0,WTA,up,Germany,34,2026-01-11 15:55:13
+836,Peangtarn Plipuech,3409.0,WTA,up,Thailand,34,2026-01-11 15:55:13
+837,Xinran Sun,82564.0,WTA,up,China,34,2026-01-11 15:55:13
+838,Mao Mushika,37889.0,WTA,up,Japan,34,2026-01-11 15:55:13
+839,Marianne Argyrokastriti,53625.0,WTA,down,Greece,34,2026-01-11 15:55:13
+840,Karine Sarkisova,40214.0,WTA,down,World,34,2026-01-11 15:55:13
+841,Marie Villet,13075.0,WTA,up,France,34,2026-01-11 15:55:13
+842,Kristina Penickova,58224.0,WTA,up,USA,33,2026-01-11 15:55:13
+843,Katy Dunne,5016.0,WTA,up,United Kingdom,33,2026-01-11 15:55:13
+844,Amy Sucha,56476.0,WTA,down,Czech Republic,33,2026-01-11 15:55:13
+845,Anastasija Cvetkovic,57899.0,WTA,up,Serbia,33,2026-01-11 15:55:13
+846,Ilinca Burcescu Maia,69713.0,WTA,up,Romania,33,2026-01-11 15:55:13
+847,Belle Thompson,39129.0,WTA,same,Australia,33,2026-01-11 15:55:13
+848,Mana Kawamura,2570.0,WTA,down,Japan,33,2026-01-11 15:55:13
+849,Maria Toma,13545.0,WTA,down,Romania,33,2026-01-11 15:55:13
+850,Anja Wildgruber,1387.0,WTA,up,Germany,33,2026-01-11 15:55:13
+851,Freya Christie,2273.0,WTA,same,United Kingdom,32,2026-01-11 15:55:13
+852,Shiyu Ye,,WTA,same,China,32,2026-01-11 15:55:13
+853,Ophelie Boullay,90171.0,WTA,same,France,32,2026-01-11 15:55:13
+854,Klara Veldman,13168.0,WTA,down,Netherlands,32,2026-01-11 15:55:13
+855,Darja Suvirdjonkova,38698.0,WTA,down,Serbia,32,2026-01-11 15:55:13
+856,Jing-Jing Lu,8238.0,WTA,down,China,31,2026-01-11 15:55:13
+857,Petra Konjikusic,50681.0,WTA,down,Serbia,31,2026-01-11 15:55:13
+858,Shannon Lam,32562.0,WTA,down,USA,31,2026-01-11 15:55:13
+859,Polina Leykina,5264.0,WTA,up,World,31,2026-01-11 15:55:13
+860,Natalija Stevanovic,219.0,WTA,up,Serbia,31,2026-01-11 15:55:13
+861,Aruzhan Sagandikova,10917.0,WTA,down,Kazakhstan,31,2026-01-11 15:55:13
+862,Louna Zoppas,54698.0,WTA,same,France,31,2026-01-11 15:55:13
+863,Ella Haavisto,38990.0,WTA,same,Finland,31,2026-01-11 15:55:13
+864,Claudia Ferrer Perez,51629.0,WTA,down,Spain,31,2026-01-11 15:55:13
+865,Julia Garcia,,WTA,down,Mexico,30,2026-01-11 15:55:13
+866,Laima Vladson,68753.0,WTA,down,Lithuania,30,2026-01-11 15:55:13
+867,Cristina Dinu,1441.0,WTA,down,Romania,30,2026-01-11 15:55:13
+868,Raquel Gonzalez Vilar,13821.0,WTA,up,Spain,30,2026-01-11 15:55:13
+869,Coco Bosman,70147.0,WTA,up,Netherlands,30,2026-01-11 15:55:13
+870,Solymar Colling,13367.0,WTA,down,USA,30,2026-01-11 15:55:13
+871,Salma Drugdova,15598.0,WTA,down,Slovakia,30,2026-01-11 15:55:13
+872,Ysaline Bonaventure,461.0,WTA,same,Belgium,29,2026-01-11 15:55:13
+873,Saisai Zheng,3398.0,WTA,same,China,29,2026-01-11 15:55:13
+874,Natalia Sousa Salazar,67621.0,WTA,down,Mexico,29,2026-01-11 15:55:13
+875,Sylvie Zund,,WTA,up,Liechtenstein,29,2026-01-11 15:55:13
+876,Anna Pircher,72884.0,WTA,up,Austria,29,2026-01-11 15:55:13
+877,Ava Hrastar,84406.0,WTA,up,USA,29,2026-01-11 15:55:13
+878,Angelica Blake,,WTA,up,United Kingdom,29,2026-01-11 15:55:13
+879,Lucie Petruzelova,1355.0,WTA,down,Czech Republic,29,2026-01-11 15:55:13
+880,Alicia Smith,6292.0,WTA,up,Australia,29,2026-01-11 15:55:13
+881,Agustina Chlpac,13036.0,WTA,up,Argentina,29,2026-01-11 15:55:13
+882,Diana-Ioana Simionescu,55523.0,WTA,down,Romania,29,2026-01-11 15:55:13
+883,Camilla Gennaro,15629.0,WTA,up,Italy,29,2026-01-11 15:55:13
+884,Polona Hercog,2819.0,WTA,up,Slovenia,28,2026-01-11 15:55:13
+885,Irem Kurt,13034.0,WTA,up,Turkey,28,2026-01-11 15:55:13
+886,Carolina Bohrer Martins,52056.0,WTA,up,Brazil,28,2026-01-11 15:55:13
+887,Tian Deng Tiana,51325.0,WTA,down,Sweden,28,2026-01-11 15:55:13
+888,Lavinia Luciano,68315.0,WTA,down,Italy,28,2026-01-11 15:55:13
+889,Alexandra Vasilyeva,1347.0,WTA,down,World,28,2026-01-11 15:55:13
+890,Wozuko Mdlulwa,50501.0,WTA,down,South Africa,28,2026-01-11 15:55:13
+891,Celine Simunyu,11612.0,WTA,same,Ireland,27,2026-01-11 15:55:13
+892,Sae Noguchi,76009.0,WTA,down,Japan,27,2026-01-11 15:55:13
+893,Valentina Ivanov,3215.0,WTA,down,New Zealand,27,2026-01-11 15:55:13
+894,Tianmei Wang,6173.0,WTA,up,USA,27,2026-01-11 15:55:13
+895,Aspen Schuman,54119.0,WTA,down,USA,27,2026-01-11 15:55:13
+896,Lucie Urbanova,33202.0,WTA,up,Czech Republic,27,2026-01-11 15:55:13
+897,Nadia Lagaev,5775.0,WTA,up,Canada,27,2026-01-11 15:55:13
+898,Lucie Nguyen Tan,1135.0,WTA,up,France,27,2026-01-11 15:55:13
+899,Cherry Kim,22975.0,WTA,up,South Korea,27,2026-01-11 15:55:13
+900,Kate Mansfield,24735.0,WTA,up,USA,27,2026-01-11 15:55:13
+901,Jamilah Snells,13360.0,WTA,up,USA,27,2026-01-11 15:55:13
+902,Stefania Rogozinska Dzik,12791.0,WTA,up,Poland,27,2026-01-11 15:55:13
+903,Carolin Raschdorf,65988.0,WTA,up,Germany,27,2026-01-11 15:55:13
+904,Julia Stamatova,2600.0,WTA,up,Bulgaria,27,2026-01-11 15:55:13
+905,Daphnee Mpetshi Perricard,52022.0,WTA,same,France,26,2026-01-11 15:55:13
+906,Defne Cirpanli,1009.0,WTA,same,Turkey,26,2026-01-11 15:55:13
+907,Elyse Tse,13809.0,WTA,down,New Zealand,26,2026-01-11 15:55:13
+908,Bella Payne,82380.0,WTA,down,USA,26,2026-01-11 15:55:13
+909,Adithya Karunaratne,13074.0,WTA,down,Hong Kong,26,2026-01-11 15:55:13
+910,Abigail Rencheli,31238.0,WTA,down,Moldova,26,2026-01-11 15:55:13
+911,Elena-Teodora Cadar,77.0,WTA,down,Romania,26,2026-01-11 15:55:13
+912,Sina Herrmann,1413.0,WTA,down,Germany,26,2026-01-11 15:55:13
+913,Shiho Tsujioka,73854.0,WTA,down,Japan,26,2026-01-11 15:55:13
+914,Evgeniya Burdina,13376.0,WTA,down,World,26,2026-01-11 15:55:13
+915,Christina McHale,496.0,WTA,down,USA,25,2026-01-11 15:55:13
+916,Yu Ye Qiu,8624.0,WTA,down,China,25,2026-01-11 15:55:13
+917,Allura Zamarripa,14438.0,WTA,down,USA,25,2026-01-11 15:55:13
+918,Dunja Maric,54858.0,WTA,down,Serbia,25,2026-01-11 15:55:13
+919,Teah Chavez,38269.0,WTA,down,Canada,25,2026-01-11 15:55:13
+920,Dabin Kim,,WTA,down,South Korea,25,2026-01-11 15:55:13
+921,Beatrice Stagno,20873.0,WTA,down,Italy,25,2026-01-11 15:55:13
+922,Jordyn McBride,79400.0,WTA,down,USA,25,2026-01-11 15:55:13
+923,Chelsea Fontenel,9252.0,WTA,down,Switzerland,25,2026-01-11 15:55:13
+924,Candela Vazquez,57346.0,WTA,up,Argentina,24,2026-01-11 15:55:13
+925,Jin Ahn Yu,3133.0,WTA,down,South Korea,24,2026-01-11 15:55:13
+926,Elza Tomase,13500.0,WTA,down,Latvia,24,2026-01-11 15:55:13
+927,Anna Gabric,2572.0,WTA,down,Germany,24,2026-01-11 15:55:13
+928,Antonia Stoyanov,70319.0,WTA,down,Netherlands,24,2026-01-11 15:55:13
+929,Irina Fetecau,3000.0,WTA,down,Romania,24,2026-01-11 15:55:13
+930,Indianna Spink,86839.0,WTA,down,United Kingdom,24,2026-01-11 15:55:13
+931,Ying Cheuk Shek,70300.0,WTA,down,Hong Kong,24,2026-01-11 15:55:13
+932,Yingqun Sun,58612.0,WTA,down,China,24,2026-01-11 15:55:13
+933,An Lin Fang,40156.0,WTA,up,Taiwan,24,2026-01-11 15:55:13
+934,Valeriia Artemeva,76954.0,WTA,up,World,24,2026-01-11 15:55:13
+935,Clarissa Blomqvist,23386.0,WTA,up,Finland,24,2026-01-11 15:55:13
+936,Victoria Pohle,55087.0,WTA,down,Germany,24,2026-01-11 15:55:13
+937,Paula Cembranos,38981.0,WTA,down,Switzerland,24,2026-01-11 15:55:13
+938,Simona Ogescu,2544.0,WTA,down,Romania,24,2026-01-11 15:55:13
+939,Mila Masic,38009.0,WTA,same,Serbia,24,2026-01-11 15:55:13
+940,Mihaela Buzarnescu,483.0,WTA,same,Romania,23,2026-01-11 15:55:13
+941,Vivian Yang,11482.0,WTA,same,New Zealand,23,2026-01-11 15:55:13
+942,Petra Sedlackova,9069.0,WTA,down,Czech Republic,23,2026-01-11 15:55:13
+943,Lea Tholey,5757.0,WTA,same,France,23,2026-01-11 15:55:13
+944,Jahnie Van Zyl,69923.0,WTA,same,South Africa,23,2026-01-11 15:55:13
+945,Adriana Tkachenko,82997.0,WTA,down,Ukraine,23,2026-01-11 15:55:13
+946,Johanna Silva,38157.0,WTA,down,Germany,23,2026-01-11 15:55:13
+947,Marta Lombardini,72030.0,WTA,same,Italy,23,2026-01-11 15:55:13
+948,Elizabeth Ionescu,53647.0,WTA,same,USA,23,2026-01-11 15:55:13
+949,Gabriella Price,114.0,WTA,same,USA,23,2026-01-11 15:55:13
+950,Lisa-Marie Rioux,19163.0,WTA,down,Japan,23,2026-01-11 15:55:13
+951,Ksenia Laskutova,7190.0,WTA,down,World,23,2026-01-11 15:55:13
+952,Nanari Katsumi,40160.0,WTA,down,Japan,23,2026-01-11 15:55:13
+953,Sara Svetac,38952.0,WTA,down,Croatia,22,2026-01-11 15:55:13
+954,Filipa Santos Ana,100.0,WTA,down,Portugal,22,2026-01-11 15:55:13
+955,Eszter Meri,2117.0,WTA,up,Slovakia,22,2026-01-11 15:55:13
+956,Krisha Mahendran,80829.0,WTA,down,India,22,2026-01-11 15:55:13
+957,Ani Amiraghyan,4535.0,WTA,down,Armenia,22,2026-01-11 15:55:13
+958,Francesca Mattioli,61631.0,WTA,down,Argentina,22,2026-01-11 15:55:13
+959,Aysegul Mert,10894.0,WTA,down,Turkey,22,2026-01-11 15:55:13
+960,Ekaterina Shalimova,9168.0,WTA,down,World,22,2026-01-11 15:55:13
+961,Lily Taylor,10895.0,WTA,up,Australia,22,2026-01-11 15:55:13
+962,Xuan Leong Shihomi Li,40287.0,WTA,down,Malaysia,22,2026-01-11 15:55:13
+963,Gabriella Broadfoot,38791.0,WTA,down,South Africa,22,2026-01-11 15:55:13
+964,Xi Luo,53035.0,WTA,down,China,22,2026-01-11 15:55:13
+965,Lorena Solar Donoso,54884.0,WTA,down,Spain,22,2026-01-11 15:55:13
+966,Ava Rodriguez,81885.0,WTA,down,USA,22,2026-01-11 15:55:13
+967,Romane Longueville,76314.0,WTA,down,Belgium,22,2026-01-11 15:55:13
+968,Arina Varaksina,14553.0,WTA,down,World,22,2026-01-11 15:55:13
+969,Kisa Yoshioka,13971.0,WTA,down,Japan,22,2026-01-11 15:55:13
+970,Nala Milic Ela,50633.0,WTA,up,Slovenia,22,2026-01-11 15:55:13
+971,Eri Hozumi,3442.0,WTA,up,Japan,21,2026-01-11 15:55:13
+972,Maya Iyengar,68681.0,WTA,up,USA,21,2026-01-11 15:55:13
+973,Aya El Aouni,10897.0,WTA,up,Morocco,21,2026-01-11 15:55:13
+974,Kate Fakih,40835.0,WTA,up,USA,21,2026-01-11 15:55:13
+975,Lauryn John-Baptiste,19166.0,WTA,down,United Kingdom,21,2026-01-11 15:55:13
+976,Yanan Hou,31155.0,WTA,up,China,21,2026-01-11 15:55:13
+977,Polina Kuharenko,40793.0,WTA,up,World,21,2026-01-11 15:55:13
+978,Isabella Barrera Aguirre,13331.0,WTA,down,USA,21,2026-01-11 15:55:13
+979,Jizel Matos Sequeira Fernandes,66514.0,WTA,down,United Kingdom,21,2026-01-11 15:55:13
+980,Neus Torner Sensano,74878.0,WTA,down,Spain,20,2026-01-11 15:55:13
+981,Maribella Zamarripa,23069.0,WTA,up,USA,20,2026-01-11 15:55:13
+982,Sophie Chang,2126.0,WTA,up,USA,20,2026-01-11 15:55:13
+983,Sofia Da Cruz Mendonca,1019.0,WTA,up,Brazil,20,2026-01-11 15:55:13
+984,Fanny Norin,38948.0,WTA,down,Sweden,20,2026-01-11 15:55:13
+985,Eleonora Alvisi,8441.0,WTA,up,Italy,20,2026-01-11 15:55:13
+987,Veronica Miroshnichenko,40122.0,WTA,up,World,20,2026-01-11 15:55:13
+988,Carson Tanguilig,69984.0,WTA,up,USA,20,2026-01-11 15:55:13
+989,Savannah Broadus,30106.0,WTA,up,USA,20,2026-01-11 15:55:13
+990,Maria Garcia Cid,18071.0,WTA,down,Spain,20,2026-01-11 15:55:13
+991,Kathleen Kanev,96.0,WTA,up,Germany,20,2026-01-11 15:55:13
+992,Nada Fouad,1020.0,WTA,down,Egypt,20,2026-01-11 15:55:13
+993,Anjali Rathi,25031.0,WTA,up,India,20,2026-01-11 15:55:13
+994,Lexue Xiao,31666.0,WTA,up,China,20,2026-01-11 15:55:13
+995,Nina Radovanovic,13073.0,WTA,up,France,20,2026-01-11 15:55:13
+995,Valentina Losciale,15372.0,WTA,up,Italy,20,2026-01-11 15:55:13
+997,Gloria Ceschi,1014.0,WTA,up,Italy,20,2026-01-11 15:55:13
+998,Arina Arifullina,24512.0,WTA,up,World,20,2026-01-11 15:55:13
+999,Sofia Martinez Solis Claudia,25343.0,WTA,up,Mexico,19,2026-01-11 15:55:13
+1000,Tegan Bush,70748.0,WTA,up,United Kingdom,19,2026-01-11 15:55:13
+1001,Kallista Liu,60031.0,WTA,up,USA,19,2026-01-11 15:55:13
+1002,Isabella Guillen Giselle,63491.0,WTA,up,Australia,19,2026-01-11 15:55:13
+1003,Jizelle Sibai,78990.0,WTA,up,Australia,19,2026-01-11 15:55:13
+1004,Daria Frayman,53774.0,WTA,up,Cyprus,19,2026-01-11 15:55:13
+1005,Gloriana Nahum,54699.0,WTA,up,Benin,19,2026-01-11 15:55:13
+1006,Kira Bataikina,67383.0,WTA,up,World,19,2026-01-11 15:55:13
+1006,Maria Lazarenko,,WTA,up,Ukraine,19,2026-01-11 15:55:13
+1008,Carolina Millan Ingrid,91244.0,WTA,down,Mexico,19,2026-01-11 15:55:13
+1009,Marion Job Karine,38136.0,WTA,down,Cameroon,19,2026-01-11 15:55:13
+1010,Lara Schmidt,,WTA,up,Germany,19,2026-01-11 15:55:13
+1011,Daria Kuczer,38181.0,WTA,up,Poland,19,2026-01-11 15:55:13
+1012,Lucie Pawlak,38780.0,WTA,up,France,19,2026-01-11 15:55:13
+1013,Kolie Allen,39131.0,WTA,up,USA,19,2026-01-11 15:55:13
+1014,Jenna Dean,66635.0,WTA,up,USA,19,2026-01-11 15:55:13
+1015,Carlotta Moccia,40162.0,WTA,up,Italy,19,2026-01-11 15:55:13
+1016,Karolina Vlckova,1037.0,WTA,down,Czech Republic,19,2026-01-11 15:55:13
+1017,Brandy Walker,5.0,WTA,up,USA,19,2026-01-11 15:55:13
+1018,Liv Hovde,9522.0,WTA,up,USA,18,2026-01-11 15:55:13
+1019,Sabastiani Leon,,WTA,up,Mexico,18,2026-01-11 15:55:13
+1020,Suha Lee,4095.0,WTA,up,South Korea,18,2026-01-11 15:55:13
+1021,DJ Bennett,52057.0,WTA,up,USA,18,2026-01-11 15:55:13
+1022,Sonja Zhiyenbayeva,40076.0,WTA,down,Kazakhstan,18,2026-01-11 15:55:13
+1023,Kateryna Diatlova,20381.0,WTA,down,Ukraine,18,2026-01-11 15:55:13
+1024,Sofia Milatova,1405.0,WTA,up,Slovakia,18,2026-01-11 15:55:13
+1025,Polina Skliar,86096.0,WTA,up,Ukraine,18,2026-01-11 15:55:13
+1026,Thea Frodin,53978.0,WTA,down,USA,18,2026-01-11 15:55:13
+1026,Anna Ureke,13214.0,WTA,up,World,18,2026-01-11 15:55:13
+1028,Zuzanna Kolonus,37956.0,WTA,up,Poland,18,2026-01-11 15:55:13
+1029,Seda Baslilar,65411.0,WTA,up,France,18,2026-01-11 15:55:13
+1030,Inka Wawrzkiewicz,84424.0,WTA,down,Poland,18,2026-01-11 15:55:13
+1031,Maria Kononova,202.0,WTA,up,World,18,2026-01-11 15:55:13
+1032,Ustiniya Lekomtseva,49392.0,WTA,down,World,18,2026-01-11 15:55:13
+1033,Alisa Kummel,14558.0,WTA,up,World,18,2026-01-11 15:55:13
+1034,Georgiana Goina Patricia,58114.0,WTA,down,Romania,18,2026-01-11 15:55:13
+1034,Polina Bakhmutkina,1342.0,WTA,up,Belgium,18,2026-01-11 15:55:13
+1036,Sara Mikaca,19162.0,WTA,down,Bosnia and Herzegovina,18,2026-01-11 15:55:13
+1037,Natsuho Arakawa,68.0,WTA,up,Japan,18,2026-01-11 15:55:13
+1038,Claudia Gasparovic,68425.0,WTA,up,Austria,18,2026-01-11 15:55:13
+1039,Maelle Leclercq,38971.0,WTA,down,France,18,2026-01-11 15:55:13
+1040,Tianmi Mi,40821.0,WTA,up,China,18,2026-01-11 15:55:13
+1041,Paulina Perez Garcia Maria,136.0,WTA,up,Colombia,17,2026-01-11 15:55:13
+1042,Alexandra Osborne,71.0,WTA,up,Australia,17,2026-01-11 15:55:13
+1043,Kim Chiarello,90503.0,WTA,up,France,17,2026-01-11 15:55:13
+1044,Eva Garkusha,1346.0,WTA,up,World,17,2026-01-11 15:55:13
+1045,Emma Charney,19702.0,WTA,up,USA,17,2026-01-11 15:55:13
+1045,Tina Manescu,88208.0,WTA,up,Germany,17,2026-01-11 15:55:13
+1047,Jo-Yee Chan,84315.0,WTA,up,USA,17,2026-01-11 15:55:13
+1048,Lucia Peyre,17376.0,WTA,down,Argentina,17,2026-01-11 15:55:13
+1049,Julita Saner,2597.0,WTA,up,Sweden,17,2026-01-11 15:55:13
+1050,Judith Perello Saavedra,1420.0,WTA,up,Spain,17,2026-01-11 15:55:13
+1050,Krystyna Pochtovyk,20383.0,WTA,up,Ukraine,17,2026-01-11 15:55:13
+1052,Valerie Glozman,37843.0,WTA,up,USA,16,2026-01-11 15:55:13
+1053,Karolina Pliskova,517.0,WTA,up,Czech Republic,16,2026-01-11 15:55:13
+1054,Tayisiya Morderger,1997.0,WTA,up,Germany,16,2026-01-11 15:55:13
+1055,Daniela Piani,28606.0,WTA,up,United Kingdom,16,2026-01-11 15:55:13
+1056,Charlotte Keitel,67693.0,WTA,up,Germany,16,2026-01-11 15:55:13
+1056,Amy Stevens,15341.0,WTA,up,Australia,16,2026-01-11 15:55:13
+1056,Kylie McKenzie,9127.0,WTA,up,USA,16,2026-01-11 15:55:13
+1056,Kennedy Drenser-Hagmann,92077.0,WTA,up,USA,16,2026-01-11 15:55:13
+1060,Amelia Paszun,84716.0,WTA,down,Poland,16,2026-01-11 15:55:13
+1060,Annika Penickova,58204.0,WTA,up,USA,16,2026-01-11 15:55:13
+1062,Anna Snigireva,51594.0,WTA,up,World,16,2026-01-11 15:55:13
+1062,Andrea Obradovic,40062.0,WTA,up,Serbia,16,2026-01-11 15:55:13
+1064,Lara Smejkal,39923.0,WTA,up,Slovenia,16,2026-01-11 15:55:13
+1065,Sofia Cohen Perovani,2264.0,WTA,up,Brazil,16,2026-01-11 15:55:13
+1066,Eunji Lee,,WTA,up,South Korea,16,2026-01-11 15:55:13
+1067,Rinon Okuwaki,39116.0,WTA,up,Japan,16,2026-01-11 15:55:13
+1068,Yui Chikaraishi,12992.0,WTA,up,Japan,16,2026-01-11 15:55:13
+1069,Vlada Ekshibarova,27727.0,WTA,up,Israel,16,2026-01-11 15:55:13
+1070,Nicole Gadient,13738.0,WTA,down,Switzerland,16,2026-01-11 15:55:13
+1071,Giulia Paterno,23392.0,WTA,down,Italy,16,2026-01-11 15:55:13
+1072,Sloane Stephens,1826.0,WTA,up,USA,15,2026-01-11 15:55:13
+1073,Xi Wu Ru,90543.0,WTA,up,China,15,2026-01-11 15:55:13
+1074,Tara Moore,1909.0,WTA,up,United Kingdom,15,2026-01-11 15:55:13
+1075,Nadia Kulbiej,70751.0,WTA,up,Poland,15,2026-01-11 15:55:13
+1076,Laetitia Sarrazin,3746.0,WTA,up,France,15,2026-01-11 15:55:13
+1076,Barbara Kostecka,86095.0,WTA,up,Poland,15,2026-01-11 15:55:13
+1078,Kiara Zabkova,73135.0,WTA,up,Slovakia,15,2026-01-11 15:55:13
+1079,Sarah Mildren,78988.0,WTA,up,Australia,15,2026-01-11 15:55:13
+1080,Funa Kozaki,13819.0,WTA,up,Japan,15,2026-01-11 15:55:13
+1081,Lani Chang,83235.0,WTA,down,USA,15,2026-01-11 15:55:13
+1081,Jessie Aney,214.0,WTA,up,USA,15,2026-01-11 15:55:13
+1083,Margaux Maquet,69067.0,WTA,up,Belgium,15,2026-01-11 15:55:13
+1084,Chukwumelije Clarke,,WTA,down,USA,15,2026-01-11 15:55:13
+1085,Maelys Bougrat,14109.0,WTA,down,France,15,2026-01-11 15:55:13
+1086,Andjela Lazarevic,52255.0,WTA,up,Serbia,15,2026-01-11 15:55:13
+1087,Cindy Langlais,62516.0,WTA,up,France,14,2026-01-11 15:55:13
+1088,Isabel Higuita Barraza Mariana,21720.0,WTA,up,Colombia,14,2026-01-11 15:55:13
+1089,Ruby Cooling,84355.0,WTA,up,United Kingdom,14,2026-01-11 15:55:13
+1090,Maria Cinalli Luna,63493.0,WTA,up,Argentina,14,2026-01-11 15:55:13
+1091,Denisa Hindova,4082.0,WTA,down,Czech Republic,14,2026-01-11 15:55:13
+1092,Selina Atay,2525.0,WTA,up,Turkey,14,2026-01-11 15:55:13
+1093,Midori Castillo Meza,90153.0,WTA,down,USA,14,2026-01-11 15:55:13
+1094,Diae El Jardi,64804.0,WTA,up,Morocco,14,2026-01-11 15:55:13
+1095,Georgina Garcia-Perez,1784.0,WTA,up,Spain,14,2026-01-11 15:55:13
+1096,Lorena Schaedel,34690.0,WTA,up,Germany,14,2026-01-11 15:55:13
+1097,Alessia Monteleone Giulia,75456.0,WTA,up,Italy,14,2026-01-11 15:55:13
+1098,Kristina Paskauskas,40089.0,WTA,up,United Kingdom,14,2026-01-11 15:55:13
+1099,Anri Nagata,13621.0,WTA,up,Japan,14,2026-01-11 15:55:13
+1100,Emma Kamper Malmkjaer,87042.0,WTA,down,Denmark,14,2026-01-11 15:55:13
+1100,Vlada Zvereva,,WTA,up,World,14,2026-01-11 15:55:13
+1102,Luana Plaza Araujo,13083.0,WTA,up,Brazil,14,2026-01-11 15:55:13
+1103,Miyu Nakashima,56185.0,WTA,up,Japan,14,2026-01-11 15:55:13
+1104,Katerina Mandelikova,14354.0,WTA,down,Czech Republic,14,2026-01-11 15:55:13
+1105,Nagomi Higashitani,38988.0,WTA,up,Japan,14,2026-01-11 15:55:13
+1106,Ching Wu Ho,1362.0,WTA,up,Hong Kong,14,2026-01-11 15:55:13
+1107,Irina Anghel Alexandra,69065.0,WTA,up,Romania,14,2026-01-11 15:55:13
+1108,Ying Ruan Zi,67675.0,WTA,up,China,14,2026-01-11 15:55:13
+1109,Tori Kinard,192.0,WTA,down,USA,14,2026-01-11 15:55:13
+1110,Kianah Motosono,22705.0,WTA,up,USA,14,2026-01-11 15:55:13
+1111,Marta Soriano Santiago,24523.0,WTA,up,Spain,14,2026-01-11 15:55:13
+1111,Polina Kaibekova,60798.0,WTA,up,World,14,2026-01-11 15:55:13
+1113,Helena Stevic,14382.0,WTA,up,France,14,2026-01-11 15:55:13
+1114,Tanisha Kashyap,40820.0,WTA,up,India,14,2026-01-11 15:55:13
+1115,Bethanie Mattek-Sands,2749.0,WTA,up,USA,13,2026-01-11 15:55:13
+1116,Rebeca Pereira,8439.0,WTA,up,Brazil,13,2026-01-11 15:55:13
+1117,Marian Gomez Pezuela Cano,2556.0,WTA,up,Mexico,13,2026-01-11 15:55:13
+1118,Alexandra Bozovic,3321.0,WTA,up,Australia,13,2026-01-11 15:55:13
+1119,Tamara Kostic,38119.0,WTA,up,Austria,13,2026-01-11 15:55:13
+1120,Liel Rothensteiner,49347.0,WTA,up,Austria,13,2026-01-11 15:55:13
+1121,Anna Pushkareva,92497.0,WTA,up,Russia,13,2026-01-11 15:55:13
+1121,Dejana Radanovic,4190.0,WTA,up,Serbia,13,2026-01-11 15:55:13
+1123,Luciana Perry,84407.0,WTA,up,USA,13,2026-01-11 15:55:13
+1124,Alice Ferlito,71935.0,WTA,up,Spain,13,2026-01-11 15:55:13
+1125,Federica Bilardo,2284.0,WTA,up,Italy,13,2026-01-11 15:55:13
+1126,Naomi McKenzie,75585.0,WTA,up,Australia,13,2026-01-11 15:55:13
+1127,Alisa Vasileva,91358.0,WTA,up,World,13,2026-01-11 15:55:13
+1128,Anna Kartseva,77927.0,WTA,up,World,13,2026-01-11 15:55:13
+1128,Mia Slama,69230.0,WTA,up,USA,13,2026-01-11 15:55:13
+1130,Emma Wilson,24734.0,WTA,up,United Kingdom,13,2026-01-11 15:55:13
+1131,Mercedes Aristegui,20222.0,WTA,up,Spain,13,2026-01-11 15:55:13
+1131,Ilinca Sagmar,68665.0,WTA,up,Romania,13,2026-01-11 15:55:13
+1133,Lara Pfeifer,13337.0,WTA,up,Italy,13,2026-01-11 15:55:13
+1134,Lena Ebster Anna,84408.0,WTA,up,Austria,13,2026-01-11 15:55:13
+1135,Giuliana Bestetti,25.0,WTA,down,Italy,13,2026-01-11 15:55:13
+1136,Nana Kawagishi,13071.0,WTA,up,Japan,13,2026-01-11 15:55:13
+1137,Paola Lopez,60664.0,WTA,up,USA,13,2026-01-11 15:55:13
+1138,Yushan Shao,9041.0,WTA,up,China,12,2026-01-11 15:55:13
+1139,Catherine Aulia,3325.0,WTA,up,Australia,12,2026-01-11 15:55:13
+1140,Charo Esquiva Banuls,52706.0,WTA,down,Spain,12,2026-01-11 15:55:13
+1141,Shuo Feng,9106.0,WTA,up,China,12,2026-01-11 15:55:13
+1142,Marina Bulbarella,2559.0,WTA,down,Argentina,12,2026-01-11 15:55:13
+1143,Mavie Osterreicher,7359.0,WTA,up,Austria,12,2026-01-11 15:55:13
+1144,Ying Xun Fang,1379.0,WTA,up,China,12,2026-01-11 15:55:13
+1145,Min Liu,4581.0,WTA,up,China,12,2026-01-11 15:55:13
+1146,Anastasia Sysoeva,125.0,WTA,up,USA,12,2026-01-11 15:55:13
+1147,Zaire Clarke,76243.0,WTA,up,USA,12,2026-01-11 15:55:13
+1148,Janae Preston,89244.0,WTA,up,USA,12,2026-01-11 15:55:13
+1149,Berta Passola,53340.0,WTA,up,Spain,12,2026-01-11 15:55:13
+1149,Xinle Geng,84720.0,WTA,up,China,12,2026-01-11 15:55:13
+1151,Aravane Rezai,3539.0,WTA,up,France,12,2026-01-11 15:55:13
+1151,Nicole Rivkin,9269.0,WTA,up,Germany,12,2026-01-11 15:55:13
+1153,Raveena Kingsley,9157.0,WTA,up,USA,12,2026-01-11 15:55:13
+1154,Katherine Barnes,58551.0,WTA,up,United Kingdom,12,2026-01-11 15:55:13
+1155,Josefina Estevez,38941.0,WTA,down,Argentina,12,2026-01-11 15:55:13
+1156,Margaret Sohns,73855.0,WTA,down,USA,12,2026-01-11 15:55:13
+1157,Nao Nishino,58203.0,WTA,up,Japan,12,2026-01-11 15:55:13
+1158,Leilany Ipunesso,56269.0,WTA,up,New Caledonia,12,2026-01-11 15:55:13
+1159,Manca Pislak,11882.0,WTA,up,Slovenia,12,2026-01-11 15:55:13
+1160,Zoe Hitt,20874.0,WTA,up,USA,12,2026-01-11 15:55:13
+1161,Kaede Usui,75546.0,WTA,down,USA,12,2026-01-11 15:55:13
+1161,Fabienne Gettwart,14243.0,WTA,up,Germany,12,2026-01-11 15:55:13
+1163,Kaat Coppez,66485.0,WTA,up,Belgium,12,2026-01-11 15:55:13
+1163,Oceane Babel,492.0,WTA,down,France,12,2026-01-11 15:55:13
+1165,Stefaniya Pushkar,73480.0,WTA,up,Ukraine,12,2026-01-11 15:55:13
+1166,Jasmine Conway,9401.0,WTA,up,United Kingdom,12,2026-01-11 15:55:13
+1167,Barbara Straszewska,73134.0,WTA,down,Poland,12,2026-01-11 15:55:13
+1168,Barbora Michalkova,70093.0,WTA,down,Czech Republic,12,2026-01-11 15:55:13
+1168,Annabelle Xu,,WTA,up,Canada,12,2026-01-11 15:55:13
+1170,Feier Hu,54660.0,WTA,up,China,12,2026-01-11 15:55:13
+1170,Remika Ohashi,72037.0,WTA,up,Japan,12,2026-01-11 15:55:13
+1172,Rachael Smith,7919.0,WTA,up,USA,12,2026-01-11 15:55:13
+1173,Barbara Dessolis,2282.0,WTA,up,Italy,12,2026-01-11 15:55:13
+1174,Maria Oliver Sanchez,38007.0,WTA,up,Spain,12,2026-01-11 15:55:13
+1175,Ada Kumru,38327.0,WTA,down,Turkey,11,2026-01-11 15:55:13
+1176,Aoi Ide,82980.0,WTA,up,Japan,11,2026-01-11 15:55:13
+1177,Shruti Ahlawat,25026.0,WTA,up,India,11,2026-01-11 15:55:13
+1178,Welles Newman,73853.0,WTA,up,USA,11,2026-01-11 15:55:13
+1179,Lisa Claeys,68070.0,WTA,up,Belgium,11,2026-01-11 15:55:13
+1180,Tereza Krejcova,73864.0,WTA,up,Czech Republic,11,2026-01-11 15:55:13
+1181,Karla Bartel,82378.0,WTA,up,Germany,11,2026-01-11 15:55:13
+1181,Mandegar Farzami,71459.0,WTA,up,Iran,11,2026-01-11 15:55:13
+1181,Luna Vujovic,65718.0,WTA,up,Serbia,11,2026-01-11 15:55:13
+1181,Daria Shadchneva,40518.0,WTA,up,World,11,2026-01-11 15:55:13
+1185,Mouna Bouzgarrou,23295.0,WTA,up,Tunisia,11,2026-01-11 15:55:13
+1185,Humera Baharmus,13978.0,WTA,up,India,11,2026-01-11 15:55:13
+1185,Yuka Hosoki,8723.0,WTA,up,Japan,11,2026-01-11 15:55:13
+1188,Smriti Bhasin,58.0,WTA,up,India,11,2026-01-11 15:55:13
+1188,Klara Kosan,11728.0,WTA,up,USA,11,2026-01-11 15:55:13
+1188,Elizabeth Coleman,9239.0,WTA,down,USA,11,2026-01-11 15:55:13
+1191,Kanako Morisaki,6933.0,WTA,up,Japan,11,2026-01-11 15:55:13
+1191,Mia Wainwright,76419.0,WTA,up,United Kingdom,11,2026-01-11 15:55:13
+1193,Alana Parnaby,1408.0,WTA,up,Australia,11,2026-01-11 15:55:13
+1194,Claudia Hoste Ferrer,146.0,WTA,up,Spain,11,2026-01-11 15:55:13
+1194,Milana Maslenkova,7030.0,WTA,up,Uzbekistan,11,2026-01-11 15:55:13
+1196,Carolina Nava Elkin Amanda,39505.0,WTA,up,Mexico,11,2026-01-11 15:55:13
+1197,Amelie Hejtmankova,69485.0,WTA,up,Czech Republic,11,2026-01-11 15:55:13
+1198,Angelica Sara,65858.0,WTA,down,Italy,11,2026-01-11 15:55:13
+1198,Emily De Oliveira,75929.0,WTA,up,USA,11,2026-01-11 15:55:13
+1200,Alesia Breaz,85934.0,WTA,up,Romania,11,2026-01-11 15:55:13
+1200,Esina Samardzic Ayline,9335.0,WTA,up,Switzerland,11,2026-01-11 15:55:13
+1200,Maayan Laron,83613.0,WTA,down,Israel,11,2026-01-11 15:55:13
+1200,Maria Mikhaylova,38938.0,WTA,up,World,11,2026-01-11 15:55:13
+1200,Kamonwan Yodpetch,27706.0,WTA,up,Thailand,11,2026-01-11 15:55:13
+1200,Isabella Svahn,40199.0,WTA,up,Sweden,11,2026-01-11 15:55:13
+1200,Sofia Martianova,74763.0,WTA,up,World,11,2026-01-11 15:55:13
+1207,Laura Boehner,15846.0,WTA,up,Germany,11,2026-01-11 15:55:13
+1207,Caterina Odorizzi,38949.0,WTA,up,Italy,11,2026-01-11 15:55:13
+1209,Analu Freitas,63826.0,WTA,up,Portugal,10,2026-01-11 15:55:13
+1210,Sara Lanca,94.0,WTA,down,Portugal,10,2026-01-11 15:55:13
+1211,Leticia Garcia Vidal,57688.0,WTA,up,Brazil,10,2026-01-11 15:55:13
+1211,Naoko Eto,5249.0,WTA,up,Japan,10,2026-01-11 15:55:13
+1213,Karla Popovic,5707.0,WTA,up,Croatia,10,2026-01-11 15:55:13
+1213,Thessy Ntondele Zinga,18142.0,WTA,up,France,10,2026-01-11 15:55:13
+1215,Kali Supova,60799.0,WTA,up,Slovakia,10,2026-01-11 15:55:13
+1216,Piper Charney,58202.0,WTA,up,USA,10,2026-01-11 15:55:13
+1216,Pei-Chi Lee,1397.0,WTA,up,Taiwan,10,2026-01-11 15:55:13
+1218,Ava-Monet Sycamore,65356.0,WTA,up,Australia,10,2026-01-11 15:55:13
+1219,Cara Korhonen,56715.0,WTA,up,Finland,10,2026-01-11 15:55:13
+1219,Celia Anson Sanchez,58397.0,WTA,up,Spain,10,2026-01-11 15:55:13
+1219,Cristina Ramos Sierra,64791.0,WTA,up,Spain,10,2026-01-11 15:55:13
+1219,Selina Dal,13255.0,WTA,up,Germany,10,2026-01-11 15:55:13
+1223,Anastasia Sukhotina,13462.0,WTA,up,World,10,2026-01-11 15:55:13
+1223,Patricia Bejenaru Karola,20152.0,WTA,up,Romania,10,2026-01-11 15:55:13
+1225,Karolina Mrazikova,51003.0,WTA,up,Slovakia,10,2026-01-11 15:55:13
+1225,Lucrezia Musetti,73781.0,WTA,up,Italy,10,2026-01-11 15:55:13
+1227,Rikke De Koning,40086.0,WTA,up,Netherlands,10,2026-01-11 15:55:13
+1228,Sydney Jara,75928.0,WTA,up,USA,10,2026-01-11 15:55:13
+1228,Malkia Menguene,,WTA,down,USA,10,2026-01-11 15:55:13
+1230,Ciara Moore,55154.0,WTA,up,United Kingdom,10,2026-01-11 15:55:13
+1230,Georgina Groth,74171.0,WTA,up,Germany,10,2026-01-11 15:55:13
+1232,Anna Kmiecik,72749.0,WTA,up,Poland,10,2026-01-11 15:55:13
+1232,Juliana Giaccio,76054.0,WTA,up,Spain,10,2026-01-11 15:55:13
+1232,Jiho Shin,3130.0,WTA,up,South Korea,10,2026-01-11 15:55:13
+1232,Sofia Suslova,90177.0,WTA,up,World,10,2026-01-11 15:55:13
+1232,Saoirse Breen,52222.0,WTA,up,Fiji,10,2026-01-11 15:55:13
+1237,Marie Mattel,89697.0,WTA,up,France,10,2026-01-11 15:55:13
+1238,Rosa Dourado Zimermman Jennifer,24284.0,WTA,up,Brazil,10,2026-01-11 15:55:13
+1239,Olivia Bergler,15525.0,WTA,up,Poland,10,2026-01-11 15:55:13
+1240,Jeong Moon,24519.0,WTA,up,South Korea,10,2026-01-11 15:55:13
+1240,Kanon Sawashiro,50791.0,WTA,down,Japan,10,2026-01-11 15:55:13
+1240,Laura Cilekova,49791.0,WTA,up,Slovakia,10,2026-01-11 15:55:13
+1240,Francesca Gandolfi,61315.0,WTA,down,Italy,10,2026-01-11 15:55:13
+1244,Anna Tabunshchyk,80336.0,WTA,up,Canada,10,2026-01-11 15:55:13
+1245,Lourdes Ayala,24413.0,WTA,up,Argentina,10,2026-01-11 15:55:13
+1246,Beatris Spasova,1345.0,WTA,up,Bulgaria,10,2026-01-11 15:55:13
+1246,Saumya Vig,13980.0,WTA,up,India,10,2026-01-11 15:55:13
+1246,Summer Yardley,58641.0,WTA,up,United Kingdom,10,2026-01-11 15:55:13
+1249,Emma Van Poppel,13203.0,WTA,up,Netherlands,10,2026-01-11 15:55:13
+1250,Jose Sanchez Uribe Maria,3885.0,WTA,up,Colombia,9,2026-01-11 15:55:13
+1251,Yana Morderger,1830.0,WTA,up,Germany,9,2026-01-11 15:55:13
+1252,Marie Desvignes Eva,52686.0,WTA,up,Singapore,9,2026-01-11 15:55:13
+1253,Kailey Evans,22282.0,WTA,up,USA,9,2026-01-11 15:55:13
+1253,Riko Kikawada,68050.0,WTA,up,Japan,9,2026-01-11 15:55:13
+1253,Sabine Rutlauka,19429.0,WTA,up,Latvia,9,2026-01-11 15:55:13
+1256,Kseniia Ruchkina,90809.0,WTA,up,Russia,9,2026-01-11 15:55:13
+1257,Isabel Skoog,40792.0,WTA,up,Sweden,9,2026-01-11 15:55:13
+1257,Maria Garcia,38929.0,WTA,up,Portugal,9,2026-01-11 15:55:13
+1259,Gabriella Mikaul,78523.0,WTA,up,USA,9,2026-01-11 15:55:13
+1260,Camilla Bossi,38280.0,WTA,up,Brazil,9,2026-01-11 15:55:13
+1260,Marcella Dessolis,53621.0,WTA,up,Italy,9,2026-01-11 15:55:13
+1260,Laalitya Kalluri,53623.0,WTA,up,India,9,2026-01-11 15:55:13
+1260,Pilar Beveraggi Lespiau,59522.0,WTA,down,Argentina,9,2026-01-11 15:55:13
+1260,Liu Yuhan,90141.0,WTA,up,China,9,2026-01-11 15:55:13
+1265,Ashmitha Easwaramurthi,99.0,WTA,up,India,9,2026-01-11 15:55:13
+1266,Francesca Dell'Edera,17.0,WTA,up,Italy,9,2026-01-11 15:55:13
+1266,Ekaterina Tupitsyna,81408.0,WTA,up,World,9,2026-01-11 15:55:13
+1266,Klaudija Bubelyte,19431.0,WTA,up,Lithuania,9,2026-01-11 15:55:13
+1266,Hephzibah Oluwadare,64356.0,WTA,up,United Kingdom,9,2026-01-11 15:55:13
+1266,Tamara Sramkova,65045.0,WTA,down,Slovakia,9,2026-01-11 15:55:13
+1271,Soha Sadiq,13983.0,WTA,up,India,9,2026-01-11 15:55:13
+1272,Polina Isakova,71279.0,WTA,up,Ukraine,9,2026-01-11 15:55:13
+1272,Teodora Sava Ioana,54092.0,WTA,up,Romania,9,2026-01-11 15:55:13
+1272,Daria Gorska,54024.0,WTA,up,Poland,9,2026-01-11 15:55:13
+1272,Emma Slavikova,61722.0,WTA,up,Czech Republic,9,2026-01-11 15:55:13
+1276,Giovanna Giessler Elena,29352.0,WTA,up,Germany,9,2026-01-11 15:55:13
+1277,Laura Brunkel,56754.0,WTA,down,Denmark,9,2026-01-11 15:55:13
+1277,Victoria Balan Sara,72448.0,WTA,up,Romania,9,2026-01-11 15:55:13
+1279,Natalia Krockova,40725.0,WTA,up,Slovakia,9,2026-01-11 15:55:13
+1280,Melis Rasim,75050.0,WTA,up,Bulgaria,9,2026-01-11 15:55:13
+1281,Lucia Llinares Domingo,15842.0,WTA,up,Spain,9,2026-01-11 15:55:13
+1282,Anna Frey,53648.0,WTA,up,USA,8,2026-01-11 15:55:13
+1283,Anna Dvorackova,81423.0,WTA,up,Czech Republic,8,2026-01-11 15:55:13
+1284,Linea Bajraliu,67387.0,WTA,up,Sweden,8,2026-01-11 15:55:13
+1285,Alja Senica,59689.0,WTA,up,Slovenia,8,2026-01-11 15:55:13
+1286,Ariadna Garcia-Patron Canals,66137.0,WTA,up,Spain,8,2026-01-11 15:55:13
+1286,Mia Kupres,6702.0,WTA,up,Canada,8,2026-01-11 15:55:13
+1286,Yasmine Wagner,49044.0,WTA,up,Germany,8,2026-01-11 15:55:13
+1289,Sophie Llewellyn,67444.0,WTA,up,USA,8,2026-01-11 15:55:13
+1289,Vanessa Teiusanu,13543.0,WTA,up,Romania,8,2026-01-11 15:55:13
+1289,Milla Sequeira,38914.0,WTA,down,Portugal,8,2026-01-11 15:55:13
+1289,Won Wi Hwui,18965.0,WTA,up,South Korea,8,2026-01-11 15:55:13
+1289,Aishi Das,62582.0,WTA,up,New Zealand,8,2026-01-11 15:55:13
+1294,Zdena Safarova,6687.0,WTA,up,Czech Republic,8,2026-01-11 15:55:13
+1295,Carmen Gallardo Guevara,16110.0,WTA,up,Spain,8,2026-01-11 15:55:13
+1295,Isabel Adrover Gallego,20218.0,WTA,up,Spain,8,2026-01-11 15:55:13
+1295,Mariia Bergen,23.0,WTA,up,Ukraine,8,2026-01-11 15:55:13
+1298,Maria Eduarda Lages,22869.0,WTA,up,Brazil,8,2026-01-11 15:55:13
+1298,Margaux Komano,17377.0,WTA,up,France,8,2026-01-11 15:55:13
+1298,Asylzhan Arystanbekova,39124.0,WTA,up,Kazakhstan,8,2026-01-11 15:55:13
+1298,Aglaya Fedorova,14552.0,WTA,up,World,8,2026-01-11 15:55:13
+1298,Viktoria Veleva,90855.0,WTA,down,Bulgaria,8,2026-01-11 15:55:13
+1298,Ailin Larraya Guidi Sol,38942.0,WTA,up,Argentina,8,2026-01-11 15:55:13
+1304,Pooja Ingale,,WTA,up,India,8,2026-01-11 15:55:13
+1305,Xichen Zhao,22721.0,WTA,up,China,8,2026-01-11 15:55:13
+1306,Paula Ormaechea,1118.0,WTA,same,Argentina,7,2026-01-11 15:55:13
+1307,Makoto Ninomiya,4310.0,WTA,same,Japan,7,2026-01-11 15:55:13
+1308,Luiza Barros Victoria,70747.0,WTA,same,Brazil,7,2026-01-11 15:55:13
+1309,Sara Milanese,49617.0,WTA,up,Italy,7,2026-01-11 15:55:13
+1309,Jelena Cvijanovic,10919.0,WTA,same,Australia,7,2026-01-11 15:55:13
+1309,Elena Michel,78662.0,WTA,same,France,7,2026-01-11 15:55:13
+1309,Kaur Sandhu Gurmanat,93944.0,WTA,up,Australia,7,2026-01-11 15:55:13
+1309,Seo Lee Gyeong,39108.0,WTA,same,South Korea,7,2026-01-11 15:55:13
+1314,Karolina Lincer,61432.0,WTA,same,Poland,7,2026-01-11 15:55:13
+1315,Marcella Cruz,75889.0,WTA,same,USA,7,2026-01-11 15:55:13
+1315,Mathilde Ngijol-Carre,74666.0,WTA,same,France,7,2026-01-11 15:55:13
+1315,Oriana Gniewkowska,72916.0,WTA,same,Poland,7,2026-01-11 15:55:13
+1315,Doga Turkmen,13028.0,WTA,same,Turkey,7,2026-01-11 15:55:13
+1315,Danielle Daley,41.0,WTA,same,United Kingdom,7,2026-01-11 15:55:13
+1320,Julie Myatovic,49584.0,WTA,same,France,7,2026-01-11 15:55:13
+1321,Jade Groen,85497.0,WTA,same,Netherlands,7,2026-01-11 15:55:13
+1321,Nigina Abduraimova,1439.0,WTA,same,Uzbekistan,7,2026-01-11 15:55:13
+1321,Avery Alexander,87957.0,WTA,same,Canada,7,2026-01-11 15:55:13
+1324,Catarina Ibiaraba Melleiro,,WTA,down,Brazil,7,2026-01-11 15:55:13
+1324,Anastasia Grechkina,35429.0,WTA,down,World,7,2026-01-11 15:55:13
+1324,Danique Havermans,58611.0,WTA,down,Netherlands,7,2026-01-11 15:55:13
+1324,Elena Grekul,20909.0,WTA,down,Ukraine,7,2026-01-11 15:55:13
+1324,Hania Abouelsaad,69486.0,WTA,down,Egypt,7,2026-01-11 15:55:13
+1324,Mutsumi Uemura,81772.0,WTA,down,Japan,7,2026-01-11 15:55:13
+1324,Matylda Burylo,61144.0,WTA,down,Norway,7,2026-01-11 15:55:13
+1324,Maddy Zampardo,82381.0,WTA,down,USA,7,2026-01-11 15:55:13
+1324,Katarina Kujovic,83338.0,WTA,down,Belgium,7,2026-01-11 15:55:13
+1333,Lois Newberry,86840.0,WTA,down,United Kingdom,7,2026-01-11 15:55:13
+1333,Mirjana Jovanovic,65091.0,WTA,up,Serbia,7,2026-01-11 15:55:13
+1335,Milena Ciocan,58750.0,WTA,same,France,7,2026-01-11 15:55:13
+1335,Dia Evtimova,1341.0,WTA,up,Bulgaria,7,2026-01-11 15:55:13
+1335,Vivien Sandberg,1006.0,WTA,down,Germany,7,2026-01-11 15:55:13
+1335,Tenika Mcgiffin,33854.0,WTA,same,Australia,7,2026-01-11 15:55:13
+1339,Anna Yang,72041.0,WTA,up,China,6,2026-01-11 15:55:13
+1340,Yuyao Li,4144.0,WTA,same,China,6,2026-01-11 15:55:13
+1341,Qianhui Tang,9104.0,WTA,same,China,6,2026-01-11 15:55:13
+1341,Allegra Korpanec Davies,91359.0,WTA,same,United Kingdom,6,2026-01-11 15:55:13
+1343,Yuliana Monroy,8063.0,WTA,same,Colombia,6,2026-01-11 15:55:13
+1344,Ximena Senties,64461.0,WTA,up,Mexico,6,2026-01-11 15:55:13
+1344,Lena Couto,39827.0,WTA,same,Portugal,6,2026-01-11 15:55:13
+1346,Alice Soulie,68755.0,WTA,up,France,6,2026-01-11 15:55:13
+1347,Victoria Gobbi Monllau Ana,6241.0,WTA,same,Argentina,6,2026-01-11 15:55:13
+1347,Karolina Krajmer,77248.0,WTA,same,Slovakia,6,2026-01-11 15:55:13
+1349,Moeka Miyata,49563.0,WTA,same,Japan,6,2026-01-11 15:55:13
+1349,Margot Phanthala,14670.0,WTA,same,France,6,2026-01-11 15:55:13
+1349,Magdalena Smekalova,53796.0,WTA,same,Czech Republic,6,2026-01-11 15:55:13
+1349,Amelie Brooks,,WTA,same,United Kingdom,6,2026-01-11 15:55:13
+1349,Anika Jaskova,13032.0,WTA,same,Slovakia,6,2026-01-11 15:55:13
+1349,Ria Dernikovic,49895.0,WTA,same,Croatia,6,2026-01-11 15:55:13
+1355,Pia Praefke,13085.0,WTA,up,Germany,6,2026-01-11 15:55:13
+1355,Sana Garakani,38903.0,WTA,same,Iran,6,2026-01-11 15:55:13
+1355,Vanja Gudelj,1008.0,WTA,same,Netherlands,6,2026-01-11 15:55:13
+1355,Yui Ohwaki,65787.0,WTA,same,Japan,6,2026-01-11 15:55:13
+1355,Ana Giraldi Requena,38018.0,WTA,same,Spain,6,2026-01-11 15:55:13
+1355,Lavinia Puiac Alexia,54023.0,WTA,up,Romania,6,2026-01-11 15:55:13
+1355,Dominika Podhajecka,71086.0,WTA,down,Poland,6,2026-01-11 15:55:13
+1355,Didi Bredberg Canizares,85919.0,WTA,down,USA,6,2026-01-11 15:55:13
+1355,Dusica Popovski,68680.0,WTA,same,Serbia,6,2026-01-11 15:55:13
+1355,Claire An,67443.0,WTA,same,USA,6,2026-01-11 15:55:13
+1355,Gala Ivanovic,84069.0,WTA,same,Serbia,6,2026-01-11 15:55:13
+1355,Maria Vancea Gabriela,92126.0,WTA,same,Romania,6,2026-01-11 15:55:13
+1355,Ellie Daniels,38794.0,WTA,same,Canada,6,2026-01-11 15:55:13
+1355,Maria Andrienko,40096.0,WTA,same,World,6,2026-01-11 15:55:13
+1355,Na-Ri Kim,4348.0,WTA,same,South Korea,6,2026-01-11 15:55:13
+1355,Megan Heuser,39181.0,WTA,same,USA,6,2026-01-11 15:55:13
+1355,Nikola Breckova,6334.0,WTA,same,Czech Republic,6,2026-01-11 15:55:13
+1355,Naomi Xu,83820.0,WTA,same,Canada,6,2026-01-11 15:55:13
+1355,Katarina Stresnakova,14034.0,WTA,same,Slovakia,6,2026-01-11 15:55:13
+1355,Lola Giza,57083.0,WTA,same,Germany,6,2026-01-11 15:55:13
+1375,Maria Fedotova Anna,63414.0,WTA,up,Dominican Republic,6,2026-01-11 15:55:13
+1376,Carmen Zamburek Ana,39110.0,WTA,up,Dominican Republic,6,2026-01-11 15:55:13
+1376,Ines Leon,51431.0,WTA,up,Spain,6,2026-01-11 15:55:13
+1376,Shria Atturu,13976.0,WTA,up,USA,6,2026-01-11 15:55:13
+1376,Prathyusha Rachapudi,23741.0,WTA,up,India,6,2026-01-11 15:55:13
+1380,Olivia Hansen Sarafina,29957.0,WTA,up,Denmark,6,2026-01-11 15:55:13
+1380,Yuna Ohashi,27844.0,WTA,up,Japan,6,2026-01-11 15:55:13
+1380,Himari Sato,9092.0,WTA,up,Japan,6,2026-01-11 15:55:13
+1380,Meshkatolzahra Safi,10908.0,WTA,down,Iran,6,2026-01-11 15:55:13
+1380,Meritxell Teixido Garcia,70752.0,WTA,up,Spain,6,2026-01-11 15:55:13
+1380,Ginevra Parentini,2115.0,WTA,up,Italy,6,2026-01-11 15:55:13
+1380,Chiara Fornasieri,38893.0,WTA,up,Italy,6,2026-01-11 15:55:13
+1387,Stefanie Voegele,1804.0,WTA,up,Switzerland,5,2026-01-11 15:55:13
+1388,Valeria Savinykh,1116.0,WTA,up,World,5,2026-01-11 15:55:13
+1389,Amalia Suciu,60360.0,WTA,up,Portugal,5,2026-01-11 15:55:13
+1390,Teresa Franco Dias,59607.0,WTA,up,Portugal,5,2026-01-11 15:55:13
+1391,Ha Jang Soo,,WTA,up,South Korea,5,2026-01-11 15:55:13
+1391,Valeriia Shvestova,,WTA,up,World,5,2026-01-11 15:55:13
+1391,Victoria Chramcova,23299.0,WTA,up,Slovakia,5,2026-01-11 15:55:13
+1391,Phillippa Preugschat,19222.0,WTA,up,Germany,5,2026-01-11 15:55:13
+1391,Alice Battesti,18145.0,WTA,up,France,5,2026-01-11 15:55:13
+1391,Anastasiya Lopata,62788.0,WTA,up,Ukraine,5,2026-01-11 15:55:13
+1391,Carla Tomai,59608.0,WTA,up,Portugal,5,2026-01-11 15:55:13
+1391,Camila Rodero,73111.0,WTA,up,Chile,5,2026-01-11 15:55:13
+1391,Heike Janse Van Vuuren,21854.0,WTA,up,South Africa,5,2026-01-11 15:55:13
+1391,Emilija Tverijonaite,50062.0,WTA,up,Lithuania,5,2026-01-11 15:55:13
+1391,Massiva Boukirat,48922.0,WTA,up,France,5,2026-01-11 15:55:13
+1391,Paulina Montiel,74126.0,WTA,up,Mexico,5,2026-01-11 15:55:13
+1391,Mariia Masiianskaia,23833.0,WTA,up,World,5,2026-01-11 15:55:13
+1391,Lucia Natal,69062.0,WTA,up,Spain,5,2026-01-11 15:55:13
+1391,Helena Buchwald,38989.0,WTA,up,Germany,5,2026-01-11 15:55:13
+1391,Honori Koyama,50995.0,WTA,up,Japan,5,2026-01-11 15:55:13
+1391,Isabella Harvison,14154.0,WTA,up,USA,5,2026-01-11 15:55:13
+1391,Maria Buculei Iulia,75051.0,WTA,up,Romania,5,2026-01-11 15:55:13
+1391,Demi Teso Kaili,69068.0,WTA,up,Japan,5,2026-01-11 15:55:13
+1391,Julia Khramtsova,76626.0,WTA,up,World,5,2026-01-11 15:55:13
+1391,Victoria Rennert Julia,13169.0,WTA,up,Germany,5,2026-01-11 15:55:13
+1412,Liv Boulard,62009.0,WTA,up,France,5,2026-01-11 15:55:13
+1412,Conny Perrin,448.0,WTA,up,Switzerland,5,2026-01-11 15:55:13
+1414,Charlotte Van Zonneveld,64496.0,WTA,down,Netherlands,5,2026-01-11 15:55:13
+1414,Ela Plosnik,53165.0,WTA,up,Slovenia,5,2026-01-11 15:55:13
+1414,Darya Velikova,68706.0,WTA,up,Bulgaria,5,2026-01-11 15:55:13
+1414,Hanna Bougouffa,20385.0,WTA,up,France,5,2026-01-11 15:55:13
+1414,Anastasia Mozgaleva,21946.0,WTA,down,World,5,2026-01-11 15:55:13
+1414,Isabella Marton,65100.0,WTA,down,Canada,5,2026-01-11 15:55:13
+1414,Priyanshi Bhandari,80129.0,WTA,up,India,5,2026-01-11 15:55:13
+1414,Rhiann Newborn,22462.0,WTA,up,USA,5,2026-01-11 15:55:13
+1414,Sonal Patil,66515.0,WTA,up,India,5,2026-01-11 15:55:13
+1423,Tara Malik,19225.0,WTA,up,USA,5,2026-01-11 15:55:13
+1423,Sofia Avataneo,56782.0,WTA,up,Italy,5,2026-01-11 15:55:13
+1423,Wen Wan I,63417.0,WTA,up,Taiwan,5,2026-01-11 15:55:13
+1423,Helena Bueno,22590.0,WTA,up,Brazil,5,2026-01-11 15:55:13
+1423,Mariam Atia,1042.0,WTA,up,Egypt,5,2026-01-11 15:55:13
+1423,Paavanii Paathak,37451.0,WTA,up,India,5,2026-01-11 15:55:13
+1423,Maria Maruca Melina,34552.0,WTA,down,Argentina,5,2026-01-11 15:55:13
+1423,Mika Buchnik,38186.0,WTA,down,Israel,5,2026-01-11 15:55:13
+1423,Anastasia Safta,14380.0,WTA,up,Romania,5,2026-01-11 15:55:13
+1423,Nicoleta Todoni Cristiana,68666.0,WTA,up,Romania,5,2026-01-11 15:55:13
+1433,Daniela Martinez,60554.0,WTA,up,Mexico,4,2026-01-11 15:55:13
+1434,Pietra Rivoli,51930.0,WTA,up,Brazil,4,2026-01-11 15:55:13
+1435,Francisca Laundes,74404.0,WTA,up,Portugal,4,2026-01-11 15:55:13
+1435,Jolie Fernandez Bianca,3456.0,WTA,up,Canada,4,2026-01-11 15:55:13
+1435,Mariia Nozdrachova,89937.0,WTA,up,Ukraine,4,2026-01-11 15:55:13
+1438,Madhurima Sawant,62374.0,WTA,up,India,4,2026-01-11 15:55:13
+1438,Mia Yamakita,40146.0,WTA,up,USA,4,2026-01-11 15:55:13
+1438,Kseniya Yersh,13499.0,WTA,up,World,4,2026-01-11 15:55:13
+1438,Cayetana Gay,62060.0,WTA,up,Spain,4,2026-01-11 15:55:13
+1438,Francoise Abanda,6699.0,WTA,up,Canada,4,2026-01-11 15:55:13
+1438,Charlotte Pikkaart,82542.0,WTA,up,Netherlands,4,2026-01-11 15:55:13
+1438,Dora Miskovic,49896.0,WTA,up,Croatia,4,2026-01-11 15:55:13
+1438,Venla Ahti,56783.0,WTA,up,Finland,4,2026-01-11 15:55:13
+1438,Yu-Yun Li,,WTA,up,Taiwan,4,2026-01-11 15:55:13
+1438,Yichen Zhao,71899.0,WTA,up,China,4,2026-01-11 15:55:13
+1448,Xenia Bandurowska,37999.0,WTA,up,Poland,4,2026-01-11 15:55:13
+1448,Yuzuha Negishi,74582.0,WTA,up,Japan,4,2026-01-11 15:55:13
+1448,Ruirui Zou,60781.0,WTA,up,China,4,2026-01-11 15:55:13
+1448,Daria Belyaeva,75364.0,WTA,down,World,4,2026-01-11 15:55:13
+1448,Gloria Contrino,77940.0,WTA,up,Italy,4,2026-01-11 15:55:13
+1448,Emma Mazzoni,21653.0,WTA,up,France,4,2026-01-11 15:55:13
+1448,Carolann Delaunay,21526.0,WTA,up,New Caledonia,4,2026-01-11 15:55:13
+1448,Aurora Urso,57058.0,WTA,up,Italy,4,2026-01-11 15:55:13
+1448,Alisa Danilova,87011.0,WTA,up,World,4,2026-01-11 15:55:13
+1448,Aleksandra Pozarenko,52629.0,WTA,up,World,4,2026-01-11 15:55:13
+1448,Abigayel Vosloo,78078.0,WTA,up,South Africa,4,2026-01-11 15:55:13
+1448,Laura Badia,62569.0,WTA,up,Brazil,4,2026-01-11 15:55:13
+1448,Holly Hutchinson,23391.0,WTA,up,United Kingdom,4,2026-01-11 15:55:13
+1448,Joody Elkady,13554.0,WTA,up,Egypt,4,2026-01-11 15:55:13
+1448,Juliette Mazzoni,2267.0,WTA,up,France,4,2026-01-11 15:55:13
+1448,Juliette Trunet,74087.0,WTA,up,France,4,2026-01-11 15:55:13
+1448,Michelle Dzjachangirova,33199.0,WTA,up,Azerbaijan,4,2026-01-11 15:55:13
+1448,Maya Drozd,51912.0,WTA,up,Germany,4,2026-01-11 15:55:13
+1448,Victoria Marchesini Maria,38943.0,WTA,up,Argentina,4,2026-01-11 15:55:13
+1448,Maria Penalver Aguilo,83298.0,WTA,up,Spain,4,2026-01-11 15:55:13
+1468,Maryna Kolb,40211.0,WTA,up,Ukraine,3,2026-01-11 15:55:13
+1469,Jennifer Jackson,16817.0,WTA,up,USA,3,2026-01-11 15:55:13
+1469,Yihan Qu,70637.0,WTA,up,China,3,2026-01-11 15:55:13
+1471,Olga Bienzobas Fernandez,92130.0,WTA,up,Spain,3,2026-01-11 15:55:13
+1471,Nala Kovacic,67678.0,WTA,up,Slovenia,3,2026-01-11 15:55:13
+1471,Fernanda Rain Contreras,65095.0,WTA,up,Chile,3,2026-01-11 15:55:13
+1474,Gabriela Kawano Cho,84311.0,WTA,up,Brazil,3,2026-01-11 15:55:13
+1474,Kaur Kaler Havah,81406.0,WTA,up,Canada,3,2026-01-11 15:55:13
+1474,Ottavia Ghirardato Emma,52688.0,WTA,up,Italy,3,2026-01-11 15:55:13
+1474,Chrystal Lopez,24582.0,WTA,up,Belgium,3,2026-01-11 15:55:13
+1474,Duanrui Gao,53036.0,WTA,up,China,3,2026-01-11 15:55:13
+1474,Ekaterina Agureeva,66797.0,WTA,up,World,3,2026-01-11 15:55:13
+1474,Eleni Tsetsou,77247.0,WTA,up,Greece,3,2026-01-11 15:55:13
+1474,Defne Aydemir,79909.0,WTA,up,Turkey,3,2026-01-11 15:55:13
+1474,Denise Valente,10916.0,WTA,up,Italy,3,2026-01-11 15:55:13
+1474,Dominika Pirohova,74921.0,WTA,up,Slovakia,3,2026-01-11 15:55:13
+1474,Diana Yakovleva,59864.0,WTA,up,Uzbekistan,3,2026-01-11 15:55:13
+1474,Aliesia Reva,87044.0,WTA,up,Ukraine,3,2026-01-11 15:55:13
+1474,Alina Yuneva,75457.0,WTA,up,World,3,2026-01-11 15:55:13
+1474,Aurora Corvi,67759.0,WTA,up,Italy,3,2026-01-11 15:55:13
+1474,Ava Schueller,89146.0,WTA,up,Austria,3,2026-01-11 15:55:13
+1474,Bianca Bernardes,2268.0,WTA,up,Brazil,3,2026-01-11 15:55:13
+1474,Bruna Liotto de Carvalho,83819.0,WTA,up,Brazil,3,2026-01-11 15:55:13
+1474,Najah Dawson,72577.0,WTA,up,Jamaica,3,2026-01-11 15:55:13
+1474,Nika Hurkacz,87758.0,WTA,up,Poland,3,2026-01-11 15:55:13
+1474,Nicole Giannini,76960.0,WTA,up,Brazil,3,2026-01-11 15:55:13
+1474,Pauline Gloeckner,84193.0,WTA,up,Germany,3,2026-01-11 15:55:13
+1474,Nina Sozaonova,84299.0,WTA,up,Russia,3,2026-01-11 15:55:13
+1474,Melissa Boyden,39056.0,WTA,up,Netherlands,3,2026-01-11 15:55:13
+1474,Hyun Kang Na,52572.0,WTA,up,South Korea,3,2026-01-11 15:55:13
+1474,Maria Aytoyan,84742.0,WTA,up,USA,3,2026-01-11 15:55:13
+1474,Madalena Matias,84428.0,WTA,up,Portugal,3,2026-01-11 15:55:13
+1474,Luisa Hrda,58145.0,WTA,up,Germany,3,2026-01-11 15:55:13
+1474,Luisa Schruff,75944.0,WTA,up,Germany,3,2026-01-11 15:55:13
+1474,Magdalena Baniak,73805.0,WTA,up,Poland,3,2026-01-11 15:55:13
+1474,Magdalena Stoilkovska,2557.0,WTA,up,North Macedonia,3,2026-01-11 15:55:13
+1474,Margarita Ignatjeva,13492.0,WTA,up,Latvia,3,2026-01-11 15:55:13
+1474,India Houghton,57056.0,WTA,up,USA,3,2026-01-11 15:55:13
+1474,Isabelle Cherny,52424.0,WTA,up,United Kingdom,3,2026-01-11 15:55:13
+1474,Jaquelyn Ogunwale,9403.0,WTA,up,United Kingdom,3,2026-01-11 15:55:13
+1474,Larisa Arnautovic,80802.0,WTA,up,Australia,3,2026-01-11 15:55:13
+1474,Yuka Naito,475.0,WTA,up,Japan,3,2026-01-11 15:55:13
+1474,Zixuan Zeng,48890.0,WTA,up,China,3,2026-01-11 15:55:13
+1474,Pranjala Yadlapalli,11768.0,WTA,up,India,3,2026-01-11 15:55:13
+1474,Polina Skopintseva,82996.0,WTA,up,Russia,3,2026-01-11 15:55:13
+1474,Sofia Meabe,61630.0,WTA,up,Argentina,3,2026-01-11 15:55:13
+1474,Sandugash Kenzhibayeva,38789.0,WTA,up,Kazakhstan,3,2026-01-11 15:55:13
+1474,Valeria Garnevska,84197.0,WTA,up,Bulgaria,3,2026-01-11 15:55:13
+1474,Viola Bedini,88829.0,WTA,up,Italy,3,2026-01-11 15:55:13
+1474,Taylor Gruber,57429.0,WTA,up,USA,3,2026-01-11 15:55:13
+1474,Sophia Ksandinov,56800.0,WTA,up,Germany,3,2026-01-11 15:55:13
