@@ -22,6 +22,47 @@ logging.basicConfig(
 
 st.set_page_config(page_title="Tennis API Data Fetcher", layout="wide")
 
+# --- PASSWORD PROTECTION ---
+def check_password():
+    """Returns `True` if the user had the correct password."""
+    import os
+    
+    # Priority: Streamlit secrets > Environment variable
+    # If neither is set, we allow access (default open)
+    password = None
+    try:
+        if "APP_PASSWORD" in st.secrets:
+            password = st.secrets["APP_PASSWORD"]
+    except FileNotFoundError:
+        pass
+        
+    if not password:
+        password = os.getenv("APP_PASSWORD")
+
+    # If no password configured, let them in
+    if not password:
+        return True
+
+    if st.session_state.get("password_correct", False):
+        return True
+
+    st.text_input(
+        "Please enter the password to access the app", type="password", key="password_input"
+    )
+    
+    if "password_input" in st.session_state:
+        if st.session_state["password_input"] == password:
+            st.session_state["password_correct"] = True
+            st.rerun()
+        elif st.session_state["password_input"]:
+            st.error("😕 Password incorrect")
+
+    return False
+
+if not check_password():
+    st.stop()  # Do not run the rest of the app if not authenticated
+# ---------------------------
+
 st.title("🎾 Tennis API Data Fetcher")
 
 
