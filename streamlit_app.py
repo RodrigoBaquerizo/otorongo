@@ -490,9 +490,8 @@ def show_details_dialog(row):
         )
     
     with col_copy2:
-        with st.expander("View raw data (for manual copy)"):
-            st.code(csv_string, language="text")
-            st.caption("Click the copy icon in the top right of the code block above.")
+        st.code(csv_string, language="text")
+        st.caption("☝️ Click the copy icon in the top right.")
 
     # Display API Error if flagged
     if api_error:
