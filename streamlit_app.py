@@ -475,18 +475,24 @@ def show_details_dialog(row):
          # Or just no matches.
          pass
     
-    # Copy functionality
-    if st.button("📋 Copy for Excel"):
-        try:
-            # Copy to clipboard (tab-separated for Excel)
-            df_details.to_csv(sep='\t', index=False, header=False, path_or_buf=None)
-            df_details.to_clipboard(sep='\t', index=False, header=False)
-            st.toast("✅ Copied to clipboard!", icon="📋")
-        except Exception as e:
-            st.error(f"Could not copy to clipboard: {e}")
-            # Fallback: show code block if clipboard access fails
-            csv_string = df_details.to_csv(sep='\t', index=False, header=False)
+    # Copy functionality (Client-side friendly)
+    st.markdown("##### Export Data")
+    col_copy1, col_copy2 = st.columns([1, 1])
+    
+    csv_string = df_details.to_csv(sep='\t', index=False, header=False)
+    
+    with col_copy1:
+        st.download_button(
+            label="📥 Download for Excel (.tsv)",
+            data=csv_string,
+            file_name=f"match_details_{row.get('event_date', 'date')}.tsv",
+            mime="text/tab-separated-values",
+        )
+    
+    with col_copy2:
+        with st.expander("View raw data (for manual copy)"):
             st.code(csv_string, language="text")
+            st.caption("Click the copy icon in the top right of the code block above.")
 
     # Display API Error if flagged
     if api_error:
