@@ -4,14 +4,9 @@ import pandas as pd
 from datetime import datetime
 from scripts.tenis_api import (
     get_standings,
-    get_events,
     get_tournaments,
     get_fixtures,
-    get_livescore,
     get_h2h,
-    get_players,
-    get_odds,
-    get_live_odds,
 )
 from scripts.process_files import process_fixture_period, process_fixture_surface
 
@@ -501,313 +496,107 @@ def show_details_dialog(row):
                 st.rerun()
 
 
-st.subheader("Individual Functions")
-# Create tabs for each function
-tab_search, tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs(
-    [
-        "Search Events",
-        "Standings",
-        "Events",
-        "Tournaments",
-        "Fixtures",
-        "Livescore",
-        "H2H",
-        "Players",
-        "Odds",
-        "Live Odds",
-    ]
-)
+# ----------------------
+# Search Events Section
+# ----------------------
+st.markdown("### 🔍 Search Events")
 
-# Tab: Search Events
-with tab_search:
-    st.markdown("### 🔍 Search Events")
+col1, col2, col3, col4 = st.columns([2, 2, 2, 4])
+with col1:
+    search_date = st.date_input(
+        "Select Date", 
+        value=datetime.today(),
+        key="search_events_date"
+    )
+with col2:
+    league_filter = st.selectbox("League", ["All", "ATP", "WTA", "Mixed"], key="search_events_league")
+with col3:
+    format_filter = st.selectbox("Format", ["All", "Singles", "Doubles"], key="search_events_format")
     
-    col1, col2, col3, col4 = st.columns([2, 2, 2, 4])
-    with col1:
-        search_date = st.date_input(
-            "Select Date", 
-            value=datetime.today(),
-            key="search_events_date"
-        )
-    with col2:
-        league_filter = st.selectbox("League", ["All", "ATP", "WTA", "Mixed"], key="search_events_league")
-    with col3:
-        format_filter = st.selectbox("Format", ["All", "Singles", "Doubles"], key="search_events_format")
-        
-    with col4:
-        st.write("") # Spacer for better vertical alignment
-        st.write("") 
-        search_clicked = st.button("Search", type="primary")
+with col4:
+    st.write("") # Spacer for better vertical alignment
+    st.write("") 
+    search_clicked = st.button("Search", type="primary")
 
-    # Initialize session state variable to store results if not present
-    if "search_events_results" not in st.session_state:
-        st.session_state.search_events_results = None
+# Initialize session state variable to store results if not present
+if "search_events_results" not in st.session_state:
+    st.session_state.search_events_results = None
 
-    # If search button is clicked, fetch data and update session state
-    if search_clicked:
-        with st.spinner("Fetching matches..."):
-            try:
-                # Reuse get_fixtures to fetch data for the single selected date
-                df_search = get_fixtures(
-                    date_start=search_date.strftime("%Y-%m-%d"),
-                    date_stop=search_date.strftime("%Y-%m-%d"),
-                    save_json=False
-                )
-                st.session_state.search_events_results = df_search
-            except Exception as e:
-                st.error(f"❌ Error fetching events: {str(e)}")
-                st.session_state.search_events_results = None
+# If search button is clicked, fetch data and update session state
+if search_clicked:
+    with st.spinner("Fetching matches..."):
+        try:
+            # Reuse get_fixtures to fetch data for the single selected date
+            df_search = get_fixtures(
+                date_start=search_date.strftime("%Y-%m-%d"),
+                date_stop=search_date.strftime("%Y-%m-%d"),
+                save_json=False
+            )
+            st.session_state.search_events_results = df_search
+        except Exception as e:
+            st.error(f"❌ Error fetching events: {str(e)}")
+            st.session_state.search_events_results = None
 
-    # Display results if available in session state
-    if st.session_state.search_events_results is not None:
-        df_search = st.session_state.search_events_results.copy()
-        
-        # Apply filters
-        if league_filter != "All":
-            if league_filter == "Mixed":
-                df_search = df_search[df_search['event_type_type'].str.contains("Mix", case=False, na=False)]
-            else:
-                df_search = df_search[df_search['event_type_type'].str.contains(league_filter, case=False, na=False)]
-                
-        if format_filter != "All":
-            df_search = df_search[df_search['event_type_type'].str.contains(format_filter, case=False, na=False)]
-        
-        if not df_search.empty:
-            st.success(f"Found {len(df_search)} matches for {search_date.strftime('%Y-%m-%d')}")
-            
-            # Filter by Tournament
-            tournaments = sorted(df_search['tournament_name'].dropna().unique().tolist())
-            selected_tournament = st.selectbox("Filter by Tournament", ["All"] + tournaments, key="search_events_tournament")
-            
-            if selected_tournament != "All":
-                df_search = df_search[df_search['tournament_name'] == selected_tournament]
-            
-            # Header row
-            h1, h2, h3, h4, h5 = st.columns([1, 2, 3, 2, 2])
-            h1.markdown("**Time**")
-            h2.markdown("**Tournament**")
-            h3.markdown("**Match**")
-            h4.markdown("**Result**")
-            h5.markdown("**Statistics**")
-            
-            st.divider()
-
-            for index, row in df_search.iterrows():
-                c1, c2, c3, c4, c5 = st.columns([1, 2, 3, 2, 2])
-                
-                # Time
-                c1.write(f"{row.get('event_time', 'N/A')}")
-                
-                # Tournament
-                c2.write(f"{row.get('tournament_name', 'N/A')}")
-                
-                # Match (Players)
-                p1 = row.get('event_first_player', 'Player 1')
-                p2 = row.get('event_second_player', 'Player 2')
-                c3.write(f"{p1} vs {p2}")
-                
-                # Result
-                res = row.get('event_final_result', '-')
-                c4.write(res)
-                
-                # Action Button
-                # Use a unique key for each button depending on event_key
-                if c5.button("See Details", key=f"btn_details_{row.get('event_key', index)}", type="primary"):
-                    show_details_dialog(row)
-                    
-                # Add a visual separator
-                st.markdown("---")
-
+# Display results if available in session state
+if st.session_state.search_events_results is not None:
+    df_search = st.session_state.search_events_results.copy()
+    
+    # Apply filters
+    if league_filter != "All":
+        if league_filter == "Mixed":
+            df_search = df_search[df_search['event_type_type'].str.contains("Mix", case=False, na=False)]
         else:
-            st.info("No matches scheduled for this date.")
+            df_search = df_search[df_search['event_type_type'].str.contains(league_filter, case=False, na=False)]
+            
+    if format_filter != "All":
+        df_search = df_search[df_search['event_type_type'].str.contains(format_filter, case=False, na=False)]
+    
+    if not df_search.empty:
+        st.success(f"Found {len(df_search)} matches for {search_date.strftime('%Y-%m-%d')}")
+        
+        # Filter by Tournament
+        tournaments = sorted(df_search['tournament_name'].dropna().unique().tolist())
+        selected_tournament = st.selectbox("Filter by Tournament", ["All"] + tournaments, key="search_events_tournament")
+        
+        if selected_tournament != "All":
+            df_search = df_search[df_search['tournament_name'] == selected_tournament]
+        
+        # Header row
+        h1, h2, h3, h4, h5 = st.columns([1, 2, 3, 2, 2])
+        h1.markdown("**Time**")
+        h2.markdown("**Tournament**")
+        h3.markdown("**Match**")
+        h4.markdown("**Result**")
+        h5.markdown("**Statistics**")
+        
+        st.divider()
 
-# Tab 1: Standings
-with tab1:
-    st.markdown("### 📊 Get Standings")
-    col1, col2 = st.columns([3, 1])
-    with col1:
-        event_type = st.selectbox(
-            "Event Type", ["ATP", "WTA", "ITF"], key="standings_event"
-        )
-    with col2:
-        save_json_standings = st.checkbox("Save JSON", value=True, key="standings_save")
+        for index, row in df_search.iterrows():
+            c1, c2, c3, c4, c5 = st.columns([1, 2, 3, 2, 2])
+            
+            # Time
+            c1.write(f"{row.get('event_time', 'N/A')}")
+            
+            # Tournament
+            c2.write(f"{row.get('tournament_name', 'N/A')}")
+            
+            # Match (Players)
+            p1 = row.get('event_first_player', 'Player 1')
+            p2 = row.get('event_second_player', 'Player 2')
+            c3.write(f"{p1} vs {p2}")
+            
+            # Result
+            res = row.get('event_final_result', '-')
+            c4.write(res)
+            
+            # Action Button
+            # Use a unique key for each button depending on event_key
+            if c5.button("See Details", key=f"btn_details_{row.get('event_key', index)}", type="primary"):
+                show_details_dialog(row)
+                
+            # Add a visual separator
+            st.markdown("---")
 
-    if st.button("Run Get Standings", key="btn_standings"):
-        with st.spinner("Fetching standings..."):
-            try:
-                get_standings(event_type=event_type, save_json=save_json_standings)
-                st.success("✅ Standings data fetched successfully!")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
+    else:
+        st.info("No matches scheduled for this date.")
 
-# Tab 2: Events
-with tab2:
-    st.markdown("### 🎪 Get Events")
-    save_json_events = st.checkbox("Save JSON", value=True, key="events_save")
-
-    if st.button("Run Get Events", key="btn_events"):
-        with st.spinner("Fetching events..."):
-            try:
-                get_events(save_json=save_json_events)
-                st.success("✅ Events data fetched successfully!")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
-
-# Tab 3: Tournaments
-with tab3:
-    st.markdown("### 🏆 Get Tournaments")
-    save_json_tournaments = st.checkbox("Save JSON", value=True, key="tournaments_save")
-
-    if st.button("Run Get Tournaments", key="btn_tournaments"):
-        with st.spinner("Fetching tournaments..."):
-            try:
-                get_tournaments(save_json=save_json_tournaments)
-                st.success("✅ Tournaments data fetched successfully!")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
-
-# Tab 4: Fixtures
-with tab4:
-    st.markdown("### 📅 Get Fixtures")
-    col1, col2, col3 = st.columns([2, 2, 1])
-    with col1:
-        date_start_fixtures = st.date_input(
-            "Start Date", value=datetime(2025, 12, 1), key="fixtures_start"
-        )
-    with col2:
-        date_stop_fixtures = st.date_input(
-            "Stop Date", value=datetime(2025, 12, 31), key="fixtures_stop"
-        )
-    with col3:
-        save_json_fixtures = st.checkbox("Save JSON", value=True, key="fixtures_save")
-
-    if st.button("Run Get Fixtures", key="btn_fixtures"):
-        with st.spinner("Fetching fixtures..."):
-            try:
-                get_fixtures(
-                    date_start=date_start_fixtures.strftime("%Y-%m-%d"),
-                    date_stop=date_stop_fixtures.strftime("%Y-%m-%d"),
-                    save_json=save_json_fixtures,
-                )
-                st.success("✅ Fixtures data fetched successfully!")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
-
-# Tab 5: Livescore
-with tab5:
-    st.markdown("### 🔴 Get Livescore")
-    save_json_livescore = st.checkbox("Save JSON", value=True, key="livescore_save")
-
-    if st.button("Run Get Livescore", key="btn_livescore"):
-        with st.spinner("Fetching livescore..."):
-            try:
-                get_livescore(save_json=save_json_livescore)
-                st.success("✅ Livescore data fetched successfully!")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
-
-# Tab 6: H2H
-with tab6:
-    st.markdown("### 🆚 Get Head-to-Head")
-    col1, col2, col3 = st.columns([2, 2, 1])
-    with col1:
-        first_player_key = st.number_input(
-            "First Player Key", value=1107, step=1, key="h2h_first"
-        )
-    with col2:
-        second_player_key = st.number_input(
-            "Second Player Key", value=168, step=1, key="h2h_second"
-        )
-    with col3:
-        save_json_h2h = st.checkbox("Save JSON", value=True, key="h2h_save")
-
-    if st.button("Run Get H2H", key="btn_h2h"):
-        with st.spinner("Fetching H2H data..."):
-            try:
-                get_h2h(
-                    first_player_key=int(first_player_key),
-                    second_player_key=int(second_player_key),
-                    save_json=save_json_h2h,
-                )
-                st.success("✅ H2H data fetched successfully!")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
-
-# Tab 7: Players
-with tab7:
-    st.markdown("### 👤 Get Players")
-    col1, col2 = st.columns([3, 1])
-    # with col1:
-    #     player_key = st.number_input(
-    #         "Player Key", value=1905, step=1, key="players_key"
-    #     )
-    with col1:
-        player_keys = st.text_input(
-            "Player Key(s) (comma-separated)", value="1905", key="players_key"
-        )
-    with col2:
-        save_json_players = st.checkbox("Save JSON", value=True, key="players_save")
-
-    # if st.button("Run Get Players", key="btn_players"):
-    #     with st.spinner("Fetching player data..."):
-    #         try:
-    #             get_players(player_key=int(player_key), save_json=save_json_players)
-    #             st.success("✅ Player data fetched successfully!")
-    #         except Exception as e:
-    #             st.error(f"❌ Error: {str(e)}")
-    if st.button("Run Get Players", key="btn_players"):
-        with st.spinner("Fetching player data..."):
-            try:
-                # Split by comma, strip whitespace, and convert to integers
-                keys = [int(k.strip()) for k in player_keys.split(",") if k.strip()]
-
-                for idx, key in enumerate(keys, 1):
-                    get_players(player_key=key, save_json=save_json_players)
-                    st.success(
-                        f"✅ Player data fetched for key {key} ({idx}/{len(keys)})"
-                    )
-
-            except ValueError:
-                st.error("❌ Error: Please enter valid numeric player keys")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
-
-# Tab 8: Odds
-with tab8:
-    st.markdown("### 💰 Get Odds")
-    col1, col2, col3 = st.columns([2, 2, 1])
-    with col1:
-        date_start_odds = st.date_input(
-            "Start Date", value=datetime(2025, 12, 1), key="odds_start"
-        )
-    with col2:
-        date_stop_odds = st.date_input(
-            "Stop Date", value=datetime(2025, 12, 31), key="odds_stop"
-        )
-    with col3:
-        save_json_odds = st.checkbox("Save JSON", value=True, key="odds_save")
-
-    if st.button("Run Get Odds", key="btn_odds"):
-        with st.spinner("Fetching odds..."):
-            try:
-                get_odds(
-                    date_start=date_start_odds.strftime("%Y-%m-%d"),
-                    date_stop=date_stop_odds.strftime("%Y-%m-%d"),
-                    save_json=save_json_odds,
-                )
-                st.success("✅ Odds data fetched successfully!")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
-
-# Tab 9: Live Odds
-with tab9:
-    st.markdown("### 💸 Get Live Odds")
-    save_json_live_odds = st.checkbox("Save JSON", value=True, key="live_odds_save")
-
-    if st.button("Run Get Live Odds", key="btn_live_odds"):
-        with st.spinner("Fetching live odds..."):
-            try:
-                get_live_odds(save_json=save_json_live_odds)
-                st.success("✅ Live odds data fetched successfully!")
-            except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
