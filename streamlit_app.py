@@ -97,7 +97,7 @@ st.markdown("---")
 
 
 @st.cache_data(ttl=3600)
-def load_tournaments_data():
+def load_tournaments_data_v2():
     return get_tournaments(save_json=False)
 
 @st.cache_data(ttl=3600)
@@ -126,8 +126,30 @@ def show_details_dialog(row):
         """,
         unsafe_allow_html=True
     )
+    view_match_details_fragment(row)
+
+@st.fragment
+def view_match_details_fragment(row):
+    # Header with player selection
+    col_h_1, col_h_2, col_h_3 = st.columns([2, 2, 6])
+    p1_name = row['event_first_player']
+    p2_name = row['event_second_player']
     
-    st.write(f"Details for **{row['event_first_player']}** vs **{row['event_second_player']}**")
+    # Use session state to track selected player for this dialog instance
+    ss_key = f"details_selection_{row.get('event_key', 'unknown')}"
+    if ss_key not in st.session_state:
+        st.session_state[ss_key] = None
+
+    with col_h_1:
+        if st.button(f"Recent: {p1_name}", key=f"btn_p1_{row.get('event_key')}"):
+             st.session_state[ss_key] = "P1"
+             
+    with col_h_2:
+        if st.button(f"Recent: {p2_name}", key=f"btn_p2_{row.get('event_key')}"):
+             st.session_state[ss_key] = "P2"
+             
+    with col_h_3:
+         st.write(f"Details for **{p1_name}** vs **{p2_name}**")
     
     # Placeholder for API error messages
     error_placeholder = st.empty()
@@ -155,7 +177,7 @@ def show_details_dialog(row):
 
         # Fallback to API/old method if not found in sample csv
         if not found_in_sample:
-            df_tournaments = load_tournaments_data()
+            df_tournaments = load_tournaments_data_v2()
             if df_tournaments is not None and not df_tournaments.empty:
                 # Robust matching helper
                 def get_surf(df, col, val):
@@ -324,6 +346,10 @@ def show_details_dialog(row):
     p2_recent_text = ""
     p2_surface_recent = "No data"
     
+    # Store full dataframes for detailed tables
+    df_p1_all = pd.DataFrame()
+    df_p2_all = pd.DataFrame()
+    
     # Define recent period (e.g. last 6 months)
     recent_start = (datetime.now() - pd.DateOffset(days=365)).strftime("%Y-%m-%d")
     recent_end = datetime.now().strftime("%Y-%m-%d")
@@ -346,6 +372,9 @@ def show_details_dialog(row):
                  # Filter for Singles only
                  if 'event_type_type' in df_p1.columns:
                      df_p1 = df_p1[df_p1['event_type_type'].astype(str).str.contains("Singles", case=False, na=False)]
+                 
+                 # Capture for detailed view
+                 df_p1_all = df_p1.copy()
                  
                  # Process overall
                  # We use a temp filename to avoid overwriting main data files if we care, or just overwrite.
@@ -398,6 +427,9 @@ def show_details_dialog(row):
                  # Filter for Singles only
                  if 'event_type_type' in df_p2.columns:
                      df_p2 = df_p2[df_p2['event_type_type'].astype(str).str.contains("Singles", case=False, na=False)]
+
+                 # Capture for detailed view
+                 df_p2_all = df_p2.copy()
 
                  stats_p2 = process_fixture_period(df_p2, save_csv=False)
                  if not stats_p2.empty:
@@ -470,6 +502,127 @@ def show_details_dialog(row):
          # Or just no matches.
          pass
     
+    # Recent Matches Section
+    selected_player_side = st.session_state.get(f"details_selection_{row.get('event_key', 'unknown')}")
+    
+    if selected_player_side:
+        target_name = row['event_first_player'] if selected_player_side == "P1" else row['event_second_player']
+        target_df = df_p1_all if selected_player_side == "P1" else df_p2_all
+        
+        st.markdown(f"---")
+        st.subheader(f"Recent matches of {target_name}")
+        
+        # Helper to format table
+        def get_recent_matches_display(df_matches, target_surface=None):
+            if df_matches.empty:
+                return pd.DataFrame()
+            
+            df = df_matches.copy()
+            
+            # Merge surface if needed
+            # We always try to merge if 'tournament_sourface' is missing OR if we need to filter by it
+            if 'tournament_sourface' not in df.columns or target_surface:
+                 df_t = load_tournaments_data_v2()
+                 
+                 if df_t is not None and not df_t.empty and 'tournament_key' in df.columns:
+                     try:
+                         # Ensure we have the surface column in tournaments df
+                         surf_col = 'tournament_sourface'
+                         if 'tournament_sourface' not in df_t.columns and 'tournament_surface' in df_t.columns:
+                             df_t['tournament_sourface'] = df_t['tournament_surface']
+                         
+                         if surf_col in df_t.columns:
+                             # Prepare match df for merge
+                             df['t_key_str'] = df['tournament_key'].astype(str).str.split('.').str[0]
+                             
+                             # Prepare tournaments df for merge
+                             df_t_merge = df_t.copy()
+                             df_t_merge['t_key_str'] = df_t_merge['tournament_key'].astype(str).str.split('.').str[0]
+                             
+                             # Deduplicate to avoid exploding rows
+                             df_t_merge = df_t_merge[['t_key_str', surf_col]].drop_duplicates(subset=['t_key_str'])
+                             
+                             # Drop existing surface col in matches if present to avoid suffixes
+                             if surf_col in df.columns:
+                                 df = df.drop(columns=[surf_col])
+                                 
+                             # Merge
+                             df = df.merge(df_t_merge, on='t_key_str', how='left')
+                     except Exception as e:
+                         logging.error(f"Error merging surface info: {e}")
+
+            # Filter by surface if requested
+            if target_surface:
+                 if 'tournament_sourface' in df.columns:
+                     # Filter: handle potential NaNs
+                     df = df[df['tournament_sourface'].astype(str) == str(target_surface)]
+                 else:
+                     return pd.DataFrame() # Cannot filter if column missing
+
+            if df.empty:
+                return pd.DataFrame()
+            
+            # Resolve winner name
+            def resolve_winner(r):
+                w = str(r.get('event_winner', ''))
+                p1_k = str(r.get('first_player_key', '')).split('.')[0]
+                p2_k = str(r.get('second_player_key', '')).split('.')[0]
+                
+                # If winner is 'First Player'
+                if w == "First Player": return r.get('event_first_player')
+                if w == "Second Player": return r.get('event_second_player')
+                
+                # If winner is key
+                w_clean = w.split('.')[0]
+                if w_clean == p1_k: return r.get('event_first_player')
+                if w_clean == p2_k: return r.get('event_second_player')
+                
+                return w
+
+            df['Winner_Name'] = df.apply(resolve_winner, axis=1)
+            
+            # Renaming and Selection
+            df = df.reset_index(drop=True)
+            df.index += 1
+            df['#'] = df.index
+            
+            cols_map = {
+                'event_date': 'Date',
+                'tournament_name': 'Tournament',
+                'event_first_player': 'P1',
+                'event_second_player': 'P2',
+                'Winner_Name': 'Winner',
+                'event_final_result': 'Score'
+            }
+            
+            # Ensure columns exist before selecting
+            defaults = {k: '' for k in cols_map.keys()}
+            for k in defaults:
+                if k not in df.columns:
+                    df[k] = defaults[k]
+                    
+            final_df = df[['#'] + list(cols_map.keys())].rename(columns=cols_map)
+            return final_df
+
+        st.markdown("**Recent Matches**")
+        if not target_df.empty:
+             df_disp_1 = get_recent_matches_display(target_df)
+             st.dataframe(df_disp_1, hide_index=True, use_container_width=True)
+        else:
+             st.info("No recent matches found.")
+             
+        st.markdown(f"**Recent Matches in Sourface ({surface})**")
+        if surface != "Unknown" and not target_df.empty:
+             df_disp_2 = get_recent_matches_display(target_df, target_surface=surface)
+             if not df_disp_2.empty:
+                 st.dataframe(df_disp_2, hide_index=True, use_container_width=True)
+             else:
+                 st.info(f"No recent matches on {surface}.")
+        elif surface == "Unknown":
+             st.warning("Current match surface is unknown, cannot filter.")
+        else:
+             st.info(f"No recent matches on {surface}.")
+
     # Copy functionality (Client-side friendly)
     st.markdown("##### Export Data")
     col_copy1, col_copy2 = st.columns([1, 1])

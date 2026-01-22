@@ -90,7 +90,7 @@ def get_tournaments(
     if save_json:
         save_to_json(data, "data/tournaments.json")
 
-    save_to_csv_simple(data, "data/tournaments.csv")
+    return save_to_csv_simple(data, "data/tournaments.csv")
 
 
 ## more params needed
