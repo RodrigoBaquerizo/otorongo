@@ -695,14 +695,15 @@ if st.session_state.search_events_results is not None:
     df_search = st.session_state.search_events_results.copy()
     
     # Apply filters
-    if league_filter != "All":
-        if league_filter == "Mixed":
-            df_search = df_search[df_search['event_type_type'].str.contains("Mix", case=False, na=False)]
-        else:
-            df_search = df_search[df_search['event_type_type'].str.contains(league_filter, case=False, na=False)]
-            
-    if format_filter != "All":
-        df_search = df_search[df_search['event_type_type'].str.contains(format_filter, case=False, na=False)]
+    if not df_search.empty:
+        if league_filter != "All":
+            if league_filter == "Mixed":
+                df_search = df_search[df_search['event_type_type'].str.contains("Mix", case=False, na=False)]
+            else:
+                df_search = df_search[df_search['event_type_type'].str.contains(league_filter, case=False, na=False)]
+                
+        if format_filter != "All":
+            df_search = df_search[df_search['event_type_type'].str.contains(format_filter, case=False, na=False)]
     
     if not df_search.empty:
         st.success(f"Found {len(df_search)} matches for {search_date.strftime('%Y-%m-%d')}")
