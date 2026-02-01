@@ -93,25 +93,32 @@ def concat_h2h(folder: str = "h2h", output_file: str = H2H_PROCESSED_FILE):
 
 def process_fixture_period(df, output_file=PLAYERS_FIXTURE_PERIOD, save_csv=True):
     df["event_date"] = pd.to_datetime(df["event_date"])
+    
+    # Logic to determine winner key safely
+    # If event_winner is not First or Second player, we set winner_key to None/NaN
+    cond_p1 = df["event_winner"] == "First Player"
+    cond_p2 = df["event_winner"] == "Second Player"
+    
     df2 = (
         df.assign(
-            winner_key=lambda x: np.where(
-                x["event_winner"] == "First Player",
-                x["first_player_key"],
-                x["second_player_key"],
+            winner_key=np.select(
+                [cond_p1, cond_p2],
+                [df["first_player_key"], df["second_player_key"]],
+                default=np.nan # Default to NaN if no winner declared
             )
         )
         .assign(
              # Normalize keys for comparison - ensures they exist!
+             # Handle NaN winner_key safely (it becomes 'nan' string)
             results_for_player_key_str=lambda x: x["results_for_player_key"].astype(str).str.split('.').str[0],
-            winner_key_str=lambda x: x["winner_key"].astype(str).str.split('.').str[0],
+            winner_key_str=lambda x: x["winner_key"].fillna(-1).astype(str).str.split('.').str[0],
         )
         .assign(
             won_main_player=lambda x: np.where(
-                x["results_for_player_key_str"] == x["winner_key_str"], 1, 0
+                (x["winner_key_str"] != "-1") & (x["results_for_player_key_str"] == x["winner_key_str"]), 1, 0
             ),
             lost_main_player=lambda x: np.where(
-                x["results_for_player_key_str"] != x["winner_key_str"], 1, 0
+                (x["winner_key_str"] != "-1") & (x["results_for_player_key_str"] != x["winner_key_str"]), 1, 0
             ),
         )
         .groupby(["results_for_player_key_str"])
@@ -138,25 +145,29 @@ def process_fixture_surface(df, output_file=PLAYERS_FIXTURE_SURFACE, save_csv=Tr
         how="left",
         suffixes=("", "_trn"),
     )
+    
+    cond_p1 = joined["event_winner"] == "First Player"
+    cond_p2 = joined["event_winner"] == "Second Player"
+    
     df2 = (
         joined.assign(
-            winner_key=lambda x: np.where(
-                x["event_winner"] == "First Player",
-                x["first_player_key"],
-                x["second_player_key"],
+             winner_key=np.select(
+                [cond_p1, cond_p2],
+                [joined["first_player_key"], joined["second_player_key"]],
+                default=np.nan
             )
         )
         .assign(
             # Normalize keys for comparison
             results_for_player_key_str=lambda x: x["results_for_player_key"].astype(str).str.split('.').str[0],
-            winner_key_str=lambda x: x["winner_key"].astype(str).str.split('.').str[0],
+            winner_key_str=lambda x: x["winner_key"].fillna(-1).astype(str).str.split('.').str[0],
         )
         .assign(
             won_main_player=lambda x: np.where(
-                x["results_for_player_key_str"] == x["winner_key_str"], 1, 0
+                 (x["winner_key_str"] != "-1") & (x["results_for_player_key_str"] == x["winner_key_str"]), 1, 0
             ),
             lost_main_player=lambda x: np.where(
-                x["results_for_player_key_str"] != x["winner_key_str"], 1, 0
+                 (x["winner_key_str"] != "-1") & (x["results_for_player_key_str"] != x["winner_key_str"]), 1, 0
             ),
         )
         .groupby(["results_for_player_key_str", "tournament_sourface"])
