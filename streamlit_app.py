@@ -68,7 +68,12 @@ st.title("🎾🐆 Otorongo Project")
 
 @st.cache_data(ttl=3600)
 def load_tournaments_data_v2():
-    return get_tournaments(save_json=False)
+    # Load from local CSV for stability and performance
+    try:
+        return pd.read_csv("data/tournaments.csv")
+    except Exception as e:
+        logging.error(f"Error loading tournaments.csv: {e}")
+        return pd.DataFrame()
 
 @st.cache_data(ttl=3600)
 def load_standings_data(event_type):
