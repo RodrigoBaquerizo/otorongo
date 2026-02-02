@@ -146,6 +146,22 @@ def process_fixture_surface(df, output_file=PLAYERS_FIXTURE_SURFACE, save_csv=Tr
         suffixes=("", "_trn"),
     )
     
+    # Normalize Surface: treat "Hard (Indoor)", "Hard (Outdoor)", etc. as "Hard"
+    # Also standardize Clay and Grass
+    if "tournament_sourface" in joined.columns:
+        conditions = [
+            joined["tournament_sourface"].astype(str).str.contains("Hard", case=False, na=False),
+            joined["tournament_sourface"].astype(str).str.contains("Clay", case=False, na=False),
+            joined["tournament_sourface"].astype(str).str.contains("Grass", case=False, na=False)
+        ]
+        choices = ["Hard", "Clay", "Grass"]
+        
+        joined["tournament_sourface"] = np.select(
+            conditions, 
+            choices, 
+            default=joined["tournament_sourface"]
+        )
+    
     cond_p1 = joined["event_winner"] == "First Player"
     cond_p2 = joined["event_winner"] == "Second Player"
     

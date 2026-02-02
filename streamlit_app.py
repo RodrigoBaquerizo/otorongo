@@ -189,6 +189,15 @@ def calculate_match_stats(row, df_tournaments=None, df_sample=None, df_atp_stand
                     res = get_surf(df_tournaments, 'tournament_name', row['tournament_name'])
                     if res: surface = res
         
+        # Normalize Surface to match grouping logic
+        s_lower = str(surface).lower()
+        if "hard" in s_lower:
+            surface = "Hard"
+        elif "clay" in s_lower:
+            surface = "Clay"
+        elif "grass" in s_lower:
+            surface = "Grass"
+            
         stats["Sourface"] = surface
     except Exception as e:
         logging.error(f"Error fetching surface: {e}")
@@ -731,14 +740,13 @@ with tab1:
 with tab2:
     st.header("Day Report")
     
-    col_dr_1, col_dr_2, col_dr_3 = st.columns([2, 2, 2])
+    # Use vertical_alignment="bottom" to align input fields and button
+    col_dr_1, col_dr_2, col_dr_3 = st.columns([2, 2, 2], vertical_alignment="bottom")
     with col_dr_1:
          dr_date = st.date_input("Select Date", value=datetime.today(), key="dr_date")
     with col_dr_2:
          dr_format = st.selectbox("Format", ["All", "Singles", "Doubles"], key="dr_format")
     with col_dr_3:
-         st.write("")
-         st.write("")
          dr_see_tournaments = st.button("See Tournaments", type="secondary")
     
     # Session state for tournament list
@@ -772,12 +780,11 @@ with tab2:
     # 2nd Row: Tournament Select & Go
     if st.session_state.dr_tournaments_list:
         st.markdown("---")
-        c1, c2 = st.columns([3, 1])
+        # Align Go button with Selectbox
+        c1, c2 = st.columns([3, 1], vertical_alignment="bottom")
         with c1:
              dr_selected_tournament = st.selectbox("Select Tournament", st.session_state.dr_tournaments_list, key="dr_selected_t", index=None, placeholder="Choose a tournament...")
         with c2:
-             st.write("")
-             st.write("")
              dr_go = st.button("Go", type="primary")
              
         if dr_go and dr_selected_tournament:
@@ -866,7 +873,7 @@ with tab2:
                             # Match Header Layout
                             # Using vertical-alignment friendly layout if possible, but columns is standard
                             # Adjust ratios: Title (approx 45%), Button (approx 5%), Status (approx 50%)
-                            c_head_1, c_head_2, c_head_3 = st.columns([0.45, 0.05, 0.50])
+                            c_head_1, c_head_2, c_head_3 = st.columns([0.45, 0.05, 0.50], vertical_alignment="center")
                             
                             with c_head_1:
                                 st.markdown(f"**Match {idx+1}: {row.get('event_first_player')} vs {row.get('event_second_player')}** ({row.get('event_time')})")
@@ -879,12 +886,11 @@ with tab2:
                             with c_head_3:
                                 st.markdown(f":{status_color}[● {status_label}]{winner_text}")
 
-                            col_table, col_copy = st.columns([8, 1])
+                            col_table, col_copy = st.columns([8, 1], vertical_alignment="center")
                             with col_table:
                                  st.dataframe(df_mini, hide_index=True, use_container_width=True)
+                            
                             with col_copy:
-                                 st.write("") # Spacer
-                                 st.write("") # Spacer
                                  # Prepare copy text (simplified for CSV/Excel paste)
                                  # Format: Date \t P1 \t P2 ...
                                  copy_text_val = "\t".join([str(stats.get(k, "")) for k in display_keys])
