@@ -17,6 +17,24 @@ def fetch_daily_data():
     logging.info("Fetching Tournaments...")
     try:
         get_tournaments(save_json=False)
+        
+        # SANITIZATION STEP: Fix known API bad data (e.g. Davis Cup surfaces)
+        tournaments_csv = "data/tournaments.csv"
+        if os.path.exists(tournaments_csv):
+            df = pd.read_csv(tournaments_csv)
+            # Replace invalid surface names with "Hard (Indoor)"
+            # Note: Davis Cup is often Hard Indoor, but API returns rounds like "- Play Offs"
+            bad_values = ["- Play Offs", "- Preliminary", "- Promotion"]
+            cols = [c for c in df.columns if "sourface" in c or "surface" in c]
+            if cols:
+                col = cols[0]
+                mask = df[col].isin(bad_values)
+                if mask.any():
+                    logging.info(f"Sanitizing {mask.sum()} rows with invalid surface data...")
+                    df.loc[mask, col] = "Hard (Indoor)"
+                    df.to_csv(tournaments_csv, index=False)
+                    logging.info("Sanitization complete.")
+
         logging.info("✅ Tournaments updated.")
     except Exception as e:
         logging.error(f"❌ Error fetching tournaments: {e}")

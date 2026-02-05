@@ -232,15 +232,15 @@ tournament_key,tournament_name,event_type_key,event_type_type,tournament_sourfac
 2723,ATP Davis Cup - Group III,265,Atp Singles,,2026-02-05 02:32:43
 2724,ATP Davis Cup - Group III,267,Atp Doubles,,2026-02-05 02:32:43
 2722,ATP Davis Cup - Group IV,265,Atp Singles,,2026-02-05 02:32:43
-2733,ATP Davis Cup - Group IV,267,Atp Doubles,- Promotion,2026-02-05 02:32:43
+2733,ATP Davis Cup - Group IV,267,Atp Doubles,Hard (Indoor),2026-02-05 02:32:43
 11333,ATP Davis Cup - Group V,265,Atp Singles,,2026-02-05 02:32:43
 11334,ATP Davis Cup - Group V,267,Atp Doubles,,2026-02-05 02:32:43
-3120,ATP Davis Cup - World Group,265,Atp Singles,- Play Offs,2026-02-05 02:32:43
+3120,ATP Davis Cup - World Group,265,Atp Singles,Hard (Indoor),2026-02-05 02:32:43
 2725,ATP Davis Cup - World Group,267,Atp Doubles,,2026-02-05 02:32:43
-3445,ATP Davis Cup - World Group I,265,Atp Singles,- Preliminary,2026-02-05 02:32:43
-3446,ATP Davis Cup - World Group I,267,Atp Doubles,- Preliminary,2026-02-05 02:32:43
-3447,ATP Davis Cup - World Group II,265,Atp Singles,- Preliminary,2026-02-05 02:32:43
-3448,ATP Davis Cup - World Group II,267,Atp Doubles,- Preliminary,2026-02-05 02:32:43
+3445,ATP Davis Cup - World Group I,265,Atp Singles,Hard (Indoor),2026-02-05 02:32:43
+3446,ATP Davis Cup - World Group I,267,Atp Doubles,Hard (Indoor),2026-02-05 02:32:43
+3447,ATP Davis Cup - World Group II,265,Atp Singles,Hard (Indoor),2026-02-05 02:32:43
+3448,ATP Davis Cup - World Group II,267,Atp Doubles,Hard (Indoor),2026-02-05 02:32:43
 9162,ATP Hong Kong,267,Atp Doubles,Hard,2026-02-05 02:32:43
 12734,ATP Hopman Cup,265,Atp Singles,Clay,2026-02-05 02:32:43
 3171,ATP Laver Cup,265,Atp Singles,Hard (Indoor),2026-02-05 02:32:43
@@ -462,7 +462,7 @@ tournament_key,tournament_name,event_type_key,event_type_type,tournament_sourfac
 4218,Billie Jean King Cup - Group III Teams,273,Teams Women,,2026-02-05 02:32:43
 11132,Billie Jean King Cup - Group IV,273,Teams Women,,2026-02-05 02:32:43
 2715,Billie Jean King Cup - World Group,273,Teams Women,,2026-02-05 02:32:43
-3832,Billie Jean King Cup - World Group II,273,Teams Women,- Play Offs,2026-02-05 02:32:43
+3832,Billie Jean King Cup - World Group II,273,Teams Women,Hard (Indoor),2026-02-05 02:32:43
 2411,Binghamton,281,Challenger Men Singles,Hard,2026-02-05 02:32:43
 8740,Binghamton,282,Challenger Men Doubles,Hard,2026-02-05 02:32:43
 1600,Binh Duong,270,Itf Men Singles,Hard,2026-02-05 02:32:43
@@ -958,10 +958,10 @@ tournament_key,tournament_name,event_type_key,event_type_type,tournament_sourfac
 1620,Danderyd-Stockholm,270,Itf Men Singles,Hard,2026-02-05 02:32:43
 3078,Darwin,271,Itf Women Singles,Hard,2026-02-05 02:32:43
 1788,Davanagere,270,Itf Men Singles,Hard,2026-02-05 02:32:43
-2735,Davis Cup - Group III,285,Teams Men,- Promotion,2026-02-05 02:32:43
-2734,Davis Cup - Group IV Teams,285,Teams Men,- Promotion,2026-02-05 02:32:43
+2735,Davis Cup - Group III,285,Teams Men,Hard (Indoor),2026-02-05 02:32:43
+2734,Davis Cup - Group IV Teams,285,Teams Men,Hard (Indoor),2026-02-05 02:32:43
 11326,Davis Cup - Group V Teams,285,Teams Men,,2026-02-05 02:32:43
-3418,Davis Cup - World Group I Teams,285,Teams Men,- Preliminary,2026-02-05 02:32:43
+3418,Davis Cup - World Group I Teams,285,Teams Men,Hard (Indoor),2026-02-05 02:32:43
 3482,Davis Cup - World Group II Teams,285,Teams Men,,2026-02-05 02:32:43
 2720,Davis Cup - World Group Teams,285,Teams Men,,2026-02-05 02:32:43
 1396,De Haan,270,Itf Men Singles,Clay,2026-02-05 02:32:43
@@ -9729,12 +9729,12 @@ tournament_key,tournament_name,event_type_key,event_type_type,tournament_sourfac
 8470,WTA Auckland,268,Wta Doubles,Hard,2026-02-05 02:32:43
 1237,WTA Australian Open,266,Wta Singles,Hard,2026-02-05 02:32:43
 1234,WTA Australian Open,268,Wta Doubles,Hard,2026-02-05 02:32:43
-2741,WTA Billie Jean King Cup - Group I,266,Wta Singles,- Promotion,2026-02-05 02:32:43
-2742,WTA Billie Jean King Cup - Group I,268,Wta Doubles,- Promotion,2026-02-05 02:32:43
+2741,WTA Billie Jean King Cup - Group I,266,Wta Singles,Hard (Indoor),2026-02-05 02:32:43
+2742,WTA Billie Jean King Cup - Group I,268,Wta Doubles,Hard (Indoor),2026-02-05 02:32:43
 2732,WTA Billie Jean King Cup - Group II,266,Wta Singles,- Relegation,2026-02-05 02:32:43
-2731,WTA Billie Jean King Cup - Group II,268,Wta Doubles,- Promotion,2026-02-05 02:32:43
-2762,WTA Billie Jean King Cup - Group III,266,Wta Singles,- Promotion,2026-02-05 02:32:43
-2763,WTA Billie Jean King Cup - Group III,268,Wta Doubles,- Promotion,2026-02-05 02:32:43
+2731,WTA Billie Jean King Cup - Group II,268,Wta Doubles,Hard (Indoor),2026-02-05 02:32:43
+2762,WTA Billie Jean King Cup - Group III,266,Wta Singles,Hard (Indoor),2026-02-05 02:32:43
+2763,WTA Billie Jean King Cup - Group III,268,Wta Doubles,Hard (Indoor),2026-02-05 02:32:43
 11133,WTA Billie Jean King Cup - Group IV,266,Wta Singles,,2026-02-05 02:32:43
 11134,WTA Billie Jean King Cup - Group IV,268,Wta Doubles,,2026-02-05 02:32:43
 3330,WTA Billie Jean King Cup - World Group,266,Wta Singles,- Qualification,2026-02-05 02:32:43
