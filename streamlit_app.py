@@ -9,7 +9,8 @@ from scripts.tenis_api import (
     get_h2h,
 )
 from scripts.process_files import process_fixture_period, process_fixture_surface
-from streamlit_shadcn_ui import button as shadcn_button
+# TODO: Descomentar cuando streamlit-shadcn-ui se instale correctamente en Streamlit Cloud
+# from streamlit_shadcn_ui import button as shadcn_button
 
 # Configure logging
 logging.basicConfig(
