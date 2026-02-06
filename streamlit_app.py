@@ -670,7 +670,7 @@ with tab1:
     with col4:
         st.write("") # Spacer for better vertical alignment
         st.write("") 
-        search_clicked = shadcn_button("Search", key="search_events_btn", variant="default")
+        search_clicked = st.button("Search", key="search_events_btn", use_container_width=True)
 
     # Initialize session state variable to store results if not present
     if "search_events_results" not in st.session_state:
@@ -747,7 +747,7 @@ with tab1:
                 # Action Button
                 # Use a unique key for each button depending on event_key
                 with c5:
-                    if shadcn_button("See Details", key=f"btn_details_{row.get('event_key', index)}", variant="default"):
+                    if st.button("See Details", key=f"btn_details_{row.get('event_key', index)}", use_container_width=True):
                         show_details_dialog(row)
                     
                 # Add a visual separator
