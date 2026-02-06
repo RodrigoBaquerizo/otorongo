@@ -1,0 +1,22 @@
+[theme]
+# Base theme: light or dark
+base = "dark"
+
+# Primary color (for buttons, checkboxes, etc.)
+primaryColor = "#10b981"  # Modern emerald green
+
+# Background color
+backgroundColor = "#0f172a"  # Deep slate navy
+
+# Secondary background color
+secondaryBackgroundColor = "#1e293b"  # Lighter slate
+
+# Text color
+textColor = "#f1f5f9"  # Soft white
+
+# Font family
+font = "sans serif"
+
+[server]
+# Prevent script auto-rerun on file changes during development
+runOnSave = true

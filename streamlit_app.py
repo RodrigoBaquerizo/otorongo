@@ -9,13 +9,25 @@ from scripts.tenis_api import (
     get_h2h,
 )
 from scripts.process_files import process_fixture_period, process_fixture_surface
+from streamlit_shadcn_ui import button as shadcn_button
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-st.set_page_config(page_title="Tennis API Data Fetcher", layout="wide")
+st.set_page_config(page_title="🎾 Otorongo - Tennis Stats", layout="wide", page_icon="🐆")
+
+# Load custom CSS
+def load_css():
+    """Load custom CSS styles"""
+    try:
+        with open("styles.css") as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    except FileNotFoundError:
+        logging.warning("styles.css not found, skipping custom styles")
+
+load_css()
 
 # --- PASSWORD PROTECTION ---
 def check_password():
@@ -58,7 +70,7 @@ if not check_password():
     st.stop()  # Do not run the rest of the app if not authenticated
 # ---------------------------
 
-st.title("🎾🐆 Otorongo Project")
+st.title("🎾🐆 Otorongo Tennis Analytics")
 
 
 
@@ -438,11 +450,11 @@ def view_match_details_fragment(row):
         st.session_state[ss_key] = None
 
     with col_h_1:
-        if st.button(f"Recent: {p1_name}", key=f"btn_p1_{row.get('event_key')}"):
+        if st.button(f"Recent: {p1_name}", key=f"btn_p1_{row.get('event_key')}", use_container_width=True):
              st.session_state[ss_key] = "P1"
              
     with col_h_2:
-        if st.button(f"Recent: {p2_name}", key=f"btn_p2_{row.get('event_key')}"):
+        if st.button(f"Recent: {p2_name}", key=f"btn_p2_{row.get('event_key')}", use_container_width=True):
              st.session_state[ss_key] = "P2"
              
     with col_h_3:
@@ -657,7 +669,7 @@ with tab1:
     with col4:
         st.write("") # Spacer for better vertical alignment
         st.write("") 
-        search_clicked = st.button("Search", type="primary")
+        search_clicked = shadcn_button("Search", key="search_events_btn", variant="default")
 
     # Initialize session state variable to store results if not present
     if "search_events_results" not in st.session_state:
@@ -733,8 +745,9 @@ with tab1:
                 
                 # Action Button
                 # Use a unique key for each button depending on event_key
-                if c5.button("See Details", key=f"btn_details_{row.get('event_key', index)}", type="primary"):
-                    show_details_dialog(row)
+                with c5:
+                    if shadcn_button("See Details", key=f"btn_details_{row.get('event_key', index)}", variant="default"):
+                        show_details_dialog(row)
                     
                 # Add a visual separator
                 st.markdown("---")
@@ -758,6 +771,25 @@ with tab2:
     if "dr_tournaments_list" not in st.session_state:
         st.session_state.dr_tournaments_list = []
         st.session_state.dr_fixtures_cache = None
+    
+    # Track previous date and format to detect changes
+    if "dr_prev_date" not in st.session_state:
+        st.session_state.dr_prev_date = None
+    if "dr_prev_format" not in st.session_state:
+        st.session_state.dr_prev_format = None
+    
+    # Reset results if date or format changed
+    current_date_str = dr_date.strftime("%Y-%m-%d")
+    if (st.session_state.dr_prev_date != current_date_str or 
+        st.session_state.dr_prev_format != dr_format):
+        # Clear previous results
+        st.session_state.dr_show_results = False
+        st.session_state.dr_current_tournament = None
+        st.session_state.dr_tournaments_list = []
+        st.session_state.dr_fixtures_cache = None
+        # Update tracking
+        st.session_state.dr_prev_date = current_date_str
+        st.session_state.dr_prev_format = dr_format
 
     if dr_see_tournaments:
         with st.spinner("Fetching tournaments for date..."):
@@ -796,8 +828,10 @@ with tab2:
              st.session_state.dr_show_results = True
              st.session_state.dr_current_tournament = dr_selected_tournament
         
-        # Check if we should show results (either just clicked Go, or previously clicked and state is active)
-        if st.session_state.get("dr_show_results") and st.session_state.get("dr_current_tournament"):
+        # Check if we should show results: only if Go was clicked AND selection matches
+        if (st.session_state.get("dr_show_results") and 
+            st.session_state.get("dr_current_tournament") and
+            dr_selected_tournament == st.session_state.dr_current_tournament):
              # Use the stored tournament from session state to remain consistent
              current_tournament = st.session_state.dr_current_tournament
              
