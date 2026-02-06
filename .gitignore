@@ -14,3 +14,6 @@ debug_*.txt
 debug_*.py
 diagnose_*.py
 test_*.py
+
+# Private documentation
+TECHNICAL_DOCUMENTATION.md
