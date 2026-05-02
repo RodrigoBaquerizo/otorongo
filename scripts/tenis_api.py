@@ -53,14 +53,35 @@ create_data_folders()
 
 
 ### HELPER FUNCTIONS ###
-def save_to_csv_simple(data: requests.Response, filename: str) -> pd.DataFrame:
+def save_to_csv_simple(data: dict, filename: str) -> pd.DataFrame:
+    """
+    Guarda los resultados de la API en CSV solo si la respuesta es exitosa.
+    NUNCA sobrescribe si hay errores de suscripción o mensajes de error.
+    """
+    if not isinstance(data, dict):
+        logging.error(f"Error: Se esperaba un diccionario en save_to_csv_simple, se recibió {type(data)}")
+        return pd.DataFrame()
+
+    # Validar éxito de la API (success == 1)
+    if data.get("success") != 1:
+        error_msg = data.get("msg", "Error desconocido en la API")
+        error_code = data.get("cod", "N/A")
+        logging.error(f"❌ API Error {error_code}: {error_msg}. Operación cancelada para {filename}")
+        raise ValueError(f"API Error: {error_msg} (Cod: {error_code})")
+
+    # Validar que existan resultados
+    results = data.get("result")
+    if not results:
+        logging.warning(f"⚠️ La API no devolvió resultados para {filename}, pero marcó éxito.")
+        return pd.DataFrame()
+
     # Create DataFrame from the 'result' list
-    df = pd.DataFrame(data["result"])
+    df = pd.DataFrame(results)
 
     # Add download timestamp column
     df["download_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # Save to CSV
+    # Save to CSV (Solo si llegamos aquí, los datos son válidos)
     df.to_csv(filename, index=False, encoding="utf-8")
     return df
 

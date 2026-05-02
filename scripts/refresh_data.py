@@ -765,14 +765,20 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
         while cursor <= end:
             block_end = min(cursor + timedelta(days=6), end)
             chunk = fetch_range(cursor.strftime("%Y-%m-%d"), block_end.strftime("%Y-%m-%d"))
+            
+            # Filtro base: Solo Singles de los circuitos que nos importan en histórico
             filtered = [r for r in chunk if r.get("event_type_type") in HIST_TYPES]
+            
             for f in filtered:
                 surf = _get_surface(f, smap)
+                
+                # BLOQUEO INTELIGENTE: Solo reportar unknown si el torneo pertenece al circuito que estamos refrescando
                 if surf == "Unknown":
-                    t_name = f.get("tournament_name", "Desconocido")
-                    if not any(u["name"] == t_name for u in all_unknowns):
-                        all_unknowns.append({"name": t_name, "key": f.get("tournament_key")})
-                    # Aunque sea unknown, recolectamos el match para procesarlo después si se define
+                    # Solo nos importa si es del tipo que estamos procesando ahora (ATP o CHA)
+                    if f.get("event_type_type") in TARGET_TYPES:
+                        t_name = f.get("tournament_name", "Desconocido")
+                        if not any(u["name"] == t_name for u in all_unknowns):
+                            all_unknowns.append({"name": t_name, "key": f.get("tournament_key")})
                 
                 new_hist.append({
                     "Fecha":     f.get("event_date"),
@@ -983,8 +989,13 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
         if all_unknowns:
             return {"status": "NEED_SURFACE", "tournaments": all_unknowns, "until": yesterday}
 
-        # --- FINALIZACIÓN HISTÓRICO (Solo si no hay unknown_surfaces) ---
-        if 'df_new' in locals():
+        # --- FINALIZACIÓN HISTÓRICO (PERSISTENCIA GARANTIZADA) ---
+        # Siempre procesamos y guardamos histórico si hubo descarga exitosa, para actualizar ganadores.
+        if new_hist:
+            df_new = pd.DataFrame(new_hist)
+            df_new["Fecha"] = pd.to_datetime(df_new["Fecha"], errors="coerce")
+            df_new = _normalize_surface(df_new)
+            
             # Unir y limpiar Histórico
             df_hist = pd.concat([df_hist, df_new], ignore_index=True)
             if "ID Partido" in df_hist.columns:
@@ -996,11 +1007,14 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
                     df_hist.loc[mask_no_id, "Jugador 1"].astype(str) + "_" +
                     df_hist.loc[mask_no_id, "Jugador 2"].astype(str)
                 )
+                # Al deduplicar, keep="last" asegura que si un partido ya existía pero el nuevo tiene Ganador, se quede el nuevo.
                 df_hist = df_hist.drop_duplicates(subset=["_dedup_id"], keep="last").drop(columns=["_dedup_id"])
             else:
                 df_hist = df_hist.drop_duplicates(subset=["Fecha", "Torneo", "Jugador 1", "Jugador 2"], keep="last")
+            
             df_hist = df_hist.sort_values("Fecha", ascending=False)
             _get_manager().save_table("historical_fixtures", df_hist)
+            logging.info(f"✅ Historical Fixtures actualizado y guardado ({len(new_hist)} filas procesadas).")
 
 
         if 'new_matches' in locals() and new_matches:
