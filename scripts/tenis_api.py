@@ -3,13 +3,10 @@ import pandas as pd
 from datetime import datetime
 import requests
 import logging
+import time
+import http.client
 from pathlib import Path
-try:
-    from scripts.process_files import join_main_files, concat_fixtures, concat_h2h
-    from scripts.logger_config import setup_logging
-except ImportError:
-    from process_files import join_main_files, concat_fixtures, concat_h2h
-    from logger_config import setup_logging
+from scripts.logger_config import setup_logging
 
 import os
 from dotenv import load_dotenv
@@ -19,6 +16,27 @@ load_dotenv(override=True)
 
 API_KEY = os.getenv("API_KEY")
 BASE_URL = f"https://api.api-tennis.com/tennis/?method="
+
+def safe_get(url, retries=3, timeout=30):
+    """Realiza una petición GET con reintentos y manejo de errores de conexión."""
+    for i in range(retries):
+        try:
+            response = requests.get(url, timeout=timeout)
+            # Forzar la lectura del contenido para disparar IncompleteRead si el servidor cortó la conexión
+            _ = response.content 
+            return response
+        except Exception as e:
+            if i < retries - 1:
+                wait = 2 ** (i + 1)
+                logging.warning(f"Fallo en API (intento {i+1}/{retries}): {e}. Reintentando en {wait}s...")
+                time.sleep(wait)
+            else:
+                logging.error(f"Error definitivo tras {retries} intentos: {e}")
+                # Si fallan todos los intentos, devolvemos un mock response para no romper el programa
+                class MockResponse:
+                    status_code = 500
+                    def json(self): return {}
+                return MockResponse()
 
 
 def create_data_folders():
@@ -64,7 +82,7 @@ def get_events(
     authentication = f"&APIkey={api_key}"
     url = base_url + method + authentication
 
-    response = requests.get(url)
+    response = safe_get(url)
     data = response.json()
 
     if save_json:
@@ -84,7 +102,7 @@ def get_tournaments(
     authentication = f"&APIkey={api_key}"
     url = base_url + method + authentication
 
-    response = requests.get(url)
+    response = safe_get(url)
     data = response.json()
 
     if save_json:
@@ -119,7 +137,7 @@ def get_fixtures(
     authentication = f"&APIkey={api_key}"
     url = base_url + method + search + authentication
 
-    response = requests.get(url)
+    response = safe_get(url)
     if response.status_code == 500:
         logging.error("Server error (500)")
         logging.error(response.text)  # See the full error
@@ -266,7 +284,7 @@ def get_livescore(
     authentication = f"&APIkey={api_key}"
     url = base_url + method + authentication
 
-    response = requests.get(url)
+    response = safe_get(url)
     data = response.json()
 
     if save_json:
@@ -387,7 +405,7 @@ def get_h2h(
     authentication = f"&APIkey={api_key}"
     url = base_url + method + search + authentication
 
-    response = requests.get(url)
+    response = safe_get(url)
     
     if response.status_code != 200:
         logging.error(f"HTTP Error {response.status_code} in get_h2h")
@@ -459,7 +477,7 @@ def get_standings(
     authentication = f"&APIkey={api_key}"
     url = base_url + method + search + authentication
 
-    response = requests.get(url)
+    response = safe_get(url)
     data = response.json()
 
     if save_json:
@@ -481,7 +499,7 @@ def get_players(
     authentication = f"&APIkey={api_key}"
     url = base_url + method + search + authentication
 
-    response = requests.get(url)
+    response = safe_get(url)
     data = response.json()
 
     if save_json:
@@ -581,18 +599,91 @@ def get_odds(
     base_url: str = BASE_URL,
     method: str = "get_odds",
     api_key: str = API_KEY,
-) -> None:
+) -> dict:
     """Function to retrieve odds information from the tenis API."""
 
     search = f"&date_start={date_start}&date_stop={date_stop}"
     authentication = f"&APIkey={api_key}"
     url = base_url + method + search + authentication
 
-    response = requests.get(url)
-    data = response.json()
+    response = safe_get(url)
+    if response.status_code != 200:
+        logging.error(f"Error en API get_odds: {response.status_code}")
+        return {}
+        
+    try:
+        data = response.json()
+    except Exception as e:
+        logging.error(f"Error decodificando JSON en get_odds: {e}")
+        return {}
 
     if save_json:
         save_to_json(data, "data/odds.json")
+    
+    return data
+
+
+def get_odds_data(date_start: str, date_stop: str, return_stats: bool = False) -> dict | tuple:
+    """
+    Recupera cuotas para un rango de fechas y devuelve un mapeo {event_key: (odd1, odd2)}.
+    Implementa un sistema de fallback iterando sobre PRIORITY_BOOKIES y luego 
+    sobre cualquier otro proveedor disponible.
+    """
+    PRIORITY_BOOKIES = ["bet365", "bwin", "1xbet", "Betsson", "Sportingbet", "Betcris"]
+    
+    data = get_odds(date_start, date_stop, save_json=False)
+    if not data or "result" not in data:
+        return ({}, {}) if return_stats else {}
+    
+    odds_map = {}
+    bookie_stats = {}
+    results = data["result"]
+    
+    if not isinstance(results, dict):
+        logging.warning("get_odds result no es un diccionario.")
+        return ({}, {}) if return_stats else {}
+
+    for event_key, markets in results.items():
+        market = markets.get("Home/Away")
+        if not market:
+            continue
+            
+        home_odds = market.get("Home", {})
+        away_odds = market.get("Away", {})
+        
+        o1, o2, used_bookie = None, None, None
+        
+        # Priority list
+        for bookie in PRIORITY_BOOKIES:
+            temp_o1 = home_odds.get(bookie)
+            temp_o2 = away_odds.get(bookie)
+            if temp_o1 and temp_o2:
+                o1 = temp_o1
+                o2 = temp_o2
+                used_bookie = bookie
+                break
+                
+        # Universal fallback
+        if not o1 or not o2:
+            for bookie in home_odds.keys():
+                temp_o1 = home_odds.get(bookie)
+                temp_o2 = away_odds.get(bookie)
+                if temp_o1 and temp_o2:
+                    o1 = temp_o1
+                    o2 = temp_o2
+                    used_bookie = bookie
+                    break
+        
+        if o1 and o2 and used_bookie:
+            try:
+                odds_map[str(event_key)] = (float(o1), float(o2))
+                bookie_stats[used_bookie] = bookie_stats.get(used_bookie, 0) + 1
+            except (ValueError, TypeError):
+                continue
+                
+    if return_stats:
+        return odds_map, bookie_stats
+    return odds_map
 
 
 def get_live_odds(
@@ -607,7 +698,7 @@ def get_live_odds(
     authentication = f"&APIkey={api_key}"
     url = base_url + method + search + authentication
 
-    response = requests.get(url)
+    response = safe_get(url)
     data = response.json()
 
     if save_json:
@@ -625,6 +716,10 @@ def get_fixtures_for_a_date(
     api_key: str = API_KEY,
 ) -> None:
     """Function to retrieve fixtures from the tenis API for a specific date."""
+    try:
+        from scripts.process_files import join_main_files, concat_fixtures, concat_h2h
+    except ImportError:
+        from process_files import join_main_files, concat_fixtures, concat_h2h
 
     search = f"&date_start={date}&date_stop={date}"
     if tournament_key is not None:

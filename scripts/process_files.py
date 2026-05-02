@@ -3,12 +3,8 @@ import os
 import numpy as np
 from typing import List, Dict
 import logging
-try:
-    from scripts.logger_config import setup_logging
-    from scripts.my_columns import COLUMNS
-except ImportError:
-    from logger_config import setup_logging
-    from my_columns import COLUMNS
+from scripts.logger_config import setup_logging
+from scripts.my_columns import COLUMNS
 
 setup_logging()
 
@@ -94,6 +90,14 @@ def concat_h2h(folder: str = "h2h", output_file: str = H2H_PROCESSED_FILE):
 def process_fixture_period(df, output_file=PLAYERS_FIXTURE_PERIOD, save_csv=True):
     df["event_date"] = pd.to_datetime(df["event_date"])
     
+    # Strict Filters: Singles only, exclude Retired, Cancelled, Walkover
+    if "event_type_type" in df.columns:
+        df = df[df["event_type_type"].astype(str).str.contains("Singles", case=False, na=False)]
+    
+    if "event_status" in df.columns:
+        invalid_mask = df["event_status"].astype(str).str.lower().str.contains("retired|cancelled|walkover", na=False)
+        df = df[~invalid_mask]
+    
     # Logic to determine winner key safely
     # If event_winner is not First or Second player, we set winner_key to None/NaN
     cond_p1 = df["event_winner"] == "First Player"
@@ -145,6 +149,14 @@ def process_fixture_surface(df, output_file=PLAYERS_FIXTURE_SURFACE, save_csv=Tr
         how="left",
         suffixes=("", "_trn"),
     )
+    
+    # Strict Filters: Singles only, exclude Retired, Cancelled, Walkover
+    if "event_type_type" in joined.columns:
+        joined = joined[joined["event_type_type"].astype(str).str.contains("Singles", case=False, na=False)]
+    
+    if "event_status" in joined.columns:
+        invalid_mask = joined["event_status"].astype(str).str.lower().str.contains("retired|cancelled|walkover", na=False)
+        joined = joined[~invalid_mask]
     
     # Normalize Surface: treat "Hard (Indoor)", "Hard (Outdoor)", etc. as "Hard"
     # Also standardize Clay and Grass

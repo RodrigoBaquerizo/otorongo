@@ -5,9 +5,28 @@ __pycache__/
 *.pyc
 .DS_Store
 
+# Secrets (Supabase credentials)
+.streamlit/secrets.toml
+
+# Data files (managed via Supabase in production)
+data/*.csv
+data/*.json
+data/*.xlsx
+data/*.tsv
+data/backups_sanitization/
+data/ATP Rankings */
+data/Backup *.csv
+
+# Backups
+backups/
+
+# Scratch / Migration scripts
+scratch/
+
 # Logs
 logs/
 *.log
+*.prof
 
 # Debug output
 debug_*.txt

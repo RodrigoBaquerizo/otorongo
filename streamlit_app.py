@@ -1,943 +1,692 @@
 import streamlit as st
-import logging
 import pandas as pd
-from datetime import datetime
-from scripts.tenis_api import (
-    get_standings,
-    get_tournaments,
-    get_fixtures,
-    get_h2h,
-)
-from scripts.process_files import process_fixture_period, process_fixture_surface
-# TODO: Descomentar cuando streamlit-shadcn-ui se instale correctamente en Streamlit Cloud
-# from streamlit_shadcn_ui import button as shadcn_button
+import numpy as np
+import os
+import json
+import logging
+import time
+from datetime import datetime, timedelta
+import base64
+from scripts.data_manager import DataManager
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+@st.cache_resource
+def get_data_manager():
+    return DataManager()
 
-st.set_page_config(page_title="🎾 Otorongo - Tennis Stats", layout="wide", page_icon="🐆")
+manager = get_data_manager()
 
-# Load custom CSS
+# Configuración de Logging
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
+# Configurar página
+st.set_page_config(page_title="🎾 Otorongo - Tennis Analytics", layout="wide", page_icon="🐆")
+
+# --- CUSTOM CSS ---
 def load_css():
-    """Load custom CSS styles"""
     try:
         with open("styles.css") as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     except FileNotFoundError:
-        logging.warning("styles.css not found, skipping custom styles")
+        pass
 
 load_css()
 
-# --- PASSWORD PROTECTION ---
-def check_password():
-    """Returns `True` if the user had the correct password."""
-    import os
-    
-    # Priority: Streamlit secrets > Environment variable
-    # If neither is set, we allow access (default open)
-    password = None
+# --- UTILS ---
+def parse_pct(val):
+    if pd.isna(val) or val in ["N/D", "-", "", "nan", "nan%"]:
+        return 0.0
     try:
-        if "APP_PASSWORD" in st.secrets:
-            password = st.secrets["APP_PASSWORD"]
-    except FileNotFoundError:
-        pass
-        
-    if not password:
-        password = os.getenv("APP_PASSWORD")
+        if isinstance(val, str):
+            return float(val.replace("%", "").replace(",", ".").strip())
+        return float(val)
+    except:
+        return 0.0
 
-    # If no password configured, let them in
-    if not password:
+def norm(val):
+    if pd.isna(val) or val is None: return ""
+    return str(val).lower().replace(".", "").replace(" ", "").strip()
+
+# --- AUTH ---
+def check_password():
+    if "password_correct" in st.session_state and st.session_state["password_correct"]:
         return True
 
-    if st.session_state.get("password_correct", False):
-        return True
+    password = os.getenv("APP_PASSWORD")
+    if not password:
+        return True # Sin protección si no hay ENV
 
-    st.text_input(
-        "Please enter the password to access the app", type="password", key="password_input"
-    )
-    
-    if "password_input" in st.session_state:
+    def password_entered():
         if st.session_state["password_input"] == password:
             st.session_state["password_correct"] = True
-            st.rerun()
-        elif st.session_state["password_input"]:
-            st.error("😕 Password incorrect")
+            del st.session_state["password_input"]
+        else:
+            st.session_state["password_correct"] = False
 
+    st.title("🎾 Acceso Reservado")
+    st.text_input("Contraseña", type="password", on_change=password_entered, key="password_input")
+    if "password_correct" in st.session_state and not st.session_state["password_correct"]:
+        st.error("😕 Contraseña incorrecta")
     return False
 
 if not check_password():
-    st.stop()  # Do not run the rest of the app if not authenticated
-# ---------------------------
+    st.stop()
 
-st.title("🎾🐆 Otorongo Tennis Analytics")
-
-
-
-############################
-
-
-
+# --- DATA LOADING ---
 @st.cache_data(ttl=3600)
 def load_tournaments_data_v2():
-    # Load from local CSV for stability and performance
     try:
-        return pd.read_csv("data/tournaments.csv")
-    except Exception as e:
-        logging.error(f"Error loading tournaments.csv: {e}")
+        return manager.load_table("tournaments")
+    except:
         return pd.DataFrame()
 
 @st.cache_data(ttl=3600)
-def load_standings_data(event_type):
-    return get_standings(event_type=event_type, save_json=False)
-
-@st.cache_data
-def load_sample_tournaments():
+def load_standings_data(event_type="ATP"):
     try:
-        return pd.read_csv("update_20260101/sample_tournaments.csv")
-    except Exception as e:
-        logging.error(f"Error loading sample tournaments: {e}")
+        return manager.load_table("rankings")
+    except:
         return pd.DataFrame()
 
-@st.dialog("Match Details")
-def show_details_dialog(row):
-    # CSS to increase dialog width to approx 80% of viewport
-    st.markdown(
-        """
-        <style>
-        div[data-testid="stDialog"] div[role="dialog"] {
-            width: 80vw;
-            max-width: 80vw;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-    view_match_details_fragment(row)
+@st.cache_data(ttl=3600)
+def load_matches_data(table_name):
+    try:
+        df = manager.load_table(table_name)
+        if not df.empty and "Fecha" in df.columns:
+            df["Fecha"] = pd.to_datetime(df["Fecha"], errors="coerce")
+        return df
+    except Exception as e:
+        logging.error(f"Error loading {table_name}: {e}")
+        return pd.DataFrame()
 
-@st.fragment
-def view_match_details_fragment(row):
-    # Header with player selection
-    col_h_1, col_h_2, col_h_3 = st.columns([2, 2, 6])
-    p1_name = row['event_first_player']
-    p2_name = row['event_second_player']
-    
-    # Use session state to track selected player for this dialog instance
-    ss_key = f"details_selection_{row.get('event_key', 'unknown')}"
-    if ss_key not in st.session_state:
-        st.session_state[ss_key] = None
+def load_analysis_config_v2(config_file):
+    if os.path.exists(config_file):
+        try:
+            with open(config_file, "r") as f:
+                return json.load(f)
+        except:
+            pass
+    return {}
 
-    with col_h_1:
-        if st.button(f"Recent: {p1_name}", key=f"btn_p1_{row.get('event_key')}"):
-             st.session_state[ss_key] = "P1"
-             
-    with col_h_2:
-        if st.button(f"Recent: {p2_name}", key=f"btn_p2_{row.get('event_key')}"):
-             st.session_state[ss_key] = "P2"
-             
-    with col_h_3:
-         st.write(f"Details for **{p1_name}** vs **{p2_name}**")
+def save_analysis_config_v2(config_file, prefix):
+    keys = ["max_bet", "min_bet", "min_odds", "min_atp", "weight_h2h", "weight_recent", "weight_surface", "weight_ranking", "weight_ultra", "min_prob", "visible_cols"]
+    config = {}
+    for k in keys:
+        session_key = f"{prefix}_{k}"
+        if session_key in st.session_state:
+            config[f"td_{k}"] = st.session_state[session_key]
     
-    # Placeholder for API error messages
-    error_placeholder = st.empty()
-    api_error = False
-    
+    try:
+        os.makedirs("data", exist_ok=True)
+        with open(config_file, "w") as f:
+            json.dump(config, f, indent=4)
+        st.toast("✅ Configuración guardada")
+    except Exception as e:
+        st.error(f"Error al guardar configuración: {e}")
 
-def calculate_match_stats(row, df_tournaments=None, df_sample=None, df_atp_standings=None, df_wta_standings=None):
+# --- CALCULATION ENGINE ---
+def calculate_match_stats(row):
     """
-    Calculates detailed statistics for a match row.
-    Returns a dictionary with stats and any API error flag.
+    Simulación de la lógica de negocio estable.
+    Esta función es invocada por el diálogo de detalles.
     """
     stats = {
-        "Date": row.get("event_date"),
-        "Player 1": row.get("event_first_player"),
-        "Player 2": row.get("event_second_player"),
-        "Sourface": "Unknown",
-        "H2H P1": 0,
-        "H2H % P1": "0%",
-        "H2H P2": 0,
-        "H2H % P2": "0%",
-        "P1 Rec. Performance": "No data",
-        "P1 Sourface R. Perf.": "No data",
-        "P1 ATP Points": "No data",
-        "P2 Rec. Performance": "No data",
-        "P2 Sourface R. Perf.": "No data",
-        "P2 ATP Points": "No data",
-        "api_error": False,
-        # Return full dataframes for detailed view inside dialog
-        "df_p1_all": pd.DataFrame(),
-        "df_p2_all": pd.DataFrame(),
-        "h2h_matches_to_display": [],
-        "p1_recent_text": "",
-        "p2_recent_text": ""
+        "Date": row.get("Fecha", "Unknown"),
+        "Player 1": row.get("Jugador 1", "N/D"),
+        "Player 2": row.get("Jugador 2", "N/D"),
+        "Sourface": row.get("Superficie", "Unknown"),
+        "H2H P1": row.get("J1 H2H", 0),
+        "H2H % P1": row.get("J1 H2H %", "0%"),
+        "P1 Rec. Performance": row.get("J1 Rend. Reciente", "N/D"),
+        "P1 Sourface R. Perf.": row.get("J1 Rend. Superficie", "N/D"),
+        "P1 Ultra Rec. Performance": row.get("Rend. Ultra reciente J1", "N/D"),
+        "P1 ATP Points": row.get("J1 Puntos ATP", 0),
+        "P2 Rec. Performance": row.get("J2 Rend. Reciente", "N/D"),
+        "P2 Sourface R. Perf.": row.get("J2 Rend. Superficie", "N/D"),
+        "P2 Ultra Rec. Performance": row.get("Rend. Ultra reciente J2", "N/D"),
+        "P2 ATP Points": row.get("J2 Puntos ATP", 0),
     }
-    
-    # 1. Get Surface
-    try:
-        if df_sample is None: df_sample = load_sample_tournaments()
-        if df_tournaments is None: df_tournaments = load_tournaments_data_v2()
-        
-        t_key = row.get("tournament_key")
-        surface = "Unknown"
-        
-        found_in_sample = False
-        if not df_sample.empty and t_key:
-            match = df_sample[df_sample['tournament_key'].astype(str) == str(t_key)]
-            if not match.empty:
-                val = match.iloc[0].get('tournament_sourface')
-                if pd.notna(val):
-                    surface = val
-                    found_in_sample = True
-
-        if not found_in_sample:
-            if df_tournaments is not None and not df_tournaments.empty:
-                def get_surf(df, col, val):
-                    match = df[df[col].astype(str) == str(val)]
-                    if not match.empty:
-                        c = 'tournament_sourface' if 'tournament_sourface' in match.columns else 'tournament_surface'
-                        return match.iloc[0][c]
-                    return None
-
-                if t_key:
-                    res = get_surf(df_tournaments, 'tournament_key', t_key)
-                    if res: surface = res
-                
-                if surface == "Unknown" and row.get("tournament_name"):
-                    res = get_surf(df_tournaments, 'tournament_name', row['tournament_name'])
-                    if res: surface = res
-        
-        # Normalize Surface to match grouping logic
-        s_lower = str(surface).lower()
-        if "hard" in s_lower:
-            surface = "Hard"
-        elif "clay" in s_lower:
-            surface = "Clay"
-        elif "grass" in s_lower:
-            surface = "Grass"
-            
-        stats["Sourface"] = surface
-    except Exception as e:
-        logging.error(f"Error fetching surface: {e}")
-
-    # 2. Get H2H
-    try:
-        p1_key = row.get("first_player_key")
-        p2_key = row.get("second_player_key")
-        
-        if p1_key and p2_key:
-            h2h_data = get_h2h(first_player_key=p1_key, second_player_key=p2_key, save_json=False, save_csv=False)
-            
-            if h2h_data is None:
-                stats["api_error"] = True
-            elif "H2H" in h2h_data:
-                h2h_list = h2h_data["H2H"]
-                total_matches = len(h2h_list)
-                
-                if total_matches > 0:
-                    h2h_p1 = 0
-                    h2h_p2 = 0
-                    for match in h2h_list:
-                        winner = match.get("event_winner")
-                        match_p1 = match.get("first_player_key")
-                        match_p2 = match.get("second_player_key")
-                        
-                        winner_key = None
-                        if winner == "First Player":
-                            winner_key = match_p1
-                        elif winner == "Second Player":
-                            winner_key = match_p2
-                        else:
-                            winner_key = winner
-                            
-                        clean_winner = str(int(float(winner_key))) if winner_key else None
-                        clean_p1 = str(int(float(p1_key))) if p1_key else None
-                        clean_p2 = str(int(float(p2_key))) if p2_key else None
-                        
-                        if clean_winner and clean_p1 and clean_winner == clean_p1:
-                            h2h_p1 += 1
-                        elif clean_winner and clean_p2 and clean_winner == clean_p2:
-                            h2h_p2 += 1
-                    
-                    stats["H2H P1"] = h2h_p1
-                    stats["H2H % P1"] = f"{(h2h_p1 / total_matches) * 100:.1f}%".replace('.', ',')
-                    stats["H2H P2"] = h2h_p2
-                    stats["H2H % P2"] = f"{(h2h_p2 / total_matches) * 100:.1f}%".replace('.', ',')
-
-                    # Last 5 matches
-                    h2h_display = []
-                    for match in h2h_list[:5]:
-                        winner_name = match.get("event_winner", "Unknown")
-                        clean_winner = str(int(float(match.get("event_winner")))) if match.get("event_winner") and str(match.get("event_winner")).replace('.','',1).isdigit() else match.get("event_winner")
-                        
-                        display_winner = winner_name
-                        p1_name = row.get("event_first_player")
-                        p2_name = row.get("event_second_player")
-                        
-                        clean_p1 = str(int(float(p1_key))) if p1_key else None
-                        clean_p2 = str(int(float(p2_key))) if p2_key else None
-                        
-                        if clean_winner == "First Player" or clean_winner == clean_p1:
-                            display_winner = p1_name
-                        elif clean_winner == "Second Player" or clean_winner == clean_p2:
-                            display_winner = p2_name
-                            
-                        h2h_display.append({
-                            "Date": match.get("event_date"),
-                            "Tournament": match.get("tournament_name"),
-                            "Winner": display_winner,
-                            "Score": match.get("event_final_result")
-                        })
-                    stats["h2h_matches_to_display"] = h2h_display
-
-    except Exception as e:
-        logging.error(f"Error fetching H2H: {e}")
-
-    # 3. Get ATP/WTA Points
-    try:
-        def find_points(df, p_key):
-             if df is not None and not df.empty and 'player_key' in df.columns and 'points' in df.columns:
-                 try:
-                     target_key = float(p_key)
-                     match = df[df['player_key'].apply(lambda x: float(x) if pd.notnull(x) else -1) == target_key]
-                     if not match.empty:
-                         return match.iloc[0]['points']
-                 except:
-                     return None
-             return None
-
-        if df_atp_standings is None: df_atp_standings = load_standings_data("ATP")
-        
-        p1_key = row.get("first_player_key")
-        p2_key = row.get("second_player_key")
-
-        # P1 Points
-        pt = find_points(df_atp_standings, p1_key)
-        if pt is None:
-            if df_wta_standings is None: df_wta_standings = load_standings_data("WTA")
-            pt = find_points(df_wta_standings, p1_key)
-        if pt is not None: stats["P1 ATP Points"] = pt
-
-        # P2 Points  
-        pt = find_points(df_atp_standings, p2_key)
-        if pt is None:
-            if df_wta_standings is None: df_wta_standings = load_standings_data("WTA")
-            pt = find_points(df_wta_standings, p2_key)
-        if pt is not None: stats["P2 ATP Points"] = pt
-
-    except Exception as e:
-        logging.error(f"Error fetching standings: {e}")
-
-    # 4. Recent Performance
-    recent_start = (datetime.now() - pd.DateOffset(days=365)).strftime("%Y-%m-%d")
-    recent_end = datetime.now().strftime("%Y-%m-%d")
-    
-    try:
-        # P1
-        if p1_key:
-             clean_p1_key = str(int(float(p1_key))) if str(p1_key).replace('.','',1).isdigit() else str(p1_key)
-             df_p1 = get_fixtures(date_start=recent_start, date_stop=recent_end, player_key=clean_p1_key, save_json=False, save_csv=False)
-             
-             if df_p1 is None:
-                 stats["api_error"] = True
-             elif not df_p1.empty:
-                 # Deduplicate by event_key to ensure consistency
-                 if 'event_key' in df_p1.columns:
-                     df_p1 = df_p1.drop_duplicates(subset=['event_key'])
-
-                 if 'event_type_type' in df_p1.columns:
-                     df_p1 = df_p1[df_p1['event_type_type'].astype(str).str.contains("Singles", case=False, na=False)]
-                 
-                 stats["df_p1_all"] = df_p1.copy()
-                 
-                 stats_p1 = process_fixture_period(df_p1, save_csv=False)
-                 if not stats_p1.empty:
-                      row_p1 = stats_p1[stats_p1['results_for_player_key'] == clean_p1_key]
-                      if not row_p1.empty:
-                          w = row_p1.iloc[0]['won_main_player']
-                          l = row_p1.iloc[0]['lost_main_player']
-                          total = w + l
-                          pct = (w / total * 100) if total > 0 else 0
-                          stats["P1 Rec. Performance"] = f"{pct:.1f}%".replace('.', ',')
-                          stats["p1_recent_text"] = f"{row.get('event_first_player')}: {w}W - {l}L"
-                      
-                 stats_p1_surf = process_fixture_surface(df_p1, save_csv=False)
-                 if not stats_p1_surf.empty and stats["Sourface"] != "Unknown":
-                      row_surf = stats_p1_surf[
-                          (stats_p1_surf['results_for_player_key'] == clean_p1_key) & 
-                          (stats_p1_surf['tournament_sourface'] == stats["Sourface"])
-                      ]
-                      if not row_surf.empty:
-                           w = row_surf.iloc[0]['won_main_player']
-                           l = row_surf.iloc[0]['lost_main_player']
-                           total = w + l
-                           pct = (w / total * 100) if total > 0 else 0
-                           stats["P1 Sourface R. Perf."] = f"{pct:.1f}%".replace('.', ',')
-                           stats["p1_recent_text"] += f" | Sourface: {w}W - {l}L"
-
-        # P2
-        if p2_key:
-             clean_p2_key = str(int(float(p2_key))) if str(p2_key).replace('.','',1).isdigit() else str(p2_key)
-             df_p2 = get_fixtures(date_start=recent_start, date_stop=recent_end, player_key=clean_p2_key, save_json=False, save_csv=False)
-             
-             if df_p2 is None:
-                 stats["api_error"] = True
-             elif not df_p2.empty:
-                 # Deduplicate
-                 if 'event_key' in df_p2.columns:
-                     df_p2 = df_p2.drop_duplicates(subset=['event_key'])
-
-                 if 'event_type_type' in df_p2.columns:
-                     df_p2 = df_p2[df_p2['event_type_type'].astype(str).str.contains("Singles", case=False, na=False)]
-
-                 stats["df_p2_all"] = df_p2.copy()
-
-                 stats_p2 = process_fixture_period(df_p2, save_csv=False)
-                 if not stats_p2.empty:
-                      row_p2 = stats_p2[stats_p2['results_for_player_key'] == clean_p2_key]
-                      if not row_p2.empty:
-                          w = row_p2.iloc[0]['won_main_player']
-                          l = row_p2.iloc[0]['lost_main_player']
-                          total = w + l
-                          pct = (w / total * 100) if total > 0 else 0
-                          stats["P2 Rec. Performance"] = f"{pct:.1f}%".replace('.', ',')
-                          stats["p2_recent_text"] = f"{row.get('event_second_player')}: {w}W - {l}L"
-                 
-                 stats_p2_surf = process_fixture_surface(df_p2, save_csv=False)
-                 if not stats_p2_surf.empty and stats["Sourface"] != "Unknown":
-                      row_surf = stats_p2_surf[
-                           (stats_p2_surf['results_for_player_key'] == clean_p2_key) & 
-                           (stats_p2_surf['tournament_sourface'] == stats["Sourface"])
-                      ]
-                      if not row_surf.empty:
-                           w = row_surf.iloc[0]['won_main_player']
-                           l = row_surf.iloc[0]['lost_main_player']
-                           total = w + l
-                           pct = (w / total * 100) if total > 0 else 0
-                           stats["P2 Sourface R. Perf."] = f"{pct:.1f}%".replace('.', ',')
-                           stats["p2_recent_text"] += f" | Sourface: {w}W - {l}L"
-
-    except Exception as e:
-        logging.error(f"Error fetching recent performance: {e}")
-        
     return stats
 
-@st.dialog("Match Details")
+# --- UI COMPONENTS ---
+@st.dialog("Detalles del Partido")
 def show_details_dialog(row):
-    # CSS to increase dialog width to approx 80% of viewport
-    st.markdown(
-        """
+    st.markdown("""
         <style>
         div[data-testid="stDialog"] div[role="dialog"] {
-            width: 80vw;
-            max-width: 80vw;
+            width: 85vw;
+            max-width: 85vw;
         }
         </style>
-        """,
-        unsafe_allow_html=True
-    )
-    view_match_details_fragment(row)
-
-@st.fragment
-def view_match_details_fragment(row):
-    # Header with player selection
-    col_h_1, col_h_2, col_h_3 = st.columns([2, 2, 6])
-    p1_name = row['event_first_player']
-    p2_name = row['event_second_player']
+    """, unsafe_allow_html=True)
     
-    # Use session state to track selected player for this dialog instance
-    ss_key = f"details_selection_{row.get('event_key', 'unknown')}"
-    if ss_key not in st.session_state:
-        st.session_state[ss_key] = None
-
-    with col_h_1:
-        if st.button(f"Recent: {p1_name}", key=f"btn_p1_{row.get('event_key')}", use_container_width=True):
-             st.session_state[ss_key] = "P1"
-             
-    with col_h_2:
-        if st.button(f"Recent: {p2_name}", key=f"btn_p2_{row.get('event_key')}", use_container_width=True):
-             st.session_state[ss_key] = "P2"
-             
-    with col_h_3:
-         st.write(f"Details for **{p1_name}** vs **{p2_name}**")
-    
-    # Placeholder for API error messages
-    error_placeholder = st.empty()
-
-    # Calculate stats using the helper function
-    # Note: we might want to cache this per session/fragment if possible, but fragments rerun on interaction
-    # For now, let's call it. If it's too slow, we can cache.
-    # The helper functions (get_fixtures etc) are cached, so it shouldn't be too bad.
     stats = calculate_match_stats(row)
-
-    # 4. Build DataFrame for Display
-    # Extract keys to match DataFrame columns
-    display_keys = [
-        "Date", "Player 1", "Player 2", "Sourface", 
-        "H2H P1", "H2H % P1", "H2H P2", "H2H % P2", 
-        "P1 Rec. Performance", "P1 Sourface R. Perf.", "P1 ATP Points", 
-        "P2 Rec. Performance", "P2 Sourface R. Perf.", "P2 ATP Points"
-    ]
+    st.subheader(f"🐆 Análisis: {stats['Player 1']} vs {stats['Player 2']}")
     
-    # Filter stats dict to just these keys
-    data = {k: [stats.get(k)] for k in display_keys}
-    df_details = pd.DataFrame(data)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(f"**Torneo:** {row.get('Torneo', 'N/D')}")
+        st.write(f"**Superficie:** {stats['Sourface']}")
+    with col2:
+        st.write(f"**Fecha:** {stats['Date']}")
+        st.write(f"**ID Partido:** {row.get('ID Partido', 'N/D')}")
     
-    # Display
-    st.dataframe(df_details, hide_index=True, use_container_width=True)
+    st.divider()
     
-    # Recent Performance Text
-    if stats.get("p1_recent_text"):
-        st.caption(stats.get("p1_recent_text"))
-    if stats.get("p2_recent_text"):
-        st.caption(stats.get("p2_recent_text"))
-
-    # H2H History Table
-    h2h_matches_to_display = stats.get("h2h_matches_to_display", [])
-    if h2h_matches_to_display:
-        st.markdown("##### Head-to-Head History (Last 5)")
-        st.dataframe(pd.DataFrame(h2h_matches_to_display), hide_index=True, use_container_width=True)
+    # Tabla comparativa
+    display_keys = ["H2H", "Recent %", "Surface %", "Ultra %", "ATP Points"]
+    p1_vals = [stats["H2H % P1"], stats["P1 Rec. Performance"], stats["P1 Sourface R. Perf."], stats["P1 Ultra Rec. Performance"], stats["P1 ATP Points"]]
+    p2_h2h_pct = row.get("J2 H2H %", "0%")
+    p2_vals = [p2_h2h_pct, stats["P2 Rec. Performance"], stats["P2 Sourface R. Perf."], stats["P2 Ultra Rec. Performance"], stats["P2 ATP Points"]]
     
-    # Recent Matches Section
-    selected_player_side = st.session_state.get(f"details_selection_{row.get('event_key', 'unknown')}")
+    df_cmp = pd.DataFrame({
+        "Métrica": display_keys,
+        stats["Player 1"]: p1_vals,
+        stats["Player 2"]: p2_vals
+    })
+    st.table(df_cmp)
     
-    if selected_player_side:
-        target_name = row['event_first_player'] if selected_player_side == "P1" else row['event_second_player']
-        target_df = stats.get("df_p1_all") if selected_player_side == "P1" else stats.get("df_p2_all")
-        
-        st.markdown(f"---")
-        st.subheader(f"Recent matches of {target_name}")
-        
-        # Helper to format table
-        def get_recent_matches_display(df_matches, target_surface=None):
-            if df_matches is None or df_matches.empty:
-                return pd.DataFrame()
-            
-            df = df_matches.copy()
-            
-            # Merge surface if needed
-            # We always try to merge if 'tournament_sourface' is missing OR if we need to filter by it
-            if 'tournament_sourface' not in df.columns or target_surface:
-                 df_t = load_tournaments_data_v2()
-                 
-                 if df_t is not None and not df_t.empty and 'tournament_key' in df.columns:
-                     try:
-                         # Ensure we have the surface column in tournaments df
-                         surf_col = 'tournament_sourface'
-                         if 'tournament_sourface' not in df_t.columns and 'tournament_surface' in df_t.columns:
-                             df_t['tournament_sourface'] = df_t['tournament_surface']
-                         
-                         if surf_col in df_t.columns:
-                             # Prepare match df for merge
-                             df['t_key_str'] = df['tournament_key'].astype(str).str.split('.').str[0]
-                             
-                             # Prepare tournaments df for merge
-                             df_t_merge = df_t.copy()
-                             df_t_merge['t_key_str'] = df_t_merge['tournament_key'].astype(str).str.split('.').str[0]
-                             
-                             # Deduplicate to avoid exploding rows
-                             df_t_merge = df_t_merge[['t_key_str', surf_col]].drop_duplicates(subset=['t_key_str'])
-                             
-                             # Drop existing surface col in matches if present to avoid suffixes
-                             if surf_col in df.columns:
-                                 df = df.drop(columns=[surf_col])
-                                 
-                             # Merge
-                             df = df.merge(df_t_merge, on='t_key_str', how='left')
-                     except Exception as e:
-                         logging.error(f"Error merging surface info: {e}")
+    st.info("Nota: Los detalles históricos completos están disponibles en la tabla principal de datos.")
 
-            # Filter by surface if requested
-            if target_surface:
-                 if 'tournament_sourface' in df.columns:
-                     # Filter: handle potential NaNs
-                     df = df[df['tournament_sourface'].astype(str) == str(target_surface)]
-                 else:
-                     return pd.DataFrame() # Cannot filter if column missing
-
-            if df.empty:
-                return pd.DataFrame()
-            
-            # Resolve winner name
-            def resolve_winner(r):
-                w = str(r.get('event_winner', ''))
-                p1_k = str(r.get('first_player_key', '')).split('.')[0]
-                p2_k = str(r.get('second_player_key', '')).split('.')[0]
-                
-                # If winner is 'First Player'
-                if w == "First Player": return r.get('event_first_player')
-                if w == "Second Player": return r.get('event_second_player')
-                
-                # If winner is key
-                w_clean = w.split('.')[0]
-                if w_clean == p1_k: return r.get('event_first_player')
-                if w_clean == p2_k: return r.get('event_second_player')
-                
-                return w
-
-            df['Winner_Name'] = df.apply(resolve_winner, axis=1)
-            
-            # Renaming and Selection
-            df = df.reset_index(drop=True)
-            df.index += 1
-            df['#'] = df.index
-            
-            cols_map = {
-                'event_date': 'Date',
-                'tournament_name': 'Tournament',
-                'event_first_player': 'P1',
-                'event_second_player': 'P2',
-                'Winner_Name': 'Winner',
-                'event_final_result': 'Score'
+# --- DIALOGOS ---
+@st.dialog("Asignar Superficies a Torneos Nuevos")
+def show_surface_assignment_dialog(tournaments, mode):
+    st.warning("Se han detectado nuevos torneos en la API sin superficie asignada.")
+    st.write("Por favor, asigna la superficie correspondiente para continuar con la actualización.")
+    
+    with st.form("surface_assignment_form"):
+        selections = {}
+        for t in tournaments:
+            key = t.get("key", "N/D")
+            name = t.get("name", "Desconocido")
+            selections[key] = {
+                "name": name,
+                "surface": st.selectbox(f"{name} (Key: {key})", ["Hard", "Clay", "Grass"], key=f"sel_{key}")
             }
             
-            # Ensure columns exist before selecting
-            defaults = {k: '' for k in cols_map.keys()}
-            for k in defaults:
-                if k not in df.columns:
-                    df[k] = defaults[k]
-                    
-            final_df = df[['#'] + list(cols_map.keys())].rename(columns=cols_map)
-            return final_df
+        if st.form_submit_button("Confirmar y Guardar", type="primary"):
+            try:
+                import csv
+                with open("data/tournaments.csv", "a", newline="", encoding="utf-8") as f:
+                    writer = csv.writer(f)
+                    for k, data in selections.items():
+                        writer.writerow([k, data["name"], data["surface"]])
+                
+                st.success("Superficies guardadas correctamente. Reanudando actualización...")
+                
+                from scripts.refresh_data import refresh
+                with st.spinner("Continuando actualización..."):
+                    refresh(mode=mode)
+                
+                st.cache_data.clear()
+                st.rerun()
+            except Exception as e:
+                st.error(f"Error al guardar: {e}")
 
-        st.markdown("**Recent Matches**")
-        if not target_df.empty:
-             df_disp_1 = get_recent_matches_display(target_df)
-             st.dataframe(df_disp_1, hide_index=True, use_container_width=True)
-        else:
-             st.info("No recent matches found.")
-             
-        surface = stats.get("Sourface", "Unknown")
-        st.markdown(f"**Recent Matches in Sourface ({surface})**")
-        if surface != "Unknown" and not target_df.empty:
-             df_disp_2 = get_recent_matches_display(target_df, target_surface=surface)
-             if not df_disp_2.empty:
-                 st.dataframe(df_disp_2, hide_index=True, use_container_width=True)
-             else:
-                 st.info(f"No recent matches on {surface}.")
-        elif surface == "Unknown":
-             st.warning("Current match surface is unknown, cannot filter.")
-        else:
-             st.info(f"No recent matches on {surface}.")
+# --- TABS RENDERERS ---
 
-    # Copy functionality (Client-side friendly)
-    st.markdown("##### Export Data")
-    col_copy1, col_copy2 = st.columns([1, 1])
+def render_stats_analysis_tab(header, table_name, config_path, prefix, mode, button_label):
+    st.header(header)
     
-    csv_string = df_details.to_csv(sep='\t', index=False, header=False)
+    # --- Configuración Persistence ---
+    saved_cfg = load_analysis_config_v2(config_path)
     
-    with col_copy1:
-        st.download_button(
-            label="📥 Download for Excel (.tsv)",
-            data=csv_string,
-            file_name=f"match_details_{row.get('event_date', 'date')}.tsv",
-            mime="text/tab-separated-values",
+    conf_map = {
+        "max_bet": 100.0, "min_bet": 20.0, "min_odds": 1.08, "min_atp": 0,
+        "weight_h2h": 1.0, "weight_recent": 15.0, "weight_surface": 43.8, 
+        "weight_ranking": 40.5, "weight_ultra": 0.0, "min_prob": 64.0
+    }
+    
+    for k, default in conf_map.items():
+        session_key = f"{prefix}_{k}"
+        if session_key not in st.session_state:
+            st.session_state[session_key] = saved_cfg.get(f"td_{k}", default)
+
+    # --- Acciones ---
+    prog_container = st.empty()
+    col_ref, _ = st.columns([2, 8])
+    with col_ref:
+        if st.button(button_label, key=f"btn_{prefix}_refresh", type="primary", use_container_width=True):
+            try:
+                from scripts.refresh_data import refresh
+                
+                with prog_container.container():
+                    prog_bar = st.progress(0)
+                    prog_text = st.empty()
+                
+                def update_progress(step, total, msg):
+                    pct = max(0, min(100, int((step / total) * 100)))
+                    prog_bar.progress(pct)
+                    prog_text.text(msg)
+                
+                with st.spinner("Actualizando datos..."):
+                    res = refresh(mode=mode, progress_callback=update_progress)
+                
+                prog_container.empty()
+                
+                if res and res.get("status") == "NEED_SURFACE":
+                    show_surface_assignment_dialog(res.get("tournaments", []), mode)
+                else:
+                    st.cache_data.clear()
+                    st.rerun()
+            except Exception as e:
+                st.error(f"Error: {e}")
+
+    # --- Cargar Datos ---
+    df_raw = load_matches_data(table_name)
+    
+    if df_raw.empty:
+        st.warning(f"No se encontraron datos en la tabla {table_name}")
+        return
+        
+    # --- Ordenamiento Predeterminado por Fecha ---
+    df_raw["Fecha"] = pd.to_datetime(df_raw["Fecha"], errors="coerce")
+    df_raw = df_raw.sort_values(by="Fecha", ascending=False).reset_index(drop=True)
+
+    # --- Filtros Temporales ---
+    col_f1, col_f2, col_f3 = st.columns(3)
+    with col_f1:
+        date_start = st.date_input("Fecha Inicio", value=df_raw["Fecha"].min().date(), key=f"{prefix}_date_start")
+    with col_f2:
+        date_end = st.date_input("Fecha Fin", value=df_raw["Fecha"].max().date(), key=f"{prefix}_date_end")
+    with col_f3:
+        surf_filter = st.selectbox("Superficie", ["Todas", "Hard", "Clay", "Grass"], key=f"{prefix}_surf_filter")
+
+    st.divider()
+
+    # --- UI Parámetros (3 columnas) ---
+    col_ui1, col_ui2, col_ui3 = st.columns(3)
+    with col_ui1:
+        st.markdown("##### Constantes")
+        st.number_input("Apuesta máxima (€)", value=float(st.session_state[f"{prefix}_max_bet"]), step=10.0, key=f"{prefix}_max_bet")
+        st.number_input("Apuesta mínima (€)", value=float(st.session_state[f"{prefix}_min_bet"]), step=5.0, key=f"{prefix}_min_bet")
+        st.number_input("Cuota mínima", value=float(st.session_state[f"{prefix}_min_odds"]), step=0.01, key=f"{prefix}_min_odds")
+        st.number_input("Puntos ATP mínimos", value=int(st.session_state[f"{prefix}_min_atp"]), step=10, key=f"{prefix}_min_atp")
+
+    with col_ui2:
+        st.markdown("##### Pesos (%)")
+        st.number_input("H2H (%)", value=float(st.session_state[f"{prefix}_weight_h2h"]), step=0.5, key=f"{prefix}_weight_h2h")
+        st.number_input("Reciente (%)", value=float(st.session_state[f"{prefix}_weight_recent"]), step=0.5, key=f"{prefix}_weight_recent")
+        st.number_input("Superficie (%)", value=float(st.session_state[f"{prefix}_weight_surface"]), step=0.5, key=f"{prefix}_weight_surface")
+        st.number_input("Ranking (%)", value=float(st.session_state[f"{prefix}_weight_ranking"]), step=0.5, key=f"{prefix}_weight_ranking")
+        st.number_input("Ultra Reciente (%)", value=float(st.session_state[f"{prefix}_weight_ultra"]), step=0.5, key=f"{prefix}_weight_ultra")
+
+    with col_ui3:
+        st.markdown("##### Umbrales")
+        st.number_input("Prob. Mínima para apostar (%)", value=float(st.session_state[f"{prefix}_min_prob"]), step=0.5, key=f"{prefix}_min_prob")
+        if st.button("💾 Guardar Configuración", key=f"btn_save_{prefix}", use_container_width=True):
+            save_analysis_config_v2(config_path, prefix)
+
+    # --- Filtrado y Cálculos Vectorizados ---
+    df = df_raw.copy()
+    df = df[(df["Fecha"].dt.date >= date_start) & (df["Fecha"].dt.date <= date_end)]
+    if surf_filter != "Todas":
+        df = df[df["Superficie"] == surf_filter]
+
+    if df.empty:
+        st.info("No hay partidos que coincidan con los filtros de fecha/superficie.")
+        return
+
+    # Parámetros desde session_state
+    w_h2h = st.session_state[f"{prefix}_weight_h2h"] / 100
+    w_rec = st.session_state[f"{prefix}_weight_recent"] / 100
+    w_sur = st.session_state[f"{prefix}_weight_surface"] / 100
+    w_ran = st.session_state[f"{prefix}_weight_ranking"] / 100
+    w_ult = st.session_state[f"{prefix}_weight_ultra"] / 100
+    
+    m_prob = st.session_state[f"{prefix}_min_prob"]
+    m_odds = st.session_state[f"{prefix}_min_odds"]
+    m_atp  = st.session_state[f"{prefix}_min_atp"]
+    max_b  = st.session_state[f"{prefix}_max_bet"]
+    min_b  = st.session_state[f"{prefix}_min_bet"]
+
+    # --- Core Logica de Negocio ---
+    def get_f_norm(v1, v2, weight):
+        denominator = v1 + v2
+        return np.where(denominator > 0, (v1 / denominator) * weight, 0)
+
+    # Parsear columnas críticas
+    h1 = df["J1 H2H %"].apply(parse_pct)
+    h2 = df["J2 H2H %"].apply(parse_pct)
+    r1 = df["J1 Rend. Reciente"].apply(parse_pct)
+    r2 = df["J2 Rend. Reciente"].apply(parse_pct)
+    s1 = df["J1 Rend. Superficie"].apply(parse_pct)
+    s2 = df["J2 Rend. Superficie"].apply(parse_pct)
+    u1 = df["Rend. Ultra reciente J1"].apply(parse_pct)
+    u2 = df["Rend. Ultra reciente J2"].apply(parse_pct)
+    p1 = pd.to_numeric(df["J1 Puntos ATP"], errors='coerce').fillna(0)
+    p2 = pd.to_numeric(df["J2 Puntos ATP"], errors='coerce').fillna(0)
+    o1 = pd.to_numeric(df["Cuota J1"], errors='coerce').fillna(0)
+    o2 = pd.to_numeric(df["Cuota J2"], errors='coerce').fillna(0)
+
+    # Cálculo de f1 y f2 (Modelo Estable 5 pesos)
+    df["f1"] = (
+        (h1/100 * w_h2h) + 
+        get_f_norm(r1, r2, w_rec) + 
+        get_f_norm(s1, s2, w_sur) + 
+        get_f_norm(p1, p2, w_ran) + 
+        get_f_norm(u1, u2, w_ult)
+    ) * 100.0
+
+    df["f2"] = (
+        (h2/100 * w_h2h) + 
+        get_f_norm(r2, r1, w_rec) + 
+        get_f_norm(s2, s1, w_sur) + 
+        get_f_norm(p2, p1, w_ran) + 
+        get_f_norm(u2, u1, w_ult)
+    ) * 100.0
+
+    # Lógica de Apuesta
+    def get_stake(prob_pct, odds, p1_pts, p2_pts):
+        if prob_pct < m_prob: return 0, "No"
+        if odds < m_odds: return 0, "No"
+        # Regla: La suma de puntos ATP de los rivales debe superar el umbral
+        if (p1_pts + p2_pts) < m_atp: return 0, "No"
+        
+        # Escala oficial del "Modelo Conservador Mejorado (15 niveles)"
+        # La probabilidad aquí viene en porcentaje (0-100), por lo que dividimos entre 100 para evaluar
+        p = prob_pct / 100.0
+        
+        if p >= 0.62:
+            pct_amount = 1.0     # 100% para >= 62%
+        elif p >= 0.59:
+            pct_amount = 0.60
+        elif p >= 0.56:
+            pct_amount = 0.36
+        elif p >= 0.53:
+            pct_amount = 0.264
+        elif p >= 0.50:
+            pct_amount = 0.20
+        else:
+            pct_amount = 0.0
+
+        # Calcular monto final basado en el Input de Apuesta Máxima
+        final_amount = max_b * pct_amount
+        
+        # Restricción final: Asegurar que el monto respeta el Apuesta Mínima ingresada por UI
+        if final_amount > 0 and final_amount < min_b:
+            final_amount = min_b
+            
+        return final_amount, "Yes"
+
+    stakes_1 = [get_stake(f, o, p1_val, p2_val) for f, o, p1_val, p2_val in zip(df["f1"], o1, p1, p2)]
+    stakes_2 = [get_stake(f, o, p1_val, p2_val) for f, o, p1_val, p2_val in zip(df["f2"], o2, p1, p2)]
+
+    bet_flags = []
+    bet_for = []
+    amounts = []
+
+    for i in range(len(df)):
+        s1_amt, s1_flag = stakes_1[i]
+        s2_amt, s2_flag = stakes_2[i]
+        
+        # Si ambos cumplen, gana el de mayor probabilidad calculada
+        if s1_flag == "Yes" and s2_flag == "Yes":
+            if df.iloc[i]["f1"] >= df.iloc[i]["f2"]:
+                s2_flag = "No"
+                s2_amt = 0
+            else:
+                s1_flag = "No"
+                s1_amt = 0
+                
+        if s1_flag == "Yes":
+            bet_flags.append("Yes")
+            bet_for.append(df.iloc[i]["Jugador 1"])
+            amounts.append(s1_amt)
+        elif s2_flag == "Yes":
+            bet_flags.append("Yes")
+            bet_for.append(df.iloc[i]["Jugador 2"])
+            amounts.append(s2_amt)
+        else:
+            bet_flags.append("No")
+            bet_for.append("")
+            amounts.append(0)
+
+    df["Bet?"] = bet_flags
+    df["Bet for"] = bet_for
+    df["Amount"] = amounts
+
+    # Resultado y PNL
+    def check_win(row):
+        if row["Bet?"] == "No": return ""
+        ganador_norm = norm(row["Ganador"])
+        if not ganador_norm or ganador_norm == "-": return ""
+        
+        # Ignorar partidos no terminados
+        if any(estado in ganador_norm for estado in ["retired", "cancelled", "walkover", "retirado", "cancelado"]):
+            return ""
+            
+        if norm(row["Bet for"]) == ganador_norm: return "Yes"
+        return "No"
+
+    df["Won?"] = df.apply(check_win, axis=1)
+
+    def calc_pnl(row):
+        if row["Won?"] == "": return 0.0
+        if row["Won?"] == "Yes":
+            cuota = float(row["Cuota J1"] if norm(row["Bet for"]) == norm(row["Jugador 1"]) else row["Cuota J2"])
+            return row["Amount"] * (cuota - 1)
+        return -row["Amount"]
+
+    df["PNL"] = df.apply(calc_pnl, axis=1)
+
+    # --- TABLA DE RESUMEN EJECUTIVO (ESTABLE) ---
+    finished_bets = df[df["Won?"].isin(["Yes", "No"])]
+    wins = (finished_bets["Won?"] == "Yes").sum()
+    losses = (finished_bets["Won?"] == "No").sum()
+    
+    total_matches = len(df)
+    total_bets_fin = len(finished_bets)
+    win_rate = (wins / total_bets_fin * 100) if total_bets_fin > 0 else 0
+    total_pnl = df["PNL"].sum()
+    total_invested = finished_bets["Amount"].sum()
+    roi = (total_pnl / total_invested * 100) if total_invested > 0 else 0
+
+    df_resumen = pd.DataFrame({
+        "Partidos": [total_matches],
+        "Apostados (Fin.)": [total_bets_fin],
+        "Acierto": [f"{win_rate:.2f}% ({wins}W-{losses}L)"],
+        "Balance": [f"{total_pnl:.2f} €"],
+        "ROI": [f"{roi:.2f}%"]
+    })
+    
+    def color_financials(val):
+        try:
+            num = float(str(val).replace(' €', '').replace('%', ''))
+            if num > 0: return 'color: #28a745; font-weight: bold;'
+            elif num < 0: return 'color: #dc3545; font-weight: bold;'
+            return ''
+        except:
+            return ''
+            
+    styled_resumen = df_resumen.style.map(color_financials, subset=['Balance', 'ROI'])
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("#### Resumen de resultados")
+    st.dataframe(styled_resumen, hide_index=True, use_container_width=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # Columnas finales a mostrar
+    final_cols = [
+        "Bet?", "Bet for", "Amount", "Won?", "PNL", "Torneo", "Fecha", "Superficie",
+        "Jugador 1", "J1 Puntos ATP", "Jugador 2", "J2 Puntos ATP",
+        "J1 H2H %", "J2 H2H %", "J1 Rend. Reciente", "J1 Rend. Superficie", "Rend. Ultra reciente J1",
+        "J2 Rend. Reciente", "J2 Rend. Superficie", "Rend. Ultra reciente J2",
+        "f1", "f2", "Cuota J1", "Cuota J2", "Ganador", "ID Partido"
+    ]
+    
+    df_display = df[final_cols].copy()
+    df_display["Fecha"] = df_display["Fecha"].dt.strftime("%Y-%m-%d")
+    
+    vis_key = f"{prefix}_visible_cols"
+    if vis_key not in st.session_state:
+        st.session_state[vis_key] = saved_cfg.get("td_visible_cols", final_cols)
+
+    with st.expander("👁️ Configurar Visibilidad de Columnas"):
+        st.multiselect("Columnas Visibles", options=final_cols, key=vis_key)
+
+    visible_cols = st.session_state[vis_key]
+    visible_cols = [c for c in visible_cols if c in df_display.columns]
+    
+    df_to_edit = df_display[visible_cols].copy()
+    
+    styled_df_display = df_to_edit.style
+    if "Won?" in visible_cols:
+        styled_df_display = styled_df_display.map(
+            lambda v: 'background-color: #d4edda; color: #155724; font-weight: bold;' if v == 'Yes' 
+            else ('background-color: #f8d7da; color: #721c24; font-weight: bold;' if v == 'No' else ''), 
+            subset=['Won?']
         )
     
-    with col_copy2:
-        st.code(csv_string, language="text")
-        st.caption("☝️ Click the copy icon in the top right.")
-
-    # Display API Error if flagged
-    if stats.get("api_error"):
-        with error_placeholder.container():
-            st.error("API is currently unstable. Please try again in a few moments.")
-            if st.button("🔄 Refresh Results"):
+    col_btn_1, col_btn_2 = st.columns([2, 8])
+    with col_btn_1:
+        if st.button("💾 Guardar Cambios en CSV", key=f"btn_save_csv_{prefix}", type="primary", use_container_width=True):
+            from scripts.data_persistence import apply_edits
+            success = apply_edits(f"dt_{prefix}", df_display, table_name, manager)
+            if success:
+                st.cache_data.clear()
                 st.rerun()
 
+    st.data_editor(
+        styled_df_display, 
+        key=f"dt_{prefix}",
+        height=1000, 
+        hide_index=True, 
+        use_container_width=True,
+        disabled=[c for c in final_cols if c not in ["Cuota J1", "Cuota J2", "Ganador", "Fecha"]],
+        column_config={
+            "ID Partido": st.column_config.NumberColumn("ID Partido", format="%d"),
+            "Cuota J1": st.column_config.NumberColumn("Cuota J1", format="%.3f"),
+            "Cuota J2": st.column_config.NumberColumn("Cuota J2", format="%.3f")
+        }
+    )
 
+# --- BETA TAB RENDERER (Download logic included) ---
 
-# ----------------------
-# Search Events Section
-# ----------------------
-tab1, tab2 = st.tabs(["Search Events", "Day Report"])
+def render_bet_tab(mode, table_name, prefix, header):
+    st.header(header)
+    
+    # 1. Refresh Button
+    col_ref, _ = st.columns([2, 8])
+    with col_ref:
+        if st.button(f"🔄 Actualizar {mode}", key=f"btn_{prefix}_refresh", type="primary", use_container_width=True):
+            try:
+                from scripts.refresh_data import refresh
+                with st.spinner("Descargando..."):
+                    refresh(mode=mode)
+                st.cache_data.clear()
+                st.rerun()
+            except Exception as e:
+                st.error(f"Error: {e}")
+
+    # 2. Date Filters
+    st.write("##### Filtrar por Fecha")
+    c1, c2, c3, c4, c5 = st.columns(5)
+    today = datetime.now().date()
+    yesterday = today - timedelta(days=1)
+    tomorrow = today + timedelta(days=1)
+    next2 = today + timedelta(days=2)
+    
+    filter_key = f"{prefix}_date_filter"
+    if filter_key not in st.session_state: st.session_state[filter_key] = str(today)
+    
+    with c1: 
+        if st.button("Ayer", key=f"b_{prefix}_y", use_container_width=True): st.session_state[filter_key] = str(yesterday); st.rerun()
+    with c2: 
+        if st.button("Hoy", key=f"b_{prefix}_t", use_container_width=True): st.session_state[filter_key] = str(today); st.rerun()
+    with c3: 
+        if st.button("Mañana", key=f"b_{prefix}_to", use_container_width=True): st.session_state[filter_key] = str(tomorrow); st.rerun()
+    with c4: 
+        if st.button("+2 Días", key=f"b_{prefix}_p2", use_container_width=True): st.session_state[filter_key] = str(next2); st.rerun()
+    with c5: 
+        if st.button("Todos", key=f"b_{prefix}_all", use_container_width=True): st.session_state[filter_key] = "All"; st.rerun()
+
+    # 3. Load and Filter
+    df_raw = load_matches_data(table_name)
+    
+    if df_raw.empty:
+        st.warning("No hay datos disponibles.")
+        return
+
+    # Solo partidos sin terminar
+    df_f = df_raw[df_raw["Ganador"].isna() | (df_raw["Ganador"] == "-") | (df_raw["Ganador"] == "")].copy()
+    
+    if st.session_state[filter_key] != "All":
+        target = pd.to_datetime(st.session_state[filter_key]).date()
+        df_f = df_f[df_f["Fecha"].dt.date == target]
+    else:
+        df_f = df_f[(df_f["Fecha"].dt.date >= yesterday) & (df_f["Fecha"].dt.date <= next2)]
+
+    if df_f.empty:
+        st.info("No hay partidos programados para esta selección.")
+        return
+
+    # 4. Sorting logic (Tournament + Time)
+    # Note: 'Hora' column must exist in refresh_data.py
+    if "Hora" in df_f.columns:
+        df_f = df_f.sort_values(by=["Torneo", "Hora"], ascending=[True, True])
+    else:
+        df_f = df_f.sort_values(by="Torneo")
+
+    # 5. TSV Export Generation
+    export_cols = [
+        "Torneo", "Fecha", "Superficie", "Jugador 1", "J1 Key", "J1 Puntos ATP",
+        "Jugador 2", "J2 Key", "J2 Puntos ATP", 
+        "J1 H2H", "J1 H2H %", "J2 H2H", "J2 H2H %",
+        "J1 Rend. Reciente", "J1 Rend. Superficie", "Rend. Ultra reciente J1", 
+        "J2 Rend. Reciente", "J2 Rend. Superficie", "Rend. Ultra reciente J2", 
+        "Cuota J1", "Cuota J2"
+    ]
+    
+    # Pre-format for TSV (Excel compatible with commas)
+    df_tsv = df_f.copy()
+    if len(df_tsv) > 0:
+        for c in df_tsv.columns:
+            if any(x in c for x in ["Cuota", "Puntos", "Rend", "H2H", "f1", "f2"]):
+                df_tsv[c] = df_tsv[c].apply(lambda x: str(x).replace(".", ",") if pd.notna(x) and x != "" else x)
+
+        tsv_lines = ["\t".join(export_cols)]
+        for _, row in df_tsv.iterrows():
+            row_data = [str(row.get(c, "")) for c in export_cols]
+            tsv_lines.append("\t".join(row_data))
+            tsv_lines.append("") # Línea en blanco entre partidos
+        
+        tsv_data = "\n".join(tsv_lines)
+        
+        col_st, col_dl = st.columns([8, 2])
+        with col_st:
+            st.success(f"Mostrando {len(df_f)} partidos encontrados.")
+        with col_dl:
+            st.download_button(
+                label="📥 Descargar TSV",
+                data=tsv_data,
+                file_name=f"otorongo_{prefix}_{st.session_state[filter_key]}.tsv",
+                mime="text/tab-separated-values",
+                use_container_width=True
+            )
+
+    # Display Dataframe
+    display_df = df_f.copy()
+    # Format date for display
+    display_df["Fecha"] = display_df["Fecha"].dt.strftime("%d/%m/%y")
+    st.dataframe(
+        display_df, 
+        height=1000, 
+        hide_index=True, 
+        use_container_width=True,
+        column_config={
+            "ID Partido": st.column_config.NumberColumn("ID Partido", format="%d"),
+            "Cuota J1": st.column_config.NumberColumn("Cuota J1", format="%.3f"),
+            "Cuota J2": st.column_config.NumberColumn("Cuota J2", format="%.3f")
+        }
+    )
+
+# --- MAIN APP ---
+tab1, tab2, tab3, tab4 = st.tabs(["ATP data", "ATP Bet", "Challenger data", "Challenger Bet"])
 
 with tab1:
-    st.markdown("### 🔍 Search Events")
-
-    col1, col2, col3, col4 = st.columns([2, 2, 2, 4])
-    with col1:
-        search_date = st.date_input(
-            "Select Date", 
-            value=datetime.today(),
-            key="search_events_date"
-        )
-    with col2:
-        league_filter = st.selectbox("League", ["All", "ATP", "WTA", "Mixed"], key="search_events_league")
-    with col3:
-        format_filter = st.selectbox("Format", ["All", "Singles", "Doubles"], key="search_events_format")
-        
-    with col4:
-        st.write("") # Spacer for better vertical alignment
-        st.write("") 
-        search_clicked = st.button("Search", key="search_events_btn", use_container_width=True)
-
-    # Initialize session state variable to store results if not present
-    if "search_events_results" not in st.session_state:
-        st.session_state.search_events_results = None
-
-    # If search button is clicked, fetch data and update session state
-    if search_clicked:
-        with st.spinner("Fetching matches..."):
-            try:
-                # Reuse get_fixtures to fetch data for the single selected date
-                df_search = get_fixtures(
-                    date_start=search_date.strftime("%Y-%m-%d"),
-                    date_stop=search_date.strftime("%Y-%m-%d"),
-                    save_json=False
-                )
-                st.session_state.search_events_results = df_search
-            except Exception as e:
-                st.error(f"❌ Error fetching events: {str(e)}")
-                st.session_state.search_events_results = None
-
-    # Display results if available in session state
-    if st.session_state.search_events_results is not None:
-        df_search = st.session_state.search_events_results.copy()
-        
-        # Apply filters
-        if not df_search.empty:
-            if league_filter != "All":
-                if league_filter == "Mixed":
-                    df_search = df_search[df_search['event_type_type'].str.contains("Mix", case=False, na=False)]
-                else:
-                    df_search = df_search[df_search['event_type_type'].str.contains(league_filter, case=False, na=False)]
-                    
-            if format_filter != "All":
-                df_search = df_search[df_search['event_type_type'].str.contains(format_filter, case=False, na=False)]
-        
-        if not df_search.empty:
-            st.success(f"Found {len(df_search)} matches for {search_date.strftime('%Y-%m-%d')}")
-            
-            # Filter by Tournament
-            tournaments = sorted(df_search['tournament_name'].dropna().unique().tolist())
-            selected_tournament = st.selectbox("Filter by Tournament", ["All"] + tournaments, key="search_events_tournament")
-            
-            if selected_tournament != "All":
-                df_search = df_search[df_search['tournament_name'] == selected_tournament]
-            
-            # Header row
-            h1, h2, h3, h4, h5 = st.columns([1, 2, 3, 2, 2])
-            h1.markdown("**Time**")
-            h2.markdown("**Tournament**")
-            h3.markdown("**Match**")
-            h4.markdown("**Result**")
-            h5.markdown("**Statistics**")
-            
-            st.divider()
-
-            for index, row in df_search.iterrows():
-                c1, c2, c3, c4, c5 = st.columns([1, 2, 3, 2, 2])
-                
-                # Time
-                c1.write(f"{row.get('event_time', 'N/A')}")
-                
-                # Tournament
-                c2.write(f"{row.get('tournament_name', 'N/A')}")
-                
-                # Match (Players)
-                p1 = row.get('event_first_player', 'Player 1')
-                p2 = row.get('event_second_player', 'Player 2')
-                c3.write(f"{p1} vs {p2}")
-                
-                # Result
-                res = row.get('event_final_result', '-')
-                c4.write(res)
-                
-                # Action Button
-                # Use a unique key for each button depending on event_key
-                with c5:
-                    if st.button("See Details", key=f"btn_details_{row.get('event_key', index)}", use_container_width=True):
-                        show_details_dialog(row)
-                    
-                # Add a visual separator
-                st.markdown("---")
-
-        else:
-            st.info("No matches scheduled for this date.")
-
+    render_stats_analysis_tab("🎾 ATP History & Analysis", "atp_matches", "data/analysis_config.json", "atp", "ATP", "🔄 Refresh ATP")
 with tab2:
-    st.header("Day Report")
-    
-    # Use vertical_alignment="bottom" to align input fields and button
-    col_dr_1, col_dr_2, col_dr_3 = st.columns([2, 2, 2], vertical_alignment="bottom")
-    with col_dr_1:
-         dr_date = st.date_input("Select Date", value=datetime.today(), key="dr_date")
-    with col_dr_2:
-         dr_format = st.selectbox("Format", ["All", "Singles", "Doubles"], key="dr_format")
-    with col_dr_3:
-         dr_see_tournaments = st.button("See Tournaments", type="secondary")
-    
-    # Session state for tournament list
-    if "dr_tournaments_list" not in st.session_state:
-        st.session_state.dr_tournaments_list = []
-        st.session_state.dr_fixtures_cache = None
-    
-    # Track previous date and format to detect changes
-    if "dr_prev_date" not in st.session_state:
-        st.session_state.dr_prev_date = None
-    if "dr_prev_format" not in st.session_state:
-        st.session_state.dr_prev_format = None
-    
-    # Reset results if date or format changed
-    current_date_str = dr_date.strftime("%Y-%m-%d")
-    if (st.session_state.dr_prev_date != current_date_str or 
-        st.session_state.dr_prev_format != dr_format):
-        # Clear previous results
-        st.session_state.dr_show_results = False
-        st.session_state.dr_current_tournament = None
-        st.session_state.dr_tournaments_list = []
-        st.session_state.dr_fixtures_cache = None
-        # Update tracking
-        st.session_state.dr_prev_date = current_date_str
-        st.session_state.dr_prev_format = dr_format
-
-    if dr_see_tournaments:
-        with st.spinner("Fetching tournaments for date..."):
-             dates_str = dr_date.strftime("%Y-%m-%d")
-             df_fix = get_fixtures(date_start=dates_str, date_stop=dates_str, save_json=False, save_csv=False)
-             
-             if df_fix is not None and not df_fix.empty:
-                  # Filter format
-                  if dr_format != "All":
-                      df_fix = df_fix[df_fix['event_type_type'].astype(str).str.contains(dr_format, case=False, na=False)]
-                  
-                  if not df_fix.empty:
-                      t_list = sorted(df_fix['tournament_name'].dropna().unique().tolist())
-                      st.session_state.dr_tournaments_list = t_list
-                      st.session_state.dr_fixtures_cache = df_fix
-                  else:
-                      st.warning(f"No {dr_format} matches found for this date.")
-                      st.session_state.dr_tournaments_list = []
-                      st.session_state.dr_fixtures_cache = None
-             else:
-                  st.warning("No matches found for this date.")
-                  st.session_state.dr_tournaments_list = []
-                  st.session_state.dr_fixtures_cache = None
-    
-    # 2nd Row: Tournament Select & Go
-    if st.session_state.dr_tournaments_list:
-        st.markdown("---")
-        # Align Go button with Selectbox
-        c1, c2 = st.columns([3, 1], vertical_alignment="bottom")
-        with c1:
-             dr_selected_tournament = st.selectbox("Select Tournament", st.session_state.dr_tournaments_list, key="dr_selected_t", index=None, placeholder="Choose a tournament...")
-        with c2:
-             dr_go = st.button("Go", type="primary")
-             
-        if dr_go and dr_selected_tournament:
-             st.session_state.dr_show_results = True
-             st.session_state.dr_current_tournament = dr_selected_tournament
-        
-        # Check if we should show results: only if Go was clicked AND selection matches
-        if (st.session_state.get("dr_show_results") and 
-            st.session_state.get("dr_current_tournament") and
-            dr_selected_tournament == st.session_state.dr_current_tournament):
-             # Use the stored tournament from session state to remain consistent
-             current_tournament = st.session_state.dr_current_tournament
-             
-             df_cache = st.session_state.dr_fixtures_cache
-             if df_cache is not None:
-                  # Filter specific tournament
-                  df_t_matches = df_cache[df_cache['tournament_name'] == current_tournament]
-                  
-                  if not df_t_matches.empty:
-                       st.info(f"Processing {len(df_t_matches)} matches for {current_tournament}...")
-                       
-                       # Process matches
-                       # We don't want to show progress bar on every interaction (like opening dialog), 
-                       # but it's fine for now or could be guarded.
-                       progress_bar = st.progress(0)
-                       total = len(df_t_matches)
-                       
-                       for idx, (i, row) in enumerate(df_t_matches.iterrows()):
-                            # Calculate stats
-                            stats = calculate_match_stats(row)
-                            
-                            # Construct 1-row DF for display
-                            display_keys = [
-                                "Date", "Player 1", "Player 2", "Sourface", 
-                                "H2H P1", "H2H % P1", "H2H P2", "H2H % P2", 
-                                "P1 Rec. Performance", "P1 Sourface R. Perf.", "P1 ATP Points", 
-                                "P2 Rec. Performance", "P2 Sourface R. Perf.", "P2 ATP Points"
-                            ]
-                            data = {k: [stats.get(k)] for k in display_keys}
-                            df_mini = pd.DataFrame(data)
-                            
-                            # Display row
-                            # Determine Status Color
-                            status = row.get('event_status', '')
-                            # API Statuses: "Finished", "Cancelled" (Red)
-                            # "After Pending", "" (Green)
-                            # "Ended", "Awarded", "Retired" (Red)
-                            # "Int.", "Postp." (Red?)
-                            # Live statuses: "1. Set", "2. Set", "3. Set", "4. Set", "5. Set", "Points", "In Progress" (Orange)
-                            
-                            status_color = "green"
-                            status_label = "Not Started"
-                            
-                            # Normalize status
-                            s_lower = str(status).lower().strip()
-                            
-                            if s_lower in ["finished", "ended", "retired", "awarded", "cancelled", "walkover", "after retired"]:
-                                status_color = "red"
-                                status_label = "Finished"
-                                if s_lower == "cancelled": status_label = "Cancelled"
-                                if s_lower == "retired": status_label = "Retired"
-                            elif s_lower in ["", "after pending", "postponed"]:
-                                status_color = "green"
-                                status_label = "Not Started"
-                                if s_lower == "postponed": status_label = "Postponed"
-                            elif row.get("event_live") == "1" or "set" in s_lower or "game" in s_lower or "point" in s_lower or "progress" in s_lower:
-                                status_color = "orange"
-                                status_label = f"Ongoing ({status})"
-                            else:
-                                status_color = "green" 
-                                status_label = "Not Started"
-                            
-                            # Determine Winner if Finished
-                            winner_text = ""
-                            if status_label == "Finished" or status_label == "Retired" or status_label == "Walkover":
-                                w = str(row.get("event_winner", ""))
-                                w_name = ""
-                                if w == "First Player":
-                                    w_name = row.get("event_first_player")
-                                elif w == "Second Player":
-                                    w_name = row.get("event_second_player")
-                                else:
-                                    w_name = "" 
-                                
-                                if w_name:
-                                    winner_text = f" | **Winner: {w_name}**"
-
-                            # Match Header Layout
-                            # Using vertical-alignment friendly layout if possible, but columns is standard
-                            # Adjust ratios: Title (approx 45%), Button (approx 5%), Status (approx 50%)
-                            c_head_1, c_head_2, c_head_3 = st.columns([0.45, 0.05, 0.50], vertical_alignment="center")
-                            
-                            with c_head_1:
-                                st.markdown(f"**Match {idx+1}: {row.get('event_first_player')} vs {row.get('event_second_player')}** ({row.get('event_time')})")
-                            
-                            with c_head_2:
-                                # Small button with unique key
-                                if st.button("🔍", key=f"dr_details_{idx}_{row.get('event_key')}", help="Open Match Details"):
-                                     show_details_dialog(row)
-                            
-                            with c_head_3:
-                                st.markdown(f":{status_color}[● {status_label}]{winner_text}")
-
-                            col_table, col_copy = st.columns([8, 1], vertical_alignment="center")
-                            with col_table:
-                                 st.dataframe(df_mini, hide_index=True, use_container_width=True)
-                            
-                            with col_copy:
-                                 # Prepare copy text (simplified for CSV/Excel paste)
-                                 # Format: Date \t P1 \t P2 ...
-                                 copy_text_val = "\t".join([str(stats.get(k, "")) for k in display_keys])
-                                 st.code(copy_text_val, language="text")
-                            
-                            progress_bar.progress((idx + 1) / total)
-                       
-                       progress_bar.empty()
-                  else:
-                       st.warning("No matches found for this tournament.")
+    render_bet_tab("ATP", "atp_matches", "atp_bet", "📅 ATP Scheduled Matches")
+with tab3:
+    render_stats_analysis_tab("🎾 Challenger History & Analysis", "challenger_matches", "data/challenger_config.json", "cha", "CHA", "🔄 Refresh Challenger")
+with tab4:
+    render_bet_tab("CHA", "challenger_matches", "cha_bet", "📅 Challenger Scheduled Matches")
