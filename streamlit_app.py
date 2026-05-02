@@ -204,22 +204,42 @@ def show_surface_assignment_dialog(tournaments, mode):
             
         if st.form_submit_button("Confirmar y Guardar", type="primary"):
             try:
-                import csv
-                with open("data/tournaments.csv", "a", newline="", encoding="utf-8") as f:
-                    writer = csv.writer(f)
-                    for k, data in selections.items():
-                        writer.writerow([k, data["name"], data["surface"]])
+                # 1. Cargar torneos existentes mediante el Manager
+                df_trn = manager.load_table("tournaments")
                 
-                st.success("Superficies guardadas correctamente. Reanudando actualización...")
+                # 2. Preparar nuevos registros
+                new_entries = []
+                for k, data in selections.items():
+                    new_entries.append({
+                        "tournament_key": str(k),
+                        "tournament_name": data["name"],
+                        "tournament_sourface": data["surface"]
+                    })
                 
+                df_new = pd.DataFrame(new_entries)
+                
+                # 3. Concatenar y guardar usando persistencia dual del Manager
+                if df_trn.empty:
+                    df_final = df_new
+                else:
+                    df_final = pd.concat([df_trn, df_new], ignore_index=True)
+                
+                # Deduplicar por key por si acaso
+                df_final = df_final.drop_duplicates(subset=["tournament_key"], keep="last")
+                
+                manager.save_table("tournaments", df_final)
+                
+                st.success("✅ Superficies guardadas correctamente. Reanudando actualización...")
+                
+                # 4. Limpiar caché y reanudar refresh
+                st.cache_data.clear()
                 from scripts.refresh_data import refresh
                 with st.spinner("Continuando actualización..."):
                     refresh(mode=mode)
                 
-                st.cache_data.clear()
                 st.rerun()
             except Exception as e:
-                st.error(f"Error al guardar: {e}")
+                st.error(f"❌ Error al guardar: {e}")
 
 # --- TABS RENDERERS ---
 
