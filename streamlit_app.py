@@ -230,13 +230,17 @@ def show_surface_assignment_dialog(tournaments, mode):
                 manager.save_table("tournaments", df_final)
                 
                 st.success("✅ Superficies guardadas correctamente. Reanudando actualización...")
+                st.info("Iniciando descarga de partidos...")
                 
-                # 4. Limpiar caché y reanudar refresh
-                st.cache_data.clear()
+                # 4. Reanudar refresh (el DataManager no usa caché interno, así que leerá de Supabase directo)
                 from scripts.refresh_data import refresh
                 with st.spinner("Continuando actualización..."):
                     refresh(mode=mode)
                 
+                # 5. Limpiar caché de Streamlit DESPUÉS del refresh para que la App principal cargue los nuevos partidos
+                st.cache_data.clear()
+                
+                # 6. Recargar la interfaz (solo ocurre después de que el refresh terminó)
                 st.rerun()
             except Exception as e:
                 st.error(f"❌ Error al guardar: {e}")
