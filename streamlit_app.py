@@ -21,6 +21,10 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 # Configurar página
 st.set_page_config(page_title="🎾 Otorongo - Tennis Analytics", layout="wide", page_icon="🐆")
 
+# Inicialización de Estado Pendiente para Refresh Auto-Resume
+if "pending_refresh_mode" not in st.session_state:
+    st.session_state.pending_refresh_mode = None
+
 # --- CUSTOM CSS ---
 def load_css():
     try:
@@ -230,17 +234,8 @@ def show_surface_assignment_dialog(tournaments, mode):
                 manager.save_table("tournaments", df_final)
                 
                 st.success("✅ Superficies guardadas correctamente. Reanudando actualización...")
-                st.info("Iniciando descarga de partidos...")
                 
-                # 4. Reanudar refresh (el DataManager no usa caché interno, así que leerá de Supabase directo)
-                from scripts.refresh_data import refresh
-                with st.spinner("Continuando actualización..."):
-                    refresh(mode=mode)
-                
-                # 5. Limpiar caché de Streamlit DESPUÉS del refresh para que la App principal cargue los nuevos partidos
-                st.cache_data.clear()
-                
-                # 6. Recargar la interfaz (solo ocurre después de que el refresh terminó)
+                # El refresco de la app continuará automáticamente gracias a st.session_state.pending_refresh_mode
                 st.rerun()
             except Exception as e:
                 st.error(f"❌ Error al guardar: {e}")
@@ -265,34 +260,11 @@ def render_stats_analysis_tab(header, table_name, config_path, prefix, mode, but
             st.session_state[session_key] = saved_cfg.get(f"td_{k}", default)
 
     # --- Acciones ---
-    prog_container = st.empty()
     col_ref, _ = st.columns([2, 8])
     with col_ref:
         if st.button(button_label, key=f"btn_{prefix}_refresh", type="primary", use_container_width=True):
-            try:
-                from scripts.refresh_data import refresh
-                
-                with prog_container.container():
-                    prog_bar = st.progress(0)
-                    prog_text = st.empty()
-                
-                def update_progress(step, total, msg):
-                    pct = max(0, min(100, int((step / total) * 100)))
-                    prog_bar.progress(pct)
-                    prog_text.text(msg)
-                
-                with st.spinner("Actualizando datos..."):
-                    res = refresh(mode=mode, progress_callback=update_progress)
-                
-                prog_container.empty()
-                
-                if res and res.get("status") == "NEED_SURFACE":
-                    show_surface_assignment_dialog(res.get("tournaments", []), mode)
-                else:
-                    st.cache_data.clear()
-                    st.rerun()
-            except Exception as e:
-                st.error(f"Error: {e}")
+            st.session_state.pending_refresh_mode = mode
+            st.rerun()
 
     # --- Cargar Datos ---
     df_raw = load_matches_data(table_name)
@@ -592,14 +564,8 @@ def render_bet_tab(mode, table_name, prefix, header):
     col_ref, _ = st.columns([2, 8])
     with col_ref:
         if st.button(f"🔄 Actualizar {mode}", key=f"btn_{prefix}_refresh", type="primary", use_container_width=True):
-            try:
-                from scripts.refresh_data import refresh
-                with st.spinner("Descargando..."):
-                    refresh(mode=mode)
-                st.cache_data.clear()
-                st.rerun()
-            except Exception as e:
-                st.error(f"Error: {e}")
+            st.session_state.pending_refresh_mode = mode
+            st.rerun()
 
     # 2. Date Filters
     st.write("##### Filtrar por Fecha")
@@ -704,6 +670,40 @@ def render_bet_tab(mode, table_name, prefix, header):
     )
 
 # --- MAIN APP ---
+# --- Auto-Resume Refresh Logic ---
+if st.session_state.pending_refresh_mode is not None:
+    mode = st.session_state.pending_refresh_mode
+    st.info(f"🚀 Reanudando actualización automática de partidos {mode}...")
+    prog_container = st.empty()
+    try:
+        from scripts.refresh_data import refresh
+        with prog_container.container():
+            prog_bar = st.progress(0)
+            prog_text = st.empty()
+        
+        def update_progress(step, total, msg):
+            pct = max(0, min(100, int((step / total) * 100)))
+            prog_bar.progress(pct)
+            prog_text.text(msg)
+        
+        with st.spinner(f"Actualizando datos {mode}..."):
+            res = refresh(mode=mode, progress_callback=update_progress)
+        
+        prog_container.empty()
+        
+        if res and res.get("status") == "NEED_SURFACE":
+            show_surface_assignment_dialog(res.get("tournaments", []), mode)
+        elif res and res.get("status") == "SUCCESS":
+            st.cache_data.clear()
+            st.session_state.pending_refresh_mode = None
+            st.rerun()
+        else:
+            st.error("Error desconocido en el refresh.")
+            st.session_state.pending_refresh_mode = None
+    except Exception as e:
+        st.error(f"Error crítico en el refresh automático: {e}")
+        st.session_state.pending_refresh_mode = None
+
 tab1, tab2, tab3, tab4 = st.tabs(["ATP data", "ATP Bet", "Challenger data", "Challenger Bet"])
 
 with tab1:
