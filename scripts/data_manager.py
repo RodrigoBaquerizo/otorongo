@@ -157,6 +157,7 @@ class DataManager:
                                     else float(v) if isinstance(v, (np.floating,))
                                     else str(v) if isinstance(v, (np.str_, np.bytes_))
                                     else bool(v) if isinstance(v, (np.bool_,))
+                                    else str(v) if isinstance(v, pd.Timestamp)
                                     else v) for k, v in rec.items()}
                     data_dict = [_sanitize_record(r) for r in data_dict]
                     

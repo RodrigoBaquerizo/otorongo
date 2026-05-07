@@ -231,12 +231,14 @@ def show_surface_assignment_dialog(tournaments, mode):
                 # Deduplicar por key por si acaso
                 df_final = df_final.drop_duplicates(subset=["tournament_key"], keep="last")
                 
-                manager.save_table("tournaments", df_final)
+                success = manager.save_table("tournaments", df_final)
                 
-                st.success("✅ Superficies guardadas correctamente. Reanudando actualización...")
-                
-                # El refresco de la app continuará automáticamente gracias a st.session_state.pending_refresh_mode
-                st.rerun()
+                if success:
+                    st.success("✅ Superficies guardadas correctamente. Reanudando actualización...")
+                    # El refresco de la app continuará automáticamente gracias a st.session_state.pending_refresh_mode
+                    st.rerun()
+                else:
+                    st.error("❌ Fallo crítico al guardar las superficies en la base de datos.")
             except Exception as e:
                 st.error(f"❌ Error al guardar: {e}")
 
@@ -697,6 +699,9 @@ if st.session_state.pending_refresh_mode is not None:
             st.cache_data.clear()
             st.session_state.pending_refresh_mode = None
             st.rerun()
+        elif res and res.get("status") == "ERROR":
+            st.error(f"❌ Error en el refresh: {res.get('msg', 'Error desconocido')}")
+            st.session_state.pending_refresh_mode = None
         else:
             st.error("Error desconocido en el refresh.")
             st.session_state.pending_refresh_mode = None

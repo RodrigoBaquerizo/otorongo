@@ -37,7 +37,15 @@ def _get_manager():
         _manager_instance = DataManager()
     return _manager_instance
 
-API_KEY = os.getenv("API_KEY")
+def _get_api_key():
+    try:
+        import streamlit as st
+        return st.secrets.get("API_KEY") or os.getenv("API_KEY")
+    except Exception:
+        return os.getenv("API_KEY")
+
+API_KEY = _get_api_key()
+
 BASE_URL = "https://api.api-tennis.com/tennis/?method=get_fixtures"
 RANKINGS_FILE = "data/atp_rankings_merged.csv"
 
@@ -56,7 +64,20 @@ def _surface_map():
     df = _get_manager().load_table("tournaments")
     if df.empty or "tournament_key" not in df.columns:
         return {}
-    return df.set_index("tournament_key")["tournament_sourface"].to_dict()
+    
+    base_dict = df.set_index("tournament_key")["tournament_sourface"].to_dict()
+    final_dict = {}
+    for k, v in base_dict.items():
+        final_dict[k] = v
+        try:
+            # Añadir versión entera para compatibilidad local/CSV
+            final_dict[int(k)] = v
+        except Exception:
+            pass
+        # Añadir versión texto para compatibilidad Supabase
+        final_dict[str(k)] = v
+        
+    return final_dict
 
 
 def _normalize_surface(df: pd.DataFrame) -> pd.DataFrame:
@@ -1309,7 +1330,12 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
     if progress_callback:
         progress_callback(4, 4, "Finalizando y guardando archivos...")
         
-    _get_manager().save_table(table_name, df_target)
+    success = _get_manager().save_table(table_name, df_target)
+
+    if not success:
+        summary["status"] = "ERROR"
+        summary["msg"] = "Fallo crítico de persistencia al guardar la tabla final."
+        return summary
 
     summary["until"] = yesterday
     summary["status"] = "SUCCESS"

@@ -14,7 +14,16 @@ from dotenv import load_dotenv
 setup_logging()
 load_dotenv(override=True)
 
-API_KEY = os.getenv("API_KEY")
+def _get_api_key():
+    """Busca la API_KEY en st.secrets (Nube) o os.getenv (Local)."""
+    try:
+        import streamlit as st
+        return st.secrets.get("API_KEY") or os.getenv("API_KEY")
+    except Exception:
+        return os.getenv("API_KEY")
+
+API_KEY = _get_api_key()
+
 BASE_URL = f"https://api.api-tennis.com/tennis/?method="
 
 def safe_get(url, retries=3, timeout=30):
