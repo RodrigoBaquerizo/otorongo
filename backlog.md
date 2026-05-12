@@ -198,4 +198,15 @@ Crear una red de seguridad proactiva para detectar errores de inconsistencia ant
 
 ---
 
+## 1️⃣8️⃣ Investigación de Fallo en Refresh Challenger (Pendiente)
+
+### [ ] 🔍 Diagnóstico de Excepción Silenciosa en Circuito Challenger
+- **Problema**: El botón "Refresh Challenger" no responde ni abre el diálogo de superficies en la web, a diferencia del modo ATP. Se sospecha de una excepción técnica (Timeout, Rate Limit o Corrupción de Archivo) debido al alto volumen de partidos (~140 diarios) o un fallo en el guardado del historial.
+- **Acción**: 
+    - Ejecutar el refresh mediante CLI para capturar el traceback exacto.
+    - Optimizar el manejo de errores en `streamlit_app.py` para que las excepciones de `refresh_data.py` se muestren siempre en la UI.
+    - Verificar la integridad estructural de `Challenger Tour Matches.csv` tras los últimos recálculos.
+
+---
+
 > **Nota para los agentes**: Este es un documento de gestión. No realizar cambios en código hasta recibir la instrucción específica de una tarea.

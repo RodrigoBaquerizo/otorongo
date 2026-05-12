@@ -1,0 +1,25 @@
+==================================================
+📋 REPORTE DE SALUD DE DATOS - OTORONGO
+Fecha: 2026-04-11 18:55:02
+==================================================
+
+🔍 Escaneando ATP 2026 (data/ATP Tour 2026 Matches.csv)...
+❌ [FAIL] Se encontraron 9 filas con J1 Key o J2 Key faltantes.
+   Ejemplos (Índices CSV): [47, 57, 63, 139, 158]
+⚠️ [ALERT] 9 filas tienen jugadores con 0 puntos o N/D.
+✅ [OK] Todas las superficies son válidas (Hard, Clay, Grass).
+
+🔍 Escaneando Challenger 2026 (data/Challenger Tour Matches.csv)...
+❌ [FAIL] Se encontraron 130 filas con J1 Key o J2 Key faltantes.
+   Ejemplos (Índices CSV): [0, 14, 17, 34, 58]
+⚠️ [ALERT] 782 filas tienen jugadores con 0 puntos o N/D.
+❌ [FAIL] Superficies inválidas detectadas: ['Unknown']
+
+🔍 Escaneando Histórico (data/atp_challenger_fixtures_2024_2026.csv)...
+❌ [FAIL] Se encontraron 2192 filas con J1 Key o J2 Key faltantes.
+   Ejemplos (Índices CSV): [1116, 1330, 1333, 1353, 1357]
+✅ [OK] Todas las superficies son válidas (Hard, Clay, Grass).
+
+==================================================
+🚩 ESTADO DE SALUD: SE ENCONTRARON 2493 PUNTOS DE FALLO
+==================================================

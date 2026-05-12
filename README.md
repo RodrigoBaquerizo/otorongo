@@ -13,6 +13,7 @@ Otorongo es una aplicación web desarrollada con Streamlit que permite analizar 
 - **📈 Rendimiento Reciente**: Análisis de victorias/derrotas recientes
 - **🏟️ Rendimiento por Superficie**: Estadísticas específicas por tipo de cancha (Hard, Clay, Grass)
 - **🏆 Rankings ATP/WTA**: Puntos actuales de ranking de los jugadores
+- **🚀 Optimización Avanzada**: Motor independiente (`heavy_optimizer.py`) para calcular pesos ideales mediante simulación masiva.
 - **🔒 Acceso Protegido**: Autenticación por contraseña
 
 ## 🚀 Instalación

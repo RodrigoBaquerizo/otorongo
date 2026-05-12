@@ -96,13 +96,23 @@ class DataManager:
                 if client:
                     # Paginación: Supabase limita a 1000 filas por request (configuración del servidor).
                     # Iteramos páginas de 1000 hasta obtener todos los datos.
+                    pk_map = {
+                        "atp_matches": "ID Partido",
+                        "challenger_matches": "ID Partido",
+                        "historical_fixtures": "ID Partido",
+                        "tournaments": "tournament_key",
+                    }
+                    pk_col = pk_map.get(table_name)
+                    
                     page_size = 1000
                     all_data = []
                     offset = 0
                     while True:
-                        response = (client.table(table_name)
-                                    .select("*")
-                                    .range(offset, offset + page_size - 1)
+                        query = client.table(table_name).select("*")
+                        if pk_col:
+                            query = query.order(pk_col)
+                        
+                        response = (query.range(offset, offset + page_size - 1)
                                     .execute())
                         if response.data:
                             all_data.extend(response.data)
@@ -116,11 +126,8 @@ class DataManager:
                         df = pd.DataFrame(all_data)
                         logging.info(f"[NUBE] Cargado {table_name}: {len(df)} filas desde Supabase.")
                         return df
-                    else:
-                        logging.info(f"[NUBE] Supabase retornó 0 filas para {table_name}.")
-                        return pd.DataFrame()
             except Exception as e:
-                logging.error(f"[NUBE] Fallo de conexión Supabase ({table_name}): {e}. Ejecutando Fallback a CSV...")
+                logging.error(f"[NUBE] Fallo de conexión Supabase ({table_name}): {e}. Intentando carga local...")
         
         # Comportamiento Local o Fallback de Producción
         csv_path = self._get_csv_path(table_name)
