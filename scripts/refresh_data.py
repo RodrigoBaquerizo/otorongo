@@ -805,6 +805,7 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
                     "Fecha":     f.get("event_date"),
                     "Hora":      f.get("event_time", ""),
                     "Torneo":    f.get("tournament_name"),
+                    "Tournament Key": str(f.get("tournament_key", "")) if f.get("tournament_key") else "",
                     "Superficie": surf,
                     "Jugador 1":  f.get("event_first_player", ""),
                     "J1 Key":     str(f.get("first_player_key", "")) if f.get("first_player_key") else "",
@@ -977,6 +978,7 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
 
                 new_matches.append({
                     "Torneo":     f.get("tournament_name", ""),
+                    "Tournament Key": str(f.get("tournament_key", "")) if f.get("tournament_key") else "",
                     "Fecha":      fecha_fmt,
                     "Hora":       f.get("event_time", ""),
                     "Superficie": surf,
@@ -1022,16 +1024,23 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
             if "ID Partido" in df_hist.columns:
                 df_hist["_dedup_id"] = df_hist["ID Partido"].fillna("").astype(str).str.replace(".0", "", regex=False).str.strip()
                 mask_no_id = (df_hist["_dedup_id"] == "") | (df_hist["_dedup_id"].str.lower() == "nan")
+                # Usar Tournament Key en el fallback de dedup para evitar cruces entre circuitos
+                t_key_col = df_hist["Tournament Key"].fillna("").astype(str) if "Tournament Key" in df_hist.columns else df_hist["Torneo"].astype(str)
                 df_hist.loc[mask_no_id, "_dedup_id"] = (
                     df_hist.loc[mask_no_id, "Fecha"].dt.strftime("%Y-%m-%d") + "_" +
-                    df_hist.loc[mask_no_id, "Torneo"].astype(str) + "_" +
+                    t_key_col[mask_no_id] + "_" +
                     df_hist.loc[mask_no_id, "Jugador 1"].astype(str) + "_" +
                     df_hist.loc[mask_no_id, "Jugador 2"].astype(str)
                 )
                 # Al deduplicar, keep="last" asegura que si un partido ya existía pero el nuevo tiene Ganador, se quede el nuevo.
                 df_hist = df_hist.drop_duplicates(subset=["_dedup_id"], keep="last").drop(columns=["_dedup_id"])
             else:
-                df_hist = df_hist.drop_duplicates(subset=["Fecha", "Torneo", "Jugador 1", "Jugador 2"], keep="last")
+                dedup_cols = ["Fecha", "Jugador 1", "Jugador 2"]
+                if "Tournament Key" in df_hist.columns:
+                    dedup_cols.insert(1, "Tournament Key")
+                else:
+                    dedup_cols.insert(1, "Torneo")
+                df_hist = df_hist.drop_duplicates(subset=dedup_cols, keep="last")
             
             df_hist = df_hist.sort_values("Fecha", ascending=False)
             _get_manager().save_table("historical_fixtures", df_hist)
@@ -1158,15 +1167,27 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
         df_hist_sync = _get_manager().load_table("historical_fixtures")
         df_hist_sync["Fecha"] = pd.to_datetime(df_hist_sync["Fecha"], errors="coerce")
 
-        # Construir el conjunto de torneos ATP que ya conocemos en el archivo ATP26
-        target_known_torneos = set(df_target["Torneo"].dropna().unique())
-
-        # Filtrar histórico: solo partidos de 2026 en torneos que ya aparecen en ATP26
-        # (esto excluye automáticamente el otro circuito, ITF, etc.)
-        df_hist_target = df_hist_sync[
-            (df_hist_sync["Fecha"].dt.year == 2026) &
-            (df_hist_sync["Torneo"].isin(target_known_torneos))
-        ].copy()
+        # Construir el conjunto de Tournament Keys que ya conocemos en el archivo de circuito
+        # Usar Tournament Key como identificador primario para evitar filtraciones entre circuitos
+        use_tkey_target = "Tournament Key" in df_target.columns and df_target["Tournament Key"].notna().any()
+        use_tkey_hist   = "Tournament Key" in df_hist_sync.columns and df_hist_sync["Tournament Key"].notna().any()
+        
+        if use_tkey_target and use_tkey_hist:
+            # Ruta preferida: filtrado por Tournament Key (evita colisiones de nombres)
+            target_known_keys = set(df_target["Tournament Key"].dropna().astype(str).str.replace(".0", "", regex=False).unique())
+            df_hist_target = df_hist_sync[
+                (df_hist_sync["Fecha"].dt.year == 2026) &
+                (df_hist_sync["Tournament Key"].astype(str).str.replace(".0", "", regex=False).isin(target_known_keys))
+            ].copy()
+            logging.info(f"Sync histórico: filtrado por Tournament Key ({len(target_known_keys)} keys conocidas).")
+        else:
+            # Fallback: filtrado por nombre (retrocompatibilidad con datos sin Tournament Key)
+            target_known_torneos = set(df_target["Torneo"].dropna().unique())
+            df_hist_target = df_hist_sync[
+                (df_hist_sync["Fecha"].dt.year == 2026) &
+                (df_hist_sync["Torneo"].isin(target_known_torneos))
+            ].copy()
+            logging.info(f"Sync histórico: filtrado por nombre de torneo (fallback, {len(target_known_torneos)} nombres).")
 
         if not df_hist_target.empty:
             # ── (a) Detectar partidos faltantes en ATP26 con ventana ±3 días ─────────
