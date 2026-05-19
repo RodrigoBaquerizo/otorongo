@@ -1728,15 +1728,13 @@ def render_analytics_dashboard(prefix, df_computed, show_categories=True):
 
 
 if not manager.is_production:
-    col_tabs, col_btn = st.columns([5, 1.2], vertical_alignment="top")
-    with col_tabs:
-        tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["ATP data", "ATP Bet", "Challenger data", "Challenger Bet", "ATP Análisis", "Challenger Análisis"])
-    with col_btn:
-        st.write("")  # Pequeño padding vertical
+    with st.sidebar:
+        st.markdown("---")
+        st.subheader("🛠️ Administración Local")
         if st.button("📤 Update Prod. Data", use_container_width=True, help="Sincroniza todos los datos locales hacia Supabase (Nube)"):
             sync_to_supabase_dialog()
-else:
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["ATP data", "ATP Bet", "Challenger data", "Challenger Bet", "ATP Análisis", "Challenger Análisis"])
+
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["ATP data", "ATP Bet", "Challenger data", "Challenger Bet", "ATP Análisis", "Challenger Análisis"])
 
 with tab1:
     render_stats_analysis_tab("🎾 ATP History & Analysis", "atp_matches", "data/analysis_config.json", "atp", "ATP", "🔄 Refresh ATP")
