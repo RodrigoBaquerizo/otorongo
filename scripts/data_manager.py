@@ -14,7 +14,10 @@ class DataManager:
             self.supabase_url = st.secrets.get("SUPABASE_URL")
             self.supabase_key = st.secrets.get("SUPABASE_KEY")
         except Exception:
-            # Fallback a variables de entorno para testing local si hiciera falta
+            pass
+            
+        # Fallback a variables de entorno para testing local si hiciera falta
+        if not self.supabase_url or not self.supabase_key:
             self.supabase_url = os.getenv("SUPABASE_URL")
             self.supabase_key = os.getenv("SUPABASE_KEY")
 
@@ -153,7 +156,50 @@ class DataManager:
             try:
                 client = self._get_client()
                 if client:
-                    df_clean = self._prepare_df_for_upsert(df, table_name)
+                    # Filtro Diferencial para optimizar upserts en la nube
+                    pk_map = {
+                        "atp_matches": "ID Partido",
+                        "challenger_matches": "ID Partido",
+                        "historical_fixtures": "ID Partido",
+                        "tournaments": "tournament_key",
+                    }
+                    pk_col = pk_map.get(table_name)
+                    df_to_send = df
+                    if pk_col and pk_col in df.columns:
+                        try:
+                            df_existing = self.load_table(table_name)
+                            if not df_existing.empty:
+                                df_ext_idx = df_existing.copy()
+                                df_cur_idx = df.copy()
+                                df_ext_idx[pk_col] = df_ext_idx[pk_col].astype(str).str.replace(".0", "", regex=False).str.strip()
+                                df_cur_idx[pk_col] = df_cur_idx[pk_col].astype(str).str.replace(".0", "", regex=False).str.strip()
+                                df_ext_idx = df_ext_idx.set_index(pk_col)
+                                df_cur_idx = df_cur_idx.set_index(pk_col)
+                                
+                                new_keys = df_cur_idx.index.difference(df_ext_idx.index)
+                                df_new = df_cur_idx.loc[new_keys]
+                                
+                                common_keys = df_cur_idx.index.intersection(df_ext_idx.index)
+                                if len(common_keys) > 0:
+                                    df_cur_com = df_cur_idx.loc[common_keys]
+                                    df_ext_com = df_ext_idx.loc[common_keys]
+                                    cols = [c for c in df_cur_com.columns if c in df_ext_com.columns]
+                                    mask = ~((df_cur_com[cols].fillna("N/D_PH") == df_ext_com[cols].fillna("N/D_PH")).all(axis=1))
+                                    df_changed = df_cur_com[mask]
+                                else:
+                                    df_changed = pd.DataFrame()
+                                    
+                                df_to_send = pd.concat([df_new, df_changed]).reset_index()
+                                logging.info(f"[NUBE] Filtro diferencial: enviando {len(df_to_send)} filas (de {len(df)} totales).")
+                        except Exception as diff_err:
+                            logging.error(f"[NUBE] Error calculando diferencia para {table_name}: {diff_err}")
+                            df_to_send = df
+
+                    if df_to_send.empty:
+                        logging.info(f"[NUBE] No hay cambios que enviar para {table_name}.")
+                        return True
+
+                    df_clean = self._prepare_df_for_upsert(df_to_send, table_name)
                     data_dict = df_clean.to_dict(orient="records")
                     
                     # Convertir tipos numpy a tipos nativos de Python para serialización JSON

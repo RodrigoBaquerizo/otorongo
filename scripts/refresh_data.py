@@ -62,22 +62,26 @@ HIST_TYPES      = {"Atp Singles", "Challenger Men Singles", "Challenger Men - Si
 
 def _surface_map():
     df = _get_manager().load_table("tournaments")
-    if df.empty or "tournament_key" not in df.columns:
-        return {}
+    if df.empty:
+        return {"keys": {}, "names": {}}
     
-    base_dict = df.set_index("tournament_key")["tournament_sourface"].to_dict()
-    final_dict = {}
-    for k, v in base_dict.items():
-        final_dict[k] = v
-        try:
-            # Añadir versión entera para compatibilidad local/CSV
-            final_dict[int(k)] = v
-        except Exception:
-            pass
-        # Añadir versión texto para compatibilidad Supabase
-        final_dict[str(k)] = v
-        
-    return final_dict
+    key_dict = {}
+    if "tournament_key" in df.columns and "tournament_sourface" in df.columns:
+        base_dict = df.set_index("tournament_key")["tournament_sourface"].to_dict()
+        for k, v in base_dict.items():
+            if pd.isna(k): continue
+            key_dict[k] = v
+            try: key_dict[int(k)] = v
+            except Exception: pass
+            key_dict[str(k)] = v
+
+    name_dict = {}
+    if "tournament_name" in df.columns and "tournament_sourface" in df.columns:
+        df_clean = df.dropna(subset=["tournament_name", "tournament_sourface"])
+        for _, row in df_clean.iterrows():
+            name_dict[str(row["tournament_name"]).strip().lower()] = row["tournament_sourface"]
+            
+    return {"keys": key_dict, "names": name_dict}
 
 
 def _normalize_surface(df: pd.DataFrame) -> pd.DataFrame:
@@ -108,12 +112,32 @@ def fetch_range(from_date: str, to_date: str) -> list:
 
 
 def _get_surface(fixture: dict, smap: dict) -> str:
+    keys_map = smap.get("keys", smap) if isinstance(smap, dict) else {}
+    names_map = smap.get("names", {}) if isinstance(smap, dict) else {}
+    
     t_key = fixture.get("tournament_key")
+    t_name = str(fixture.get("tournament_name") or "Desconocido").strip()
+    
+    # Si no tiene key, le asignamos la key determinista basada en el nombre
+    if not t_key or pd.isna(t_key) or str(t_key).strip() == "":
+        import hashlib
+        t_key = "name_" + hashlib.md5(t_name.encode('utf-8')).hexdigest()[:8]
+        
     try:
-        k = int(t_key) if t_key and str(t_key).isdigit() else t_key
-        return smap.get(k, "Unknown")
+        k = int(t_key) if str(t_key).isdigit() else t_key
+        surf = keys_map.get(k)
+        if surf and surf != "Unknown": return surf
+        surf = keys_map.get(str(k))
+        if surf and surf != "Unknown": return surf
     except Exception:
-        return "Unknown"
+        pass
+        
+    t_name_norm = t_name.lower()
+    if t_name_norm:
+        surf = names_map.get(t_name_norm)
+        if surf and surf != "Unknown": return surf
+            
+    return "Unknown"
 
 
 def _winner(f: dict) -> str:
@@ -798,8 +822,12 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
                     # Solo nos importa si es del tipo que estamos procesando ahora (ATP o CHA)
                     if f.get("event_type_type") in TARGET_TYPES:
                         t_name = f.get("tournament_name", "Desconocido")
+                        t_key = f.get("tournament_key")
+                        if not t_key or pd.isna(t_key) or str(t_key).strip() == "":
+                            import hashlib
+                            t_key = "name_" + hashlib.md5(str(t_name).strip().encode('utf-8')).hexdigest()[:8]
                         if not any(u["name"] == t_name for u in all_unknowns):
-                            all_unknowns.append({"name": t_name, "key": f.get("tournament_key")})
+                            all_unknowns.append({"name": t_name, "key": t_key})
                 
                 new_hist.append({
                     "Fecha":     f.get("event_date"),
@@ -904,8 +932,12 @@ def refresh(mode="ATP", progress_callback=None) -> dict:
                 surf = _get_surface(f, smap)
                 if surf == "Unknown":
                     t_name = f.get("tournament_name", "Desconocido")
+                    t_key = f.get("tournament_key")
+                    if not t_key or pd.isna(t_key) or str(t_key).strip() == "":
+                        import hashlib
+                        t_key = "name_" + hashlib.md5(str(t_name).strip().encode('utf-8')).hexdigest()[:8]
                     if not any(u["name"] == t_name for u in all_unknowns):
-                        all_unknowns.append({"name": t_name, "key": f.get("tournament_key")})
+                        all_unknowns.append({"name": t_name, "key": t_key})
                     continue # No procesar hasta que se defina la superficie
 
                 # Cuotas: Priorizar el mapa específico de cuotas
