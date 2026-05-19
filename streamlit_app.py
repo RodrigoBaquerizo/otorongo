@@ -94,8 +94,15 @@ def load_standings_data(event_type="ATP"):
 def load_matches_data(table_name):
     try:
         df = manager.load_table(table_name)
-        if not df.empty and "Fecha" in df.columns:
-            df["Fecha"] = pd.to_datetime(df["Fecha"], errors="coerce")
+        if not df.empty:
+            if "Fecha" in df.columns:
+                df["Fecha"] = pd.to_datetime(df["Fecha"], errors="coerce")
+            
+            # Coercionar columnas estrictamente numéricas (TEXT) a float
+            numeric_cols = ["Cuota J1", "Cuota J2", "J1 Puntos ATP", "J2 Puntos ATP"]
+            for col in numeric_cols:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors="coerce")
         return df
     except Exception as e:
         logging.error(f"Error loading {table_name}: {e}")
