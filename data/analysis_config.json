@@ -1,0 +1,33 @@
+{
+    "td_max_bet": 100.0,
+    "td_min_bet": 20.0,
+    "td_min_odds": 1.08,
+    "td_min_atp": 450,
+    "td_visible_cols": [
+        "Bet for",
+        "Amount",
+        "Won?",
+        "Torneo",
+        "Fecha_str",
+        "Jugador 1",
+        "Jugador 2",
+        "Cuota J1",
+        "Cuota J2",
+        "Ganador",
+        "Fecha"
+    ],
+    "td_hard_weight_h2h": 12.0,
+    "td_hard_weight_recent": 18.0,
+    "td_hard_weight_surface": 12.0,
+    "td_hard_weight_ranking": 54.0,
+    "td_hard_weight_ultra": 4.0,
+    "td_hard_min_prob": 65.05,
+    "td_hard_min_prob_no_h2h": 62.5,
+    "td_clay_weight_h2h": 11.2,
+    "td_clay_weight_recent": 2.7,
+    "td_clay_weight_surface": 24.3,
+    "td_clay_weight_ranking": 55.5,
+    "td_clay_weight_ultra": 6.3,
+    "td_clay_min_prob": 66.0,
+    "td_clay_min_prob_no_h2h": 63.0
+}

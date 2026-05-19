@@ -1,0 +1,25 @@
+{
+    "Grand Slam": [
+        "Australian Open",
+        "Roland Garros",
+        "French Open",
+        "Wimbledon",
+        "US Open"
+    ],
+    "Masters 1000": [
+        "Indian Wells",
+        "Miami",
+        "Monte Carlo",
+        "Madrid",
+        "Rome",
+        "Montreal",
+        "Toronto",
+        "Cincinnati",
+        "Shanghai",
+        "Paris"
+    ],
+    "Copa Davis": [
+        "Davis Cup",
+        "Copa Davis"
+    ]
+}

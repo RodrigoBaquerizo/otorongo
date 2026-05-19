@@ -13,6 +13,11 @@ data/*.csv
 data/*.json
 data/*.xlsx
 data/*.tsv
+!data/analysis_config.json
+!data/challenger_config.json
+!data/player_master.json
+!data/master-normalizacion-players-key.csv
+!data/tournament_categories.json
 data/backups_sanitization/
 data/ATP Rankings */
 data/Backup *.csv
