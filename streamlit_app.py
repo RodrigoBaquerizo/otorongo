@@ -7,6 +7,8 @@ import logging
 import time
 from datetime import datetime, timedelta
 import base64
+from dotenv import load_dotenv
+load_dotenv(override=True)
 from scripts.data_manager import DataManager
 
 @st.cache_resource
@@ -273,6 +275,59 @@ def show_surface_assignment_dialog(tournaments, mode):
                     st.error("❌ Fallo crítico al guardar las superficies en la base de datos.")
             except Exception as e:
                 st.error(f"❌ Error al guardar: {e}")
+
+@st.dialog("Sincronización a Producción")
+def sync_to_supabase_dialog():
+    st.write("Iniciando la sincronización de todos los datos locales de tenis hacia la base de datos de Supabase en producción...")
+    
+    import subprocess
+    import os
+    import sys
+    
+    sync_url = os.getenv("SYNC_SUPABASE_URL")
+    sync_key = os.getenv("SYNC_SUPABASE_KEY")
+    
+    if not sync_url or not sync_key:
+        st.error("❌ Error: SYNC_SUPABASE_URL o SYNC_SUPABASE_KEY no están definidos en el archivo .env")
+        st.info("Por favor, asegúrate de que el archivo `.env` contenga estas claves para poder realizar la subida.")
+        return
+        
+    status_text = st.empty()
+    status_text.info("⏳ Sincronizando... por favor espera.")
+    log_area = st.empty()
+    
+    try:
+        env = os.environ.copy()
+        env["SUPABASE_URL"] = sync_url
+        env["SUPABASE_KEY"] = sync_key
+        
+        process = subprocess.Popen(
+            [sys.executable, "scripts/push_to_supabase.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            env=env
+        )
+        
+        output_lines = []
+        while True:
+            line = process.stdout.readline()
+            if not line:
+                break
+            output_lines.append(line)
+            # Mostrar las últimas 20 líneas de registro para que se vea fluído
+            log_area.code("".join(output_lines[-20:]))
+            
+        process.wait()
+        
+        if process.returncode == 0:
+            status_text.success("🎉 ¡Sincronización masiva completada con éxito!")
+            st.cache_data.clear()
+        else:
+            status_text.error(f"❌ La sincronización falló con código de salida: {process.returncode}")
+            log_area.code("".join(output_lines))
+    except Exception as e:
+        status_text.error(f"❌ Error al ejecutar el script de sincronización: {e}")
 
 # --- CORE CALCULATION ENGINE ---
 
@@ -1672,7 +1727,16 @@ def render_analytics_dashboard(prefix, df_computed, show_categories=True):
                             )
 
 
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["ATP data", "ATP Bet", "Challenger data", "Challenger Bet", "ATP Análisis", "Challenger Análisis"])
+if not manager.is_production:
+    col_tabs, col_btn = st.columns([5, 1.2], vertical_alignment="top")
+    with col_tabs:
+        tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["ATP data", "ATP Bet", "Challenger data", "Challenger Bet", "ATP Análisis", "Challenger Análisis"])
+    with col_btn:
+        st.write("")  # Pequeño padding vertical
+        if st.button("📤 Update Prod. Data", use_container_width=True, help="Sincroniza todos los datos locales hacia Supabase (Nube)"):
+            sync_to_supabase_dialog()
+else:
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["ATP data", "ATP Bet", "Challenger data", "Challenger Bet", "ATP Análisis", "Challenger Análisis"])
 
 with tab1:
     render_stats_analysis_tab("🎾 ATP History & Analysis", "atp_matches", "data/analysis_config.json", "atp", "ATP", "🔄 Refresh ATP")
