@@ -22,13 +22,23 @@ MONTOS_VAL = np.array([m[2] for m in MONTOS_DATA])
 def norm_name(s):
     return str(s).lower().replace(".", "").replace(" ", "").strip()
 
-def preprocess_data(file_path):
+def preprocess_data(file_path, surface=None):
     print(f"--- Cargando datos: {file_path} ---")
     df = pd.read_csv(file_path)
+    
+    # Filtrado por superficie (si se especifica)
+    if surface:
+        df = df[df["Superficie"].str.lower() == surface.lower()]
+        print(f"--- Filtrando por superficie: {surface} ---")
     
     # Solo partidos con ganador registrado
     df_valid = df[df["Ganador"].notna() & (df["Ganador"] != "-") & (df["Ganador"] != "")]
     total_partidos = len(df_valid)
+    
+    if total_partidos < 60:
+        print(f"⚠️ Muestra insuficiente para optimización fiable ({total_partidos} partidos). Se requiere un mínimo de 60.")
+        sys.exit(1)
+        
     df = df_valid.copy()
     
     def to_float(series):
@@ -104,6 +114,7 @@ def preprocess_data(file_path):
         "C1": C1, "C2": C2,
         "odds1": o1, "odds2": o2,
         "pts_sum": p1 + p2,
+        "has_h2h": (h1 > 0) | (h2 > 0),
         "is_p1_win": is_p1_winner,
         "is_p2_win": is_p2_winner,
         "N": len(df),
@@ -125,14 +136,17 @@ def get_bet_amount(scores):
     valid = (scores >= MONTOS_MIN[idx]) & (scores < MONTOS_MAX[idx])
     return np.where(valid, MONTOS_VAL[idx], 0.0)
 
-def evaluate_combination(data, w, m_odds, m_atp, m_prob):
+def evaluate_combination(data, w, m_odds, m_atp, m_prob, m_prob_no_h2h):
     # w is (5,) weights summing to 1.0 (0-100 transformed to 0-1)
     f1 = np.dot(data["C1"], w) * 100.0
     f2 = np.dot(data["C2"], w) * 100.0
     
+    # Effective prob threshold per match
+    thresh = np.where(data["has_h2h"], m_prob, m_prob_no_h2h)
+    
     # Bet flags
-    b1 = (f1 >= m_prob) & (data["odds1"] >= m_odds) & (data["pts_sum"] >= m_atp)
-    b2 = (f2 >= m_prob) & (data["odds2"] >= m_odds) & (data["pts_sum"] >= m_atp)
+    b1 = (f1 >= thresh) & (data["odds1"] >= m_odds) & (data["pts_sum"] >= m_atp)
+    b2 = (f2 >= thresh) & (data["odds2"] >= m_odds) & (data["pts_sum"] >= m_atp)
     
     # Resolve conflicts (pick highest score if both)
     # Actually, if both are true, we only bet on one.
@@ -179,6 +193,7 @@ def evaluate_combination(data, w, m_odds, m_atp, m_prob):
         "m_odds": m_odds,
         "m_atp": m_atp,
         "m_prob": m_prob,
+        "m_prob_no_h2h": m_prob_no_h2h,
         "total_partidos": data["total_partidos"]
     }
 
@@ -188,27 +203,39 @@ def worker(data, iterations, seed, pipe):
     
     for _ in range(iterations):
         while True:
-            # Generate weights summing to 100 with 0.5 step
-            cuts = np.sort(np.random.choice(np.arange(0, 201), 4, replace=True))
-            w_int = np.zeros(5, dtype=int)
-            w_int[0] = cuts[0] # H2H
-            w_int[1] = cuts[1] - cuts[0]
-            w_int[2] = cuts[2] - cuts[1]
-            w_int[3] = cuts[3] - cuts[2] # Ranking
-            w_int[4] = 200 - cuts[3]
+            # Constraints (Decimal precision - Challenger Hard Optimization):
+            # H2H: 1-14%
+            # Reciente: 2-25%
+            # Superficie: 10-40%
+            # Ranking: 35-60%
+            # Ultra: 1-15%
+            w = np.zeros(5)
+            w[0] = np.random.uniform(1.0, 14.1) # H2H
+            w[1] = np.random.uniform(2.0, 25.1) # Reciente
+            w[2] = np.random.uniform(10.0, 40.1) # Superficie
+            w[3] = np.random.uniform(35.0, 60.1) # Ranking
+            w[4] = np.random.uniform(1.0, 15.1) # Ultra
             
-            # Constraints: Ranking > 29% (58 * 0.5) AND H2H <= 10% (20 * 0.5)
-            if w_int[3] > 58 and w_int[0] <= 20:
-                break
+            # Re-normalize to 100 if close to it, or just use rejection sampling
+            if np.sum(w) > 90 and np.sum(w) < 110:
+                w = (w / np.sum(w)) * 100.0
+                # Check if still in bounds after normalization
+                if (1.0 <= w[0] <= 14.0 and 
+                    2.0 <= w[1] <= 25.0 and 
+                    10.0 <= w[2] <= 40.0 and 
+                    35.0 <= w[3] <= 60.0 and 
+                    1.0 <= w[4] <= 15.0):
+                    break
                 
-        w = w_int * 0.5 / 100.0 # to 0-1 scale
+        w_final = w / 100.0 # to 0-1 scale
         
-        # Thresholds (Updated to User Constraints)
-        m_odds = np.round(np.random.uniform(1.12, 1.30), 2)
-        m_atp = int(np.random.choice(np.arange(250, 541, 10)))
+        # Thresholds (Constrained for Specific Search)
+        m_odds = 1.17 # Fixed
+        m_atp = 500   # Fixed
         m_prob = float(np.random.randint(60, 86))
+        m_prob_no_h2h = float(np.random.randint(58, 86))
         
-        res = evaluate_combination(data, w, m_odds, m_atp, m_prob)
+        res = evaluate_combination(data, w_final, m_odds, m_atp, m_prob, m_prob_no_h2h)
         if res:
             local_best.append(res)
             if len(local_best) > 100:
@@ -222,6 +249,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("csv", nargs="?", default="data/Challenger Tour Matches.csv")
     parser.add_argument("--minutes", type=int, default=10)
+    parser.add_argument("--surface", type=str, default=None, help="Filtrar por superficie: Hard, Clay, Grass")
     args = parser.parse_args()
 
     if not os.path.exists(args.csv):
@@ -233,7 +261,7 @@ def main():
                 print("Error: Tampoco existe el archivo ATP.")
                 return
 
-    data = preprocess_data(args.csv)
+    data = preprocess_data(args.csv, args.surface)
     
     num_cpus = mp.cpu_count()
     print(f"--- Iniciando optimización en {num_cpus} núcleos por {args.minutes} minutos ---")
@@ -279,13 +307,17 @@ def main():
     # --- Reporte Final ---
     print("\n" + "="*80)
     print(f"OPTIMIZACIÓN COMPLETADA - TOP 20 COMBINACIONES")
+    if args.surface:
+        print(f"SUPERFICIE: {args.surface.upper()}")
+    else:
+        print(f"SUPERFICIE: GLOBAL")
     print("="*80)
     
-    # PRECISION CHALLENGE: Win Rate >= 85.0, Bets >= 90
+    # CHALLENGER HIGH PRECISION: Win Rate >= 86.0, Bets >= 50
     qualifying = [
         r for r in global_results 
-        if r["win_rate"] >= 85.0 
-        and r.get("bets", 0) >= 90
+        if r["win_rate"] >= 86.0 
+        and r.get("bets", 0) >= 50
     ]
     
     def print_report(title, results):
@@ -305,11 +337,12 @@ def main():
                 "H2H": f"{r['w'][0]:.1f}%",
                 "Rec": f"{r['w'][1]:.1f}%",
                 "Surf": f"{r['w'][2]:.1f}%",
-                "Rank": f"{r['w'][3]:.1f}%",
+                "Rank-W": f"{r['w'][3]:.1f}%",
                 "Ultra": f"{r['w'][4]:.1f}%",
                 "Odds": r["m_odds"],
                 "ATP": r["m_atp"],
-                "Prob": f"{r['m_prob']:.0f}%"
+                "Prob": f"{r['m_prob']:.0f}%",
+                "P-NoH2H": f"{r['m_prob_no_h2h']:.0f}%"
             })
         print(pd.DataFrame(report_data).to_string(index=False))
 
@@ -322,7 +355,7 @@ def main():
     print_report("LISTA 2: MAYOR ROI", top_roi)
 
     if not qualifying:
-        print("\n[NOTA] No se encontraron combinaciones que cumplan estrictamente WR >= 85% y Bets >= 90. Los reportes arriba muestran los mejores candidatos generales.")
+        print("\n[NOTA] No se encontraron combinaciones que cumplan estrictamente WR >= 86% y Bets >= 50.")
     
     return
 

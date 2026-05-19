@@ -178,12 +178,8 @@ Crear una red de seguridad proactiva para detectar errores de inconsistencia ant
 
 ## 1️⃣6️⃣ Protección de Circuitos y Sincronización (Pendiente)
 
-### [ ] 🛡️ Blindaje por ID de Torneo (Eliminar Filtraciones ATP/CHA)
-- **Problema**: Actualmente la sincronización del Paso 3 usa solo el nombre del torneo, lo que causa que partidos de ATP Madrid se filtren en el archivo de Challenger Madrid.
-- **Acción**: 
-    - Modificar la estructura de `ATP Tour 2026 Matches.csv` y `Challenger Tour Matches.csv` para incluir la columna `Tournament Key`.
-    - Actualizar `refresh_data.py` para que la sincronización con el historial (Paso 2.5) utilice el `tournament_key` (único por circuito) en lugar de solo el nombre del torneo.
-    - Asegurar que el archivo histórico maestro también capture y valide este ID para evitar colisiones entre Masters 1000 y Challengers con nombres idénticos.
+### [x] 🛡️ Blindaje por ID de Torneo (Eliminar Filtraciones ATP/CHA)
+> **Nota**: Se implementó el uso de `Tournament Key` como identificador primario en `refresh_data.py` y en los archivos maestros (`ATP Tour 2026 Matches.csv`, `Challenger Tour Matches.csv` y el histórico maestro). Esto elimina la colisión de datos entre circuitos que comparten nombres de torneos (ej: Madrid), garantizando que la sincronización con el histórico sea exacta.
 
 ## 1️⃣7️⃣ Integridad de Datos y Blindaje de API (Completado)
 
@@ -207,6 +203,54 @@ Crear una red de seguridad proactiva para detectar errores de inconsistencia ant
     - Optimizar el manejo de errores en `streamlit_app.py` para que las excepciones de `refresh_data.py` se muestren siempre en la UI.
     - Verificar la integridad estructural de `Challenger Tour Matches.csv` tras los últimos recálculos.
 
+## 1️⃣9️⃣ Optimización de Umbrales para Partidos sin H2H (Pendiente)
+
+### [x] Fase 1: Implementación en UI y Motor de Análisis (App)
+- **Acción**: Añadir el parámetro `min_prob_no_h2h` en `streamlit_app.py`, la configuración JSON y la UI para permitir un umbral diferenciado en partidos sin historial.
+- **Detalle**: Implementar la lógica de "Doble Gatillo" en la función `get_stake` de la App. (Completado)
+
+### [ ] Fase 2: Integración en el Optimizador
+- **Acción**: Actualizar `heavy_optimizer.py` para que el nuevo umbral sea parte del espacio de búsqueda y se optimice automáticamente para maximizar el ROI.
+
+### [x] Pestaña de 'ATP Análisis'
+> **Nota**: Se añadió la nueva pestaña "ATP Análisis" al final de la navegación. El contenido se carga de forma diferida (lazy loading) dentro de su bloque `with tab5:` para mantener la performance. Incluye un subheader y un contenedor para el gráfico de evolución de rendimiento.
+
+## 2️⃣1️⃣ Módulo de Análisis Avanzado (ATP Análisis)
+
+### [x] 21.1 Gráfico: Evolución de Rendimiento
+> **Nota**: Se implementó el motor de visualización Plotly en `tab5`. Lee el DataFrame calculado de `st.session_state["atp_computed_df"]`, que se actualiza automáticamente al cambiar parámetros en "ATP data". Incluye agrupación Día/Semana/Mes con `resample()`, doble eje Y para 2 métricas simultáneas, balance acumulado opcional, y tooltip enriquecido con rango de fechas, n° apuestas, Balance, ROI y Acierto. Mini-resumen de KPIs debajo del gráfico.
+
+### [x] 21.2 Ficha de Análisis de Jugador (Mirror Mode)
+> **Nota**: Se implementó la sección de análisis de jugador en `tab5`. Se agregó un buscador que permite seleccionar a cualquier jugador con apuestas. Muestra un badge de rentabilidad total, y compara el rendimiento (Apuestas, Win Rate, Cuota Media, Balance, ROI) en modo "A Favor" y "En Contra". Se agregaron visualizaciones Plotly (Semáforo de Superficie en barras y Evolución de Profit en línea) y una lista con el historial de los últimos 5 partidos apostados.
+
+### [x] 21.3 Análisis por Superficie (Tactical Traffic Light)
+> **Nota**: Se implementó una sección entre la Evolución de rendimiento y la Ficha de Jugador. Incluye un radar chart (`go.Scatterpolar`) mostrando el ROI por superficie (ajustado dinámicamente a rangos negativos), acompañado de una tabla con N° Apuestas, % Acierto, Balance, ROI y Cuota Media. Las superficies con menos de 10 apuestas incluyen una etiqueta visual de `(⚠️ Muestra pequeña)` para contextualizar la significancia estadística.
+
+### [x] 21.4 Análisis de Rangos de Cuotas (Odds Buckets & Edge)
+> **Nota**: Se implementó una sección agrupando las apuestas en 5 buckets de cuotas. El gráfico combinado interactivo muestra el volumen de apuestas en barras (color verde/rojo según si el Edge es positivo o negativo) y el Yield real en una línea. Se calculan dinámicamente el Win Rate Real, el Win Rate Esperado (basado en el inverso de la cuota) y el Edge. Incluye avisos de "Muestra pequeña" si un bucket tiene menos de 20 apuestas.
+
+### [x] 21.5 Rendimiento por Categoría de Torneo
+> **Nota**: Se implementó una sección de desglose por categoría de torneo (Grand Slam, Masters 1000, Copa Davis, ATP 500/250). Utiliza un diccionario JSON (`data/tournament_categories.json`) que se auto-genera si no existe y clasifica usando búsqueda por substring. Muestra un gráfico de anillos (Donut chart) con el volumen de apuestas y una tabla detallada con el Edge y Yield real por cada categoría.
+
+### [x] 21.6 Análisis de Drawdown, Volatilidad y Supervivencia
+> **Nota**: Se implementó la sección "Radiografía de Riesgo" en tab5. Incluye input de bankroll (default 500 €), 4 KPIs (Profit Factor, Racha Máxima, Time to Recovery, Risk of Ruin), gráfico de estalactitas de Drawdown, termómetro de riesgo actual vs. máximo histórico, y un Stress Test que avisa si el drawdown máximo supera el 50% del bankroll declarado.
+
+### [x] 21.7 Curva de Fiabilidad y Auditoría de Calibración
+> **Nota**: Se implementó la sección "Auditoría de Calibración" al final de tab5. Calcula el Brier Score usando todos los partidos con resultado definido. Genera buckets de calibración cada 5% (de 50% a 100%), mostrando un scatter plot de burbujas donde el tamaño es proporcional al volumen y el color indica el nivel de calibración (verde ≤5%, amarillo ≤12%, rojo >12% de diferencial). Incluye diagnóstico automático de sesgo optimista o conservador comparando el WR real vs la probabilidad del modelo en el rango cercano al umbral de entrada configurado.
+
+---
+
+## 3️⃣ Gestión de Estrategias y Pesos
+### [x] 22. Configuración Multi-Superficie (ATP)
+> **Nota**: Se implementó la configuración multi-superficie en la pestaña ATP. Ahora permite definir pesos y umbrales independientes para Hard (Dura) y Clay (Tierra), manteniendo globales las constantes de bankroll. El motor de cálculo `_compute_bets_df` selecciona dinámicamente los parámetros por fila según la superficie del partido (Grass/Indoor usan Hard por defecto). Se incluyó un mecanismo de migración automática en `load_analysis_config_v2` para conservar la configuración previa del usuario en ambas superficies.
+
+---
+
+## 4️⃣ Análisis y Optimización del Circuito Challenger
+### [x] 23. Módulo "Challenger Análisis" (Nueva Pestaña)
+> **Nota**: Se implementó la pestaña "Challenger Análisis". Se refactorizó todo el código analítico visual de `tab5` hacia una función modular genérica `render_analytics_dashboard(prefix, df, show_categories)`. Esto permite que tanto el circuito ATP como el Challenger utilicen el mismo motor visual (Evolución, Semáforo, Buckets, Riesgo, Calibración) aislando completamente el `st.session_state` mediante prefijos dinámicos. La sección de Categorías de Torneo se ocultó exitosamente para Challenger. La calibración hereda correctamente el umbral base respectivo de cada circuito (Dura).
+
 ---
 
 > **Nota para los agentes**: Este es un documento de gestión. No realizar cambios en código hasta recibir la instrucción específica de una tarea.
+
