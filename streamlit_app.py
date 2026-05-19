@@ -94,21 +94,8 @@ def load_standings_data(event_type="ATP"):
 def load_matches_data(table_name):
     try:
         df = manager.load_table(table_name)
-        if not df.empty:
-            if "Fecha" in df.columns:
-                df["Fecha"] = pd.to_datetime(df["Fecha"], errors="coerce")
-            
-            # Coercionar columnas numéricas de Supabase (TEXT) a float
-            numeric_cols = [
-                "Cuota J1", "Cuota J2", 
-                "J1 Puntos ATP", "J2 Puntos ATP",
-                "J1 H2H", "J1 H2H %", "J2 H2H", "J2 H2H %",
-                "J1 Rend. Reciente", "J1 Rend. Superficie", "Rend. Ultra reciente J1",
-                "J2 Rend. Reciente", "J2 Rend. Superficie", "Rend. Ultra reciente J2"
-            ]
-            for col in numeric_cols:
-                if col in df.columns:
-                    df[col] = pd.to_numeric(df[col], errors="coerce")
+        if not df.empty and "Fecha" in df.columns:
+            df["Fecha"] = pd.to_datetime(df["Fecha"], errors="coerce")
         return df
     except Exception as e:
         logging.error(f"Error loading {table_name}: {e}")
