@@ -92,6 +92,13 @@ SYNC_CONFIG = {
             "Ganador", "Hora"
         ],
         "dtype": {"J1 Key": str, "J2 Key": str, "ID Partido": str}
+    },
+    "rankings": {
+        "csv_path": "data/atp_rankings_merged.csv",
+        "table_name": "rankings",
+        "pk": ["player_key", "date"],
+        "columns": ["player_key", "date", "player_name", "points"],
+        "dtype": {"player_key": str, "date": str, "player_name": str}
     }
 }
 
@@ -157,6 +164,10 @@ def process_and_upload(name, config):
             
             df_filtered.loc[mask, pk_col] = df_filtered[mask].apply(generate_metadata_id, axis=1)
             print(f"  🔑 Generados {mask.sum()} IDs de partido basados en metadatos para evitar descartes.")
+    elif isinstance(pk_col, list):
+        for c in pk_col:
+            df_filtered[c] = df_filtered[c].astype(str).str.strip()
+            df_filtered = df_filtered[~df_filtered[c].isin(["nan", "None", ""])]
     else:
         df_filtered[pk_col] = df_filtered[pk_col].astype(str).str.strip()
         df_filtered = df_filtered[~df_filtered[pk_col].isin(["nan", "None", ""])]
@@ -171,8 +182,12 @@ def process_and_upload(name, config):
     # 5. Deduplicar registros en base a la clave primaria (conservando el último registro en aparecer)
     deduped_dict = {}
     for rec in clean_records:
-        pk_val = rec.get(pk_col)
-        if pk_val:
+        if isinstance(pk_col, list):
+            pk_val = tuple(rec.get(c) for c in pk_col)
+        else:
+            pk_val = rec.get(pk_col)
+            
+        if pk_val and not any(x is None for x in (pk_val if isinstance(pk_val, tuple) else [pk_val])):
             deduped_dict[pk_val] = rec
     
     deduped_records = list(deduped_dict.values())
@@ -218,7 +233,16 @@ def process_and_upload(name, config):
 success_all = True
 t_total_start = time.time()
 
-for name, config in SYNC_CONFIG.items():
+# Permitir filtrar qué tablas subir pasando argumentos
+target_tables = sys.argv[1:] if len(sys.argv) > 1 else list(SYNC_CONFIG.keys())
+
+for name in target_tables:
+    if name not in SYNC_CONFIG:
+        print(f"❌ ERROR: La tabla '{name}' no existe en la configuración. Tablas válidas: {list(SYNC_CONFIG.keys())}")
+        success_all = False
+        break
+        
+    config = SYNC_CONFIG[name]
     success = process_and_upload(name, config)
     if not success:
         success_all = False
